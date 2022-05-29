@@ -10,6 +10,7 @@
  
     <py-env>
         - matplotlib
+        - pandas
     </py-env>
 </head>
 <body>
@@ -37,11 +38,10 @@ plt.title('Year vs Population')
 plt.legend(loc='lower right')
  
 fig
-
- 
-  
- 
-import pandas as pd 
+     </py-script> 
+     <py-script> print("My Lineplot")</py-script> 
+     <py-script> 
+  import pandas as pd 
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
 year = range (1992, 2021,1)
