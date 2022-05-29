@@ -37,6 +37,25 @@ plt.title('Year vs Population')
 plt.legend(loc='lower right')
  
 fig
+
+ 
+  
+ 
+import pandas as pd 
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+year = range (1992, 2021,1)
+capacity_wikipedia = (105,130,158,192,309,422,566,807,1250,1615,2069,2635,3723,5112,6660,9183,15844,23185,40336,70469,100504, 138856,
+                      178391, 221988, 295816, 388550, 488741, 586421, 713970)
+df = pd.DataFrame(capacity_wikipedia, index = year)
+df.plot(logy = True, figsize=(8,4),ax=ax)
+#pyscript.write("chart1",fig)
+fig
+      </py-script>
+  </body>
+</html>
+
+
     </py-script>
 </body>
 </html>
