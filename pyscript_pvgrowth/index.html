@@ -32,10 +32,10 @@ population_2 = [43, 43, 44, 44, 45, 45]
 #plt.plot(year_1, population_1, marker='o', linestyle='--', color='g', label='Country 1')
 #plt.plot(year_2, population_2,  marker='d', linestyle='-', color='r', label='Country 2')
  
-plt.xlabel('Year')
-plt.ylabel('Population (M)')
-plt.title('Year vs Population')
-plt.legend(loc='lower right')
+#plt.xlabel('Year')
+#plt.ylabel('Population (M)')
+#plt.title('Year vs Population')
+#plt.legend(loc='lower right')
  
 #fig
      </py-script> 
@@ -45,10 +45,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
 year = range (1992, 2021,1)
+
 capacity_wikipedia = (105,130,158,192,309,422,566,807,1250,1615,2069,2635,3723,5112,6660,9183,15844,23185,40336,70469,100504, 138856,
                       178391, 221988, 295816, 388550, 488741, 586421, 713970)
+year_1 = [2022, 2025, 2028, 2031]
+predicted_capacity = [1000000, 2000000, 4000000, 8000000]
+         
 df = pd.DataFrame(capacity_wikipedia, index = year)
+df1 = pd. DataFrame(predicted_capacity, index = year_1)
 df.plot(logy = True, figsize=(8,4),ax=ax)
+df1.plot(logy = True, figsize=(8,4),ax=ax)
 #pyscript.write("chart1",fig)
 fig
       </py-script>
