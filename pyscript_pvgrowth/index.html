@@ -43,7 +43,6 @@ plt.ylabel('Installed PV [MW]')
      <py-script> print("2030: 10 TW, this is 3 doublings")</py-script>
      <py-script> print("world energy 16 TW")</py-script>
      <py-script> savings 10x possible to 1.6 TW: electrical transport, HVAC heating, exponential food</py-script>
-     <py-script> energy savings come from electricity to replace ICE, HVAC to replace stove, solid state lighting, inverters, enzymes, catalyst </py-script>
      <py-script> 
 import pandas as pd 
 import matplotlib.pyplot as plt
@@ -62,7 +61,8 @@ df1.plot(logy = True, figsize=(8,4),ax=ax, grid = True)
 plt.legend(['historical PV growth', 'projected PV growth'])         
 #pyscript.write("chart1",fig)
 fig
-#display(df.to_string())
+
+display(df.to_string())
 #display(df1.to_string())
       </py-script>
   </body>
