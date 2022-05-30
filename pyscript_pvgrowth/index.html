@@ -56,15 +56,13 @@ df = pd.DataFrame(capacity_wikipedia, index = year)
 df1 = pd. DataFrame(predicted_capacity, index = year_1)
 df.plot(logy = True, figsize=(8,4),ax=ax, grid = True)
 df1.plot(logy = True, figsize=(8,4),ax=ax, grid = True)
-         
 plt.xlabel('Year')
 plt.ylabel('Installed PV [MW]')
-
 plt.legend(['historical PV growth', 'projected PV growth'])         
 #pyscript.write("chart1",fig)
 fig
 
-print(df.to_string())
+#print(df.to_string())
 #display(df1.to_string())
       </py-script>
   </body>
