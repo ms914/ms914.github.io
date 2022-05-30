@@ -53,7 +53,7 @@ predicted_capacity = [1000000, 2000000, 4000000, 8000000]
          
 df = pd.DataFrame(capacity_wikipedia, index = year)
 df1 = pd. DataFrame(predicted_capacity, index = year_1)
-df.plot(logy = True, figsize=(8,4),ax=ax)
+df.plot(logy = True, figsize=(8,4),ax=ax, grid = True)
 df1.plot(logy = True, figsize=(8,4),ax=ax)
 #pyscript.write("chart1",fig)
 fig
