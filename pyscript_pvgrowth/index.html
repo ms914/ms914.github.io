@@ -32,6 +32,7 @@ df1 = pd. DataFrame({'time':year_1, 'data':predicted_capacity}, index = year_1)
 # plot
 fig = plt.figure()
 plt.yscale("log")
+plt.ylabel('MW')
 for frame in [df, df1]:
     plt.plot(frame['time'], frame['data'])
 fig
