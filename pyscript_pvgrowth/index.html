@@ -1,10 +1,5 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
  
@@ -13,38 +8,17 @@
         - pandas
     </py-env>
 </head>
-<body>
-    <h1>Growth of photovoltaics</h1>
     
-    <div id="lineplot"></div>
-    <py-script output="lineplot">
-# Python Code Goes Here ...
-import matplotlib.pyplot as plt
- 
-#fig, ax = plt.subplots()
- 
-year_1 = [2016, 2017, 2018, 2019, 2020, 2021]
-population_1 = [42, 43, 45, 47, 48, 50]
- 
-year_2 = [2016, 2017, 2018, 2019, 2020, 2021]
-population_2 = [43, 43, 44, 44, 45, 45]
- 
-#plt.plot(year_1, population_1, marker='o', linestyle='--', color='g', label='Country 1')
-#plt.plot(year_2, population_2,  marker='d', linestyle='-', color='r', label='Country 2')
- 
-#plt.title('Year vs Population')
-#plt.legend(loc='lower right')
- 
-#fig
-     </py-script> 
-     <py-script> print("2022: 1 TW, this is about what the EU wants to install by 2030")</py-script> 
-     <py-script> print("2030: 10 TW, this is 3 doublings")</py-script>
-     <py-script> print("world energy 16 TW")</py-script>
-     <py-script> print("10x reduction possible: electrical transport, H/V/AC heating, exponential food")</py-script>
-     <py-script> 
+<body>
+    
+    <py-script> 
+
+# import & R plot style
 import pandas as pd 
 import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
+plt.style.use("ggplot")
+
+# data frame
 year = range (1992, 2021,1)
 
 capacity_wikipedia = (105,130,158,192,309,422,566,807,1250,1615,2069,2635,3723,5112,6660,9183,15844,23185,40336,70469,100504, 138856,
@@ -52,25 +26,17 @@ capacity_wikipedia = (105,130,158,192,309,422,566,807,1250,1615,2069,2635,3723,5
 year_1 = [2022, 2025, 2028, 2031]
 predicted_capacity = [1000000, 2000000, 4000000, 8000000]
          
-df = pd.DataFrame(capacity_wikipedia, index = year)
-df1 = pd. DataFrame(predicted_capacity, index = year_1)
-df.plot(logy = True, figsize=(8,4),ax=ax, grid = True)
-df1.plot(logy = True, figsize=(8,4),ax=ax, grid = True)
-plt.xlabel('Year')
-plt.ylabel('Installed PV [MW]')
-plt.legend(['historical PV growth', 'projected PV growth'])         
-#pyscript.write("chart1",fig)
-fig
-#print(df.to_string())
-#display(df1.to_string())
-     </py-script>
-     <py-script>
-# Keeling curve
-#url = "https://scrippsco2.ucsd.edu/assets/data/atmospheric/stations/in_situ_co2/weekly/weekly_in_situ_co2_mlo.csv"
-#df2 = pd.read_csv(url,names=['date','CO2 ppm'], skiprows=range(0, 44))
-#print('Dataframe has %d data points of %d features' %(df.shape[0],df.shape[1]))
-#df.head()
-      </py-script>
+df = pd.DataFrame({'time': year, 'data':capacity_wikipedia}, index = year)
+df1 = pd. DataFrame({'time':year_1, 'data':predicted_capacity}, index = year_1)
+
+# plot
+fig = plt.figure()
+plt.yscale("log")
+for frame in [df, df1]:
+    plt.plot(frame['time'], frame['data'])
+plt.show()
+
+    </py-script>
   </body>
 </html>
 
