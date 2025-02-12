@@ -87,7 +87,7 @@ $$
 
 Es sei 
 $$
-K=\{(x,y,z)^T\in\mathbb{R}^3 : x^2+y^2+z^2\leq4,\; y\geq0,\; z\geq0$$
+K=\{(x,y,z)^T\in\mathbb{R}^3 : x^2+y^2+z^2\leq4,\; y\geq0,\; z\geq0
 $$
 das Kugelsegment und $\partial K$ die Vereinigung aller Oberflächen des Segments.  
 Weiterhin sei 
