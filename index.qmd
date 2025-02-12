@@ -1,11 +1,11 @@
 ---
-title: "ms914.github.io"
+title: "HM3 Website"
+format: html
 ---
 
-This is a Quarto website. This is Markus Quarto website.
+# Herzlich Willkommen zur HM3 Website
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.
 
-```{r}
-1 + 1
-```
+- [Exam Questions](exam-questions.qmd)
+- [Solutions](solutions.qmd)
