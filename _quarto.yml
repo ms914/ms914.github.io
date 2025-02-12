@@ -1,0 +1,17 @@
+project:
+  type: website
+
+website:
+  title: "HM3: Exam Questions & Solutions"
+  navbar:
+    left:
+      - text: "Exam Questions"
+        href: exam-questions.qmd
+      - text: "Solutions"
+        href: solutions.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

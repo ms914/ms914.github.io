@@ -1,0 +1,11 @@
+---
+title: "HM3 Website"
+format: html
+---
+
+# Herzlich Willkommen zur HM3 Website
+
+Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.
+
+- [Exam Questions](exam-questions.qmd)
+- [Solutions](solutions.qmd)
