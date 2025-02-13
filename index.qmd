@@ -10,12 +10,4 @@ Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörig
 - [Exam Questions](exam-questions.qmd)
 - [Solutions](solutions.qmd)
 
-Die HM3 ist die Grundlage für kontinuierliche Feldtheorien: 
-
-Das ist für
-
-- MB-Ingenieure die Strömungslehre und für 
-- ET-Ingenieure die Elektrodynamik.
-
-Die DGL sind die Navier-Stokes Gleichung bzw. die Maxwell-Gleichungen.
-Die VA liefert die Lösungsmethoden, vor allem für die weiche Formulierung der DGLs, die für die numerische Lösung verwendet wird.
+Die HM3 ist die Grundlage für die Theorie der Massenerhaltung in der Strömungsdynamik.
