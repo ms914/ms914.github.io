@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "HM3 Website",
     "section": "",
-    "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\n\nDie HM3 ist die Grundlage für kontinuierliche Feldtheorien:\nDas ist für\n\nMB-Ingenieure die Strömungslehre und für\nET-Ingenieure die Elektrodynamik.\n\nDie DGL sind die Navier-Stokes Gleichung bzw. die Maxwell-Gleichungen. Die VA liefert die Lösungsmethoden, vor allem für die weiche Formulierung der DGLs, die für die numerische Lösung verwendet wird."
+    "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\n\nDie HM3 ist die Grundlage für die Theorie der Massenerhaltung in der Strömungsdynamik."
   },
   {
     "objectID": "exam-questions.html",
