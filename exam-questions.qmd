@@ -57,7 +57,7 @@ die die Randbedingungen $u(t,0)=u(t,\pi)=0,\;t>0$ erfüllt.
 
 Gegeben sei das parameterabhängige Vektorfeld 
 $$
-F:\mathbb{R}^3\to\mathbb{R}^3,\quad F=\begin{pmatrix} x\frac{y^3}{3}\\x^2\Bigl(z^2+\frac{y^2}{2}\Bigr)-\alpha x^2z^2\$1-\alpha)2x^2yz+z^2 \end{pmatrix},
+F:\mathbb{R}^3\to\mathbb{R}^3,\quad F=\begin{pmatrix} x\frac{y^3}{3}\\x^2\Bigl(z^2+\frac{y^2}{2}\Bigr)-\alpha x^2z^2\\(1-\alpha)2x^2yz+z^2 \end{pmatrix},
 $$
 und der Weg
 $$
