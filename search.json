@@ -56,6 +56,55 @@
     "text": "Es sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
   },
   {
+    "objectID": "klausuren.html",
+    "href": "klausuren.html",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "HM1\nHM2\nHM3\nHM4"
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-1-7-punkte",
+    "href": "klausuren.html#aufgabe-1-7-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "Aufgabe 1 (7 Punkte)",
+    "text": "Aufgabe 1 (7 Punkte)\nBestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-2-14-punkte",
+    "href": "klausuren.html#aufgabe-2-14-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "Aufgabe 2 (14 Punkte)",
+    "text": "Aufgabe 2 (14 Punkte)\nGegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-3-55-punkte",
+    "href": "klausuren.html#aufgabe-3-55-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "Aufgabe 3 (5+5 Punkte)",
+    "text": "Aufgabe 3 (5+5 Punkte)\n\nStellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-4-64-punkte",
+    "href": "klausuren.html#aufgabe-4-64-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "Aufgabe 4 (6+4 Punkte)",
+    "text": "Aufgabe 4 (6+4 Punkte)\n\nBestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-5-72-punkte",
+    "href": "klausuren.html#aufgabe-5-72-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "Aufgabe 5 (7+2 Punkte)",
+    "text": "Aufgabe 5 (7+2 Punkte)\nGegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-6-46-punkte",
+    "href": "klausuren.html#aufgabe-6-46-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "Aufgabe 6 (4+6 Punkte)",
+    "text": "Aufgabe 6 (4+6 Punkte)\n\nBerechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
