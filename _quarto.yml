@@ -7,6 +7,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: klausuren.qmd
+        text: Klausuren HM1 - HM4
       - about.qmd
 
 format:
