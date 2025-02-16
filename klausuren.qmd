@@ -4,13 +4,6 @@ format: html
 editor: visual
 ---
 
-# Navigationsleiste
-
-- [HM1](#hm1)
-- [HM2](#hm2)
-- [HM3](#hm3)
-- [HM4](#hm4)
-
 # HM1 - Klausur Aufgaben
 
 ## Aufgabe 1 (7 Punkte)
