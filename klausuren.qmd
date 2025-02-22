@@ -257,7 +257,7 @@ b) Berechnen Sie den Fluss von $F$ durch $\partial K$, also $\int_{\partial K}F\
 
 c) Berechnen Sie  $\int_{\partial K}rot(F)\cdot dn$.
 
-d) Berechnen Sie mit Hilfe des Satzes von Stokes das Integral $\int_{\partial K \text{\B}}F\cdot dn$, wobei $B$ der Boden des Kugelsegments in der ($x$-$y$)-Ebene ist.
+d) Berechnen Sie mit Hilfe des Satzes von Stokes das Integral $\int_{\partial K \text{\B}}rot (F)\cdot dn$, wobei $B$ der Boden des Kugelsegments in der ($x$-$y$)-Ebene ist.
 
 ---
 
