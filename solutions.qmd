@@ -5,6 +5,8 @@ format: html
 
 # HM3: Kurzlösungen
 
+<button onclick="window.print()">Download as PDF</button>
+
 Im Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:
 
 | **Aufgabe / Teil** | **Kurzlösung / Ergebnis** |
