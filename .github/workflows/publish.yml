@@ -13,8 +13,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Clean Quarto Cache
-        run: rm -rf ~/.quarto
+      
         
       - name: Check out repository
         uses: actions/checkout@v4
