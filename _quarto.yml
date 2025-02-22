@@ -11,7 +11,7 @@ website:
         text: Klausuren HM1 - HM4
       - href: karteikarten.qmd
         text: Karteikarten
-      - <button onclick="window.print()">Download as PDF</button>
+     
     
       - about.qmd
 
