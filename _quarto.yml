@@ -11,8 +11,6 @@ website:
         text: Klausuren HM1 - HM4
       - href: karteikarten.qmd
         text: Karteikarten
-     
-    
       - about.qmd
 
 format:
