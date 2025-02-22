@@ -97,4 +97,4 @@ $$
 **a)** Parametrisieren Sie das Volumen in Kugelkoordinaten.  
 **b)** Berechnen Sie den Fluss $\int_{\partial K}F\cdot n\,dS$, wobei $n$ die nach außen gerichtete Normale ist.  
 **c)** Berechnen Sie $\int_{\partial K}\operatorname{rot}(F)\cdot n\,dS$.  
-**d)** Berechnen Sie mit dem Satz von Stokes das Integral $\int_{\partial K\setminus B}F\cdot n\,dS$, wobei $B$ der Boden des Kugelsegments in der (x‑y)-Ebene ist.
+**d)** Berechnen Sie mit dem Satz von Stokes das Integral $\int_{\partial K\setminus B}rot F\cdot n\,dS$, wobei $B$ der Boden des Kugelsegments in der (x‑y)-Ebene ist.
