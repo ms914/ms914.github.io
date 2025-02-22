@@ -248,7 +248,7 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td><strong>5(c)</strong></td>
-<td>Mit <span class="math inline">\(F(x,y,z)=(x+y,\,y-x,\,2)^T\)</span> erhält man nach Einsetzen und Kürzen: <br> <span class="math inline">\(F(f(u,v))\cdot (f_u\times f_v)= e^{2u}-1\)</span>. <br> <strong>Oberflächenintegral:</strong> <span class="math inline">\(\displaystyle \int_{u=0}^1\int_{v=0}^{2\pi}(e^{2u}-1)\,dv\,du=\pi(e^2-2)\)</span>.</td>
+<td>Mit <span class="math inline">\(F(x,y,z)=(x+y,\,y-x,\,2)^T\)</span> erhält man nach Einsetzen und Kürzen: <br> <span class="math inline">\(F(f(u,v))\cdot (f_u\times f_v)= e^{2u}-1\)</span>. <br> <strong>Oberflächenintegral:</strong> <span class="math inline">\(\displaystyle \int_{u=0}^1\int_{v=0}^{2\pi}(e^{2u}-1)\,dv\,du=\pi(e^2-3)\)</span>.</td>
 </tr>
 <tr class="even">
 <td><strong>6(a)</strong></td>
@@ -264,7 +264,7 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td><strong>6(d)</strong></td>
-<td>Sei <span class="math inline">\(B\)</span> der Boden (<span class="math inline">\(z=0\)</span>) des Kugelsegments. <br> Es gilt: <span class="math inline">\(\int_{\partial K}F\cdot n\,dS = \int_{\partial K\setminus B}F\cdot n\,dS+\int_B F\cdot n\,dS\)</span>. <br> Auf <span class="math inline">\(B\)</span> ist <span class="math inline">\(n=(0,0,-1)\)</span> und <span class="math inline">\(F(x,y,0)=(x-y,x+y,xy)\)</span> ⇒ <span class="math inline">\(F\cdot n=-xy\)</span>. <br> Wegen Symmetrie: <span class="math inline">\(\int_B (-xy)dA=0\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_{\partial K\setminus B}F\cdot n\,dS=8\pi\)</span>.</td>
+<td>Sei <span class="math inline">\(B\)</span> der Boden (<span class="math inline">\(z=0\)</span>) des Kugelsegments. <br> Es gilt: <span class="math inline">\(\int_{\partial K}rot F\cdot n\,dS = \int_{\partial K\setminus B}rot F\cdot n\,dS+\int_B rot F\cdot n\,dS\)</span>. <br> Auf <span class="math inline">\(B\)</span> ist <span class="math inline">\(n=(0,0,-1)\)</span> und <span class="math inline">\(rot F(x,y,0)=(0,0,-2)\)</span> ⇒ <span class="math inline">\(F\cdot n=2\)</span>. <br> Wegen Symmetrie: <span class="math inline">\(\int_B (-xy)dA=0\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_{\partial K\setminus B}F\cdot n\,dS=8\pi\)</span>.</td>
 </tr>
 </tbody>
 </table>
