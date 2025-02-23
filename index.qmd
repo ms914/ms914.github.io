@@ -8,6 +8,6 @@ format: html
 Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.
 
 - [Exam Questions](exam-questions.qmd)
-- [Solutions](solutions.qmd) [pdf](HM3_Klausur_Lösung.pdf)
+- [Solutions](solutions.qmd) [pdf](HM3_Klausur_solution.pdf)
 
 Die HM3 ist die Grundlage für die Theorie der Strömungsdynamik. 
