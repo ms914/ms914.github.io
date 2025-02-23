@@ -177,9 +177,6 @@ window.Quarto = {
 
 <section id="hm3-kurzlösungen" class="level1">
 <h1>HM3: Kurzlösungen</h1>
-<button onclick="window.print()">
-Download as PDF
-</button>
 <p>Im Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:</p>
 <table class="caption-top table">
 <colgroup>
@@ -211,7 +208,7 @@ Download as PDF
 </tr>
 <tr class="odd">
 <td><strong>2(a)</strong></td>
-<td>Gegeben: <span class="math inline">\(A=\begin{pmatrix}3&amp;-1\\5&amp;-1\end{pmatrix}\)</span>. <br> Charakteristik: <span class="math inline">\(\det(A-\lambda I)=\lambda^2-2\lambda+2=0\)</span> ⇒ <span class="math inline">\(\lambda=1\pm i\)</span>. <br> Eigenvektor zu <span class="math inline">\(\lambda=1+i\)</span>: <span class="math inline">\(v=(1,\,2-i)^T\)</span>. <br> Zerlegung: <span class="math inline">\(a=(1,2)^T\)</span>, <span class="math inline">\(b=(0,-1)^T\)</span>. <br> Reelles Fundamentalsystem: <br> <span class="math inline">\(x_1(t)=e^t\Bigl[a\cos t-b\sin t\Bigr]\)</span>, <br> <span class="math inline">\(x_2(t)=e^t\Bigl[a\sin t+b\cos t\Bigr]\)</span>. <br> e^t (cos, sin ) <br> e^t(a_2 cos + b_2 sin, a_2 sin - b_2 cos)</td>
+<td>Gegeben: <span class="math inline">\(A=\begin{pmatrix}3&amp;-1\\5&amp;-1\end{pmatrix}\)</span>. <br> Charakteristik: <span class="math inline">\(\det(A-\lambda I)=\lambda^2-2\lambda+2=0\)</span> ⇒ <span class="math inline">\(\lambda=1\pm i\)</span>. <br> Eigenvektor zu <span class="math inline">\(\lambda=1+i\)</span>: <span class="math inline">\(v=(1,\,2-i)^T\)</span>. <br> Zerlegung: <span class="math inline">\(a=(1,2)^T\)</span>, <span class="math inline">\(b=(0,-1)^T\)</span>. <br> Reelles Fundamentalsystem: <br> <span class="math inline">\(x_1(t)=e^t\Bigl[a\cos t-b\sin t\Bigr]\)</span>, <br> <span class="math inline">\(x_2(t)=e^t\Bigl[a\sin t+b\cos t\Bigr]\)</span>.</td>
 </tr>
 <tr class="even">
 <td><strong>2(b)</strong></td>
@@ -267,7 +264,7 @@ Download as PDF
 </tr>
 <tr class="odd">
 <td><strong>6(d)</strong></td>
-<td>Sei <span class="math inline">\(B\)</span> der Boden (<span class="math inline">\(z=0\)</span>) des Kugelsegments. <br> Es gilt: <span class="math inline">\(\int_{\partial K}\operatorname {rot} F\cdot n\,dS = \int_{\partial K\setminus B}\operatorname {rot}\cdot n\,dS+\int_B \operatorname {rot}\cdot n\,dS\)</span>. <br> Auf <span class="math inline">\(B\)</span> ist <span class="math inline">\(n=(0,0,-1)\)</span> und <span class="math inline">\(\operatorname {rot}(x,y,0)=(x,-y,2)\)</span> ⇒ <span class="math inline">\(F\cdot n=-2\)</span>. <br> <span class="math inline">\(\int_B (-2)dA=-2*2\pi\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_{\partial K\setminus B}F\cdot n\,dS=-4\pi\)</span>. (D.h. <span class="math inline">\(4 \pi\)</span> durch den Rand ohne Boden und ingesamt <span class="math inline">\(= 0\)</span> aus c) )</td>
+<td>Sei <span class="math inline">\(B\)</span> der Boden (<span class="math inline">\(z=0\)</span>) des Kugelsegments. <br> Es gilt: <span class="math inline">\(\int_{\partial K}\operatorname {rot} F\cdot n\,dS = \int_{\partial K\setminus B}\operatorname {rot}\cdot n\,dS+\int_B \operatorname {rot}\cdot n\,dS\)</span>. <br> Auf <span class="math inline">\(B\)</span> ist <span class="math inline">\(n=(0,0,-1)\)</span> und <span class="math inline">\(\operatorname {rot}(x,y,0)=(x,-y,2)\)</span> ⇒ <span class="math inline">\(F\cdot n=-2\)</span>. <br> <span class="math inline">\(\int_B (-2)dA=-2*2\pi=-4\pi\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_{\partial K\setminus B}rot(F)\cdot n\,dS=4\pi\)</span>. (weil Summe <span class="math inline">\(= 0\)</span> aus 6 (c) )</td>
 </tr>
 </tbody>
 </table>
