@@ -29,3 +29,5 @@ Im Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:
 | **6(c)** | Da $\operatorname{div}(\operatorname{rot}F)=0$, gilt: <br> $\displaystyle \int_{\partial K}\operatorname{rot}F\cdot n\,dS=0$. |
 | **6(d)** | Sei $B$ der Boden ($z=0$) des Kugelsegments. <br> Es gilt: $\int_{\partial K}\operatorname {rot} F\cdot n\,dS = \int_{\partial K\setminus B}\operatorname {rot}\cdot n\,dS+\int_B \operatorname {rot}\cdot n\,dS$. <br> Auf $B$ ist $n=(0,0,-1)$ und $\operatorname {rot}(x,y,0)=(x,-y,2)$ ⇒ $F\cdot n=-2$. <br> $\int_B (-2)dA=-2*2\pi=-4\pi$. <br> **Ergebnis:** $\displaystyle \int_{\partial K\setminus B}rot(F)\cdot n\,dS=4\pi$. (weil Summe $= 0$ aus 6 (c) ) |
 
+[colab](https://colab.research.google.com/drive/1yMC6mkhiUe6dk9Kfzyma7kfPXMiWwhFI?usp=sharing)
+
