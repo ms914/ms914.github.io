@@ -4,6 +4,6 @@ title: "About"
 
 About this site
 
-```{r}
+```{python}
 1 + 1
 ```
