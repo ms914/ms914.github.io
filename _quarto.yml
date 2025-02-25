@@ -13,7 +13,10 @@ website:
         text: Lösungen HM1 - HM4
       - href: karteikarten.qmd
         text: Karteikarten
+      - href: hm3_python.qmd
+        text: Sympy
       - about.qmd
+      
 
 format:
   html:
