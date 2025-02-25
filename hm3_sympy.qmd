@@ -1,8 +1,6 @@
 ---
 title: "hm3_sympy"
 format: html
-editor: visual
-jupyter: python3
 ---
 
 ## Quarto
