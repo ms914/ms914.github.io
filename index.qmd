@@ -9,6 +9,5 @@ Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörig
 
 - [Exam Questions](exam-questions.qmd)
 - [Solutions](solutions.qmd)
-- [Sympy](quarto_python.qmd)
 
 Die HM3 ist die Grundlage für die Theorie der Strömungsdynamik. 
