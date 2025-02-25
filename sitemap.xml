@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ms914.github.io/exam-questions.html</loc>
-    <lastmod>2025-02-25T17:00:52.106Z</lastmod>
+    <loc>https://ms914.github.io/index.html</loc>
+    <lastmod>2025-02-25T17:21:19.064Z</lastmod>
   </url>
   <url>
-    <loc>https://ms914.github.io/HM_solutions.html</loc>
-    <lastmod>2025-02-25T17:00:52.102Z</lastmod>
+    <loc>https://ms914.github.io/exam-questions.html</loc>
+    <lastmod>2025-02-25T17:21:19.064Z</lastmod>
   </url>
   <url>
     <loc>https://ms914.github.io/about.html</loc>
-    <lastmod>2025-02-25T17:00:52.106Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ms914.github.io/index.html</loc>
-    <lastmod>2025-02-25T17:00:52.106Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ms914.github.io/karteikarten.html</loc>
-    <lastmod>2025-02-25T17:00:52.106Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ms914.github.io/solutions.html</loc>
-    <lastmod>2025-02-25T17:00:52.117Z</lastmod>
+    <lastmod>2025-02-25T17:21:19.064Z</lastmod>
   </url>
   <url>
     <loc>https://ms914.github.io/klausuren.html</loc>
-    <lastmod>2025-02-25T17:00:52.106Z</lastmod>
+    <lastmod>2025-02-25T17:21:19.064Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ms914.github.io/HM_solutions.html</loc>
+    <lastmod>2025-02-25T17:21:19.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ms914.github.io/karteikarten.html</loc>
+    <lastmod>2025-02-25T17:21:19.064Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ms914.github.io/solutions.html</loc>
+    <lastmod>2025-02-25T17:21:19.077Z</lastmod>
   </url>
 </urlset>
