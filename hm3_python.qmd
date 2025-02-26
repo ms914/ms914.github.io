@@ -8,7 +8,7 @@ editor: visual
 
 ## Aufgabe 1
 
-``` Text
+```
 # Aufgabe 1
 import sympy as sp
 
