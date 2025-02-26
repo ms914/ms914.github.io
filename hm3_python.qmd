@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-## Quarto-python
+## HM3 Sympy
 
 ## Aufgabe 1
 
@@ -217,7 +217,7 @@ print(integral_value)
 
 ```
 # Aufgabe 5
-# mühsam von Hand
+
 # Parametrisierung
 u,v = sp.symbols('u v')
 #g_u = sp.Matrix([sp.exp(u)-1,0,u])
