@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "HM3 Website",
-    "section": "",
-    "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\n\nDie HM3 ist die Grundlage für die Theorie der Strömungsdynamik."
-  },
-  {
     "objectID": "exam-questions.html",
     "href": "exam-questions.html",
     "title": "Exam Questions",
@@ -56,62 +49,6 @@
     "text": "Es sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "klausuren.html",
-    "href": "klausuren.html",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert.\n\n\n\nGegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\).\n\n\n\n\nStellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an.\n\n\n\n\nBestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab.\n\n\n\n\nGegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\).\n\n\n\n\n\nBerechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-1-7-punkte",
-    "href": "klausuren.html#aufgabe-1-7-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert."
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-2-14-punkte",
-    "href": "klausuren.html#aufgabe-2-14-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Gegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\)."
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-3-55-punkte",
-    "href": "klausuren.html#aufgabe-3-55-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Stellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an."
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-4-64-punkte",
-    "href": "klausuren.html#aufgabe-4-64-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab."
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-5-72-punkte",
-    "href": "klausuren.html#aufgabe-5-72-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Gegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\)."
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-6-46-punkte",
-    "href": "klausuren.html#aufgabe-6-46-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Berechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
-  },
-  {
     "objectID": "HM_solutions.html",
     "href": "HM_solutions.html",
     "title": "HM1_Lösung",
@@ -131,6 +68,62 @@
     "title": "HM1_Lösung",
     "section": "Kurzlösung zur Klausur HM 2",
     "text": "Kurzlösung zur Klausur HM 2\n\nAufgabe 1 (8 Punkte)\nGegeben: \\[\nA=\\begin{pmatrix}\n1&1&3&1\\\\\n2&-1&0&1\\\\\n-3&2&1&-2\\\\\n4&1&6&1\n\\end{pmatrix},\\quad\nb=\\begin{pmatrix}6\\\\-1\\\\1\\\\3\\end{pmatrix}.\n\\]\nLösungsschritte:\n\nGauß-Elimination:\n– Schreiben Sie das erweiterte System und eliminieren Sie \\(x_1\\) mithilfe von Zeilenoperationen.\n– Durch Einsetzen von \\(x_1\\) aus der ersten Zeile in die anderen erhält man ein System in den Variablen \\(x_2\\), \\(x_3\\) und \\(x_4\\).\nReduziertes System (nach Substitution):\nEs stellt sich folgendes Teilsystem heraus: \\[\n\\begin{aligned}\n&3x_2+6x_3+x_4=13,\\\\\n&5x_2+10x_3+x_4=19,\\\\\n&x_2+2x_3+x_4=7.\n\\end{aligned}\n\\] Aus der Differenz der ersten beiden Gleichungen folgt: \\[\n2x_2+4x_3=6\\quad\\Rightarrow\\quad x_2+2x_3=3.\n\\] Mit der dritten Gleichung: \\[\nx_2+2x_3+x_4=7\\quad\\Rightarrow\\quad x_4=4.\n\\] Setzen Sie \\(x_3=t\\) als freien Parameter ein, dann folgt: \\[\nx_2=3-2t.\n\\]\nRücksubstitution:\nAus der ersten Zeile: \\[\nx_1=6 - x_2-3x_3-x_4 = 6 - (3-2t) - 3t - 4 = -1 - t.\n\\]\n\nErgebnis:\n\\[\nx(t)=\\begin{pmatrix} -1-t\\\\ 3-2t\\\\ t\\\\ 4\\end{pmatrix},\\quad t\\in\\mathbb{R}.\n\\] Da ein freier Parameter verbleibt, ist der Rang von \\(A\\)\n\\[\n\\operatorname{rg}(A)=3.\n\\]\n\n\n\nAufgabe 2 (7+3 Punkte)\na) Parameterdarstellung der Geraden \\(g\\):\nDie Koordinatendarstellung \\[\n\\frac{4-x_1}{2}=\\frac{4+x_2}{3}=\\frac{2-x_3}{2}=t\n\\] liefert: \\[\n\\begin{aligned}\nx_1&=4-2t,\\\\\nx_2&=3t-4,\\\\\nx_3&=2-2t.\n\\end{aligned}\n\\] Also:\n\\[\ng(t)=(4-2t,\\;3t-4,\\;2-2t)^T.\n\\]\nParameterdarstellung der Ebene \\(E\\):\nGegeben durch die Punkte \\[\nP=(3,1,2),\\quad Q=(-1,3,2),\\quad R=(5,-2,4).\n\\] Berechnen Sie zwei Richtungsvektoren: \\[\n\\begin{aligned}\n\\vec{PQ}&=Q-P=(-4,2,0),\\\\\n\\vec{PR}&=R-P=(2,-3,2).\n\\end{aligned}\n\\] Der Normalenvektor ist das Kreuzprodukt: \\[\nn=\\vec{PQ}\\times\\vec{PR}=\\begin{pmatrix}4\\\\8\\\\8\\end{pmatrix}\\quad\\Rightarrow\\quad n=(1,2,2)\n\\] (bei Bedarf normiert).\nDie Ebenengleichung in Hesse-Normalform lautet dann: \\[\n1\\,(x-3)+2\\,(y-1)+2\\,(z-2)=0\\quad\\Rightarrow\\quad x+2y+2z-9=0.\n\\]\nb) Schnitt bzw. Abstand:\nSetzen Sie \\(g(t)=(4-2t,3t-4,2-2t)\\) in die Ebenengleichung ein: \\[\n(4-2t)+2(3t-4)+2(2-2t)-9=4-2t+6t-8+4-4t-9=-9.\n\\] Da \\(-9\\neq0\\) – unabhängig von \\(t\\) – liegt die Gerade nicht in der Ebene (keinen Schnittpunkt).\nAbstand:\nDer Abstand \\(d\\) eines beliebigen Punktes \\(P_g\\) der Geraden von der Ebene ist: \\[\nd=\\frac{|(4-2t)+2(3t-4)+2(2-2t)-9|}{\\sqrt{1^2+2^2+2^2}}=\\frac{9}{3}=3.\n\\]\n\n\n\nAufgabe 3 (8+3 Punkte)\nGegeben: \\[\nA=\\begin{pmatrix}\n1&-2&3\\\\\n1&0&1\\\\\n0&4&-2\n\\end{pmatrix}.\n\\]\na) Eigenwerte:\nBerechnen Sie die Determinante von \\(A-\\lambda I\\): \\[\n\\det\\Bigl(A-\\lambda I\\Bigr)=\\lambda^3+\\lambda^2-4\\lambda-4=0.\n\\] Offensichtlich ist \\(\\lambda=2\\) eine Nullstelle. Faktorisieren: \\[\n\\lambda^3+\\lambda^2-4\\lambda-4=(\\lambda-2)(\\lambda+1)(\\lambda+2)=0.\n\\] Eigenwerte:\n\\(\\lambda_1=2,\\quad \\lambda_2=-1,\\quad \\lambda_3=-2.\\)\nEigenvektoren:\n\nFür \\(\\lambda=2\\): Lösen \\((A-2I)v=0\\) führt zu\n\\[\nv=(1,\\,1,\\,1)^T.\n\\]\nFür \\(\\lambda=-1\\): Lösen \\((A+I)v=0\\) ergibt\n\\[\nv=(-5,\\,1,\\,4)^T.\n\\]\nFür \\(\\lambda=-2\\): Lösen \\((A+2I)v=0\\) liefert\n\\[\nv=(-1,\\,0,\\,1)^T.\n\\]\n\nb) Darstellung in der Eigenbasis:\nSei \\(B=\\{(1,1,1),\\,(-5,1,4),\\,(-1,0,1)\\}\\). Dann ist die Darstellung der linearen Abbildung \\[\ny=Ax\n\\] in Basis \\(B\\) diagonal: \\[\nA_B=\\begin{pmatrix}\n2&0&0\\\\\n0&-1&0\\\\\n0&0&-2\n\\end{pmatrix}.\n\\]\n\n\n\nAufgabe 4 (4+4+3 Punkte)\na) Stationäre Punkte:\nBerechnen Sie die partiellen Ableitungen: \\[\n\\begin{aligned}\nf_x(x,y)&=-\\ln x+\\frac{y^2-x}{x},\\\\\nf_y(x,y)&=2y\\,\\ln x.\n\\end{aligned}\n\\] Setzen \\(f_y=0\\): - Fall 1: \\(\\ln x=0\\) \\(\\Rightarrow x=1\\). Dann \\(f_x(1,y)=\\,(y^2-1)=0\\) \\(\\Rightarrow y=\\pm 1.\\) - Fall 2: \\(y=0\\). Dann \\(f_x(x,0)=-\\ln x-1=0\\) \\(\\Rightarrow \\ln x=-1\\) \\(\\Rightarrow x=e^{-1}.\\)\nStationäre Punkte:\n\\((1,1),\\;(1,-1),\\;(e^{-1},0).\\)\nb) Klassifizierung:\n\nBei \\((1,1)\\) und \\((1,-1)\\):\nBerechnen der Hesse-Matrix führt zu einem negativen Determinantenwert (\\(D&lt;0\\)) – Sattelpunkt.\nBei \\((e^{-1},0)\\):\nMit \\(f_{xx}(e^{-1},0)=-e\\) und \\(f_{yy}(e^{-1},0)=-2\\) ergibt sich\n\\[\nD=(-e)(-2)=2e&gt;0,\\quad f_{xx}&lt;0,\n\\] also lokales Maximum.\n\nc) Taylor-Polynom 2. Ordnung in \\((1,2)\\):\nBerechnen Sie: \\[\n\\begin{aligned}\nf(1,2)&=(4-1)\\ln1=0,\\\\\nf_x(1,2)&=-\\ln1+\\frac{4-1}{1}=3,\\\\\nf_y(1,2)&=2\\cdot2\\,\\ln1=0.\n\\end{aligned}\n\\] Zusatzableitungen: \\[\n\\begin{aligned}\nf_{xx}(x,y)&=-\\frac{1}{x}-\\frac{y^2}{x^2}\\quad\\Rightarrow\\quad f_{xx}(1,2)=-1-4=-5,\\\\\nf_{xy}(x,y)&=\\frac{2y}{x}\\quad\\Rightarrow\\quad f_{xy}(1,2)=4,\\\\\nf_{yy}(x,y)&=2\\ln x\\quad\\Rightarrow\\quad f_{yy}(1,2)=0.\n\\end{aligned}\n\\] Taylorpolynom: \\[\nT_2(x,y)=3(x-1)+\\frac{1}{2}\\Bigl[-5(x-1)^2+8(x-1)(y-2)\\Bigr].\n\\]\n\n\n\nAufgabe 5 (7+3 Punkte)\nGegeben:\n\\(f(x,y)=(3x+2y)x=3x^2+2xy\\) und Nebenbedingung\n\\[\ng(x,y)=2x^3+3x^2y-40=0.\n\\]\na) Lagrange-Funktion: \\[\n\\mathcal{L}(x,y, \\lambda)=3x^2+2xy+\\lambda\\Bigl(2x^3+3x^2y-40\\Bigr).\n\\] Ableitungen: \\[\n\\begin{aligned}\n\\mathcal{L}_x&=6x+2y+\\lambda\\,(6x^2+6xy)=0,\\\\\n\\mathcal{L}_y&=2x+3\\lambda x^2=0,\\\\\n\\mathcal{L}_\\lambda&=2x^3+3x^2y-40=0.\n\\end{aligned}\n\\] Aus \\(\\mathcal{L}_y=0\\) (bei \\(x\\neq0\\)): \\[\n2x+3\\lambda x^2=0\\quad\\Rightarrow\\quad \\lambda=-\\frac{2}{3x}.\n\\] Einsetzen in \\(\\mathcal{L}_x=0\\) liefert: \\[\n6x+2y-\\frac{2}{3x}(6x^2+6xy)=6x+2y-4x-4y=2x-2y=0,\n\\] also \\(y=x\\).\nIn die Nebenbedingung einsetzen: \\[\n2x^3+3x^3=5x^3=40\\quad\\Rightarrow\\quad x^3=8\\quad\\Rightarrow\\quad x=2,\n\\] und damit \\(y=2\\).\nKandidat:\n\\((2,2)\\).\nb) Ableitung entlang der durch die Nebenbedingung implizit gegebenen Kurve:\nGesucht ist \\[\n\\frac{d}{dx}f(x,y(x))=f_x(x,y)+f_y(x,y)\\,y'(x),\n\\] wobei \\(y'(x)\\) über die totale Differentiation der Nebenbedingung \\(g(x,y)=0\\) mit \\[\ny'(x)=-\\frac{g_x}{g_y},\\quad g_x=6x^2+6xy,\\quad g_y=3x^2.\n\\] Einsetzen liefert \\[\n\\frac{d}{dx}f(x,y(x))=2x-2y,\n\\] insbesondere bei \\((2,2)\\) gilt:\n\\(\\frac{d}{dx}f(2,2)=0\\).\n\n\n\nAufgabe 6 (10 Punkte)\nGegeben:\n\\(f(x,y)=\\frac{2y}{x}\\), und das Kreissegment \\(B\\) wird begrenzt durch\n- die Kreislinie: \\((x-2)^2+y^2=4\\)\n- die Gerade: \\(x+2y=4\\).\nLösungsschritte:\n\nPolarkoordinaten:\nVerschieben Sie das Koordinatensystem zum Kreiszentrum \\((2,0)\\): \\[\nx=2+r\\cos\\theta,\\quad y=r\\sin\\theta,\\quad r\\le2.\n\\]\nTransformation der Geradengleichung:\nEinsetzen:\n\\[\n(2+r\\cos\\theta)+2r\\sin\\theta=4\\quad\\Rightarrow\\quad r\\bigl(\\cos\\theta+2\\sin\\theta\\bigr)=2.\n\\] Dies bestimmt den radialen Grenzwert \\(r_{\\max}(\\theta)=\\dfrac{2}{\\cos\\theta+2\\sin\\theta}\\) für Winkel \\(\\theta\\) in einem bestimmten Intervall \\([\\theta_1,\\theta_2]\\).\nIntegralaufbau:\nMit \\(f(x,y)=\\frac{2r\\sin\\theta}{2+r\\cos\\theta}\\) und dem Jakobiand \\(r\\) ergibt sich: \\[\nI=\\int_{\\theta_1}^{\\theta_2}\\int_{0}^{r_{\\max}(\\theta)} \\frac{2r\\sin\\theta}{2+r\\cos\\theta}\\,r\\,dr\\,d\\theta.\n\\]\nBerechnung:\nNach Durchführung der \\(r\\)- und \\(\\theta\\)-Integration (unter Beachtung der durch den Schnitt der Kreislinie und der Geraden bestimmten Grenzen) erhält man: \\[\nI=\\frac{8}{3}\\Biggl[2\\arctan\\Bigl(\\frac{3}{4}\\Bigr)-\\ln\\Bigl(\\frac{25}{9}\\Bigr)\\Biggr].\n\\]\n\n\n\n\nEndergebnis Kurzfassung:\n\nAufgabe 1:\n\\(\\displaystyle x=(-1-t,\\;3-2t,\\;t,\\;4)^T,\\; t\\in\\mathbb{R}\\) und \\(\\operatorname{rg}(A)=3.\\)\nAufgabe 2:\nGeradendarstellung: \\(g(t)=(4-2t,\\;3t-4,\\;2-2t)^T.\\)\nEbenengleichung (Hesse-Normalform): \\(x+2y+2z-9=0.\\)\nSchnitt: Nein; Abstand: \\(3.\\)\nAufgabe 3:\nEigenwerte: \\(2,\\;-1,\\;-2.\\)\nEigenvektoren: \\((1,1,1)^T,\\;(-5,1,4)^T,\\;(-1,0,1)^T.\\)\nDarstellung in Eigenbasis: \\(A_B=\\operatorname{diag}(2,-1,-2).\\)\nAufgabe 4:\nStationäre Punkte: \\((1,1)\\) und \\((1,-1)\\) (Sattelpunkte), \\((e^{-1},0)\\) (lokales Maximum).\nTaylorpolynom 2. Ordnung in \\((1,2)\\): \\[\nT_2(x,y)=3(x-1)+\\frac{-5(x-1)^2+8(x-1)(y-2)}{2}.\n\\]\nAufgabe 5:\nMit Lagrange-Multiplikatoren: Kandidat \\((2,2)\\);\nAbleitung entlang der Nebenbedingung: \\(\\frac{d}{dx}f(x,y(x))=2(x-y)\\) (bei \\((2,2)\\) \\(=0\\)).\nAufgabe 6:\nNach Umrechnung in Polarkoordinaten und Integration: \\[\nI=\\frac{8}{3}\\Biggl[2\\arctan\\Bigl(\\frac{3}{4}\\Bigr)-\\ln\\Bigl(\\frac{25}{9}\\Bigr)\\Biggr].\n\\]\n\n\nDiese Kurzlösung fasst die wesentlichen Zwischenschritte und das Endergebnis für alle Aufgaben zusammen. Falls noch Details benötigt werden, stehe ich gern zur Verfügung!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "hm3_python.html#aufgabe-1",
+    "href": "hm3_python.html#aufgabe-1",
+    "title": "Quarto_website_python",
+    "section": "Aufgabe 1",
+    "text": "Aufgabe 1\n# Aufgabe 1\nimport sympy as sp\n\n# Koordinaten in kartesischen Variablen\nx, t = sp.symbols('x t', real=True)\n\n# Koeffizienten bestimmen\nM = 2*t*x**3 - 2*t\nN = 3*t**2*x**2\n\n#M = 3*t*x**2\n#N = t*(2*x**3-2)\n\n# Exaktheit prüfen: dM/dx = dN/dt ?\ndMdx = sp.diff(M, x)\ndNdt = sp.diff(N, t)\nis_exact = sp.simplify(dMdx - dNdt) == 0\nprint(\"Die DGL ist exakt:\", is_exact)\n\n# Potenzialfunktion Phi finden\nPhi = sp.integrate(M, t) + sp.integrate(N - sp.diff(sp.integrate(M, t), x), x)\nprint(\"Potenzialfunktion Phi:\", Phi)\n# Lösung der DGL bestimmen\nsolution = sp.Eq(Phi, sp.Symbol('C'))\nprint(\"Allgemeine Lösung:\", solution)\n\n# Test\n# N\nPhi.diff(x)-M\n# erwartet: 0\n# M\nPhi.diff(t)-N\n# erwartet: 0\n\n# Anfangswertproblem lösen\nC_value = sp.solve(solution.subs([(t, 1), (x, 0)]), sp.Symbol('C'))\nfinal_solution = solution.subs(sp.Symbol('C'), C_value[0])\nprint(\"Lösung des Anfangswertproblems:\", final_solution)\n\n# Grenzwert für t -&gt; ∞ bestimmen\nx_infinity = sp.limit(final_solution.rhs, t, sp.oo)\nprint(\"Grenzwert der Lösung für t -&gt; ∞:\", x_infinity)\n\n\n\nPhi.simplify()"
+  },
+  {
+    "objectID": "hm3_python.html#aufgabe-2",
+    "href": "hm3_python.html#aufgabe-2",
+    "title": "Quarto_website_python",
+    "section": "Aufgabe 2",
+    "text": "Aufgabe 2\n# Aufgabe 2\n# System von ODE\nimport sympy as sp\n\n# variables\nx,y,t,c1,c2 = sp.symbols('x y t c_1 c_2')\nA=sp.Matrix([(3,-1),(5, -1)])\n#A=sp.Matrix([(0,-1),(5, 4)])\n\n\n# calculate only one eigenvalue\n# the other one is complex conjugate\nEV=(sp.trace(A)+sp.sqrt(sp.trace(A)**2-4*sp.det(A)))/2\nprint(EV)\n\n# calculate one eigenvector\nX=sp.Matrix((x,y))\nM=A-EV*sp.eye(2)\nM1=M*X\n\n# solve only first row, set x=1\ny=sp.solve(M1[0], y)\n# choose x=1 and calculate y\nX=sp.Matrix((1,(y[0].subs(x,1))))\n\n# express all variables (a=re(X),b=im(X)) and (re(EV), im(EV) in the real solution of the system of ODEs\n#a=X.as_real_imag()[0]\n#b=X.as_real_imag()[1]\na, b = X.as_real_imag()\nprint(a)\nprint(b)\n#ev_real=EV.as_real_imag()[0]\n#ev_imag=EV.as_real_imag()[1]\nev_real, ev_imag = EV.as_real_imag()\n# solution\nx1=sp.exp(ev_real*t)*(a*sp.cos(ev_imag*t)-b*sp.sin(ev_imag*t))\nx2=sp.exp(ev_real*t)*(a*sp.sin(ev_imag*t)+b*sp.cos(ev_imag*t))\nmatrix = sp.Matrix([(x1,x2)])\n#print(matrix)\nsolution=c1*x1+c2*x2\n#print(solution)\nsolution\n\n# partikuläre Lösung\nB=sp.Matrix((1,0))\nxp=-A.inv()*B\nxp\nprint (xp)\n\n\n# Test ob EV korrekt ist\nassert sp.simplify(M*X)==sp.Matrix([0,0]), 'Eigenvektor nok'\nmatrix"
+  },
+  {
+    "objectID": "hm3_python.html#aufgabe-3",
+    "href": "hm3_python.html#aufgabe-3",
+    "title": "Quarto_website_python",
+    "section": "Aufgabe 3",
+    "text": "Aufgabe 3\n# Aufgabe 3\nimport sympy as sp\n\n# Parabolic PDE\n\n# Define symbols\nx, t, k, a = sp.symbols('x t k a', real=True, positive=True)\n\n# Fourier coefficients for f(x) = 1 on [0, pi]\nb_k = (2/sp.pi) * sp.integrate(sp.sin(k*x), (x, 0, sp.pi))\nb_k = sp.simplify(b_k)\n\n# Solution for u(0,x) = sin(kx)\nu_k = sp.exp(-a * k**2 * t) * sp.sin(k*x)\n\n# General solution for u(0,x) = 1 (sum over odd k)\nn = sp.symbols('n', integer=True, positive=True)\nk_n = 2*n - 1  # Only odd indices\nu_series = sp.Sum((4 / (k_n * sp.pi)) * sp.exp(-a * k_n**2 * t) * sp.sin(k_n * x), (n, 1, sp.oo))\n\n# Display results\nprint(\"Fourier coefficient b_k:\", b_k)\nprint(\"Solution for u(0,x) = sin(kx):\", u_k)\nprint(\"General solution u(t,x):\", sp.simplify(u_series))\nb_k\nu_k\nu_series"
+  },
+  {
+    "objectID": "hm3_python.html#aufgabe-4",
+    "href": "hm3_python.html#aufgabe-4",
+    "title": "Quarto_website_python",
+    "section": "Aufgabe 4",
+    "text": "Aufgabe 4\nimport sympy as sp\n\n# Definition der Variablen\nx, y, z, t, beta = sp.symbols('x y z t beta')\n\n# Definition des Vektorfeldes F\nF = sp.Matrix([\n    y**2 - 2*beta*z*sp.exp(x*z),\n    2*x*y + 3*z,\n    3*y - 2*x*sp.exp(x*z)\n])\n\n# Berechnung der Rotation von F\nrot_F = sp.simplify(sp.Matrix([sp.diff(F[2], y) - sp.diff(F[1], z),\n                               sp.diff(F[0], z) - sp.diff(F[2], x),\n                               sp.diff(F[1], x) - sp.diff(F[0], y)]))\n\n# Lösung für beta, sodass rot F = 0\nbeta_solution = sp.solve(rot_F, beta)\n\n# Einsetzen von beta = 1\nF_conservative = F.subs(beta, 1)\n\n# Bestimmung des Potentials phi\nphi_x = sp.integrate(F_conservative[0], x)\nphi = phi_x + sp.Function('g')(y, z)\n\n# Ableitung von phi nach y und Vergleich mit F[1]\ng_yz = sp.simplify(sp.diff(phi, y) - F_conservative[1])\ng_y_solution = sp.integrate(3*z, y)  # Lösung für g(y, z)\nphi = phi_x + g_y_solution + sp.Function('h')(z)\n\n# Ableitung von phi nach z und Vergleich mit F[2]\nh_z = sp.simplify(sp.diff(phi, z) - F_conservative[2])\nh_solution = sp.integrate(0, z)  # h(z) ist konstant\nphi = phi.subs(sp.Function('h')(z), h_solution)\n\n# Definition der Kurve gamma\ngamma = sp.Matrix([\n    sp.cos(t) - t/(2*sp.pi),\n    sp.cos(t),\n    sp.sin(t)\n])\n\n# Evaluierung des Potentials an den Endpunkten\nphi_start = phi.subs({x: gamma[0].subs(t, 0), y: gamma[1].subs(t, 0), z: gamma[2].subs(t, 0)})\nphi_end = phi.subs({x: gamma[0].subs(t, 2*sp.pi), y: gamma[1].subs(t, 2*sp.pi), z: gamma[2].subs(t, 2*sp.pi)})\n\n# Berechnung des Kurvenintegrals\nintegral_value = phi_end - phi_start\n\n# Ausgabe der Ergebnisse\nprint(\"Lösungen für beta, sodass F konservativ ist:\")\nprint(beta_solution)\nprint(\"\\nPotential phi(x,y,z) für beta=1:\")\nprint(phi)\nprint(\"\\nWert des Kurvenintegrals:\")\nprint(integral_value)"
+  },
+  {
+    "objectID": "hm3_python.html#aufgabe-5",
+    "href": "hm3_python.html#aufgabe-5",
+    "title": "Quarto_website_python",
+    "section": "Aufgabe 5",
+    "text": "Aufgabe 5\n# Aufgabe 5\n# mühsam von Hand\n# Parametrisierung\nu,v = sp.symbols('u v')\n#g_u = sp.Matrix([sp.exp(u)-1,0,u])\n#g_u = sp.Matrix([u**2,0,u])\n#g_u=sp.Matrix([u**2-1,0,u])\ng_u=sp.Matrix([u,0,-u**2])\ng_uv =sp.Matrix([ g_u[0]*sp.cos(v), g_u[0]*sp.sin (v), u])\nf_u=g_uv.diff(u)\nf_v=g_uv.diff(v)\nn=sp.simplify(f_u.cross(f_v))\nprint('Normal vector: ')\nn\n# Substitution F(x,y,z)-&gt;F(gamma(u,v))\nx,y,z = sp.symbols('x y z')\n#F_xyz=sp.Matrix([x+y,y-x,2]) # Typical vector field with div F = 2\n#F_xyz=sp.Matrix([x,y,z])\nF_xyz=-sp.Matrix([y,-x,z])\nF_uv=F_xyz.subs(x,g_uv[0]).subs(y,g_uv[1]).subs(z,g_uv[2])\nprint('Parametrisiertes Vektorfeld: ')\nF_uv\nintegrand=F_uv.dot(n)\n#integrand=F_uv.dot(n).simplify()\nprint(integrand)\nprint(integrand.simplify())\nintegrand.simplify()\nsp.simplify(sp.integrate(integrand,(u,0,2), (v,0,2*sp.pi)))"
+  },
+  {
+    "objectID": "hm3_python.html#aufgabe-6",
+    "href": "hm3_python.html#aufgabe-6",
+    "title": "Quarto_website_python",
+    "section": "Aufgabe 6",
+    "text": "Aufgabe 6\nimport sympy as sp\n\n# Variablen definieren\nx, y, z, r, phi = sp.symbols('x y z r phi')\n\n# Vektorfelder definieren\nF = sp.Matrix([2*y*sp.exp(z) + x, y - 2*x*z + 9, z*x + sp.sin(y)])\nG = sp.Matrix([-y*z, x*z, z])\n\n# Divergenz von F berechnen\ndiv_F = sp.simplify(sp.diff(F[0], x) + sp.diff(F[1], y) + sp.diff(F[2], z))\n\n# Volumenelement in Zylinderkoordinaten\ndV = r * sp.diff(x, x) * sp.diff(r, r) * sp.diff(phi, phi)\n\n# Volumenintegral für den Fluss\nflux_integral = sp.integrate(\n    sp.integrate(\n        sp.integrate((x + 2) * r, (r, 0, x)),\n        (phi, 0, 2*sp.pi)\n    ),\n    (x, 1, 3)\n)\n\n# Rotation von G berechnen\nrot_G = sp.simplify(sp.Matrix([\n    sp.diff(G[2], y) - sp.diff(G[1], z),\n    sp.diff(G[0], z) - sp.diff(G[2], x),\n    sp.diff(G[1], x) - sp.diff(G[0], y)\n]))\n\n# Divergenz der Rotation von G\ndiv_rot_G = sp.simplify(sp.diff(rot_G[0], x) + sp.diff(rot_G[1], y) + sp.diff(rot_G[2], z))\n\n# Ausgabe\nprint(\"Divergenz von F:\", div_F)\nprint(\"Fluss durch K:\", flux_integral)\nprint(\"Rotation von G:\", rot_G)\nprint(\"Divergenz der Rotation von G:\", div_rot_G)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HM3 Website",
+    "section": "",
+    "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n\nDie HM3 ist die Grundlage für die Theorie der Strömungsdynamik."
   },
   {
     "objectID": "karteikarten.html",
@@ -250,5 +243,54 @@
     "title": "Solutions",
     "section": "",
     "text": "HM3: Kurzlösungen\nIm Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:\n\n\n\n\n\n\n\nAufgabe / Teil\nKurzlösung / Ergebnis\n\n\n\n\n1(a)\nGegeben: \\(x' = t\\,x^2 + t\\) mit \\(x(0)=0\\).  Umformung: \\(x' = t\\,(x^2+1)\\).  Trennung: \\(\\displaystyle \\frac{dx}{1+x^2}=t\\,dt\\).  Integration: \\(\\arctan(x)=\\frac{t^2}{2}+C\\).  Mit \\(x(0)=0\\) folgt \\(C=0\\).  Lösung: \\(x(t)=\\tan\\Bigl(\\frac{t^2}{2}\\Bigr)\\).  Definitionsbereich: \\(t\\in(-\\sqrt{\\pi},\\sqrt{\\pi})\\).\n\n\n1(b)(i)\nDGL: \\(2t(x^3-1)+3t^2x^2x'=0\\).  Setze \\(M(t,x)=2t(x^3-1)\\) und \\(N(t,x)=3t^2x^2\\).  Ableiten: \\(M_x=6tx^2\\) und \\(N_t=6tx^2\\) ⇒ exakt.\n\n\n1(b)(ii)\nGesucht: \\(\\Phi\\) mit \\(\\Phi_t=M\\) und \\(\\Phi_x=N\\).  Integriere \\(N\\) nach \\(x\\): \\(\\Phi(t,x)=t^2x^3+g(t)\\).  Ableiten nach \\(t\\): \\(\\Phi_t=2tx^3+g'(t)\\).  Da \\(M=2t(x^3-1)\\) muss \\(g'(t)=-2t\\) sein, also \\(g(t)=-t^2\\).  Potential: \\(\\Phi(t,x)=t^2(x^3-1)\\).\n\n\n1(b)(iii)\n\\(\\Phi(t,x)=\\) konstant; mit \\(x(1)=0\\) folgt \\(\\Phi(1,0)=-1\\).  Lösung: \\(t^2(x^3-1)=-1\\) ⇔ \\(x^3=1-\\frac{1}{t^2}\\) ⇔ \\(x(t)=\\sqrt[3]{1-\\frac{1}{t^2}}\\).  Für \\(t\\to\\infty\\) konvergiert \\(x(t)\\to 1\\).\n\n\n2(a)\nGegeben: \\(A=\\begin{pmatrix}3&-1\\\\5&-1\\end{pmatrix}\\).  Charakteristik: \\(\\det(A-\\lambda I)=\\lambda^2-2\\lambda+2=0\\) ⇒ \\(\\lambda=1\\pm i\\).  Eigenvektor zu \\(\\lambda=1+i\\): \\(v=(1,\\,2-i)^T\\).  Zerlegung: \\(a=(1,2)^T\\), \\(b=(0,-1)^T\\).  Reelles Fundamentalsystem:  \\(x_1(t)=e^t\\Bigl[a\\cos t-b\\sin t\\Bigr]\\),  \\(x_2(t)=e^t\\Bigl[a\\sin t+b\\cos t\\Bigr]\\).\n\n\n2(b)\nPartikulär: Finde \\(x_p\\) mit \\(Ax_p=-b\\) (wobei \\(b=(1,0)^T\\)).  Lösen: \\(3x-y=-1\\) und \\(5x-y=0\\) ⇒ \\(x=\\frac{1}{2}\\), \\(y=\\frac{5}{2}\\).  Somit: \\(x_p=\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).  Allgemeine Lösung: \\(x(t)=c_1\\,x_1(t)+c_2\\,x_2(t)+x_p\\).  Matrixform: \\(X=\\begin{pmatrix}x_1(t)&&x_2(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix}=\\begin{pmatrix}\\cos(t)&&\\sin(t)\\\\a_2\\cos(t)-b_2\\sin(t)&&a_2\\sin(t)+b_2\\cos(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix} +\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).\n\n\n3(a)\nDie PDE \\(2u_t-u_{xx}=0\\) kann umgeschrieben werden als \\(u_t=\\frac{1}{2}u_{xx}\\) – die klassische Wärmeleitungsgleichung.  Klassifikation: parabolisch.\n\n\n3(b)\nFür \\(f(x)=1\\) (auf \\([0,\\pi]\\)) ungerade periodisch fortgesetzt:  Fourier-Sinus-Koeffizient: \\(\\displaystyle b_k=\\frac{2}{\\pi}\\int_0^\\pi \\sin(kx)\\,dx=\\frac{2(1-\\cos(k\\pi))}{\\pi k}\\).  Damit: \\(b_k=\\frac{4}{\\pi k}\\) für ungerade \\(k\\) und 0 für gerade \\(k\\).\n\n\n3(c)\nAnsatz: \\(u(t,x)=T(t)\\sin(kx)\\).  Einsetzen in \\(2u_t-u_{xx}=0\\) ergibt \\(2T'(t)+k^2T(t)=0\\).  Lösung: \\(T(t)=\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).  Ergebnis: \\(u(t,x)=\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\). Ergebnis: \\(u(t,x)=\\sum_\\text{k ungerade}^n\\frac{4}{\\pi k}\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).\n\n\n4(a)\nVektorfeld: \\(F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix}\\).  Notwendige Bedingung (z. B. \\(P_y=Q_x\\)):  \\(P_y=x\\,y^2\\) und \\(Q_x=xy^2+2x(1-\\alpha)z^2\\).  → Für alle \\(x,z\\) folgt \\(1-\\alpha=0\\).  Ergebnis: \\(\\alpha=1\\).\n\n\n4(b)\nFür \\(\\alpha=1\\) vereinfacht sich \\(Q(x,y,z)=x^2\\frac{y^2}{2}\\) und \\(R(x,y,z)=z^2\\).  Integriere \\(P\\): \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+g(y,z)\\).  Da \\(\\Phi_y=\\frac{x^2y^2}{2}+g_y(y,z)=Q\\) ⇒ \\(g_y(y,z)=0\\) und \\(g(y,z)=h(z)\\).  \\(h'(z)=z^2\\) ⇒ \\(h(z)=\\frac{z^3}{3}+C\\).  Potential: \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+\\frac{z^3}{3}\\).\n\n\n4(c)\nMit \\(F=\\nabla\\Phi\\) ist das Kurvenintegral wegunabhängig.  Berechne: \\(\\gamma(0)=(1,0,0)^T\\) und \\(\\gamma(1)=(0,1,1)^T\\).  \\(\\Phi(1,0,0)=0\\) und \\(\\Phi(0,1,1)=\\frac{1}{3}\\).  Ergebnis: \\(\\displaystyle \\int_\\gamma F\\cdot d\\gamma=\\frac{1}{3}\\).\n\n\n5(a)\nRotationsfläche zu \\(\\gamma(u)=(e^u-1,0,u)^T\\).  Parametrisierung: \\(f(u,v)=\\Bigl((e^u-1)\\cos v,\\,(e^u-1)\\sin v,\\,u\\Bigr)\\) mit \\(u\\in[0,1]\\), \\(v\\in[0,2\\pi]\\).\n\n\n5(b)\nTangentialvektoren:  \\(f_u=(e^u\\cos v,\\,e^u\\sin v,\\,1)\\),  \\(f_v=(- (e^u-1)\\sin v,\\,(e^u-1)\\cos v,\\,0)\\).  Normale (nicht normiert): \\(n=f_u\\times f_v=(- (e^u-1)\\cos v,\\,- (e^u-1)\\sin v,\\,e^u(e^u-1))\\).\n\n\n5(c)\nMit \\(F(x,y,z)=(x+y,\\,y-x,\\,2)^T\\) erhält man nach Einsetzen und Kürzen:  \\(F(f(u,v))\\cdot (f_u\\times f_v)= e^{2u}-1\\).  Oberflächenintegral: \\(\\displaystyle \\int_{u=0}^1\\int_{v=0}^{2\\pi}(e^{2u}-1)\\,dv\\,du=\\pi(e^2-3)\\).\n\n\n6(a)\nKugelsegment \\(K=\\{(x,y,z):x^2+y^2+z^2\\le4,\\; y\\ge0,\\; z\\ge0\\}\\) in Kugelkoordinaten:  \\(x=r\\sin\\varphi\\cos\\theta,\\; y=r\\sin\\varphi\\sin\\theta,\\; z=r\\cos\\varphi\\).  Bereiche: \\(r\\in[0,2]\\), \\(\\varphi\\in[0,\\pi/2]\\) (wegen \\(z\\ge0\\)) und \\(\\theta\\in[0,\\pi]\\) (wegen \\(y\\ge0\\)).\n\n\n6(b)\nDivergenz: \\(\\operatorname{div}F=1+1+1=3\\).  Volumen des Balls (Radius 2): \\(\\frac{32\\pi}{3}\\); \\(K\\) ist ein Viertel davon: \\(V_K=\\frac{8\\pi}{3}\\).  Fluss: \\(3\\cdot\\frac{8\\pi}{3}=8\\pi\\).\n\n\n6(c)\nDa \\(\\operatorname{div}(\\operatorname{rot}F)=0\\), gilt:  \\(\\displaystyle \\int_{\\partial K}\\operatorname{rot}F\\cdot n\\,dS=0\\).\n\n\n6(d)\nSei \\(B\\) der Boden (\\(z=0\\)) des Kugelsegments.  Es gilt: \\(\\int_{\\partial K}\\operatorname {rot} F\\cdot n\\,dS = \\int_{\\partial K\\setminus B}\\operatorname {rot}\\cdot n\\,dS+\\int_B \\operatorname {rot}\\cdot n\\,dS\\).  Auf \\(B\\) ist \\(n=(0,0,-1)\\) und \\(\\operatorname {rot}(x,y,0)=(x,-y,2)\\) ⇒ \\(F\\cdot n=-2\\).  \\(\\int_B (-2)dA=-2*2\\pi=-4\\pi\\).  Ergebnis: \\(\\displaystyle \\int_{\\partial K\\setminus B}rot(F)\\cdot n\\,dS=4\\pi\\). (weil Summe \\(= 0\\) aus 6 (c) )\n\n\n\ncolab"
+  },
+  {
+    "objectID": "klausuren.html",
+    "href": "klausuren.html",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert.\n\n\n\nGegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\).\n\n\n\n\nStellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an.\n\n\n\n\nBestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab.\n\n\n\n\nGegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\).\n\n\n\n\n\nBerechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-1-7-punkte",
+    "href": "klausuren.html#aufgabe-1-7-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-2-14-punkte",
+    "href": "klausuren.html#aufgabe-2-14-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Gegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-3-55-punkte",
+    "href": "klausuren.html#aufgabe-3-55-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Stellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-4-64-punkte",
+    "href": "klausuren.html#aufgabe-4-64-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-5-72-punkte",
+    "href": "klausuren.html#aufgabe-5-72-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Gegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-6-46-punkte",
+    "href": "klausuren.html#aufgabe-6-46-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Berechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Solutions – ms914.github.io</title>
+<title>Quarto_website_python – ms914.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -153,7 +124,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hm3-kurzlösungen" id="toc-hm3-kurzlösungen" class="nav-link active" data-scroll-target="#hm3-kurzlösungen">HM3: Kurzlösungen</a></li>
+  <li><a href="#quarto-python" id="toc-quarto-python" class="nav-link active" data-scroll-target="#quarto-python">Quarto-python</a></li>
+  <li><a href="#aufgabe-1" id="toc-aufgabe-1" class="nav-link" data-scroll-target="#aufgabe-1">Aufgabe 1</a></li>
+  <li><a href="#aufgabe-2" id="toc-aufgabe-2" class="nav-link" data-scroll-target="#aufgabe-2">Aufgabe 2</a></li>
+  <li><a href="#aufgabe-3" id="toc-aufgabe-3" class="nav-link" data-scroll-target="#aufgabe-3">Aufgabe 3</a></li>
+  <li><a href="#aufgabe-4" id="toc-aufgabe-4" class="nav-link" data-scroll-target="#aufgabe-4">Aufgabe 4</a></li>
+  <li><a href="#aufgabe-5" id="toc-aufgabe-5" class="nav-link" data-scroll-target="#aufgabe-5">Aufgabe 5</a></li>
+  <li><a href="#aufgabe-6" id="toc-aufgabe-6" class="nav-link" data-scroll-target="#aufgabe-6">Aufgabe 6</a></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +139,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Solutions</h1>
+<h1 class="title">Quarto_website_python</h1>
 </div>
 
 
@@ -179,100 +156,280 @@ window.Quarto = {
 </header>
 
 
-<section id="hm3-kurzlösungen" class="level1">
-<h1>HM3: Kurzlösungen</h1>
-<p>Im Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 42%">
-<col style="width: 57%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Aufgabe / Teil</strong></th>
-<th><strong>Kurzlösung / Ergebnis</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>1(a)</strong></td>
-<td><strong>Gegeben:</strong> <span class="math inline">\(x' = t\,x^2 + t\)</span> mit <span class="math inline">\(x(0)=0\)</span>. <br> <strong>Umformung:</strong> <span class="math inline">\(x' = t\,(x^2+1)\)</span>. <br> <strong>Trennung:</strong> <span class="math inline">\(\displaystyle \frac{dx}{1+x^2}=t\,dt\)</span>. <br> <strong>Integration:</strong> <span class="math inline">\(\arctan(x)=\frac{t^2}{2}+C\)</span>. <br> Mit <span class="math inline">\(x(0)=0\)</span> folgt <span class="math inline">\(C=0\)</span>. <br> <strong>Lösung:</strong> <span class="math inline">\(x(t)=\tan\Bigl(\frac{t^2}{2}\Bigr)\)</span>. <br> <strong>Definitionsbereich:</strong> <span class="math inline">\(t\in(-\sqrt{\pi},\sqrt{\pi})\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>1(b)(i)</strong></td>
-<td>DGL: <span class="math inline">\(2t(x^3-1)+3t^2x^2x'=0\)</span>. <br> Setze <span class="math inline">\(M(t,x)=2t(x^3-1)\)</span> und <span class="math inline">\(N(t,x)=3t^2x^2\)</span>. <br> Ableiten: <span class="math inline">\(M_x=6tx^2\)</span> und <span class="math inline">\(N_t=6tx^2\)</span> ⇒ exakt.</td>
-</tr>
-<tr class="odd">
-<td><strong>1(b)(ii)</strong></td>
-<td>Gesucht: <span class="math inline">\(\Phi\)</span> mit <span class="math inline">\(\Phi_t=M\)</span> und <span class="math inline">\(\Phi_x=N\)</span>. <br> Integriere <span class="math inline">\(N\)</span> nach <span class="math inline">\(x\)</span>: <span class="math inline">\(\Phi(t,x)=t^2x^3+g(t)\)</span>. <br> Ableiten nach <span class="math inline">\(t\)</span>: <span class="math inline">\(\Phi_t=2tx^3+g'(t)\)</span>. <br> Da <span class="math inline">\(M=2t(x^3-1)\)</span> muss <span class="math inline">\(g'(t)=-2t\)</span> sein, also <span class="math inline">\(g(t)=-t^2\)</span>. <br> <strong>Potential:</strong> <span class="math inline">\(\Phi(t,x)=t^2(x^3-1)\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>1(b)(iii)</strong></td>
-<td><span class="math inline">\(\Phi(t,x)=\)</span> konstant; mit <span class="math inline">\(x(1)=0\)</span> folgt <span class="math inline">\(\Phi(1,0)=-1\)</span>. <br> <strong>Lösung:</strong> <span class="math inline">\(t^2(x^3-1)=-1\)</span> ⇔ <span class="math inline">\(x^3=1-\frac{1}{t^2}\)</span> ⇔ <span class="math inline">\(x(t)=\sqrt[3]{1-\frac{1}{t^2}}\)</span>. <br> Für <span class="math inline">\(t\to\infty\)</span> konvergiert <span class="math inline">\(x(t)\to 1\)</span>.</td>
-</tr>
-<tr class="odd">
-<td><strong>2(a)</strong></td>
-<td>Gegeben: <span class="math inline">\(A=\begin{pmatrix}3&amp;-1\\5&amp;-1\end{pmatrix}\)</span>. <br> Charakteristik: <span class="math inline">\(\det(A-\lambda I)=\lambda^2-2\lambda+2=0\)</span> ⇒ <span class="math inline">\(\lambda=1\pm i\)</span>. <br> Eigenvektor zu <span class="math inline">\(\lambda=1+i\)</span>: <span class="math inline">\(v=(1,\,2-i)^T\)</span>. <br> Zerlegung: <span class="math inline">\(a=(1,2)^T\)</span>, <span class="math inline">\(b=(0,-1)^T\)</span>. <br> Reelles Fundamentalsystem: <br> <span class="math inline">\(x_1(t)=e^t\Bigl[a\cos t-b\sin t\Bigr]\)</span>, <br> <span class="math inline">\(x_2(t)=e^t\Bigl[a\sin t+b\cos t\Bigr]\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>2(b)</strong></td>
-<td><strong>Partikulär:</strong> Finde <span class="math inline">\(x_p\)</span> mit <span class="math inline">\(Ax_p=-b\)</span> (wobei <span class="math inline">\(b=(1,0)^T\)</span>). <br> Lösen: <span class="math inline">\(3x-y=-1\)</span> und <span class="math inline">\(5x-y=0\)</span> ⇒ <span class="math inline">\(x=\frac{1}{2}\)</span>, <span class="math inline">\(y=\frac{5}{2}\)</span>. <br> Somit: <span class="math inline">\(x_p=\begin{pmatrix}\frac{1}{2}\\\frac{5}{2}\end{pmatrix}\)</span>. <br> <strong>Allgemeine Lösung:</strong> <span class="math inline">\(x(t)=c_1\,x_1(t)+c_2\,x_2(t)+x_p\)</span>. <br> <strong>Matrixform:</strong> <span class="math inline">\(X=\begin{pmatrix}x_1(t)&amp;&amp;x_2(t)\end{pmatrix}\begin{pmatrix}c_1\\c_2\end{pmatrix}=\begin{pmatrix}\cos(t)&amp;&amp;\sin(t)\\a_2\cos(t)-b_2\sin(t)&amp;&amp;a_2\sin(t)+b_2\cos(t)\end{pmatrix}\begin{pmatrix}c_1\\c_2\end{pmatrix} +\begin{pmatrix}\frac{1}{2}\\\frac{5}{2}\end{pmatrix}\)</span>.</td>
-</tr>
-<tr class="odd">
-<td><strong>3(a)</strong></td>
-<td>Die PDE <span class="math inline">\(2u_t-u_{xx}=0\)</span> kann umgeschrieben werden als <span class="math inline">\(u_t=\frac{1}{2}u_{xx}\)</span> – die klassische Wärmeleitungsgleichung. <br> <strong>Klassifikation:</strong> parabolisch.</td>
-</tr>
-<tr class="even">
-<td><strong>3(b)</strong></td>
-<td>Für <span class="math inline">\(f(x)=1\)</span> (auf <span class="math inline">\([0,\pi]\)</span>) ungerade periodisch fortgesetzt: <br> Fourier-Sinus-Koeffizient: <span class="math inline">\(\displaystyle b_k=\frac{2}{\pi}\int_0^\pi \sin(kx)\,dx=\frac{2(1-\cos(k\pi))}{\pi k}\)</span>. <br> Damit: <span class="math inline">\(b_k=\frac{4}{\pi k}\)</span> für ungerade <span class="math inline">\(k\)</span> und 0 für gerade <span class="math inline">\(k\)</span>.</td>
-</tr>
-<tr class="odd">
-<td><strong>3(c)</strong></td>
-<td>Ansatz: <span class="math inline">\(u(t,x)=T(t)\sin(kx)\)</span>. <br> Einsetzen in <span class="math inline">\(2u_t-u_{xx}=0\)</span> ergibt <span class="math inline">\(2T'(t)+k^2T(t)=0\)</span>. <br> <strong>Lösung:</strong> <span class="math inline">\(T(t)=\exp\Bigl(-\frac{k^2}{2}t\Bigr)\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(u(t,x)=\sin(kx)\exp\Bigl(-\frac{k^2}{2}t\Bigr)\)</span>.<br> <strong>Ergebnis:</strong> <span class="math inline">\(u(t,x)=\sum_\text{k ungerade}^n\frac{4}{\pi k}\sin(kx)\exp\Bigl(-\frac{k^2}{2}t\Bigr)\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>4(a)</strong></td>
-<td>Vektorfeld: <span class="math inline">\(F=\begin{pmatrix} x\frac{y^3}{3}\\x^2\Bigl(z^2+\frac{y^2}{2}\Bigr)-\alpha x^2z^2\\(1-\alpha)2x^2yz+z^2 \end{pmatrix}\)</span>. <br> Notwendige Bedingung (z. B. <span class="math inline">\(P_y=Q_x\)</span>): <br> <span class="math inline">\(P_y=x\,y^2\)</span> und <span class="math inline">\(Q_x=xy^2+2x(1-\alpha)z^2\)</span>. <br> → Für alle <span class="math inline">\(x,z\)</span> folgt <span class="math inline">\(1-\alpha=0\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\alpha=1\)</span>.</td>
-</tr>
-<tr class="odd">
-<td><strong>4(b)</strong></td>
-<td>Für <span class="math inline">\(\alpha=1\)</span> vereinfacht sich <span class="math inline">\(Q(x,y,z)=x^2\frac{y^2}{2}\)</span> und <span class="math inline">\(R(x,y,z)=z^2\)</span>. <br> Integriere <span class="math inline">\(P\)</span>: <span class="math inline">\(\Phi(x,y,z)=\frac{x^2y^3}{6}+g(y,z)\)</span>. <br> Da <span class="math inline">\(\Phi_y=\frac{x^2y^2}{2}+g_y(y,z)=Q\)</span> ⇒ <span class="math inline">\(g_y(y,z)=0\)</span> und <span class="math inline">\(g(y,z)=h(z)\)</span>. <br> <span class="math inline">\(h'(z)=z^2\)</span> ⇒ <span class="math inline">\(h(z)=\frac{z^3}{3}+C\)</span>. <br> <strong>Potential:</strong> <span class="math inline">\(\Phi(x,y,z)=\frac{x^2y^3}{6}+\frac{z^3}{3}\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>4(c)</strong></td>
-<td>Mit <span class="math inline">\(F=\nabla\Phi\)</span> ist das Kurvenintegral wegunabhängig. <br> Berechne: <span class="math inline">\(\gamma(0)=(1,0,0)^T\)</span> und <span class="math inline">\(\gamma(1)=(0,1,1)^T\)</span>. <br> <span class="math inline">\(\Phi(1,0,0)=0\)</span> und <span class="math inline">\(\Phi(0,1,1)=\frac{1}{3}\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_\gamma F\cdot d\gamma=\frac{1}{3}\)</span>.</td>
-</tr>
-<tr class="odd">
-<td><strong>5(a)</strong></td>
-<td>Rotationsfläche zu <span class="math inline">\(\gamma(u)=(e^u-1,0,u)^T\)</span>. <br> <strong>Parametrisierung:</strong> <span class="math inline">\(f(u,v)=\Bigl((e^u-1)\cos v,\,(e^u-1)\sin v,\,u\Bigr)\)</span> mit <span class="math inline">\(u\in[0,1]\)</span>, <span class="math inline">\(v\in[0,2\pi]\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>5(b)</strong></td>
-<td>Tangentialvektoren: <br> <span class="math inline">\(f_u=(e^u\cos v,\,e^u\sin v,\,1)\)</span>, <br> <span class="math inline">\(f_v=(- (e^u-1)\sin v,\,(e^u-1)\cos v,\,0)\)</span>. <br> <strong>Normale (nicht normiert):</strong> <span class="math inline">\(n=f_u\times f_v=(- (e^u-1)\cos v,\,- (e^u-1)\sin v,\,e^u(e^u-1))\)</span>.</td>
-</tr>
-<tr class="odd">
-<td><strong>5(c)</strong></td>
-<td>Mit <span class="math inline">\(F(x,y,z)=(x+y,\,y-x,\,2)^T\)</span> erhält man nach Einsetzen und Kürzen: <br> <span class="math inline">\(F(f(u,v))\cdot (f_u\times f_v)= e^{2u}-1\)</span>. <br> <strong>Oberflächenintegral:</strong> <span class="math inline">\(\displaystyle \int_{u=0}^1\int_{v=0}^{2\pi}(e^{2u}-1)\,dv\,du=\pi(e^2-3)\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>6(a)</strong></td>
-<td>Kugelsegment <span class="math inline">\(K=\{(x,y,z):x^2+y^2+z^2\le4,\; y\ge0,\; z\ge0\}\)</span> in Kugelkoordinaten: <br> <span class="math inline">\(x=r\sin\varphi\cos\theta,\; y=r\sin\varphi\sin\theta,\; z=r\cos\varphi\)</span>. <br> Bereiche: <span class="math inline">\(r\in[0,2]\)</span>, <span class="math inline">\(\varphi\in[0,\pi/2]\)</span> (wegen <span class="math inline">\(z\ge0\)</span>) und <span class="math inline">\(\theta\in[0,\pi]\)</span> (wegen <span class="math inline">\(y\ge0\)</span>).</td>
-</tr>
-<tr class="odd">
-<td><strong>6(b)</strong></td>
-<td>Divergenz: <span class="math inline">\(\operatorname{div}F=1+1+1=3\)</span>. <br> Volumen des Balls (Radius 2): <span class="math inline">\(\frac{32\pi}{3}\)</span>; <span class="math inline">\(K\)</span> ist ein Viertel davon: <span class="math inline">\(V_K=\frac{8\pi}{3}\)</span>. <br> <strong>Fluss:</strong> <span class="math inline">\(3\cdot\frac{8\pi}{3}=8\pi\)</span>.</td>
-</tr>
-<tr class="even">
-<td><strong>6(c)</strong></td>
-<td>Da <span class="math inline">\(\operatorname{div}(\operatorname{rot}F)=0\)</span>, gilt: <br> <span class="math inline">\(\displaystyle \int_{\partial K}\operatorname{rot}F\cdot n\,dS=0\)</span>.</td>
-</tr>
-<tr class="odd">
-<td><strong>6(d)</strong></td>
-<td>Sei <span class="math inline">\(B\)</span> der Boden (<span class="math inline">\(z=0\)</span>) des Kugelsegments. <br> Es gilt: <span class="math inline">\(\int_{\partial K}\operatorname {rot} F\cdot n\,dS = \int_{\partial K\setminus B}\operatorname {rot}\cdot n\,dS+\int_B \operatorname {rot}\cdot n\,dS\)</span>. <br> Auf <span class="math inline">\(B\)</span> ist <span class="math inline">\(n=(0,0,-1)\)</span> und <span class="math inline">\(\operatorname {rot}(x,y,0)=(x,-y,2)\)</span> ⇒ <span class="math inline">\(F\cdot n=-2\)</span>. <br> <span class="math inline">\(\int_B (-2)dA=-2*2\pi=-4\pi\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_{\partial K\setminus B}rot(F)\cdot n\,dS=4\pi\)</span>. (weil Summe <span class="math inline">\(= 0\)</span> aus 6 (c) )</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://colab.research.google.com/drive/1yMC6mkhiUe6dk9Kfzyma7kfPXMiWwhFI?usp=sharing">colab</a></p>
+<section id="quarto-python" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-python">Quarto-python</h2>
+</section>
+<section id="aufgabe-1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1">Aufgabe 1</h2>
+<pre><code># Aufgabe 1
+import sympy as sp
+
+# Koordinaten in kartesischen Variablen
+x, t = sp.symbols('x t', real=True)
+
+# Koeffizienten bestimmen
+M = 2*t*x**3 - 2*t
+N = 3*t**2*x**2
+
+#M = 3*t*x**2
+#N = t*(2*x**3-2)
+
+# Exaktheit prüfen: dM/dx = dN/dt ?
+dMdx = sp.diff(M, x)
+dNdt = sp.diff(N, t)
+is_exact = sp.simplify(dMdx - dNdt) == 0
+print("Die DGL ist exakt:", is_exact)
+
+# Potenzialfunktion Phi finden
+Phi = sp.integrate(M, t) + sp.integrate(N - sp.diff(sp.integrate(M, t), x), x)
+print("Potenzialfunktion Phi:", Phi)
+# Lösung der DGL bestimmen
+solution = sp.Eq(Phi, sp.Symbol('C'))
+print("Allgemeine Lösung:", solution)
+
+# Test
+# N
+Phi.diff(x)-M
+# erwartet: 0
+# M
+Phi.diff(t)-N
+# erwartet: 0
+
+# Anfangswertproblem lösen
+C_value = sp.solve(solution.subs([(t, 1), (x, 0)]), sp.Symbol('C'))
+final_solution = solution.subs(sp.Symbol('C'), C_value[0])
+print("Lösung des Anfangswertproblems:", final_solution)
+
+# Grenzwert für t -&gt; ∞ bestimmen
+x_infinity = sp.limit(final_solution.rhs, t, sp.oo)
+print("Grenzwert der Lösung für t -&gt; ∞:", x_infinity)
+
+
+
+Phi.simplify()</code></pre>
+</section>
+<section id="aufgabe-2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2">Aufgabe 2</h2>
+<pre><code># Aufgabe 2
+# System von ODE
+import sympy as sp
+
+# variables
+x,y,t,c1,c2 = sp.symbols('x y t c_1 c_2')
+A=sp.Matrix([(3,-1),(5, -1)])
+#A=sp.Matrix([(0,-1),(5, 4)])
+
+
+# calculate only one eigenvalue
+# the other one is complex conjugate
+EV=(sp.trace(A)+sp.sqrt(sp.trace(A)**2-4*sp.det(A)))/2
+print(EV)
+
+# calculate one eigenvector
+X=sp.Matrix((x,y))
+M=A-EV*sp.eye(2)
+M1=M*X
+
+# solve only first row, set x=1
+y=sp.solve(M1[0], y)
+# choose x=1 and calculate y
+X=sp.Matrix((1,(y[0].subs(x,1))))
+
+# express all variables (a=re(X),b=im(X)) and (re(EV), im(EV) in the real solution of the system of ODEs
+#a=X.as_real_imag()[0]
+#b=X.as_real_imag()[1]
+a, b = X.as_real_imag()
+print(a)
+print(b)
+#ev_real=EV.as_real_imag()[0]
+#ev_imag=EV.as_real_imag()[1]
+ev_real, ev_imag = EV.as_real_imag()
+# solution
+x1=sp.exp(ev_real*t)*(a*sp.cos(ev_imag*t)-b*sp.sin(ev_imag*t))
+x2=sp.exp(ev_real*t)*(a*sp.sin(ev_imag*t)+b*sp.cos(ev_imag*t))
+matrix = sp.Matrix([(x1,x2)])
+#print(matrix)
+solution=c1*x1+c2*x2
+#print(solution)
+solution
+
+# partikuläre Lösung
+B=sp.Matrix((1,0))
+xp=-A.inv()*B
+xp
+print (xp)
+
+
+# Test ob EV korrekt ist
+assert sp.simplify(M*X)==sp.Matrix([0,0]), 'Eigenvektor nok'
+matrix</code></pre>
+</section>
+<section id="aufgabe-3" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3">Aufgabe 3</h2>
+<pre><code># Aufgabe 3
+import sympy as sp
+
+# Parabolic PDE
+
+# Define symbols
+x, t, k, a = sp.symbols('x t k a', real=True, positive=True)
+
+# Fourier coefficients for f(x) = 1 on [0, pi]
+b_k = (2/sp.pi) * sp.integrate(sp.sin(k*x), (x, 0, sp.pi))
+b_k = sp.simplify(b_k)
+
+# Solution for u(0,x) = sin(kx)
+u_k = sp.exp(-a * k**2 * t) * sp.sin(k*x)
+
+# General solution for u(0,x) = 1 (sum over odd k)
+n = sp.symbols('n', integer=True, positive=True)
+k_n = 2*n - 1  # Only odd indices
+u_series = sp.Sum((4 / (k_n * sp.pi)) * sp.exp(-a * k_n**2 * t) * sp.sin(k_n * x), (n, 1, sp.oo))
+
+# Display results
+print("Fourier coefficient b_k:", b_k)
+print("Solution for u(0,x) = sin(kx):", u_k)
+print("General solution u(t,x):", sp.simplify(u_series))
+b_k
+u_k
+u_series
+</code></pre>
+</section>
+<section id="aufgabe-4" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4">Aufgabe 4</h2>
+<pre><code>import sympy as sp
+
+# Definition der Variablen
+x, y, z, t, beta = sp.symbols('x y z t beta')
+
+# Definition des Vektorfeldes F
+F = sp.Matrix([
+    y**2 - 2*beta*z*sp.exp(x*z),
+    2*x*y + 3*z,
+    3*y - 2*x*sp.exp(x*z)
+])
+
+# Berechnung der Rotation von F
+rot_F = sp.simplify(sp.Matrix([sp.diff(F[2], y) - sp.diff(F[1], z),
+                               sp.diff(F[0], z) - sp.diff(F[2], x),
+                               sp.diff(F[1], x) - sp.diff(F[0], y)]))
+
+# Lösung für beta, sodass rot F = 0
+beta_solution = sp.solve(rot_F, beta)
+
+# Einsetzen von beta = 1
+F_conservative = F.subs(beta, 1)
+
+# Bestimmung des Potentials phi
+phi_x = sp.integrate(F_conservative[0], x)
+phi = phi_x + sp.Function('g')(y, z)
+
+# Ableitung von phi nach y und Vergleich mit F[1]
+g_yz = sp.simplify(sp.diff(phi, y) - F_conservative[1])
+g_y_solution = sp.integrate(3*z, y)  # Lösung für g(y, z)
+phi = phi_x + g_y_solution + sp.Function('h')(z)
+
+# Ableitung von phi nach z und Vergleich mit F[2]
+h_z = sp.simplify(sp.diff(phi, z) - F_conservative[2])
+h_solution = sp.integrate(0, z)  # h(z) ist konstant
+phi = phi.subs(sp.Function('h')(z), h_solution)
+
+# Definition der Kurve gamma
+gamma = sp.Matrix([
+    sp.cos(t) - t/(2*sp.pi),
+    sp.cos(t),
+    sp.sin(t)
+])
+
+# Evaluierung des Potentials an den Endpunkten
+phi_start = phi.subs({x: gamma[0].subs(t, 0), y: gamma[1].subs(t, 0), z: gamma[2].subs(t, 0)})
+phi_end = phi.subs({x: gamma[0].subs(t, 2*sp.pi), y: gamma[1].subs(t, 2*sp.pi), z: gamma[2].subs(t, 2*sp.pi)})
+
+# Berechnung des Kurvenintegrals
+integral_value = phi_end - phi_start
+
+# Ausgabe der Ergebnisse
+print("Lösungen für beta, sodass F konservativ ist:")
+print(beta_solution)
+print("\nPotential phi(x,y,z) für beta=1:")
+print(phi)
+print("\nWert des Kurvenintegrals:")
+print(integral_value)
+
+</code></pre>
+</section>
+<section id="aufgabe-5" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5">Aufgabe 5</h2>
+<pre><code># Aufgabe 5
+# mühsam von Hand
+# Parametrisierung
+u,v = sp.symbols('u v')
+#g_u = sp.Matrix([sp.exp(u)-1,0,u])
+#g_u = sp.Matrix([u**2,0,u])
+#g_u=sp.Matrix([u**2-1,0,u])
+g_u=sp.Matrix([u,0,-u**2])
+g_uv =sp.Matrix([ g_u[0]*sp.cos(v), g_u[0]*sp.sin (v), u])
+f_u=g_uv.diff(u)
+f_v=g_uv.diff(v)
+n=sp.simplify(f_u.cross(f_v))
+print('Normal vector: ')
+n</code></pre>
+<pre><code># Substitution F(x,y,z)-&gt;F(gamma(u,v))
+x,y,z = sp.symbols('x y z')
+#F_xyz=sp.Matrix([x+y,y-x,2]) # Typical vector field with div F = 2
+#F_xyz=sp.Matrix([x,y,z])
+F_xyz=-sp.Matrix([y,-x,z])
+F_uv=F_xyz.subs(x,g_uv[0]).subs(y,g_uv[1]).subs(z,g_uv[2])
+print('Parametrisiertes Vektorfeld: ')
+F_uv</code></pre>
+<pre><code>integrand=F_uv.dot(n)
+#integrand=F_uv.dot(n).simplify()
+print(integrand)
+print(integrand.simplify())
+integrand.simplify()</code></pre>
+<pre><code>sp.simplify(sp.integrate(integrand,(u,0,2), (v,0,2*sp.pi)))</code></pre>
+</section>
+<section id="aufgabe-6" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6">Aufgabe 6</h2>
+<pre><code>import sympy as sp
+
+# Variablen definieren
+x, y, z, r, phi = sp.symbols('x y z r phi')
+
+# Vektorfelder definieren
+F = sp.Matrix([2*y*sp.exp(z) + x, y - 2*x*z + 9, z*x + sp.sin(y)])
+G = sp.Matrix([-y*z, x*z, z])
+
+# Divergenz von F berechnen
+div_F = sp.simplify(sp.diff(F[0], x) + sp.diff(F[1], y) + sp.diff(F[2], z))
+
+# Volumenelement in Zylinderkoordinaten
+dV = r * sp.diff(x, x) * sp.diff(r, r) * sp.diff(phi, phi)
+
+# Volumenintegral für den Fluss
+flux_integral = sp.integrate(
+    sp.integrate(
+        sp.integrate((x + 2) * r, (r, 0, x)),
+        (phi, 0, 2*sp.pi)
+    ),
+    (x, 1, 3)
+)
+
+# Rotation von G berechnen
+rot_G = sp.simplify(sp.Matrix([
+    sp.diff(G[2], y) - sp.diff(G[1], z),
+    sp.diff(G[0], z) - sp.diff(G[2], x),
+    sp.diff(G[1], x) - sp.diff(G[0], y)
+]))
+
+# Divergenz der Rotation von G
+div_rot_G = sp.simplify(sp.diff(rot_G[0], x) + sp.diff(rot_G[1], y) + sp.diff(rot_G[2], z))
+
+# Ausgabe
+print("Divergenz von F:", div_F)
+print("Fluss durch K:", flux_integral)
+print("Rotation von G:", rot_G)
+print("Divergenz der Rotation von G:", div_rot_G)</code></pre>
 
 
 </section>
