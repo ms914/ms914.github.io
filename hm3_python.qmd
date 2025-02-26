@@ -232,7 +232,7 @@ print('Normal vector: ')
 n
 ```
 
-```{python}
+```
 # Substitution F(x,y,z)->F(gamma(u,v))
 x,y,z = sp.symbols('x y z')
 #F_xyz=sp.Matrix([x+y,y-x,2]) # Typical vector field with div F = 2
@@ -243,7 +243,7 @@ print('Parametrisiertes Vektorfeld: ')
 F_uv
 ```
 
-```{python}
+```
 integrand=F_uv.dot(n)
 #integrand=F_uv.dot(n).simplify()
 print(integrand)
@@ -251,7 +251,7 @@ print(integrand.simplify())
 integrand.simplify()
 ```
 
-```{python}
+```
 sp.simplify(sp.integrate(integrand,(u,0,2), (v,0,2*sp.pi)))
 ```
 
