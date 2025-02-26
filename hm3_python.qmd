@@ -2,14 +2,13 @@
 title: "Quarto_website_python"
 format: html
 editor: visual
-jupyter: python3
 ---
 
 ## Quarto-python
 
 ## Aufgabe 1
 
-```{python}
+```
 # Aufgabe 1
 import sympy as sp
 
@@ -60,7 +59,7 @@ Phi.simplify()
 
 ## Aufgabe 2
 
-```{python}
+```
 # Aufgabe 2
 # System von ODE
 import sympy as sp
@@ -118,7 +117,7 @@ matrix
 
 ## Aufgabe 3
 
-```{python}
+```
 # Aufgabe 3
 import sympy as sp
 
@@ -151,7 +150,7 @@ u_series
 
 ## Aufgabe 4
 
-```{python}
+```
 import sympy as sp
 
 # Definition der Variablen
@@ -216,7 +215,7 @@ print(integral_value)
 
 ## Aufgabe 5
 
-```{python}
+```
 # Aufgabe 5
 # mühsam von Hand
 # Parametrisierung
@@ -258,7 +257,7 @@ sp.simplify(sp.integrate(integrand,(u,0,2), (v,0,2*sp.pi)))
 
 ## Aufgabe 6
 
-```{python}
+```
 import sympy as sp
 
 # Variablen definieren
