@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -177,52 +148,76 @@ window.Quarto = {
 </header>
 
 
-<p>HM1</p>
-<p><strong>Aufgabe 1 (7 Punkte).</strong></p>
-<p>Bestimmen Sie alle $x ℝ $ für die die Reihe</p>
-<p><span class="math display">\[\sum_{n=1}^{\infty} \frac{1}{n 3^n} {(x-1)^n}\]</span></p>
-<p>konvergiert.</p>
-<p><strong>Aufgabe 2 (14 Punkte).</strong> Gegeben sei die Funktion</p>
-<p><span class="math display">\[f(x)=\frac{1}{x^2(x-3)}\]</span></p>
-<p>Geben Sie den maximalen Definitionsbereich von <span class="math inline">\(f\)</span> an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall <span class="math inline">\([-2,5]\)</span>.</p>
-<p><strong>Aufgabe 3 (5+5 Punkte).</strong> a) Stellen Sie</p>
-<p><span class="math display">\[\frac{(\sqrt{2} + i \sqrt{2})^3}{(2 e^{i \pi/3})^6}\]</span></p>
-<p>in Polarform dar.</p>
-<ol start="2" type="a">
-<li>Bestimmen Sie alle komplexen Lösungen der Gleichung</li>
-</ol>
-<p><span class="math display">\[ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0 \]</span></p>
-<p>Geben Sie die Lösungen dabei in Polarform an.</p>
-<p><strong>Aufgabe 4 (6+4 Punkte)</strong></p>
-<ol type="a">
-<li>Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion</li>
-</ol>
-<p><span class="math display">\[ g(x)=x^2ln (x) \]</span></p>
-<p>im Entwicklungspunkt <span class="math inline">\(x=e\)</span></p>
-<ol start="2" type="a">
-<li>Schätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall <span class="math inline">\([e,2e]\)</span> ab.</li>
-</ol>
-<p><strong>Aufgabe 5 (7+2 Punkte).</strong></p>
-<p>Gegeben sei die Funktion</p>
-<p><span class="math display">\[h(x)=\frac{x^2+4x-3}{x^3-3x-2}. \]</span></p>
-<ol type="a">
-<li><p>Berechnen Sie die Partialbruchzerlegung von <span class="math inline">\(h(x)\)</span>.</p></li>
-<li><p>Bestimmen Sie eine Stammfunktion von <span class="math inline">\(h(x)\)</span>.</p></li>
-</ol>
-<p><strong>Aufgabe 6 (4+6 Punkte).</strong></p>
-<ol type="a">
-<li>Berechnen Sie den Grenzwert</li>
-</ol>
-<p><span class="math display">\[\lim_{y-&gt;1}\sqrt{1-y^2}ln(\sqrt{1-y^2}). \]</span></p>
-<ol start="2" type="a">
-<li>Berechnen Sie für <span class="math inline">\(y\in (0,1)\)</span> das Integral</li>
-</ol>
-<p><span class="math display">\[ I(y)=\int_0^yln(\sqrt{1-x^2})\frac{x}{\sqrt{1-x^2}}dx .\]</span></p>
-<p><em>Hinweis: Für <span class="math inline">\(x&gt;0\)</span> gilt: <span class="math inline">\(xln(x)'=ln(x)\)</span></em></p>
-<p>HM2</p>
-<p><strong>Aufgabe 1 (8 Punkte)</strong></p>
-<p>Gegeben sei ein lineares Gleichungssystem <strong><em>Ax=b</em></strong> mit der Koeffizientenmatrix und der rechten Seite</p>
-<p><span class="math display">\[
+<pre><code>HM1
+
+**Aufgabe 1 (7 Punkte).**
+
+Bestimmen Sie alle $x \in ℝ $ für die die Reihe
+
+$$\sum_{n=1}^{\infty} \frac{1}{n 3^n} {(x-1)^n}$$
+
+konvergiert.
+
+**Aufgabe 2 (14 Punkte).** Gegeben sei die Funktion
+
+$$f(x)=\frac{1}{x^2(x-3)}$$
+
+Geben Sie den maximalen Definitionsbereich von $f$ an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall $[-2,5]$.
+
+**Aufgabe 3 (5+5 Punkte).**
+a) Stellen Sie
+
+$$\frac{(\sqrt{2} + i \sqrt{2})^3}{(2 e^{i \pi/3})^6}$$
+
+
+in Polarform dar.
+
+b) Bestimmen Sie alle komplexen Lösungen der Gleichung
+
+$$ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0 $$
+
+Geben Sie die Lösungen dabei in Polarform an.
+
+**Aufgabe 4 (6+4 Punkte)**
+
+a) Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion
+
+$$ g(x)=x^2ln (x) $$
+
+im Entwicklungspunkt $x=e$
+
+b) Schätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall $[e,2e]$ ab.
+
+**Aufgabe 5 (7+2 Punkte).**
+
+Gegeben sei die Funktion
+
+$$h(x)=\frac{x^2+4x-3}{x^3-3x-2}. $$
+
+a) Berechnen Sie die Partialbruchzerlegung von $h(x)$.
+
+b) Bestimmen Sie eine Stammfunktion von $h(x)$.
+
+**Aufgabe 6 (4+6 Punkte).**
+
+a) Berechnen Sie den Grenzwert
+
+$$\lim_{y-&gt;1}\sqrt{1-y^2}ln(\sqrt{1-y^2}). $$
+
+b) Berechnen Sie für $y\in (0,1)$ das Integral
+
+$$ I(y)=\int_0^yln(\sqrt{1-x^2})\frac{x}{\sqrt{1-x^2}}dx .$$
+
+*Hinweis: Für $x&gt;0$ gilt: $xln(x)'=ln(x)$*
+
+
+HM2
+
+**Aufgabe 1 (8 Punkte)**
+
+Gegeben sei ein lineares Gleichungssystem  ***Ax=b*** mit der Koeffizientenmatrix und der rechten Seite
+
+$$
 A=
 \begin{pmatrix}
    1&amp;1&amp; 3&amp; 1\\
@@ -230,8 +225,9 @@ A=
    -3&amp; 2&amp; 1&amp; -2&amp;\\
    4&amp; 1&amp; 6&amp; 1&amp;
 \end{pmatrix}
-\]</span></p>
-<p><span class="math display">\[
+$$
+
+$$
 b=
 \begin{pmatrix}
    6\\
@@ -239,152 +235,220 @@ b=
    1\\
    3
 \end{pmatrix}
-\]</span></p>
-<p>Bestimmen Sie die Lösung des Gleichungssystems. Wie ist der Rang der Matrix <strong><em>A</em></strong>?</p>
-<p><strong>Aufgabe 2 (7+3 Punkte)</strong></p>
-<p>Im dreidimensionalen Raum <span class="math inline">\(R3\)</span> seien eine Gerade in Koordinatendarstellung</p>
-<p><span class="math inline">\(g: \frac{4-x_1}{2}=\frac{4+x_2}{3}=\frac{2-x_3}{2}\)</span></p>
-<p>sowie eine Ebene E durch die drei Punkte (3,1,2), (-1,3,2), (5,-2,4).</p>
-<ol type="a">
-<li><p>Geben Sie eine Parameterdarstellung der Geraden <span class="math inline">\(g\)</span> und die Hesse-Normalform der Ebene <span class="math inline">\(E\)</span> an.</p></li>
-<li><p>Entscheiden Sie ob die Gerade <span class="math inline">\(g\)</span> und die Ebene <span class="math inline">\(E\)</span> sich in einem Punkt schneiden.</p></li>
-</ol>
-<ul>
-<li><p>Wenn ja, berechnen Sie die Koordinaten des Schnittpunkts.</p></li>
-<li><p>Wenn nein, berechnen Sie denAbstand der Geraden von der Ebene.</p></li>
-</ul>
-<p><strong>Aufgabe 3 (8 + 3 Punkte)</strong></p>
-<p>Gegeben sei die Matrix</p>
-<p><span class="math display">\[
+$$
+
+Bestimmen Sie die Lösung des Gleichungssystems. Wie ist der Rang der Matrix ***A***?
+
+**Aufgabe 2 (7+3 Punkte)**
+
+Im dreidimensionalen Raum $R3$ seien eine Gerade in Koordinatendarstellung
+
+$g: \frac{4-x_1}{2}=\frac{4+x_2}{3}=\frac{2-x_3}{2}$
+
+sowie eine Ebene E durch die drei Punkte (3,1,2), (-1,3,2), (5,-2,4).
+
+a) Geben Sie eine Parameterdarstellung der Geraden $g$ und die Hesse-Normalform der Ebene $E$ an.
+
+b) Entscheiden Sie ob die Gerade $g$ und die Ebene $E$ sich in einem Punkt schneiden.
+
+- Wenn ja, berechnen Sie die Koordinaten des Schnittpunkts.
+
+- Wenn nein, berechnen Sie denAbstand der Geraden von der Ebene.
+
+**Aufgabe 3 (8 + 3 Punkte)**
+
+Gegeben sei die Matrix
+
+$$
 A=
 \begin{pmatrix}
    1&amp; -2&amp; 3\\
    1&amp; 0&amp; 1&amp;\\
    0&amp; 4&amp; -2&amp;
 \end{pmatrix}
-\]</span></p>
-<ol type="a">
-<li><p>Berechnen Sie alle Eigenwerte und zugehörigen Eigenvektoren von <span class="math inline">\(A\)</span>.</p></li>
-<li><p>Drücken Sie die lineare Abbildung <span class="math inline">\(y=Ax\)</span> in einer Basis <span class="math inline">\(B\)</span> aus, die durch die Eigenvektoren von <span class="math inline">\(A\)</span> gebildet wird.</p></li>
-</ol>
-<p><strong>Aufgabe 4 (4+4+3 Punkte)</strong> Gegeben sei die Funktion <span class="math inline">\(f(x,y)=(y^2-x)ln(x)\)</span> mit <span class="math inline">\(x&gt;0\)</span> und <span class="math inline">\(y\in ℝ\)</span>.</p>
-<ol type="a">
-<li><p>Berechnen Sie alle stationären Punkte von <span class="math inline">\(f\)</span>.</p></li>
-<li><p>Überprüfen Sie, bei welchen stationären Punkten es sich um lokale Extrema handelt und geben Sie gegebenenfalls an, ob es sich jeweils um ein lokales Minimum oder Maximum handelt.</p></li>
-<li><p>Bestimmen sie das Taylor-Polynom zweiten Grades von <span class="math inline">\(f\)</span> mit Entwicklungspunkt <span class="math inline">\((x_0, y_0)=(1,2)\)</span>.</p></li>
-</ol>
-<p><strong>Aufgabe 5 (7 + 3 Punkte)</strong></p>
-<ol type="a">
-<li>Bestimmen Sie mit der Methode der Lagrange-Multiplikatoren die Kandidaten für lokale Extrema der Funktion</li>
-</ol>
-<p><span class="math inline">\(f(x,y)=(3x+2y)x\)</span></p>
-<p>unter der Nebenbedingung</p>
-<p><span class="math inline">\(2x^3+3x^2y=40\)</span></p>
-<ol start="2" type="a">
-<li>Berechnen Sie die Ableitung der Funktion <span class="math inline">\(f\)</span> entlang der implizit durch die Nebenbedingungen gegebenen Kurve <span class="math inline">\(x \mapsto (x,(y(x))\)</span>.</li>
-</ol>
-<p><strong>Aufgabe 6 (10 Punkte)</strong></p>
-<p>Berechnen Sie das Integral der Funktion <span class="math inline">\(f(x,y)=2y/x\)</span> über das Kreissegment <span class="math inline">\(B\)</span>, das von der Kreislinie mit der Gleichung <span class="math inline">\((x-2)^2+y^2=4\)</span> und der Geraden mit der Gleichung <span class="math inline">\(x+2y=4\)</span> begrenzt wird (siehe Abbildung 1).</p>
-<p>HM3:</p>
-<p><strong>Aufgabe 1 (10 Punkte)</strong></p>
-<ol type="a">
-<li>Lösen Sie das Anfangswertproblem <span class="math display">\[ x'=tx^2+t\quad\text{ x(0)=0}\]</span> und geben Sie den maximalen Definitionsbereich an.</li>
-</ol>
-<p>Hinweis <span class="math inline">\(\arctan'(x)=\frac{1}{1+x^2}\)</span></p>
-<ol start="2" type="a">
-<li>Betrachten Sie die Differentialgleichung</li>
-</ol>
-<p><span class="math display">\[2tx^3-2t+3t^2x^2x'=0,\quad x(1)=0\]</span> (i) Zeigen Sie das die DGL exakt ist.</p>
-<ol start="2" type="i">
-<li><p>Geben Sie eine Funktion <span class="math inline">\(\Phi=\Phi(t,x)\)</span> an, so dass <span class="math inline">\(\Phi_t(t,x)+\Phi_x(t,x)\dot x=0\)</span></p></li>
-<li><p>Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für <span class="math inline">\(t \rightarrow \infty\)</span>.</p></li>
-</ol>
-<p><strong>Aufgabe 2 (10 Punkte)</strong> Gegeben ist das lineare System <span class="math display">\[ \dot x=\begin{pmatrix} 3&amp;-1\\5&amp;-1 \end{pmatrix}x\]</span></p>
-<ol type="a">
-<li><p>Geben Sie ein reelles Fundamentalsystem an.</p></li>
-<li><p>Geben sie die allgemeine reelle Lösung des Anfangswertproblems <span class="math inline">\(\dot x=Ax+b\)</span> mit <span class="math inline">\(b=\begin{pmatrix}1\\0\end{pmatrix}\)</span></p></li>
-</ol>
-<p>an.</p>
-<p><strong>Aufgabe 3 (10 Punkte)</strong> Gegeben sei die partielle Differentialgleichung <span class="math display">\[ 2u_t-u_{xx}=0\]</span> mit <span class="math inline">\(x\in[0,\pi]\)</span> und <span class="math inline">\(t&gt;0\)</span></p>
-<ol type="a">
-<li><p>Klassifizieren Sie die Differentialgleichung. Verwenden Sie dazu die Begriffe elliptisch, parabolisch, hyperbolisch. Begründen Sie ihre Aussage.</p></li>
-<li><p>Bestimmen Sie die Koeffizienten der Fouriereihe der ungerade periodisch fortgesetzten Funktion <span class="math display">\[f(x)=1\quad  \text{für } x\in [0,\pi]\]</span>.</p></li>
-<li><p>Bestimmen Sie für alle $kℕ $ eine Lösung der PDE mit der Anfangsbedingung</p></li>
-</ol>
-<p><span class="math display">\[u(0,x)=sin(kx)\quad x\in[0,\pi]\]</span></p>
-<p>die die Randbedingungen <span class="math inline">\(u(t,0)=u(t,\pi)=0, t&gt;0\)</span> erfüllt.</p>
-<p><strong>Aufgabe 4 (10 Punkte)</strong></p>
-<p>Gegeben seine das parameterabhängige Vektorfeld <span class="math inline">\(F:ℝ^3\rightarrow ℝ^3\)</span> und der Weg <span class="math inline">\(\gamma: [0,1]\rightarrow ℝ\)</span>.</p>
-<p><span class="math inline">\(F=\begin{pmatrix} x\frac{y^3}{3}\\x^2(z^2+\frac{y^2}{2})-\alpha x^2z^2\\(1-\alpha)2x^2yz+z^2 \end{pmatrix}\)</span> und <span class="math inline">\(\gamma(t)=\begin{pmatrix} 1-t^2\\ t^2\\ t\end{pmatrix}\)</span></p>
-<ol type="a">
-<li><p>Bestimen Sie alle <span class="math inline">\(\alpha\in ℝ\)</span>, so dass <span class="math inline">\(F\)</span> ein Potential besitzt. 4P</p></li>
-<li><p>Geben Sie für <span class="math inline">\(\alpha=1\)</span> ein Potential an. 4P</p></li>
-<li><p>Berechnen Sie für <span class="math inline">\(\alpha=1\)</span> das Kurvenintegral 2. Art des Vektorfelds <span class="math inline">\(F\)</span> entlang <span class="math inline">\(\gamma\)</span>. 2P</p></li>
-</ol>
-<p><strong>Aufgabe 5 (10 Punkte)</strong></p>
-<p>Es sei <span class="math inline">\(\gamma(u)=(e^u-1,0,u)^T\)</span> mit <span class="math inline">\(u\in[0,1]\)</span> ein planarer Weg in der x-z-Ebene. Mit <span class="math inline">\(A\)</span> bezeichnen wir die Rotationsfläche, die entsteht, wenn <span class="math inline">\(\gamma\)</span> um die z-Achse rotiert wird.</p>
-<p>Gegeben sei außerdem das Vektorfeld</p>
-<p><span class="math display">\[ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} x+y\\ y-x \\2 \end{pmatrix} \]</span></p>
-<ol type="a">
-<li><p>Geben Sie eine Parametrisierung <span class="math inline">\(f(u,v)\)</span> der Fläche <span class="math inline">\(A\)</span> an. 3P</p></li>
-<li><p>Bestimmen Sie Tangentialvektoren und Normenvektor an die Fläche <span class="math inline">\(A\)</span>. 3P</p></li>
-<li><p>Bestimmen Sie das Oberflächenintegral 2.Art <span class="math inline">\(\int_AF\cdot dn\)</span>. 3P</p></li>
-</ol>
-<p><strong>Aufgabe 6 (10 Punkte)</strong></p>
-<p>Es sei das Kugelsegment <span class="math inline">\(K\)</span> durch</p>
-<p><span class="math display">\[ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4, y\geq0, z\geq0\right\}\]</span></p>
-<p>gegeben und <span class="math inline">\(\partial K\)</span> sei die Vereinigung aller Oberflächen des Kugelsegments.</p>
-<p>Weiterhin sei das Vektorfeld <span class="math inline">\(F:ℝ^3\rightarrow ℝ^3\)</span> gegeben durch</p>
-<p><span class="math display">\[F(x,y,z)=\begin{pmatrix} x-y\\x+y \\z+xy \end{pmatrix}\]</span></p>
-<ol type="a">
-<li><p>Parametrisieren Sie das Volumen in Kugelkoordinaten.</p></li>
-<li><p>Berechnen Sie den Fluss von <span class="math inline">\(F\)</span> durch <span class="math inline">\(\partial K\)</span>, also <span class="math inline">\(\int_{\partial K}F\cdot dn\)</span>, wobei die Normale <span class="math inline">\(n\)</span> nach außen zeigt.</p></li>
-<li><p>Berechnen Sie <span class="math inline">\(\int_{\partial K}rot(F)\cdot dn\)</span>.</p></li>
-<li><p>Berechnen Sie mit Hilfe des Satzes von Stokes das Integral <span class="math inline">\(\int_{\partial K \text{\B}}rot F\cdot dn\)</span>, wobei <span class="math inline">\(B\)</span> der Boden des Kugelsegments in der (<span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span>)-Ebene ist.</p></li>
-</ol>
-<p>HM4 <strong>Aufgabe 1 (10 Punkte)</strong> Gegeben ist die Matrix <span class="math display">\[A=\begin{pmatrix} 2 &amp; 1 \\ 1 &amp; -1 \end{pmatrix}\]</span></p>
-<ol type="a">
-<li><p>Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragsgrößten Eigenwertes von <span class="math inline">\(A\)</span> mit dem Startvektor <span class="math inline">\(x_0=(1,1)^T\)</span> durch.</p></li>
-<li><p>Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragskleinsten Eigenwertes von <span class="math inline">\(A\)</span> mit dem Startvektor <span class="math inline">\(x_0=(1,-1)^T\)</span> durch.</p></li>
-</ol>
-<p><strong>Aufgabe 2 (10 Punkte)</strong></p>
-<p>Gegeben sind die Wertepaare</p>
-<p><span class="math display">\[
+$$
+
+a) Berechnen Sie alle Eigenwerte und zugehörigen Eigenvektoren von $A$.
+
+b) Drücken Sie die lineare Abbildung $y=Ax$ in einer Basis $B$ aus, die durch die Eigenvektoren von $A$ gebildet wird.
+
+**Aufgabe 4 (4+4+3 Punkte)**
+Gegeben sei die Funktion $f(x,y)=(y^2-x)ln(x)$ mit $x&gt;0$ und $y\in ℝ$.
+
+a) Berechnen Sie alle stationären Punkte von $f$.
+
+b) Überprüfen Sie, bei welchen stationären Punkten es sich um lokale Extrema handelt und geben Sie gegebenenfalls an, ob es sich jeweils um ein lokales Minimum oder Maximum handelt.
+
+c) Bestimmen sie das Taylor-Polynom zweiten Grades von $f$ mit Entwicklungspunkt $(x_0, y_0)=(1,2)$.
+
+**Aufgabe 5 (7 + 3 Punkte)**
+
+a) Bestimmen Sie mit der Methode der Lagrange-Multiplikatoren die Kandidaten für lokale Extrema der Funktion
+
+$f(x,y)=(3x+2y)x$
+
+unter der Nebenbedingung
+
+$2x^3+3x^2y=40$
+
+b) Berechnen Sie die Ableitung der Funktion $f$ entlang der implizit durch die Nebenbedingungen gegebenen Kurve $x \mapsto (x,(y(x))$.
+
+**Aufgabe 6 (10  Punkte)**
+
+Berechnen Sie das Integral der Funktion $f(x,y)=2y/x$ über das Kreissegment $B$, das von der Kreislinie mit der Gleichung $(x-2)^2+y^2=4$ und der Geraden mit der Gleichung $x+2y=4$ begrenzt wird (siehe Abbildung 1).
+
+HM3:
+
+**Aufgabe 1 (10 Punkte)**
+
+a) Lösen Sie das Anfangswertproblem $$ x'=tx^2+t\quad\text{ x(0)=0}$$
+und geben Sie den maximalen Definitionsbereich an.
+
+Hinweis $\arctan'(x)=\frac{1}{1+x^2}$
+
+b) Betrachten Sie die Differentialgleichung
+
+$$2tx^3-2t+3t^2x^2x'=0,\quad x(1)=0$$
+  (i) Zeigen Sie das die DGL exakt ist.
+
+  (ii) Geben Sie eine Funktion $\Phi=\Phi(t,x)$ an, so dass $\Phi_t(t,x)+\Phi_x(t,x)\dot x=0$
+
+  (iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für $t \rightarrow \infty$.
+
+**Aufgabe 2 (10 Punkte)**
+Gegeben ist das lineare System
+$$ \dot x=\begin{pmatrix} 3&amp;-1\\5&amp;-1 \end{pmatrix}x$$
+
+a) Geben Sie ein reelles Fundamentalsystem an.
+
+b) Geben sie die allgemeine reelle Lösung des Anfangswertproblems $\dot x=Ax+b$ mit
+$b=\begin{pmatrix}1\\0\end{pmatrix}$
+
+an.
+
+**Aufgabe 3 (10 Punkte)**
+Gegeben sei die partielle Differentialgleichung
+$$ 2u_t-u_{xx}=0$$
+mit $x\in[0,\pi]$ und $t&gt;0$
+
+a) Klassifizieren Sie die Differentialgleichung. Verwenden Sie dazu die Begriffe elliptisch, parabolisch, hyperbolisch. Begründen Sie ihre Aussage.
+
+b) Bestimmen Sie die Koeffizienten der Fouriereihe der ungerade periodisch fortgesetzten Funktion
+$$f(x)=1\quad  \text{für } x\in [0,\pi]$$.
+
+c) Bestimmen Sie für alle $k\in ℕ $ eine Lösung der PDE mit der Anfangsbedingung
+
+$$u(0,x)=sin(kx)\quad x\in[0,\pi]$$
+
+die die Randbedingungen $u(t,0)=u(t,\pi)=0, t&gt;0$ erfüllt.
+
+**Aufgabe 4 (10 Punkte)**
+
+Gegeben seine das parameterabhängige Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ und der Weg $\gamma: [0,1]\rightarrow ℝ$.
+
+$F=\begin{pmatrix} x\frac{y^3}{3}\\x^2(z^2+\frac{y^2}{2})-\alpha x^2z^2\\(1-\alpha)2x^2yz+z^2 \end{pmatrix}$ und $\gamma(t)=\begin{pmatrix} 1-t^2\\ t^2\\ t\end{pmatrix}$
+
+a) Bestimen Sie alle $\alpha\in ℝ$, so dass $F$ ein Potential besitzt. 4P
+
+b) Geben Sie für $\alpha=1$ ein  Potential an. 4P
+
+c) Berechnen Sie für $\alpha=1$ das Kurvenintegral 2. Art des Vektorfelds $F$ entlang $\gamma$. 2P
+
+**Aufgabe 5 (10 Punkte)**
+
+Es sei $\gamma(u)=(e^u-1,0,u)^T$ mit $u\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\gamma$ um die z-Achse  rotiert wird.
+
+Gegeben sei außerdem das Vektorfeld
+
+$$ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} x+y\\ y-x \\2 \end{pmatrix} $$
+
+a) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. 3P
+
+b) Bestimmen Sie Tangentialvektoren und Normenvektor an die Fläche $A$. 3P
+
+c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. 3P
+
+**Aufgabe 6 (10 Punkte)**
+
+Es sei das Kugelsegment $K$ durch
+
+$$ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4, y\geq0, z\geq0\right\}$$
+
+gegeben und $\partial K$ sei die Vereinigung aller Oberflächen des Kugelsegments.
+
+Weiterhin sei das Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ gegeben durch
+
+$$F(x,y,z)=\begin{pmatrix} x-y\\x+y \\z+xy \end{pmatrix}$$
+
+a) Parametrisieren Sie das Volumen in Kugelkoordinaten.
+
+b) Berechnen Sie den Fluss von $F$ durch $\partial K$, also $\int_{\partial K}F\cdot dn$, wobei die Normale $n$ nach außen zeigt.
+
+c) Berechnen Sie  $\int_{\partial K}rot(F)\cdot dn$.
+
+d) Berechnen Sie mit Hilfe des Satzes von Stokes das Integral $\int_{\partial K \text{\B}}rot F\cdot dn$, wobei $B$ der Boden des Kugelsegments in der ($x$-$y$)-Ebene ist.
+
+HM4
+**Aufgabe 1 (10 Punkte)**
+Gegeben ist die Matrix $$A=\begin{pmatrix} 2 &amp; 1 \\ 1 &amp; -1 \end{pmatrix}$$
+
+a) Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragsgrößten Eigenwertes von $A$ mit dem Startvektor $x_0=(1,1)^T$ durch.
+
+b) Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragskleinsten Eigenwertes von $A$ mit dem Startvektor $x_0=(1,-1)^T$ durch.
+
+**Aufgabe 2 (10 Punkte)**
+
+Gegeben sind die Wertepaare
+
+$$
 \begin{array}{ccc}
 i&amp;0&amp;1&amp;2&amp;3\\
 \hline
 x_i&amp;-1&amp;0&amp;1&amp;2\\
 f_i&amp;5&amp;1&amp;1&amp;-1
 \end{array}
-\]</span></p>
-<ol type="a">
-<li><p>Berechnen Sie das Interpolationspolynom in der Newton-Basis</p></li>
-<li><p>Bestimmen Sie das Interpolationspolynom <span class="math inline">\(p(x)\)</span> in der Monom-Basis</p></li>
-<li><p>Approximieren Sie den Wert der Nullstelle von <span class="math inline">\(p(x)\)</span> im Intervall <span class="math inline">\([1,2]\)</span> mit zwei Schritten des Bisektionsverfahrens</p></li>
-<li><p>Approximeren Sie das Integral <span class="math inline">\(\int_{-1}^1 p(x) dx\)</span> mit der Simpson-Regel, wobei <span class="math inline">\(p(x)\)</span> das Polynom aus Aufgabenteil b) ist.</p></li>
-</ol>
-<p><strong>Aufgabe 3 (10 Punkte)</strong></p>
-<p>Gegeben seien die Messwerte</p>
-<p><span class="math display">\[
+$$
+
+a) Berechnen Sie das Interpolationspolynom in der Newton-Basis
+
+b) Bestimmen Sie das Interpolationspolynom $p(x)$ in der Monom-Basis
+
+c) Approximieren Sie den Wert der Nullstelle von $p(x)$ im Intervall $[1,2]$ mit zwei Schritten des Bisektionsverfahrens
+
+d) Approximeren Sie das Integral $\int_{-1}^1 p(x) dx$ mit der Simpson-Regel, wobei $p(x)$ das Polynom aus Aufgabenteil b) ist.
+
+**Aufgabe 3 (10 Punkte)**
+
+Gegeben seien die Messwerte
+
+$$
 \begin{array}{ccc}
 x_i&amp;-2&amp;-1&amp;0&amp;1&amp;2\\
 \hline
 f_i&amp;0&amp;0&amp;0&amp;-1&amp;1
 \end{array}
-\]</span></p>
-<ol type="a">
-<li><p>Die Messwerte sollen durch ein Polynom 2.ter Ordnung approximiert werden. Stellen Sie das zugehörige lineare Ausgleichsproblem und die Normalengleichungen auf.</p></li>
-<li><p>Lösen Sie das Gleichungssystem <span class="math inline">\(Ax=b\)</span> mit</p></li>
-</ol>
-<p><span class="math inline">\(A=\begin{pmatrix} 5 &amp; 0 &amp; 10 \\ 0 &amp; 10 &amp; 0 \\ 10 &amp; 0 &amp; 34 \end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(b=\begin{pmatrix} 0  \\ 1  \\ 3 \end{pmatrix}\)</span></p>
-<p>mit Hilfe der Cholesky-Zerlegung.</p>
-<p><strong>Aufgabe 4 (10 Punkte)</strong></p>
-<p>Gegebn sind die folgenden drei Wertepaare <span class="math inline">\(t_1,y_1)=(-1,2)\)</span>, <span class="math inline">\(t_2,y_2)=(0,1)\)</span>, <span class="math inline">\(t_3,y_3)=(1,0)\)</span> und die Funktion <span class="math inline">\(y=f(x_1, x_2, t)=(t+x_2)^2x_1\)</span>.</p>
-<ol type="a">
-<li><p>Formulieren Sie ein nichtlineares Ausgleichsproblem, so dass die Funktion <span class="math inline">\(f\)</span> die Werte <span class="math inline">\(y_i\)</span> and den Stellen <span class="math inline">\(t_i\)</span> möglichst gut approximiert.</p></li>
-<li><p>Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausgleichsproblem von a) mit dem Startwert $x_1,x_2=(1,1)^T. Liefert der berechnete Wert eine Verbesserung für das Ausgleichsproblem im Vergleich zum Startwert?</p></li>
-</ol>
+$$
+
+a) Die Messwerte sollen durch ein Polynom 2.ter Ordnung approximiert werden. Stellen Sie das zugehörige lineare Ausgleichsproblem und die Normalengleichungen auf. 
+
+b) Lösen Sie das Gleichungssystem $Ax=b$ mit 
+
+$A=\begin{pmatrix} 5 &amp; 0 &amp; 10 \\ 0 &amp; 10 &amp; 0 \\ 10 &amp; 0 &amp; 34 \end{pmatrix}$,
+
+$b=\begin{pmatrix} 0  \\ 1  \\ 3 \end{pmatrix}$
+
+mit Hilfe der Cholesky-Zerlegung.
+
+
+
+**Aufgabe 4 (10 Punkte)**
+
+Gegebn sind die folgenden drei Wertepaare $t_1,y_1)=(-1,2)$, $t_2,y_2)=(0,1)$, $t_3,y_3)=(1,0)$ und die Funktion $y=f(x_1, x_2, t)=(t+x_2)^2x_1$.
+
+a) Formulieren Sie ein nichtlineares Ausgleichsproblem, so dass die Funktion $f$ die Werte $y_i$ and den Stellen $t_i$ möglichst gut approximiert.
+
+b) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausgleichsproblem von a) mit dem Startwert $x_1,x_2=(1,1)^T. Liefert der berechnete Wert eine Verbesserung für das Ausgleichsproblem im Vergleich zum Startwert?
+</code></pre>
 
 
 
