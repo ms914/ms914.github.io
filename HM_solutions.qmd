@@ -8,7 +8,7 @@ editor: visual
 
 ### **Aufgabe 1 (7 Punkte)**
 
-Die Reihe hat die Form $$ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{n 3^n} $$ und ist eine Potenzreihe mit Konvergenzradius $$ R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = 3. $$ Damit konvergiert die Reihe für $$ |x - 1| < 3, \quad \Rightarrow \quad -2 < x < 4. $$ Randpunkte prüfen: - Für $ x = -2 $ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für $ x = 4 $ divergiert sie ebenfalls aus dem gleichen Grund.
+Die Reihe hat die Form $$ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{n 3^n} $$ und ist eine Potenzreihe mit Konvergenzradius $$ R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = 3. $$ Damit konvergiert die Reihe für $$ |x - 1| < 3, \quad \Rightarrow \quad -2 < x < 4. $$ Randpunkte prüfen: - Für $x = -2$ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für $ x = 4 $ divergiert sie ebenfalls aus dem gleichen Grund.
 
 **Lösung:** Die Reihe konvergiert für $ x \in (-2,4) $.
 
