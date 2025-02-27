@@ -123,7 +123,7 @@
     "href": "index.html",
     "title": "HM3 Website",
     "section": "",
-    "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n```{include} klausuren_latex.txt\n\nDie HM3 ist die Grundlage für die Theorie der Strömungsdynamik."
+    "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n\nDie HM3 ist die Grundlage für die Theorie der Strömungsdynamik."
   },
   {
     "objectID": "karteikarten.html",
@@ -292,5 +292,12 @@
     "title": "Höhere Mathematik Klausuren",
     "section": "",
     "text": "Berechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+  },
+  {
+    "objectID": "klausuren.html#latex-code",
+    "href": "klausuren.html#latex-code",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "Latex code",
+    "text": "Latex code\n\n```{include} klausuren_latex.txt"
   }
 ]
