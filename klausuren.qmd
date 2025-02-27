@@ -325,3 +325,6 @@ b) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausglei
 
 ---
 
+## Latex code
+
+- ```{include} klausuren_latex.txt
