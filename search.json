@@ -126,6 +126,13 @@
     "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n\nDie HM3 ist die Grundlage für die Theorie der Strömungsdynamik."
   },
   {
+    "objectID": "klausuren_latex.html",
+    "href": "klausuren_latex.html",
+    "title": "Latex Code der Klausuren",
+    "section": "",
+    "text": "```mlwhngrgd klausuren_latex.txt"
+  },
+  {
     "objectID": "karteikarten.html",
     "href": "karteikarten.html",
     "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
