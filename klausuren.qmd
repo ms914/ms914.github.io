@@ -325,7 +325,7 @@ b) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausglei
 
 ---
 
-```latex
+```{latex}
 HM1
 
 **Aufgabe 1 (7 Punkte).**
