@@ -5,4 +5,6 @@ format: html
 
 
 
-```{include} klausuren_latex.txt
+``` latex
+{{< include _klausuren_latex.txt >}} 
+```
