@@ -325,7 +325,7 @@ b) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausglei
 
 ---
 
-```
+```latex
 HM1
 
 **Aufgabe 1 (7 Punkte).**
@@ -388,7 +388,9 @@ $$ I(y)=\int_0^yln(\sqrt{1-x^2})\frac{x}{\sqrt{1-x^2}}dx .$$
 
 *Hinweis: Für $x>0$ gilt: $xln(x)'=ln(x)$*
 
+```
 
+```latex
 HM2
 
 **Aufgabe 1 (8 Punkte)**
@@ -474,8 +476,10 @@ b) Berechnen Sie die Ableitung der Funktion $f$ entlang der implizit durch die N
 **Aufgabe 6 (10  Punkte)**
 
 Berechnen Sie das Integral der Funktion $f(x,y)=2y/x$ über das Kreissegment $B$, das von der Kreislinie mit der Gleichung $(x-2)^2+y^2=4$ und der Geraden mit der Gleichung $x+2y=4$ begrenzt wird (siehe Abbildung 1).
+```
 
-HM3:
+```latex
+HM3
 
 **Aufgabe 1 (10 Punkte)**
 
@@ -565,7 +569,9 @@ b) Berechnen Sie den Fluss von $F$ durch $\partial K$, also $\int_{\partial K}F\
 c) Berechnen Sie  $\int_{\partial K}rot(F)\cdot dn$.
 
 d) Berechnen Sie mit Hilfe des Satzes von Stokes das Integral $\int_{\partial K \text{\B}}rot F\cdot dn$, wobei $B$ der Boden des Kugelsegments in der ($x$-$y$)-Ebene ist.
+```
 
+```latex
 HM4
 **Aufgabe 1 (10 Punkte)**
 Gegeben ist die Matrix $$A=\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}$$
