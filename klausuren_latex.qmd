@@ -4,8 +4,4 @@ format: html
 ---
 
 
-
-```
-
-include _klausuren_latex.txt 
-```
+{{< include _klausuren_latex.txt >}}
