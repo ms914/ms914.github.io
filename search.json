@@ -130,7 +130,7 @@
     "href": "klausuren_latex.html",
     "title": "Latex Code der Klausuren",
     "section": "",
-    "text": "```dgxdaxozz klausuren_latex.txt"
+    "text": "include _klausuren_latex.txt"
   },
   {
     "objectID": "karteikarten.html",
