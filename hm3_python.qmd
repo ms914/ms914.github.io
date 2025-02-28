@@ -1,8 +1,11 @@
 ---
-title: "Quarto_website_python"
-format: html
+title: "sympy"
+format:
+  html:
+    code-copy: true
 editor: visual
 ---
+
 
 ## HM3 Sympy
 
@@ -52,9 +55,6 @@ print("Lösung des Anfangswertproblems:", final_solution)
 x_infinity = sp.limit(final_solution.rhs, t, sp.oo)
 print("Grenzwert der Lösung für t -> ∞:", x_infinity)
 
-
-
-Phi.simplify()
 ```
 
 ## Aufgabe 2
@@ -65,7 +65,8 @@ Phi.simplify()
 import sympy as sp
 
 # variables
-x,y,t,c1,c2 = sp.symbols('x y t c_1 c_2')
+x,y,c1,c2 = sp.symbols('x y c_1 c_2')
+t = sp.symbols('t', positive = True)
 A=sp.Matrix([(3,-1),(5, -1)])
 #A=sp.Matrix([(0,-1),(5, 4)])
 
@@ -113,11 +114,21 @@ print (xp)
 # Test ob EV korrekt ist
 assert sp.simplify(M*X)==sp.Matrix([0,0]), 'Eigenvektor nok'
 matrix
+
+A=sp.Matrix([(3,-1),(5, -1)])
+λ1,λ2=A.eigenvals()
+print(λ1,λ2)
+v1,v2=A.eigenvects()
+print(v1,v2)
+
+sol=5/2*v1[2][0]*sp.exp(λ1*t)+5/2*v2[2][0]*sp.exp(λ2*t)
+sol1, sol2 = sol.as_real_imag()
+sol
 ```
 
 ## Aufgabe 3
 
-```
+```default
 # Aufgabe 3
 import sympy as sp
 
@@ -150,7 +161,7 @@ u_series
 
 ## Aufgabe 4
 
-```
+```default
 import sympy as sp
 
 # Definition der Variablen
@@ -215,9 +226,9 @@ print(integral_value)
 
 ## Aufgabe 5
 
-```
+```default
 # Aufgabe 5
-
+# mühsam von Hand
 # Parametrisierung
 u,v = sp.symbols('u v')
 #g_u = sp.Matrix([sp.exp(u)-1,0,u])
@@ -232,7 +243,7 @@ print('Normal vector: ')
 n
 ```
 
-```
+```default
 # Substitution F(x,y,z)->F(gamma(u,v))
 x,y,z = sp.symbols('x y z')
 #F_xyz=sp.Matrix([x+y,y-x,2]) # Typical vector field with div F = 2
@@ -243,7 +254,7 @@ print('Parametrisiertes Vektorfeld: ')
 F_uv
 ```
 
-```
+```default
 integrand=F_uv.dot(n)
 #integrand=F_uv.dot(n).simplify()
 print(integrand)
@@ -251,13 +262,13 @@ print(integrand.simplify())
 integrand.simplify()
 ```
 
-```
+```default
 sp.simplify(sp.integrate(integrand,(u,0,2), (v,0,2*sp.pi)))
 ```
 
 ## Aufgabe 6
 
-```
+```default
 import sympy as sp
 
 # Variablen definieren
