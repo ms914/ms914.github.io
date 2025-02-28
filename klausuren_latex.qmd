@@ -1,8 +1,0 @@
----
-title: "Latex Code der Klausuren"
-format: html
----
-
-```
-{{< include _latex.qmd >}}
-```
