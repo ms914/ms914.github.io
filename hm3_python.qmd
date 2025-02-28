@@ -143,13 +143,13 @@ for eigenvalue, multiplicity, eigenvecs in eigen_data:
             
         eigenvectors.append((eigenvalue, vec))
 
-
+# Komplexe Lösung
 λ1, v1  = eigenvectors[0]
 #λ2, v2  = eigenvectors[1]
-
 v1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0]
-
 sol1=v1*sp.exp(λ1*t) # es genügt eine komplexe Lösung zu betrachten; Rotor
+
+# Umschreiben als Matrix von reellen Lösungen
 sol_list=sol1.as_real_imag() # ergibt eine Liste von Vektoren
 matrix=sp.Matrix([sol_list]) # als Matrix
 #sp.simplify(matrix/sp.exp(t))
@@ -157,11 +157,11 @@ matrix
 ```
 
 ```default
-
-
 # noch kürzer
-v1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0] # erster Eintrag 1
+# Eigenvektor und Eigenwert
+v1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0] # erster Eintrag auf 1 normiert
 λ1, _ = A.eigenvals() 
+# reelles System
 sp.Matrix([(v1*sp.exp(λ1*t)).as_real_imag()])
 ```
 
