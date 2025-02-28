@@ -8,9 +8,9 @@ website:
       - href: index.qmd
         text: Home
       - href: klausuren.qmd
-        text: Latex HM1 - HM4  
+        text: Klausuren  
       - href: HM_solutions.qmd
-        text: Lösungen HM1 - HM4
+        text: Lösungen
       - href: karteikarten.qmd
         text: Karteikarten
       - href: hm3_codecopy.qmd
