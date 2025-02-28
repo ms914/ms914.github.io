@@ -6,7 +6,9 @@ format:
 editor: visual
 ---
 
-## HM1
+# HM1
+
+## Aufgabe 1
 ```default
 HM1
 
@@ -18,11 +20,22 @@ $$\sum_{n=1}^{\infty} \frac{1}{n 3^n} {(x-1)^n}$$
 
 konvergiert.
 
+```
+## Aufgabe 2
+
+```default
+
 **Aufgabe 2 (14 Punkte).** Gegeben sei die Funktion
 
 $$f(x)=\frac{1}{x^2(x-3)}$$
 
 Geben Sie den maximalen Definitionsbereich von $f$ an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall $[-2,5]$.
+
+```
+
+## Aufgabe 3
+
+```default
 
 **Aufgabe 3 (5+5 Punkte).**
 a) Stellen Sie
@@ -38,6 +51,12 @@ $$ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0 $$
 
 Geben Sie die Lösungen dabei in Polarform an.
 
+```
+
+## Aufgabe 4
+
+```default
+
 **Aufgabe 4 (6+4 Punkte)**
 
 a) Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion
@@ -48,6 +67,12 @@ im Entwicklungspunkt $x=e$
 
 b) Schätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall $[e,2e]$ ab.
 
+```
+
+## Aufgabe 5
+
+```default
+
 **Aufgabe 5 (7+2 Punkte).**
 
 Gegeben sei die Funktion
@@ -57,6 +82,12 @@ $$h(x)=\frac{x^2+4x-3}{x^3-3x-2}. $$
 a) Berechnen Sie die Partialbruchzerlegung von $h(x)$.
 
 b) Bestimmen Sie eine Stammfunktion von $h(x)$.
+
+```
+## Aufgabe 6
+
+```default
+
 
 **Aufgabe 6 (4+6 Punkte).**
 
@@ -71,7 +102,13 @@ $$ I(y)=\int_0^yln(\sqrt{1-x^2})\frac{x}{\sqrt{1-x^2}}dx .$$
 *Hinweis: Für $x>0$ gilt: $xln(x)'=ln(x)$*
 
 ````
-## HM2
+
+
+
+# HM2
+
+## Aufgabe 1
+
 ```default
 
 HM2
@@ -102,6 +139,12 @@ $$
 
 Bestimmen Sie die Lösung des Gleichungssystems. Wie ist der Rang der Matrix ***A***?
 
+```
+
+## Aufgabe 2
+
+```default
+
 **Aufgabe 2 (7+3 Punkte)**
 
 Im dreidimensionalen Raum $R3$ seien eine Gerade in Koordinatendarstellung
@@ -117,6 +160,12 @@ b) Entscheiden Sie ob die Gerade $g$ und die Ebene $E$ sich in einem Punkt schne
 - Wenn ja, berechnen Sie die Koordinaten des Schnittpunkts.
 
 - Wenn nein, berechnen Sie denAbstand der Geraden von der Ebene.
+
+```
+
+## Aufgabe 3
+
+```default
 
 **Aufgabe 3 (8 + 3 Punkte)**
 
@@ -135,6 +184,12 @@ a) Berechnen Sie alle Eigenwerte und zugehörigen Eigenvektoren von $A$.
 
 b) Drücken Sie die lineare Abbildung $y=Ax$ in einer Basis $B$ aus, die durch die Eigenvektoren von $A$ gebildet wird.
 
+```
+
+## Aufgabe 4
+
+```default
+
 **Aufgabe 4 (4+4+3 Punkte)**
 Gegeben sei die Funktion $f(x,y)=(y^2-x)ln(x)$ mit $x>0$ und $y\in ℝ$.
 
@@ -143,6 +198,12 @@ a) Berechnen Sie alle stationären Punkte von $f$.
 b) Überprüfen Sie, bei welchen stationären Punkten es sich um lokale Extrema handelt und geben Sie gegebenenfalls an, ob es sich jeweils um ein lokales Minimum oder Maximum handelt.
 
 c) Bestimmen sie das Taylor-Polynom zweiten Grades von $f$ mit Entwicklungspunkt $(x_0, y_0)=(1,2)$.
+
+```
+
+## Aufgabe 5
+
+```default
 
 **Aufgabe 5 (7 + 3 Punkte)**
 
@@ -156,16 +217,21 @@ $2x^3+3x^2y=40$
 
 b) Berechnen Sie die Ableitung der Funktion $f$ entlang der implizit durch die Nebenbedingungen gegebenen Kurve $x \mapsto (x,(y(x))$.
 
+```
+
+## Aufgabe 6
+
+```default
 **Aufgabe 6 (10  Punkte)**
 
 Berechnen Sie das Integral der Funktion $f(x,y)=2y/x$ über das Kreissegment $B$, das von der Kreislinie mit der Gleichung $(x-2)^2+y^2=4$ und der Geraden mit der Gleichung $x+2y=4$ begrenzt wird (siehe Abbildung 1).
 
 
 ```
-## HM3
+# HM3
+
+## Aufgabe 1
 ```default
-
-
 HM3:
 
 **Aufgabe 1 (10 Punkte)**
@@ -183,7 +249,12 @@ $$2tx^3-2t+3t^2x^2x'=0,\quad x(1)=0$$
   (ii) Geben Sie eine Funktion $\Phi=\Phi(t,x)$ an, so dass $\Phi_t(t,x)+\Phi_x(t,x)\dot x=0$
 
   (iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für $t \rightarrow \infty$.
+```
 
+
+## Aufgabe 2
+
+```default
 **Aufgabe 2 (10 Punkte)**
 Gegeben ist das lineare System
 $$ \dot x=\begin{pmatrix} 3&-1\\5&-1 \end{pmatrix}x$$
@@ -195,6 +266,12 @@ $b=\begin{pmatrix}1\\0\end{pmatrix}$
 
 an.
 
+```
+
+
+## Aufgabe 3
+
+```default
 **Aufgabe 3 (10 Punkte)**
 Gegeben sei die partielle Differentialgleichung
 $$ 2u_t-u_{xx}=0$$
@@ -211,6 +288,12 @@ $$u(0,x)=sin(kx)\quad x\in[0,\pi]$$
 
 die die Randbedingungen $u(t,0)=u(t,\pi)=0, t>0$ erfüllt.
 
+```
+
+
+## Aufgabe 4
+
+```default
 **Aufgabe 4 (10 Punkte)**
 
 Gegeben seine das parameterabhängige Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ und der Weg $\gamma: [0,1]\rightarrow ℝ$.
@@ -222,6 +305,13 @@ a) Bestimen Sie alle $\alpha\in ℝ$, so dass $F$ ein Potential besitzt. 4P
 b) Geben Sie für $\alpha=1$ ein  Potential an. 4P
 
 c) Berechnen Sie für $\alpha=1$ das Kurvenintegral 2. Art des Vektorfelds $F$ entlang $\gamma$. 2P
+
+```
+
+
+## Aufgabe 5
+
+```default
 
 **Aufgabe 5 (10 Punkte)**
 
@@ -237,6 +327,11 @@ b) Bestimmen Sie Tangentialvektoren und Normenvektor an die Fläche $A$. 3P
 
 c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. 3P
 
+```
+
+## Aufgabe 6
+
+```default
 **Aufgabe 6 (10 Punkte)**
 
 Es sei das Kugelsegment $K$ durch
@@ -258,7 +353,13 @@ c) Berechnen Sie  $\int_{\partial K}rot(F)\cdot dn$.
 d) Berechnen Sie mit Hilfe des Satzes von Stokes das Integral $\int_{\partial K \text{\B}}rot F\cdot dn$, wobei $B$ der Boden des Kugelsegments in der ($x$-$y$)-Ebene ist.
 
 ```
-## HM4
+
+
+
+
+# HM4
+
+## Aufgabe 1
 
 ```default
 HM4
@@ -268,6 +369,13 @@ Gegeben ist die Matrix $$A=\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}$$
 a) Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragsgrößten Eigenwertes von $A$ mit dem Startvektor $x_0=(1,1)^T$ durch.
 
 b) Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragskleinsten Eigenwertes von $A$ mit dem Startvektor $x_0=(1,-1)^T$ durch.
+
+```
+
+
+## Aufgabe 2
+
+```default
 
 **Aufgabe 2 (10 Punkte)**
 
@@ -290,6 +398,13 @@ c) Approximieren Sie den Wert der Nullstelle von $p(x)$ im Intervall $[1,2]$ mit
 
 d) Approximeren Sie das Integral $\int_{-1}^1 p(x) dx$ mit der Simpson-Regel, wobei $p(x)$ das Polynom aus Aufgabenteil b) ist.
 
+```
+
+
+## Aufgabe 3
+
+```default
+
 **Aufgabe 3 (10 Punkte)**
 
 Gegeben seien die Messwerte
@@ -311,21 +426,20 @@ $A=\begin{pmatrix} 5 & 0 & 10 \\ 0 & 10 & 0 \\ 10 & 0 & 34 \end{pmatrix}$,
 $b=\begin{pmatrix} 0  \\ 1  \\ 3 \end{pmatrix}$
 
 mit Hilfe der Cholesky-Zerlegung.
+```
 
 
 
+## Aufgabe 4
+
+```default
 **Aufgabe 4 (10 Punkte)**
 
-Gegebn sind die folgenden drei Wertepaare $t_1,y_1)=(-1,2)$, $t_2,y_2)=(0,1)$, $t_3,y_3)=(1,0)$ und die Funktion $y=f(x_1, x_2, t)=(t+x_2)^2x_1$.
+Gegeben sind die folgenden drei Wertepaare $t_1,y_1)=(-1,2)$, $t_2,y_2)=(0,1)$, $t_3,y_3)=(1,0)$ und die Funktion $y=f(x_1, x_2, t)=(t+x_2)^2x_1$.
 
 a) Formulieren Sie ein nichtlineares Ausgleichsproblem, so dass die Funktion $f$ die Werte $y_i$ and den Stellen $t_i$ möglichst gut approximiert.
 
 b) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausgleichsproblem von a) mit dem Startwert $x_1,x_2=(1,1)^T. Liefert der berechnete Wert eine Verbesserung für das Ausgleichsproblem im Vergleich zum Startwert?
-
-
-
-
-
 
 ```
 
