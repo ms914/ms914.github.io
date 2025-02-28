@@ -8,7 +8,7 @@ editor: visual
 
 ## Aufgabe 1
 
-```
+```default
 # Aufgabe 1
 import sympy as sp
 
@@ -59,7 +59,7 @@ Phi.simplify()
 
 ## Aufgabe 2
 
-```
+```default
 # Aufgabe 2
 # System von ODE
 import sympy as sp
