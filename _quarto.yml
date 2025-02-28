@@ -16,6 +16,7 @@ website:
       - href: karteikarten.qmd
         text: Karteikarten
       - about.qmd
+      - hm3_codecopy.qmd
       
 
 format:
