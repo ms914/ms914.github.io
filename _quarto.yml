@@ -15,8 +15,9 @@ website:
         text: Lösungen HM1 - HM4
       - href: karteikarten.qmd
         text: Karteikarten
+      - href: hm3_codecopy.qmd
+        text: Code
       - about.qmd
-      - hm3_codecopy.qmd
       
 
 format:
