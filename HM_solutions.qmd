@@ -8,9 +8,9 @@ editor: visual
 
 ### **Aufgabe 1 (7 Punkte)**
 
-Die Reihe hat die Form $$ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{n 3^n} $$ und ist eine Potenzreihe mit Konvergenzradius $$ R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = 3. $$ Damit konvergiert die Reihe für $$ |x - 1| < 3, \quad \Rightarrow \quad -2 < x < 4. $$ Randpunkte prüfen: - Für $x = -2$ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für $x = 4$ divergiert sie ebenfalls aus dem gleichen Grund.
+Die Reihe hat die Form $$ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{n 3^n} $$ und ist eine Potenzreihe mit Konvergenzradius $$ R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = 3. $$ Damit konvergiert die Reihe für $$ |x - 1| < 3, \quad \Rightarrow \quad -2 < x < 4. $$ Randpunkte prüfen: - Für $ x = -2 $ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für $x = 4 $ divergiert sie ebenfalls aus dem gleichen Grund.
 
-**Lösung:** Die Reihe konvergiert für $x \in (-2,4)$.
+**Lösung:** Die Reihe konvergiert für $x \in (-2,4) $.
 
 ------------------------------------------------------------------------
 
@@ -20,11 +20,11 @@ Die Reihe hat die Form $$ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{
 
 **Nullstellen:** Keine, da der Zähler immer positiv ist.
 
-**Ableitungen:** $$ f'(x) = \frac{- (2x^2 - 6x)}{x^4 - 3x^3}, $$ setzen von $ f'(x) = 0 $ liefert $x = 0, 3$ (nicht im Definitionsbereich) und $x = 3/2$. $f''(x)$ bestätigt ein lokales Minimum bei $x = 3/2$.
+**Ableitungen:** $$ f'(x) = \frac{- (2x^2 - 6x)}{x^4 - 3x^3}, $$ setzen von $ f'(x) = 0 $ liefert $ x = 0, 3 $ (nicht im Definitionsbereich) und $ x = 3/2 $. $ f''(x) $ bestätigt ein lokales Minimum bei $ x = 3/2 $.
 
-**Asymptoten:** - Polstellen: $x = 0, 3$ (senkrechte Asymptoten) - Für $x \to \pm \infty$ geht $f(x) \to 0$ (waagrechte Asymptote).
+**Asymptoten:** - Polstellen: $ x = 0, 3 $ (senkrechte Asymptoten) - Für $ x \to \pm \infty $ geht $ f(x) \to 0 $ (waagrechte Asymptote).
 
-**Skizze:** Die Funktion hat eine Minimumstelle bei $x = 3/2$ und zwei Polstellen.
+**Skizze:** Die Funktion hat eine Minimumstelle bei $ x = 3/2 $ und zwei Polstellen.
 
 ------------------------------------------------------------------------
 
@@ -32,13 +32,13 @@ Die Reihe hat die Form $$ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{
 
 **a)** Umwandlung in Polarform: $$ \sqrt{2} + i \sqrt{2} = 2 e^{i \pi/4}. $$ Damit: $$ (2 e^{i \pi/4})^3 = 8 e^{i 3\pi/4}, $$ $$ (2 e^{i \pi/3})^6 = 64 e^{i 2\pi}. $$ Ergebnis: $$ \frac{8 e^{i 3\pi/4}}{64 e^{i 2\pi}} = \frac{1}{8} e^{-i 5\pi/4}. $$
 
-**b)** Faktorisieren: $$ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0. $$ Setzen $w = z\^2$ und lösen: $$ w(w^2 - (\sqrt2 + \sqrt2 i)) = 0. $$ Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.
+**b)** Faktorisieren: $$ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0. $$ Setzen $ w = z\^2 $ und lösen: $$ w(w^2 - (\sqrt2 + \sqrt2 i)) = 0. $$ Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.
 
 ------------------------------------------------------------------------
 
 ### **Aufgabe 4 (6+4 Punkte)**
 
-**a)** Taylorentwicklung von $g(x) = x^2 \ln x $ um $x = e$: $$ g(e) = e^2, \quad g'(e) = 2e \ln e + e = 3e, $$ $$ g''(e) = \frac{2e}{e} + 2 \ln e + 1 = 5, $$ $$ g'''(e) = \frac{2}{e} + \frac{2}{e} = 4/e. $$ Taylorpolynom: $$ g(x) \approx e^2 + 3e (x - e) + \frac{5}{2} (x - e)^2 + \frac{2}{3e} (x - e)^3. $$
+**a)** Taylorentwicklung von $g(x) = x\^2 \ln x $ um $x = e$: $$ g(e) = e^2, \quad g'(e) = 2e \ln e + e = 3e, $$ $$ g''(e) = \frac{2e}{e} + 2 \ln e + 1 = 5, $$ $$ g'''(e) = \frac{2}{e} + \frac{2}{e} = 4/e. $$ Taylorpolynom: $$ g(x) \approx e^2 + 3e (x - e) + \frac{5}{2} (x - e)^2 + \frac{2}{3e} (x - e)^3. $$
 
 **b)** Abschätzung des Fehlers mit der Restgliedformel.
 
@@ -54,20 +54,17 @@ Die Reihe hat die Form $$ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{
 
 ### **Aufgabe 6 (4+6 Punkte)**
 
-**a)** Grenzwert: $$ \lim_{y \to 1} \sqrt{1 - y^2} \ln (\sqrt{1 - y^2}). $$ Setze $ t = \sqrt{1 - y^2} $, dann ist $t \to 0$ und damit: $$ t \ln t \to 0. $$
+**a)** Grenzwert: $$ \lim_{y \to 1} \sqrt{1 - y^2} \ln (\sqrt{1 - y^2}). $$ Setze \$ t = \sqrt{1 - y^2} \$, dann ist \$ t \to 0 \$ und damit: $$ t \ln t \to 0. $$
 
-**b)** Integral: $$ I(y) = \int_0^y \ln(\sqrt{1 - x^2}) \frac{x}{\sqrt{1 - x^2}}dx. $$ Substitution $u = 1 - x\^2$ führt zu Lösung.
+**b)** Integral: $$ I(y) = \int_0^y \ln(\sqrt{1 - x^2}) \frac{x}{\sqrt{1 - x^2}}dx. $$ Substitution \$ u = 1 - x\^2 \$ führt zu Lösung.
 
 ------------------------------------------------------------------------
-
-
 
 ## Kurzlösung zur Klausur HM 2
 
 ### **Aufgabe 1 (8 Punkte)**
 
-Gegeben: 
-$$
+Gegeben: $$
 A=\begin{pmatrix}
 1&1&3&1\\
 2&-1&0&1\\
@@ -79,113 +76,89 @@ $$
 
 **Lösungsschritte:**
 
-1. **Gauß-Elimination:**  
-   – Schreiben Sie das erweiterte System und eliminieren Sie $x_1$ mithilfe von Zeilenoperationen.  
-   – Durch Einsetzen von $x_1$ aus der ersten Zeile in die anderen erhält man ein System in den Variablen $x_2$, $x_3$ und $x_4$.
+1.  **Gauß-Elimination:**\
+    – Schreiben Sie das erweiterte System und eliminieren Sie $x_1$ mithilfe von Zeilenoperationen.\
+    – Durch Einsetzen von $x_1$ aus der ersten Zeile in die anderen erhält man ein System in den Variablen $x_2$, $x_3$ und $x_4$.
 
-2. **Reduziertes System (nach Substitution):**  
-   Es stellt sich folgendes Teilsystem heraus:
-   $$
-   \begin{aligned}
-   &3x_2+6x_3+x_4=13,\\
-   &5x_2+10x_3+x_4=19,\\
-   &x_2+2x_3+x_4=7.
-   \end{aligned}
-   $$
-   Aus der Differenz der ersten beiden Gleichungen folgt:
-   $$
-   2x_2+4x_3=6\quad\Rightarrow\quad x_2+2x_3=3.
-   $$
-   Mit der dritten Gleichung: 
-   $$
-   x_2+2x_3+x_4=7\quad\Rightarrow\quad x_4=4.
-   $$
-   Setzen Sie $x_3=t$ als freien Parameter ein, dann folgt:
-   $$
-   x_2=3-2t.
-   $$
+2.  **Reduziertes System (nach Substitution):**\
+    Es stellt sich folgendes Teilsystem heraus: $$
+    \begin{aligned}
+    &3x_2+6x_3+x_4=13,\\
+    &5x_2+10x_3+x_4=19,\\
+    &x_2+2x_3+x_4=7.
+    \end{aligned}
+    $$ Aus der Differenz der ersten beiden Gleichungen folgt: $$
+    2x_2+4x_3=6\quad\Rightarrow\quad x_2+2x_3=3.
+    $$ Mit der dritten Gleichung: $$
+    x_2+2x_3+x_4=7\quad\Rightarrow\quad x_4=4.
+    $$ Setzen Sie $x_3=t$ als freien Parameter ein, dann folgt: $$
+    x_2=3-2t.
+    $$
 
-3. **Rücksubstitution:**  
-   Aus der ersten Zeile:
-   $$
-   x_1=6 - x_2-3x_3-x_4 = 6 - (3-2t) - 3t - 4 = -1 - t.
-   $$
+3.  **Rücksubstitution:**\
+    Aus der ersten Zeile: $$
+    x_1=6 - x_2-3x_3-x_4 = 6 - (3-2t) - 3t - 4 = -1 - t.
+    $$
 
-**Ergebnis:**  
+**Ergebnis:**\
 $$
 x(t)=\begin{pmatrix} -1-t\\ 3-2t\\ t\\ 4\end{pmatrix},\quad t\in\mathbb{R}.
-$$
-Da ein freier Parameter verbleibt, ist der Rang von $A$  
+$$ Da ein freier Parameter verbleibt, ist der Rang von $A$\
 $$
 \operatorname{rg}(A)=3.
 $$
 
----
+------------------------------------------------------------------------
 
 ### **Aufgabe 2 (7+3 Punkte)**
 
-**a) Parameterdarstellung der Geraden $g$:**
+**a) Parameterdarstellung der Geraden** $g$:
 
-Die Koordinatendarstellung
-$$
+Die Koordinatendarstellung $$
 \frac{4-x_1}{2}=\frac{4+x_2}{3}=\frac{2-x_3}{2}=t
-$$
-liefert:
-$$
+$$ liefert: $$
 \begin{aligned}
 x_1&=4-2t,\\
 x_2&=3t-4,\\
 x_3&=2-2t.
 \end{aligned}
-$$
-Also:  
+$$ Also:\
 $$
 g(t)=(4-2t,\;3t-4,\;2-2t)^T.
 $$
 
-**Parameterdarstellung der Ebene $E$:**
+**Parameterdarstellung der Ebene** $E$:
 
-Gegeben durch die Punkte 
-$$
+Gegeben durch die Punkte $$
 P=(3,1,2),\quad Q=(-1,3,2),\quad R=(5,-2,4).
-$$
-Berechnen Sie zwei Richtungsvektoren:
-$$
+$$ Berechnen Sie zwei Richtungsvektoren: $$
 \begin{aligned}
 \vec{PQ}&=Q-P=(-4,2,0),\\
 \vec{PR}&=R-P=(2,-3,2).
 \end{aligned}
-$$
-Der Normalenvektor ist das Kreuzprodukt:
-$$
+$$ Der Normalenvektor ist das Kreuzprodukt: $$
 n=\vec{PQ}\times\vec{PR}=\begin{pmatrix}4\\8\\8\end{pmatrix}\quad\Rightarrow\quad n=(1,2,2)
-$$
-(bei Bedarf normiert).  
-Die Ebenengleichung in Hesse-Normalform lautet dann:
-$$
+$$ (bei Bedarf normiert).\
+Die Ebenengleichung in Hesse-Normalform lautet dann: $$
 1\,(x-3)+2\,(y-1)+2\,(z-2)=0\quad\Rightarrow\quad x+2y+2z-9=0.
 $$
 
 **b) Schnitt bzw. Abstand:**
 
-Setzen Sie $g(t)=(4-2t,3t-4,2-2t)$ in die Ebenengleichung ein:
-$$
+Setzen Sie $g(t)=(4-2t,3t-4,2-2t)$ in die Ebenengleichung ein: $$
 (4-2t)+2(3t-4)+2(2-2t)-9=4-2t+6t-8+4-4t-9=-9.
-$$
-Da $-9\neq0$ – unabhängig von $t$ – liegt die Gerade **nicht** in der Ebene (keinen Schnittpunkt).
+$$ Da $-9\neq0$ – unabhängig von $t$ – liegt die Gerade **nicht** in der Ebene (keinen Schnittpunkt).
 
-**Abstand:**  
-Der Abstand $d$ eines beliebigen Punktes $P_g$ der Geraden von der Ebene ist:
-$$
+**Abstand:**\
+Der Abstand $d$ eines beliebigen Punktes $P_g$ der Geraden von der Ebene ist: $$
 d=\frac{|(4-2t)+2(3t-4)+2(2-2t)-9|}{\sqrt{1^2+2^2+2^2}}=\frac{9}{3}=3.
 $$
 
----
+------------------------------------------------------------------------
 
 ### **Aufgabe 3 (8+3 Punkte)**
 
-Gegeben:
-$$
+Gegeben: $$
 A=\begin{pmatrix}
 1&-2&3\\
 1&0&1\\
@@ -195,40 +168,33 @@ $$
 
 **a) Eigenwerte:**
 
-Berechnen Sie die Determinante von $A-\lambda I$:
-$$
+Berechnen Sie die Determinante von $A-\lambda I$: $$
 \det\Bigl(A-\lambda I\Bigr)=\lambda^3+\lambda^2-4\lambda-4=0.
-$$
-Offensichtlich ist $\lambda=2$ eine Nullstelle. Faktorisieren:
-$$
+$$ Offensichtlich ist $\lambda=2$ eine Nullstelle. Faktorisieren: $$
 \lambda^3+\lambda^2-4\lambda-4=(\lambda-2)(\lambda+1)(\lambda+2)=0.
-$$
-**Eigenwerte:**  
+$$ **Eigenwerte:**\
 $\lambda_1=2,\quad \lambda_2=-1,\quad \lambda_3=-2.$
 
 **Eigenvektoren:**
 
-- Für $\lambda=2$: Lösen $(A-2I)v=0$ führt zu  
-  $$
-  v=(1,\,1,\,1)^T.
-  $$
-- Für $\lambda=-1$: Lösen $(A+I)v=0$ ergibt  
-  $$
-  v=(-5,\,1,\,4)^T.
-  $$
-- Für $\lambda=-2$: Lösen $(A+2I)v=0$ liefert  
-  $$
-  v=(-1,\,0,\,1)^T.
-  $$
+-   Für $\lambda=2$: Lösen $(A-2I)v=0$ führt zu\
+    $$
+    v=(1,\,1,\,1)^T.
+    $$
+-   Für $\lambda=-1$: Lösen $(A+I)v=0$ ergibt\
+    $$
+    v=(-5,\,1,\,4)^T.
+    $$
+-   Für $\lambda=-2$: Lösen $(A+2I)v=0$ liefert\
+    $$
+    v=(-1,\,0,\,1)^T.
+    $$
 
 **b) Darstellung in der Eigenbasis:**
 
-Sei $B=\{(1,1,1),\,(-5,1,4),\,(-1,0,1)\}$. Dann ist die Darstellung der linearen Abbildung
-$$
+Sei $B=\{(1,1,1),\,(-5,1,4),\,(-1,0,1)\}$. Dann ist die Darstellung der linearen Abbildung $$
 y=Ax
-$$
-in Basis $B$ diagonal:
-$$
+$$ in Basis $B$ diagonal: $$
 A_B=\begin{pmatrix}
 2&0&0\\
 0&-1&0\\
@@ -236,188 +202,234 @@ A_B=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
----
+------------------------------------------------------------------------
 
 ### **Aufgabe 4 (4+4+3 Punkte)**
 
 **a) Stationäre Punkte:**
 
-Berechnen Sie die partiellen Ableitungen:
-$$
+Berechnen Sie die partiellen Ableitungen: $$
 \begin{aligned}
 f_x(x,y)&=-\ln x+\frac{y^2-x}{x},\\
 f_y(x,y)&=2y\,\ln x.
 \end{aligned}
-$$
-Setzen $f_y=0$:
-- Fall 1: $\ln x=0$ $\Rightarrow x=1$. Dann $f_x(1,y)=\,(y^2-1)=0$ $\Rightarrow y=\pm 1.$
-- Fall 2: $y=0$. Dann $f_x(x,0)=-\ln x-1=0$ $\Rightarrow \ln x=-1$ $\Rightarrow x=e^{-1}.$
+$$ Setzen $f_y=0$: - Fall 1: $\ln x=0$ $\Rightarrow x=1$. Dann $f_x(1,y)=\,(y^2-1)=0$ $\Rightarrow y=\pm 1.$ - Fall 2: $y=0$. Dann $f_x(x,0)=-\ln x-1=0$ $\Rightarrow \ln x=-1$ $\Rightarrow x=e^{-1}.$
 
-**Stationäre Punkte:**  
+**Stationäre Punkte:**\
 $(1,1),\;(1,-1),\;(e^{-1},0).$
 
 **b) Klassifizierung:**
 
-- Bei $(1,1)$ und $(1,-1)$:  
-  Berechnen der Hesse-Matrix führt zu einem negativen Determinantenwert ($D<0$) – **Sattelpunkt**.
+-   Bei $(1,1)$ und $(1,-1)$:\
+    Berechnen der Hesse-Matrix führt zu einem negativen Determinantenwert ($D<0$) – **Sattelpunkt**.
 
-- Bei $(e^{-1},0)$:  
-  Mit $f_{xx}(e^{-1},0)=-e$ und $f_{yy}(e^{-1},0)=-2$ ergibt sich  
-  $$
-  D=(-e)(-2)=2e>0,\quad f_{xx}<0,
-  $$
-  also **lokales Maximum**.
+-   Bei $(e^{-1},0)$:\
+    Mit $f_{xx}(e^{-1},0)=-e$ und $f_{yy}(e^{-1},0)=-2$ ergibt sich\
+    $$
+    D=(-e)(-2)=2e>0,\quad f_{xx}<0,
+    $$ also **lokales Maximum**.
 
-**c) Taylor-Polynom 2. Ordnung in $(1,2)$:**
+**c) Taylor-Polynom 2. Ordnung in** $(1,2)$:
 
-Berechnen Sie:
-$$
+Berechnen Sie: $$
 \begin{aligned}
 f(1,2)&=(4-1)\ln1=0,\\
 f_x(1,2)&=-\ln1+\frac{4-1}{1}=3,\\
 f_y(1,2)&=2\cdot2\,\ln1=0.
 \end{aligned}
-$$
-Zusatzableitungen:
-$$
+$$ Zusatzableitungen: $$
 \begin{aligned}
 f_{xx}(x,y)&=-\frac{1}{x}-\frac{y^2}{x^2}\quad\Rightarrow\quad f_{xx}(1,2)=-1-4=-5,\\
 f_{xy}(x,y)&=\frac{2y}{x}\quad\Rightarrow\quad f_{xy}(1,2)=4,\\
 f_{yy}(x,y)&=2\ln x\quad\Rightarrow\quad f_{yy}(1,2)=0.
 \end{aligned}
-$$
-**Taylorpolynom:**
-$$
+$$ **Taylorpolynom:** $$
 T_2(x,y)=3(x-1)+\frac{1}{2}\Bigl[-5(x-1)^2+8(x-1)(y-2)\Bigr].
 $$
 
----
+------------------------------------------------------------------------
 
 ### **Aufgabe 5 (7+3 Punkte)**
 
-Gegeben:  
-$f(x,y)=(3x+2y)x=3x^2+2xy$ und Nebenbedingung  
+Gegeben:\
+$f(x,y)=(3x+2y)x=3x^2+2xy$ und Nebenbedingung\
 $$
 g(x,y)=2x^3+3x^2y-40=0.
 $$
 
-**a) Lagrange-Funktion:**
-$$
+**a) Lagrange-Funktion:** $$
 \mathcal{L}(x,y, \lambda)=3x^2+2xy+\lambda\Bigl(2x^3+3x^2y-40\Bigr).
-$$
-Ableitungen:
-$$
+$$ Ableitungen: $$
 \begin{aligned}
 \mathcal{L}_x&=6x+2y+\lambda\,(6x^2+6xy)=0,\\
 \mathcal{L}_y&=2x+3\lambda x^2=0,\\
 \mathcal{L}_\lambda&=2x^3+3x^2y-40=0.
 \end{aligned}
-$$
-Aus $\mathcal{L}_y=0$ (bei $x\neq0$): 
-$$
+$$ Aus $\mathcal{L}_y=0$ (bei $x\neq0$): $$
 2x+3\lambda x^2=0\quad\Rightarrow\quad \lambda=-\frac{2}{3x}.
-$$
-Einsetzen in $\mathcal{L}_x=0$ liefert:
-$$
+$$ Einsetzen in $\mathcal{L}_x=0$ liefert: $$
 6x+2y-\frac{2}{3x}(6x^2+6xy)=6x+2y-4x-4y=2x-2y=0,
-$$
-also $y=x$.  
-In die Nebenbedingung einsetzen:
-$$
+$$ also $y=x$.\
+In die Nebenbedingung einsetzen: $$
 2x^3+3x^3=5x^3=40\quad\Rightarrow\quad x^3=8\quad\Rightarrow\quad x=2,
-$$
-und damit $y=2$.
+$$ und damit $y=2$.
 
-**Kandidat:**  
+**Kandidat:**\
 $(2,2)$.
 
 **b) Ableitung entlang der durch die Nebenbedingung implizit gegebenen Kurve:**
 
-Gesucht ist
-$$
+Gesucht ist $$
 \frac{d}{dx}f(x,y(x))=f_x(x,y)+f_y(x,y)\,y'(x),
-$$
-wobei $y'(x)$ über die totale Differentiation der Nebenbedingung $g(x,y)=0$ mit
-$$
+$$ wobei $y'(x)$ über die totale Differentiation der Nebenbedingung $g(x,y)=0$ mit $$
 y'(x)=-\frac{g_x}{g_y},\quad g_x=6x^2+6xy,\quad g_y=3x^2.
-$$
-Einsetzen liefert
-$$
+$$ Einsetzen liefert $$
 \frac{d}{dx}f(x,y(x))=2x-2y,
-$$
-insbesondere bei $(2,2)$ gilt:  
+$$ insbesondere bei $(2,2)$ gilt:\
 $\frac{d}{dx}f(2,2)=0$.
 
----
+------------------------------------------------------------------------
 
 ### **Aufgabe 6 (10 Punkte)**
 
-Gegeben:  
-$f(x,y)=\frac{2y}{x}$, und das Kreissegment $B$ wird begrenzt durch  
-- die Kreislinie: $(x-2)^2+y^2=4$  
+Gegeben:\
+$f(x,y)=\frac{2y}{x}$, und das Kreissegment $B$ wird begrenzt durch\
+- die Kreislinie: $(x-2)^2+y^2=4$\
 - die Gerade: $x+2y=4$.
 
 **Lösungsschritte:**
 
-1. **Polarkoordinaten:**  
-   Verschieben Sie das Koordinatensystem zum Kreiszentrum $(2,0)$:
-   $$
-   x=2+r\cos\theta,\quad y=r\sin\theta,\quad r\le2.
-   $$
+1.  **Polarkoordinaten:**\
+    Verschieben Sie das Koordinatensystem zum Kreiszentrum $(2,0)$: $$
+    x=2+r\cos\theta,\quad y=r\sin\theta,\quad r\le2.
+    $$
 
-2. **Transformation der Geradengleichung:**  
-   Einsetzen:  
-   $$
-   (2+r\cos\theta)+2r\sin\theta=4\quad\Rightarrow\quad r\bigl(\cos\theta+2\sin\theta\bigr)=2.
-   $$
-   Dies bestimmt den radialen Grenzwert $r_{\max}(\theta)=\dfrac{2}{\cos\theta+2\sin\theta}$ für Winkel $\theta$ in einem bestimmten Intervall $[\theta_1,\theta_2]$.
+2.  **Transformation der Geradengleichung:**\
+    Einsetzen:\
+    $$
+    (2+r\cos\theta)+2r\sin\theta=4\quad\Rightarrow\quad r\bigl(\cos\theta+2\sin\theta\bigr)=2.
+    $$ Dies bestimmt den radialen Grenzwert $r_{\max}(\theta)=\dfrac{2}{\cos\theta+2\sin\theta}$ für Winkel $\theta$ in einem bestimmten Intervall $[\theta_1,\theta_2]$.
 
-3. **Integralaufbau:**  
-   Mit $f(x,y)=\frac{2r\sin\theta}{2+r\cos\theta}$ und dem Jakobiand $r$ ergibt sich:
-   $$
-   I=\int_{\theta_1}^{\theta_2}\int_{0}^{r_{\max}(\theta)} \frac{2r\sin\theta}{2+r\cos\theta}\,r\,dr\,d\theta.
-   $$
+3.  **Integralaufbau:**\
+    Mit $f(x,y)=\frac{2r\sin\theta}{2+r\cos\theta}$ und dem Jakobiand $r$ ergibt sich: $$
+    I=\int_{\theta_1}^{\theta_2}\int_{0}^{r_{\max}(\theta)} \frac{2r\sin\theta}{2+r\cos\theta}\,r\,dr\,d\theta.
+    $$
 
-4. **Berechnung:**  
-   Nach Durchführung der $r$- und $\theta$-Integration (unter Beachtung der durch den Schnitt der Kreislinie und der Geraden bestimmten Grenzen) erhält man:
-   $$
-   I=\frac{8}{3}\Biggl[2\arctan\Bigl(\frac{3}{4}\Bigr)-\ln\Bigl(\frac{25}{9}\Bigr)\Biggr].
-   $$
+4.  **Berechnung:**\
+    Nach Durchführung der $r$- und $\theta$-Integration (unter Beachtung der durch den Schnitt der Kreislinie und der Geraden bestimmten Grenzen) erhält man: $$
+    I=\frac{8}{3}\Biggl[2\arctan\Bigl(\frac{3}{4}\Bigr)-\ln\Bigl(\frac{25}{9}\Bigr)\Biggr].
+    $$
 
----
+------------------------------------------------------------------------
 
 ### **Endergebnis Kurzfassung:**
 
-- **Aufgabe 1:**  
-  $\displaystyle x=(-1-t,\;3-2t,\;t,\;4)^T,\; t\in\mathbb{R}$ und $\operatorname{rg}(A)=3.$
+-   **Aufgabe 1:**\
+    $\displaystyle x=(-1-t,\;3-2t,\;t,\;4)^T,\; t\in\mathbb{R}$ und $\operatorname{rg}(A)=3.$
 
-- **Aufgabe 2:**  
-  Geradendarstellung: $g(t)=(4-2t,\;3t-4,\;2-2t)^T.$  
-  Ebenengleichung (Hesse-Normalform): $x+2y+2z-9=0.$  
-  **Schnitt:** Nein; **Abstand:** $3.$
+-   **Aufgabe 2:**\
+    Geradendarstellung: $g(t)=(4-2t,\;3t-4,\;2-2t)^T.$\
+    Ebenengleichung (Hesse-Normalform): $x+2y+2z-9=0.$\
+    **Schnitt:** Nein; **Abstand:** $3.$
 
-- **Aufgabe 3:**  
-  Eigenwerte: $2,\;-1,\;-2.$  
-  Eigenvektoren: $(1,1,1)^T,\;(-5,1,4)^T,\;(-1,0,1)^T.$  
-  Darstellung in Eigenbasis: $A_B=\operatorname{diag}(2,-1,-2).$
+-   **Aufgabe 3:**\
+    Eigenwerte: $2,\;-1,\;-2.$\
+    Eigenvektoren: $(1,1,1)^T,\;(-5,1,4)^T,\;(-1,0,1)^T.$\
+    Darstellung in Eigenbasis: $A_B=\operatorname{diag}(2,-1,-2).$
 
-- **Aufgabe 4:**  
-  Stationäre Punkte: $(1,1)$ und $(1,-1)$ (Sattelpunkte), $(e^{-1},0)$ (lokales Maximum).  
-  Taylorpolynom 2. Ordnung in $(1,2)$:
-  $$
-  T_2(x,y)=3(x-1)+\frac{-5(x-1)^2+8(x-1)(y-2)}{2}.
-  $$
+-   **Aufgabe 4:**\
+    Stationäre Punkte: $(1,1)$ und $(1,-1)$ (Sattelpunkte), $(e^{-1},0)$ (lokales Maximum).\
+    Taylorpolynom 2. Ordnung in $(1,2)$: $$
+    T_2(x,y)=3(x-1)+\frac{-5(x-1)^2+8(x-1)(y-2)}{2}.
+    $$
 
-- **Aufgabe 5:**  
-  Mit Lagrange-Multiplikatoren: Kandidat $(2,2)$;  
-  Ableitung entlang der Nebenbedingung: $\frac{d}{dx}f(x,y(x))=2(x-y)$ (bei $(2,2)$ $=0$).
+-   **Aufgabe 5:**\
+    Mit Lagrange-Multiplikatoren: Kandidat $(2,2)$;\
+    Ableitung entlang der Nebenbedingung: $\frac{d}{dx}f(x,y(x))=2(x-y)$ (bei $(2,2)$ $=0$).
 
-- **Aufgabe 6:**  
-  Nach Umrechnung in Polarkoordinaten und Integration:
-  $$
-  I=\frac{8}{3}\Biggl[2\arctan\Bigl(\frac{3}{4}\Bigr)-\ln\Bigl(\frac{25}{9}\Bigr)\Biggr].
-  $$
+-   **Aufgabe 6:**\
+    Nach Umrechnung in Polarkoordinaten und Integration: $$
+    I=\frac{8}{3}\Biggl[2\arctan\Bigl(\frac{3}{4}\Bigr)-\ln\Bigl(\frac{25}{9}\Bigr)\Biggr].
+    $$
+
+------------------------------------------------------------------------
+
+
+# Kurzlösung zur Klausur HM4
+
+
+## **Aufgabe 1: Vektoriterationsalgorithmus**
+
+**a) Approximation des betragsgrößten Eigenwertes**
+Gegeben:
+$$ A = \begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}, \quad x_0 = \begin{pmatrix} 1 \\ 1 \end{pmatrix} $$
+
+1. Iteration:
+$$ x_1 = A x_0 = \begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 3 \\ 0 \end{pmatrix} $$
+$$ \lambda_1 \approx \frac{\|x_1\|_\infty}{\|x_0\|_\infty} = \frac{3}{1} = 3 $$
+
+2. Iteration:
+$$ x_2 = A x_1 = \begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 3 \\ 0 \end{pmatrix} = \begin{pmatrix} 6 \\ 3 \end{pmatrix} $$
+$$ \lambda_2 \approx \frac{\|x_2\|_\infty}{\|x_1\|_\infty} = \frac{6}{3} = 2 $$
+
+**b) Approximation des betragskleinsten Eigenwertes mit inverser Iteration**
+Gegeben:
+$$ x_0 = \begin{pmatrix} 1 \\ -1 \end{pmatrix} $$
+
+1. Iteration:
+$$ y_1 = A^{-1} x_0 \approx \begin{pmatrix} 1/3 & 1/3 \\ 1/3 & -2/3 \end{pmatrix} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \begin{pmatrix} 0 \end{pmatrix} $$
+$$ \lambda_1 \approx \frac{1}{\|y_1\|_\infty} \approx -1 $$
+
+2. Iteration analog.
 
 ---
 
-Diese Kurzlösung fasst die wesentlichen Zwischenschritte und das Endergebnis für alle Aufgaben zusammen. Falls noch Details benötigt werden, stehe ich gern zur Verfügung!
+## **Aufgabe 2: Interpolation**
+
+**a) Newton-Interpolationspolynom**
+Berechnung der dividierten Differenzen:
+$$ f[x_0] = 5, f[x_1] = 1, f[x_2] = 1, f[x_3] = -1 $$
+$$ f[x_0,x_1] = \frac{1-5}{0-(-1)} = -4 $$
+$$ f[x_1,x_2] = \frac{1-1}{1-0} = 0 $$
+$$ f[x_2,x_3] = \frac{-1-1}{2-1} = -2 $$
+$$ f[x_0,x_1,x_2] = \frac{0-(-4)}{1-(-1)} = 2 $$
+$$ f[x_1,x_2,x_3] = \frac{-2-0}{2-0} = -1 $$
+$$ f[x_0,x_1,x_2,x_3] = \frac{-1-2}{2-(-1)} = -1 $$
+
+Newton-Polynom:
+$$ p(x) = 5 -4(x+1) + 2(x+1)x -1(x+1)x(x-1) $$
+
+**b) Monomdarstellung durch Umformung.**
+
+**c) Bisektionsverfahren zur Nullstellenapproximation:**
+$$ x_1=1, x_2=2 $$
+$$ p(1), p(1.5), p(2) $$ berechnen, bis hinreichende Genauigkeit erreicht.
+
+**d) Simpson-Regel:**
+$$ \int_{-1}^{1} p(x) dx \approx \frac{1-(-1)}{6} (f(-1) + 4f(0) + f(1)) $$
+
+---
+
+## **Aufgabe 3: Lineare Regression**
+
+**a) Normalengleichungen**
+Aufstellen der Summen für die Koeffizienten der Normalengleichung.
+
+**b) Cholesky-Zerlegung**
+1. Zerlege $ A = LL^T $ mit
+$$ L = \begin{pmatrix} a & 0 & 0 \\ b & c & 0 \\ d & e & f \end{pmatrix} $$
+
+2. Vorwärts- und Rückwärtseinsetzen zur Lösung von $ Ax = b $.
+
+---
+
+## **Aufgabe 4: Nichtlineare Regression**
+
+**a) Formulierung als Fehlerquadratsumme**
+$$ r_i(x_1, x_2) = f(x_1, x_2, t_i) - y_i $$
+Minimiere $ \sum r_i^2 $.
+
+**b) Gauß-Newton-Verfahren**
+Berechnung der Jacobi-Matrix und Iteration $ x^{(1)} = x^{(0)} - (J^T J)^{-1} J^T r $. Vergleich der Fehlerquadratsumme zur Beurteilung der Verbesserung.
+
+
