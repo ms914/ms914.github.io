@@ -348,3 +348,36 @@ print("Fluss durch K:", flux_integral)
 print("Rotation von G:", rot_G)
 print("Divergenz der Rotation von G:", div_rot_G)
 ```
+
+```default
+import sympy as sp
+
+# Parameter für den Kreisrand
+r, t = sp.symbols('r t')
+r = 2
+x = r * sp.cos(t)
+y = r * sp.sin(t)
+z = 0  # Kreis liegt in der xy-Ebene
+
+
+
+# Vektorfeld F
+F = sp.Matrix([x - y, x + y, z + x*y])
+
+# Tangentialvektor dr/dt
+r_t = sp.Matrix([x, y, z])
+dr_dt = sp.diff(r_t, t)
+
+# Skalarprodukt F · dr/dt
+integrand = F.dot(dr_dt)
+
+# Kurvenintegral entlang des Kreises
+integral = sp.integrate(integrand, (t, sp.pi, 0))
+
+# Kurvenintegral 
+
+# Ergebnis ausgeben
+sp.pprint(integral.simplify())
+```
+
+
