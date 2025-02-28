@@ -8,8 +8,6 @@ website:
       - href: index.qmd
         text: Home
       - href: klausuren.qmd
-        text: Klausuren HM1 - HM4
-      - href: klausuren_latex.qmd
         text: Latex HM1 - HM4  
       - href: HM_solutions.qmd
         text: Lösungen HM1 - HM4
