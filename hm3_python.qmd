@@ -126,6 +126,41 @@ sol1, sol2 = sol.as_real_imag()
 sol
 ```
 
+```default
+# short sympy solution
+A=sp.Matrix([(3,-1),(5, -1)])
+
+# Berechne Eigenwerte und Eigenvektoren
+eigen_data = A.eigenvects()
+
+# Skaliere die Eigenvektoren so, dass der erste Eintrag 1 wird
+# man teilt durch den ersten Eintrag (hier komplex)
+eigenvectors = []
+for eigenvalue, multiplicity, eigenvecs in eigen_data:
+    for vec in eigenvecs:
+        if vec[0] != 0:  # Verhindern, dass durch 0 geteilt wird
+            vec = vec / vec[0]  # Normierung auf ersten Eintrag = 1
+            
+        eigenvectors.append((eigenvalue, vec))
+
+
+λ1, v1  = eigenvectors[0]
+#λ2, v2  = eigenvectors[1]
+
+v1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0]
+
+sol1=v1*sp.exp(λ1*t) # es genügt eine komplexe Lösung zu betrachten; Rotor
+sol_list=sol1.as_real_imag() # ergibt eine Liste von Vektoren
+matrix=sp.Matrix([sol_list]) # als Matrix
+#sp.simplify(matrix/sp.exp(t))
+matrix
+
+# noch kürzer
+v1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0] # erster Eintrag 1
+λ1, _ = A.eigenvals() 
+sp.Matrix([(v1*sp.exp(λ1*t)).as_real_imag()])
+```
+
 ## Aufgabe 3
 
 ```default
