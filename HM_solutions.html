@@ -180,6 +180,13 @@ window.Quarto = {
   <li><a href="#aufgabe-6-10-punkte" id="toc-aufgabe-6-10-punkte" class="nav-link" data-scroll-target="#aufgabe-6-10-punkte"><strong>Aufgabe 6 (10 Punkte)</strong></a></li>
   <li><a href="#endergebnis-kurzfassung" id="toc-endergebnis-kurzfassung" class="nav-link" data-scroll-target="#endergebnis-kurzfassung"><strong>Endergebnis Kurzfassung:</strong></a></li>
   </ul></li>
+  <li><a href="#kurzlösung-zur-klausur-hm4" id="toc-kurzlösung-zur-klausur-hm4" class="nav-link" data-scroll-target="#kurzlösung-zur-klausur-hm4">Kurzlösung zur Klausur HM4</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-vektoriterationsalgorithmus" id="toc-aufgabe-1-vektoriterationsalgorithmus" class="nav-link" data-scroll-target="#aufgabe-1-vektoriterationsalgorithmus"><strong>Aufgabe 1: Vektoriterationsalgorithmus</strong></a></li>
+  <li><a href="#aufgabe-2-interpolation" id="toc-aufgabe-2-interpolation" class="nav-link" data-scroll-target="#aufgabe-2-interpolation"><strong>Aufgabe 2: Interpolation</strong></a></li>
+  <li><a href="#aufgabe-3-lineare-regression" id="toc-aufgabe-3-lineare-regression" class="nav-link" data-scroll-target="#aufgabe-3-lineare-regression"><strong>Aufgabe 3: Lineare Regression</strong></a></li>
+  <li><a href="#aufgabe-4-nichtlineare-regression" id="toc-aufgabe-4-nichtlineare-regression" class="nav-link" data-scroll-target="#aufgabe-4-nichtlineare-regression"><strong>Aufgabe 4: Nichtlineare Regression</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -209,23 +216,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="kurzlösung-zur-klausur-hm1">Kurzlösung zur Klausur HM1</h2>
 <section id="aufgabe-1-7-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-1-7-punkte"><strong>Aufgabe 1 (7 Punkte)</strong></h3>
-<p>Die Reihe hat die Form <span class="math display">\[ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{n 3^n} \]</span> und ist eine Potenzreihe mit Konvergenzradius <span class="math display">\[ R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = 3. \]</span> Damit konvergiert die Reihe für <span class="math display">\[ |x - 1| &lt; 3, \quad \Rightarrow \quad -2 &lt; x &lt; 4. \]</span> Randpunkte prüfen: - Für <span class="math inline">\(x = -2\)</span> divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für <span class="math inline">\(x = 4\)</span> divergiert sie ebenfalls aus dem gleichen Grund.</p>
-<p><strong>Lösung:</strong> Die Reihe konvergiert für <span class="math inline">\(x \in (-2,4)\)</span>.</p>
+<p>Die Reihe hat die Form <span class="math display">\[ \sum_{n=1}^{\infty} a_n (x-1)^n, \quad a_n = \frac{1}{n 3^n} \]</span> und ist eine Potenzreihe mit Konvergenzradius <span class="math display">\[ R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = 3. \]</span> Damit konvergiert die Reihe für <span class="math display">\[ |x - 1| &lt; 3, \quad \Rightarrow \quad -2 &lt; x &lt; 4. \]</span> Randpunkte prüfen: - Für $ x = -2 $ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für $x = 4 $ divergiert sie ebenfalls aus dem gleichen Grund.</p>
+<p><strong>Lösung:</strong> Die Reihe konvergiert für $x (-2,4) $.</p>
 <hr>
 </section>
 <section id="aufgabe-2-14-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-2-14-punkte"><strong>Aufgabe 2 (14 Punkte)</strong></h3>
 <p><strong>Definitionsbereich:</strong> <span class="math display">\[ x^2(x-3) \neq 0 \Rightarrow x \neq 0,3. \]</span></p>
 <p><strong>Nullstellen:</strong> Keine, da der Zähler immer positiv ist.</p>
-<p><strong>Ableitungen:</strong> <span class="math display">\[ f'(x) = \frac{- (2x^2 - 6x)}{x^4 - 3x^3}, \]</span> setzen von $ f’(x) = 0 $ liefert <span class="math inline">\(x = 0, 3\)</span> (nicht im Definitionsbereich) und <span class="math inline">\(x = 3/2\)</span>. <span class="math inline">\(f''(x)\)</span> bestätigt ein lokales Minimum bei <span class="math inline">\(x = 3/2\)</span>.</p>
-<p><strong>Asymptoten:</strong> - Polstellen: <span class="math inline">\(x = 0, 3\)</span> (senkrechte Asymptoten) - Für <span class="math inline">\(x \to \pm \infty\)</span> geht <span class="math inline">\(f(x) \to 0\)</span> (waagrechte Asymptote).</p>
-<p><strong>Skizze:</strong> Die Funktion hat eine Minimumstelle bei <span class="math inline">\(x = 3/2\)</span> und zwei Polstellen.</p>
+<p><strong>Ableitungen:</strong> <span class="math display">\[ f'(x) = \frac{- (2x^2 - 6x)}{x^4 - 3x^3}, \]</span> setzen von $ f’(x) = 0 $ liefert $ x = 0, 3 $ (nicht im Definitionsbereich) und $ x = 3/2 $. $ f’’(x) $ bestätigt ein lokales Minimum bei $ x = 3/2 $.</p>
+<p><strong>Asymptoten:</strong> - Polstellen: $ x = 0, 3 $ (senkrechte Asymptoten) - Für $ x $ geht $ f(x) $ (waagrechte Asymptote).</p>
+<p><strong>Skizze:</strong> Die Funktion hat eine Minimumstelle bei $ x = 3/2 $ und zwei Polstellen.</p>
 <hr>
 </section>
 <section id="aufgabe-3-55-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-3-55-punkte"><strong>Aufgabe 3 (5+5 Punkte)</strong></h3>
 <p><strong>a)</strong> Umwandlung in Polarform: <span class="math display">\[ \sqrt{2} + i \sqrt{2} = 2 e^{i \pi/4}. \]</span> Damit: <span class="math display">\[ (2 e^{i \pi/4})^3 = 8 e^{i 3\pi/4}, \]</span> <span class="math display">\[ (2 e^{i \pi/3})^6 = 64 e^{i 2\pi}. \]</span> Ergebnis: <span class="math display">\[ \frac{8 e^{i 3\pi/4}}{64 e^{i 2\pi}} = \frac{1}{8} e^{-i 5\pi/4}. \]</span></p>
-<p><strong>b)</strong> Faktorisieren: <span class="math display">\[ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0. \]</span> Setzen <span class="math inline">\(w = z\^2\)</span> und lösen: <span class="math display">\[ w(w^2 - (\sqrt2 + \sqrt2 i)) = 0. \]</span> Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.</p>
+<p><strong>b)</strong> Faktorisieren: <span class="math display">\[ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0. \]</span> Setzen $ w = z^2 $ und lösen: <span class="math display">\[ w(w^2 - (\sqrt2 + \sqrt2 i)) = 0. \]</span> Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.</p>
 <hr>
 </section>
 <section id="aufgabe-4-64-punkte" class="level3">
@@ -242,8 +249,8 @@ window.Quarto = {
 </section>
 <section id="aufgabe-6-46-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-6-46-punkte"><strong>Aufgabe 6 (4+6 Punkte)</strong></h3>
-<p><strong>a)</strong> Grenzwert: <span class="math display">\[ \lim_{y \to 1} \sqrt{1 - y^2} \ln (\sqrt{1 - y^2}). \]</span> Setze $ t = $, dann ist <span class="math inline">\(t \to 0\)</span> und damit: <span class="math display">\[ t \ln t \to 0. \]</span></p>
-<p><strong>b)</strong> Integral: <span class="math display">\[ I(y) = \int_0^y \ln(\sqrt{1 - x^2}) \frac{x}{\sqrt{1 - x^2}}dx. \]</span> Substitution <span class="math inline">\(u = 1 - x\^2\)</span> führt zu Lösung.</p>
+<p><strong>a)</strong> Grenzwert: <span class="math display">\[ \lim_{y \to 1} \sqrt{1 - y^2} \ln (\sqrt{1 - y^2}). \]</span> Setze $ t = $, dann ist $ t $ und damit: <span class="math display">\[ t \ln t \to 0. \]</span></p>
+<p><strong>b)</strong> Integral: <span class="math display">\[ I(y) = \int_0^y \ln(\sqrt{1 - x^2}) \frac{x}{\sqrt{1 - x^2}}dx. \]</span> Substitution $ u = 1 - x^2 $ führt zu Lösung.</p>
 <hr>
 </section>
 </section>
@@ -295,7 +302,7 @@ x(t)=\begin{pmatrix} -1-t\\ 3-2t\\ t\\ 4\end{pmatrix},\quad t\in\mathbb{R}.
 </section>
 <section id="aufgabe-2-73-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-2-73-punkte"><strong>Aufgabe 2 (7+3 Punkte)</strong></h3>
-<p><strong>a) Parameterdarstellung der Geraden <span class="math inline">\(g\)</span>:</strong></p>
+<p><strong>a) Parameterdarstellung der Geraden</strong> <span class="math inline">\(g\)</span>:</p>
 <p>Die Koordinatendarstellung <span class="math display">\[
 \frac{4-x_1}{2}=\frac{4+x_2}{3}=\frac{2-x_3}{2}=t
 \]</span> liefert: <span class="math display">\[
@@ -308,7 +315,7 @@ x_3&amp;=2-2t.
 <span class="math display">\[
 g(t)=(4-2t,\;3t-4,\;2-2t)^T.
 \]</span></p>
-<p><strong>Parameterdarstellung der Ebene <span class="math inline">\(E\)</span>:</strong></p>
+<p><strong>Parameterdarstellung der Ebene</strong> <span class="math inline">\(E\)</span>:</p>
 <p>Gegeben durch die Punkte <span class="math display">\[
 P=(3,1,2),\quad Q=(-1,3,2),\quad R=(5,-2,4).
 \]</span> Berechnen Sie zwei Richtungsvektoren: <span class="math display">\[
@@ -396,7 +403,7 @@ Mit <span class="math inline">\(f_{xx}(e^{-1},0)=-e\)</span> und <span class="ma
 D=(-e)(-2)=2e&gt;0,\quad f_{xx}&lt;0,
 \]</span> also <strong>lokales Maximum</strong>.</p></li>
 </ul>
-<p><strong>c) Taylor-Polynom 2. Ordnung in <span class="math inline">\((1,2)\)</span>:</strong></p>
+<p><strong>c) Taylor-Polynom 2. Ordnung in</strong> <span class="math inline">\((1,2)\)</span>:</p>
 <p>Berechnen Sie: <span class="math display">\[
 \begin{aligned}
 f(1,2)&amp;=(4-1)\ln1=0,\\
@@ -505,7 +512,46 @@ I=\frac{8}{3}\Biggl[2\arctan\Bigl(\frac{3}{4}\Bigr)-\ln\Bigl(\frac{25}{9}\Bigr)\
 \]</span></p></li>
 </ul>
 <hr>
-<p>Diese Kurzlösung fasst die wesentlichen Zwischenschritte und das Endergebnis für alle Aufgaben zusammen. Falls noch Details benötigt werden, stehe ich gern zur Verfügung!</p>
+</section>
+</section>
+<section id="kurzlösung-zur-klausur-hm4" class="level1">
+<h1>Kurzlösung zur Klausur HM4</h1>
+<section id="aufgabe-1-vektoriterationsalgorithmus" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-vektoriterationsalgorithmus"><strong>Aufgabe 1: Vektoriterationsalgorithmus</strong></h2>
+<p><strong>a) Approximation des betragsgrößten Eigenwertes</strong> Gegeben: <span class="math display">\[ A = \begin{pmatrix} 2 &amp; 1 \\ 1 &amp; -1 \end{pmatrix}, \quad x_0 = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \]</span></p>
+<ol type="1">
+<li><p>Iteration: <span class="math display">\[ x_1 = A x_0 = \begin{pmatrix} 2 &amp; 1 \\ 1 &amp; -1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 3 \\ 0 \end{pmatrix} \]</span> <span class="math display">\[ \lambda_1 \approx \frac{\|x_1\|_\infty}{\|x_0\|_\infty} = \frac{3}{1} = 3 \]</span></p></li>
+<li><p>Iteration: <span class="math display">\[ x_2 = A x_1 = \begin{pmatrix} 2 &amp; 1 \\ 1 &amp; -1 \end{pmatrix} \begin{pmatrix} 3 \\ 0 \end{pmatrix} = \begin{pmatrix} 6 \\ 3 \end{pmatrix} \]</span> <span class="math display">\[ \lambda_2 \approx \frac{\|x_2\|_\infty}{\|x_1\|_\infty} = \frac{6}{3} = 2 \]</span></p></li>
+</ol>
+<p><strong>b) Approximation des betragskleinsten Eigenwertes mit inverser Iteration</strong> Gegeben: <span class="math display">\[ x_0 = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \]</span></p>
+<ol type="1">
+<li><p>Iteration: <span class="math display">\[ y_1 = A^{-1} x_0 \approx \begin{pmatrix} 1/3 &amp; 1/3 \\ 1/3 &amp; -2/3 \end{pmatrix} \begin{pmatrix} 1 \\ -1 \end{pmatrix} = \begin{pmatrix} 0 \end{pmatrix} \]</span> <span class="math display">\[ \lambda_1 \approx \frac{1}{\|y_1\|_\infty} \approx -1 \]</span></p></li>
+<li><p>Iteration analog.</p></li>
+</ol>
+<hr>
+</section>
+<section id="aufgabe-2-interpolation" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-interpolation"><strong>Aufgabe 2: Interpolation</strong></h2>
+<p><strong>a) Newton-Interpolationspolynom</strong> Berechnung der dividierten Differenzen: <span class="math display">\[ f[x_0] = 5, f[x_1] = 1, f[x_2] = 1, f[x_3] = -1 \]</span> <span class="math display">\[ f[x_0,x_1] = \frac{1-5}{0-(-1)} = -4 \]</span> <span class="math display">\[ f[x_1,x_2] = \frac{1-1}{1-0} = 0 \]</span> <span class="math display">\[ f[x_2,x_3] = \frac{-1-1}{2-1} = -2 \]</span> <span class="math display">\[ f[x_0,x_1,x_2] = \frac{0-(-4)}{1-(-1)} = 2 \]</span> <span class="math display">\[ f[x_1,x_2,x_3] = \frac{-2-0}{2-0} = -1 \]</span> <span class="math display">\[ f[x_0,x_1,x_2,x_3] = \frac{-1-2}{2-(-1)} = -1 \]</span></p>
+<p>Newton-Polynom: <span class="math display">\[ p(x) = 5 -4(x+1) + 2(x+1)x -1(x+1)x(x-1) \]</span></p>
+<p><strong>b) Monomdarstellung durch Umformung.</strong></p>
+<p><strong>c) Bisektionsverfahren zur Nullstellenapproximation:</strong> <span class="math display">\[ x_1=1, x_2=2 \]</span> <span class="math display">\[ p(1), p(1.5), p(2) \]</span> berechnen, bis hinreichende Genauigkeit erreicht.</p>
+<p><strong>d) Simpson-Regel:</strong> <span class="math display">\[ \int_{-1}^{1} p(x) dx \approx \frac{1-(-1)}{6} (f(-1) + 4f(0) + f(1)) \]</span></p>
+<hr>
+</section>
+<section id="aufgabe-3-lineare-regression" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-lineare-regression"><strong>Aufgabe 3: Lineare Regression</strong></h2>
+<p><strong>a) Normalengleichungen</strong> Aufstellen der Summen für die Koeffizienten der Normalengleichung.</p>
+<p><strong>b) Cholesky-Zerlegung</strong> 1. Zerlege $ A = LL^T $ mit <span class="math display">\[ L = \begin{pmatrix} a &amp; 0 &amp; 0 \\ b &amp; c &amp; 0 \\ d &amp; e &amp; f \end{pmatrix} \]</span></p>
+<ol start="2" type="1">
+<li>Vorwärts- und Rückwärtseinsetzen zur Lösung von $ Ax = b $.</li>
+</ol>
+<hr>
+</section>
+<section id="aufgabe-4-nichtlineare-regression" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-nichtlineare-regression"><strong>Aufgabe 4: Nichtlineare Regression</strong></h2>
+<p><strong>a) Formulierung als Fehlerquadratsumme</strong> <span class="math display">\[ r_i(x_1, x_2) = f(x_1, x_2, t_i) - y_i \]</span> Minimiere $ r_i^2 $.</p>
+<p><strong>b) Gauß-Newton-Verfahren</strong> Berechnung der Jacobi-Matrix und Iteration $ x^{(1)} = x^{(0)} - (J^T J)^{-1} J^T r $. Vergleich der Fehlerquadratsumme zur Beurteilung der Verbesserung.</p>
 
 
 </section>
