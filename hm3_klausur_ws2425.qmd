@@ -1,0 +1,123 @@
+---
+title: "HM3_Klausur_WS2425"
+editor: visual
+---
+
+## Aufgabe 1)
+
+```default
+**Aufgabe 1 (10 Punkte)**
+
+a) Lösen Sie das Anfangswertproblem $$ x'=(1-\alpha)t\frac{x^2}{t^3}\quad\text{ x(1)=\frac{2}{1-2\alpha}},\quad \alpha\in(0,\frac{1}{2}$$
+und geben Sie den maximalen Definitionsbereich $t\in[1,T)$ der Lösung in Abhängigkeit von $\alpha$ an. Was passiert für $\alpha \to 0$?
+
+
+
+b) Betrachten Sie die Differentialgleichung
+
+$$2xe^{x^2-t}\dot x-e^{x^2-t}-1=0,\quad x(1)=1$$
+  (i) Zeigen Sie das die DGL exakt ist.
+
+  (ii) Geben Sie eine Funktion $\Phi=\Phi(t,x)$ an, so dass $\Phi_t(t,x)+\Phi_x(t,x)\dot x=0$
+
+  (iii) Geben Sie die Lösung des Anfangswertproblems an. 
+```
+
+---
+
+## Aufgabe 2)
+
+```default
+**Aufgabe 2 (10 Punkte)**
+Gegeben ist das lineare System
+$$ \dot x=\begin{pmatrix} -2&-5\\1&4 \end{pmatrix}x\quad \text{ und}\quad b(t)=4\begin{pmatrix} e^t\\0\end{pmatrix}$$
+
+a) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.
+
+b) Geben sie die allgemeine Lösung des Anfangswertproblems $\dot x=Ax+b(t)$ an.
+```
+
+---
+
+## Aufgabe 3)
+
+```default
+**Aufgabe 3 (10 Punkte)**
+Gegeben sei die partielle Differentialgleichung
+$$ u_{tt}-u_{xx}=0$$
+mit $x\in[0,\pi]$ und $t>0$
+
+a) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.
+
+b) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion
+$$f(x)=1\quad  \text{für } x\in [0,\pi]$$.
+
+c) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung
+
+$$u(0,x)=x\quad x\in[0,\pi],$$
+
+
+$$u_t(0,x)=0\quad x\in[0,\pi],$$
+
+und den Randbedingungen $u(t,0)=u(t,\pi)=0, t>0$.
+```
+
+---
+
+
+## Aufgabe 4)
+
+**Aufgabe 4 (10 Punkte)**
+
+Gegeben seine die beiden Vektorfelder $F_k:ℝ^3\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\gamma: [0,1]\rightarrow ℝ^3$.
+
+$F=\begin{pmatrix} z\cos(k(x+y))\\z\cos(k(x+y))\\\sin(k(x+y))+2z \end{pmatrix}$ und $\gamma(t)=\begin{pmatrix} \pi t\\\pi t\\ t^2\end{pmatrix}$
+
+a) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. 
+
+b) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. 
+
+c) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\gamma$.
+
+
+## Aufgabe 5)
+
+
+**Aufgabe 5 (10 Punkte)**
+
+Es sei $\gamma(u)=(e^u-1,0,\sqrt{u})^T$ mit $u\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\gamma$ um die z-Achse  rotiert wird.
+
+Gegeben sei ausserdem das Vektorfeld
+
+$$ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} xz\\yz \\x^2+y^2 \end{pmatrix} $$
+
+a) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. 
+
+b) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u>0$. 
+
+c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. 
+
+
+## Aufgabe 6)
+
+**Aufgabe 6 (10 Punkte)**
+
+Es sei die Kugel $K$ gegeben durch
+
+$$ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4 \right\}$$
+
+und $S$ ihre Oberfläche.
+
+Weiterhin sei das Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ gegeben durch
+
+
+
+$$F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x \\xy+z \end{pmatrix}$$
+
+
+b) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\int_{\partial K}F\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.
+
+c) Berechnen Sie  $\int_{S}rot(F)\cdot dn$.
+
+d) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\int_{S_O}rot(F)\cdot dn$ und $\int_{S_M}rot(F)\cdot dn$ mit Hilfe des Sates von Stokes.
+
