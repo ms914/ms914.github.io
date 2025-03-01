@@ -101,35 +101,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -284,40 +255,57 @@ window.Quarto = {
 </section>
 <section id="aufgabe-4" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-4">Aufgabe 4)</h2>
-<p><strong>Aufgabe 4 (10 Punkte)</strong></p>
-<p>Gegeben seine die beiden Vektorfelder <span class="math inline">\(F_k:ℝ^3\rightarrow ℝ^3\)</span> mit <span class="math inline">\(k=0,1\)</span> und der Weg <span class="math inline">\(\gamma: [0,1]\rightarrow ℝ^3\)</span>.</p>
-<p><span class="math inline">\(F=\begin{pmatrix} z\cos(k(x+y))\\z\cos(k(x+y))\\\sin(k(x+y))+2z \end{pmatrix}\)</span> und <span class="math inline">\(\gamma(t)=\begin{pmatrix} \pi t\\\pi t\\ t^2\end{pmatrix}\)</span></p>
-<ol type="a">
-<li><p>Bestimen Sie jeweils die Rotation von <span class="math inline">\(F_0\)</span> und <span class="math inline">\(F_1\)</span>.</p></li>
-<li><p>Untersuchen Sie, ob die Vektorfelder <span class="math inline">\(F_0\)</span> und <span class="math inline">\(F_1\)</span> ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an.</p></li>
-<li><p>Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder <span class="math inline">\(F_0\)</span> und <span class="math inline">\(F_1\)</span> entlang <span class="math inline">\(\gamma\)</span>.</p></li>
-</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 4 (10 Punkte)**</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Gegeben seine die beiden Vektorfelder $F_k:ℝ^3\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\gamma: [0,1]\rightarrow ℝ^3$.</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>$F=\begin{pmatrix} z\cos(k(x+y))\\z\cos(k(x+y))\\\sin(k(x+y))+2z \end{pmatrix}$ und $\gamma(t)=\begin{pmatrix} \pi t\\\pi t\\ t^2\end{pmatrix}$</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>a) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>b) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>c) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\gamma$.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="aufgabe-5" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-5">Aufgabe 5)</h2>
-<p><strong>Aufgabe 5 (10 Punkte)</strong></p>
-<p>Es sei <span class="math inline">\(\gamma(u)=(e^u-1,0,\sqrt{u})^T\)</span> mit <span class="math inline">\(u\in[0,1]\)</span> ein planarer Weg in der x-z-Ebene. Mit <span class="math inline">\(A\)</span> bezeichnen wir die Rotationsfläche, die entsteht, wenn <span class="math inline">\(\gamma\)</span> um die z-Achse rotiert wird.</p>
-<p>Gegeben sei ausserdem das Vektorfeld</p>
-<p><span class="math display">\[ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} xz\\yz \\x^2+y^2 \end{pmatrix} \]</span></p>
-<ol type="a">
-<li><p>Geben Sie eine Parametrisierung <span class="math inline">\(f(u,v)\)</span> der Fläche <span class="math inline">\(A\)</span> an.</p></li>
-<li><p>Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche <span class="math inline">\(A\)</span> für <span class="math inline">\(u&gt;0\)</span>.</p></li>
-<li><p>Bestimmen Sie das Oberflächenintegral 2.Art <span class="math inline">\(\int_AF\cdot dn\)</span>.</p></li>
-</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>**Aufgabe 5 (10 Punkte)**</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>Es sei $\gamma(u)=(e^u-1,0,\sqrt{u})^T$ mit $u\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\gamma$ um die z-Achse  rotiert wird.</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>Gegeben sei ausserdem das Vektorfeld</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>$$ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} xz\\yz \\x^2+y^2 \end{pmatrix} $$</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>a) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>b) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u&gt;0$. </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="aufgabe-6" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-6">Aufgabe 6)</h2>
-<p><strong>Aufgabe 6 (10 Punkte)</strong></p>
-<p>Es sei die Kugel <span class="math inline">\(K\)</span> gegeben durch</p>
-<p><span class="math display">\[ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4 \right\}\]</span></p>
-<p>und <span class="math inline">\(S\)</span> ihre Oberfläche.</p>
-<p>Weiterhin sei das Vektorfeld <span class="math inline">\(F:ℝ^3\rightarrow ℝ^3\)</span> gegeben durch</p>
-<p><span class="math display">\[F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x \\xy+z \end{pmatrix}\]</span></p>
-<ol start="2" type="a">
-<li><p>Berechnen Sie den Fluss von <span class="math inline">\(F\)</span> durch die gesamte Kugeloberfläche <span class="math inline">\(S\)</span>, also <span class="math inline">\(\int_{\partial K}F\cdot dn\)</span>, wobei die Normale <span class="math inline">\(n\)</span> nach außen zeigt mit Hilfe des Satzes von Gauss.</p></li>
-<li><p>Berechnen Sie <span class="math inline">\(\int_{S}rot(F)\cdot dn\)</span>.</p></li>
-<li><p>Die Oberfläche <span class="math inline">\(S\)</span> wird durch die Ebenen <span class="math inline">\(z=1\)</span> und <span class="math inline">\(z=-1\)</span> in drei Teilflächen <span class="math inline">\(S_O\)</span>, <span class="math inline">\(S_M\)</span> und <span class="math inline">\(S_U\)</span> unterteilt. Berechnen Sie die Integrale <span class="math inline">\(\int_{S_O}rot(F)\cdot dn\)</span> und <span class="math inline">\(\int_{S_M}rot(F)\cdot dn\)</span> mit Hilfe des Sates von Stokes.</p></li>
-</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 6 (10 Punkte)**</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Es sei die Kugel $K$ gegeben durch</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>$$ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4 \right\}$$</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>und $S$ ihre Oberfläche.</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>Weiterhin sei das Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ gegeben durch</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>$$F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x \\xy+z \end{pmatrix}$$</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>b) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\int_{\partial K}F\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>c) Berechnen Sie  $\int_{S}rot(F)\cdot dn$.</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>d) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\int_{S_O}rot(F)\cdot dn$ und $\int_{S_M}rot(F)\cdot dn$ mit Hilfe des Sates von Stokes.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
