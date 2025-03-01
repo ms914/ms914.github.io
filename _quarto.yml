@@ -14,7 +14,9 @@ website:
       - href: karteikarten.qmd
         text: Karteikarten
       - href: hm3_codecopy.qmd
-        text: Code
+        text: code
+      - href: hm3_klausur_ws2425.qmd
+        text: Klausur WS 24/25
       - href: hm3_python.qmd
         text: Sympy
       - about.qmd
