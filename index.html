@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -181,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th><strong>Eigenschaft</strong></th>
-<th><strong>Skalarfeld ( u(x,t) ) oder ( (x,y,z) )</strong></th>
-<th><strong>Vektorfeld ( (x,y,z) )</strong></th>
+<th><strong>Skalarfeld <span class="math inline">\(u(x,t)\)</span> oder <span class="math inline">\(\phi(x,y,z)\)</span></strong></th>
+<th><strong>Vektorfeld <span class="math inline">\(\mathbf{F}(x,y,z)\)</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -193,18 +222,18 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td><strong>Beispiele</strong></td>
-<td>Temperatur ( T(x,y,z) ), Druck ( p(x,y,z) ), elektrisches Potential ( (x,y,z) )</td>
-<td>Kraftfeld ( = (F_x, F_y, F_z) ), elektrisches Feld ( ), Strömungsgeschwindigkeit ( )</td>
+<td>Temperatur <span class="math inline">\(T(x,y,z)\)</span>, Druck <span class="math inline">\(p(x,y,z)\)</span>, elektrisches Potential <span class="math inline">\(\phi(x,y,z)\)</span></td>
+<td>Kraftfeld <span class="math inline">\(\mathbf{F} = (F_x, F_y, F_z)\)</span>, elektrisches Feld <span class="math inline">\(\mathbf{E}\)</span>, Strömungsgeschwindigkeit <span class="math inline">\(\mathbf{v}\)</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Typische Gleichung</strong></td>
-<td>Wärmeleitungsgleichung ( = ^2 u )</td>
+<td>Wärmeleitungsgleichung <span class="math inline">\(\frac{\partial u}{\partial t} = \alpha \nabla^2 u\)</span></td>
 <td>Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder</td>
 </tr>
 <tr class="even">
 <td><strong>Mathematische Operationen</strong></td>
-<td>Gradient (( u )) → erzeugt ein Vektorfeld aus einem Skalarfeld</td>
-<td>Divergenz (( )), Rotation (( ))</td>
+<td>Gradient (<span class="math inline">\(\nabla u\)</span>) → erzeugt ein Vektorfeld aus einem Skalarfeld</td>
+<td>Divergenz (<span class="math inline">\(\nabla \cdot \mathbf{F}\)</span>), Rotation (<span class="math inline">\(\nabla \times \mathbf{F}\)</span>)</td>
 </tr>
 <tr class="odd">
 <td><strong>Verwendung in der Physik</strong></td>
@@ -213,8 +242,8 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td><strong>Buchstabenherkunft</strong></td>
-<td>( u ) historisch von Fourier für Temperatur, ( ) für Potentiale</td>
-<td>( ) von „Force“ (Kraft) in der Mechanik</td>
+<td><span class="math inline">\(u\)</span> historisch von Fourier für Temperatur, <span class="math inline">\(\phi\)</span> für Potentiale</td>
+<td><span class="math inline">\(\mathbf{F}\)</span> von „Force“ (Kraft) in der Mechanik</td>
 </tr>
 </tbody>
 </table>
