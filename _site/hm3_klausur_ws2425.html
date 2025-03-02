@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ms914.github.io - HM3 Website</title>
+<title>ms914.github.io - HM3_Klausur_WS2425</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -67,35 +101,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,7 +123,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -138,7 +143,7 @@ window.Quarto = {
 <span class="menu-text">code</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./hm3_klausur_ws2425.html"> 
+    <a class="nav-link active" href="./hm3_klausur_ws2425.html" aria-current="page"> 
 <span class="menu-text">Klausur WS 24/25</span></a>
   </li>  
   <li class="nav-item">
@@ -165,7 +170,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#herzlich-willkommen-zur-hm3-website" id="toc-herzlich-willkommen-zur-hm3-website" class="nav-link active" data-scroll-target="#herzlich-willkommen-zur-hm3-website">Herzlich Willkommen zur HM3 Website</a></li>
+  <li><a href="#aufgabe-1" id="toc-aufgabe-1" class="nav-link active" data-scroll-target="#aufgabe-1">Aufgabe 1)</a></li>
+  <li><a href="#aufgabe-2" id="toc-aufgabe-2" class="nav-link" data-scroll-target="#aufgabe-2">Aufgabe 2)</a></li>
+  <li><a href="#aufgabe-3" id="toc-aufgabe-3" class="nav-link" data-scroll-target="#aufgabe-3">Aufgabe 3)</a></li>
+  <li><a href="#aufgabe-4" id="toc-aufgabe-4" class="nav-link" data-scroll-target="#aufgabe-4">Aufgabe 4)</a></li>
+  <li><a href="#aufgabe-5" id="toc-aufgabe-5" class="nav-link" data-scroll-target="#aufgabe-5">Aufgabe 5)</a></li>
+  <li><a href="#aufgabe-6" id="toc-aufgabe-6" class="nav-link" data-scroll-target="#aufgabe-6">Aufgabe 6)</a></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +184,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HM3 Website</h1>
+<h1 class="title">HM3_Klausur_WS2425</h1>
 </div>
 
 
@@ -191,63 +201,111 @@ window.Quarto = {
 </header>
 
 
-<section id="herzlich-willkommen-zur-hm3-website" class="level1">
-<h1>Herzlich Willkommen zur HM3 Website</h1>
-<p>Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.</p>
-<ul>
-<li><a href="./exam-questions.html">Exam Questions</a></li>
-<li><a href="./solutions.html">Solutions</a></li>
-<li><a href="./hm3_python.html">sympy code examples</a></li>
-</ul>
-<p>Die HM3 ist die Grundlage für die Theorie der Strömungsdynamik.</p>
-<p>Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:</p>
-<table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 47%">
-<col style="width: 32%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Eigenschaft</strong></th>
-<th><strong>Skalarfeld <span class="math inline">\(u(x,t)\)</span> oder <span class="math inline">\(\phi(x,y,z)\)</span></strong></th>
-<th><strong>Vektorfeld <span class="math inline">\(\mathbf{F}(x,y,z)\)</span></strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Definition</strong></td>
-<td>Ordnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)</td>
-<td>Ordnet jedem Punkt einen Vektor zu (Wert + Richtung)</td>
-</tr>
-<tr class="even">
-<td><strong>Beispiele</strong></td>
-<td>Temperatur <span class="math inline">\(T(x,y,z)\)</span>, Druck <span class="math inline">\(p(x,y,z)\)</span>, elektrisches Potential <span class="math inline">\(\phi(x,y,z)\)</span></td>
-<td>Kraftfeld <span class="math inline">\(\mathbf{F} = (F_x, F_y, F_z)\)</span>, elektrisches Feld <span class="math inline">\(\mathbf{E}\)</span>, Strömungsgeschwindigkeit <span class="math inline">\(\mathbf{v}\)</span></td>
-</tr>
-<tr class="odd">
-<td><strong>Typische Gleichung</strong></td>
-<td>Wärmeleitungsgleichung <span class="math inline">\(\frac{\partial u}{\partial t} = \alpha \nabla^2 u\)</span></td>
-<td>Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder</td>
-</tr>
-<tr class="even">
-<td><strong>Mathematische Operationen</strong></td>
-<td>Gradient (<span class="math inline">\(\nabla u\)</span>) → erzeugt ein Vektorfeld aus einem Skalarfeld</td>
-<td>Divergenz (<span class="math inline">\(\nabla \cdot \mathbf{F}\)</span>), Rotation (<span class="math inline">\(\nabla \times \mathbf{F}\)</span>)</td>
-</tr>
-<tr class="odd">
-<td><strong>Verwendung in der Physik</strong></td>
-<td>Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck</td>
-<td>Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder</td>
-</tr>
-<tr class="even">
-<td><strong>Buchstabenherkunft</strong></td>
-<td><span class="math inline">\(u\)</span> historisch von Fourier für Temperatur, <span class="math inline">\(\phi\)</span> für Potentiale</td>
-<td><span class="math inline">\(\mathbf{F}\)</span> von „Force“ (Kraft) in der Mechanik</td>
-</tr>
-</tbody>
-</table>
-<p>Diese Tabelle hilft dabei, die beiden Konzepte klar voneinander abzugrenzen und zu verstehen, wie sie in der Mathematik und Physik verwendet werden.</p>
+<section id="aufgabe-1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1">Aufgabe 1)</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 1 (10 Punkte)**</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>a) Lösen Sie das Anfangswertproblem $$ x'=(1-\alpha)t\frac{x^2}{t^3}\quad\text{ x(1)=\frac{2}{1-2\alpha}},\quad \alpha\in(0,\frac{1}{2}$$</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>und geben Sie den maximalen Definitionsbereich $t\in[1,T)$ der Lösung in Abhängigkeit von $\alpha$ an. Was passiert für $\alpha \to 0$?</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>b) Betrachten Sie die Differentialgleichung</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>$$2xe^{x^2-t}\dot x-e^{x^2-t}-1=0,\quad x(1)=1$$</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  (i) Zeigen Sie das die DGL exakt ist.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  (ii) Geben Sie eine Funktion $\Phi=\Phi(t,x)$ an, so dass $\Phi_t(t,x)+\Phi_x(t,x)\dot x=0$</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  (iii) Geben Sie die Lösung des Anfangswertproblems an. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="aufgabe-2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2">Aufgabe 2)</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 2 (10 Punkte)**</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Gegeben ist das lineare System</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>$$ \dot x=\begin{pmatrix} -2&amp;-5\\1&amp;4 \end{pmatrix}x\quad \text{ und}\quad b(t)=4\begin{pmatrix} e^t\\0\end{pmatrix}$$</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>a) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>b) Geben sie die allgemeine Lösung des Anfangswertproblems $\dot x=Ax+b(t)$ an.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="aufgabe-3" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3">Aufgabe 3)</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 3 (10 Punkte)**</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Gegeben sei die partielle Differentialgleichung</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>$$ u_{tt}-u_{xx}=0$$</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>mit $x\in[0,\pi]$ und $t&gt;0$</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>a) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>b) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>$$f(x)=1\quad  \text{für } x\in [0,\pi]$$.</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>c) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>$$u(0,x)=x\quad x\in[0,\pi],$$</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>$$u_t(0,x)=0\quad x\in[0,\pi],$$</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>und den Randbedingungen $u(t,0)=u(t,\pi)=0, t&gt;0$.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="aufgabe-4" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4">Aufgabe 4)</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 4 (10 Punkte)**</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Gegeben seine die beiden Vektorfelder $F_k:ℝ^3\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\gamma: [0,1]\rightarrow ℝ^3$.</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>$F=\begin{pmatrix} z\cos(k(x+y))\\z\cos(k(x+y))\\\sin(k(x+y))+2z \end{pmatrix}$ und $\gamma(t)=\begin{pmatrix} \pi t\\\pi t\\ t^2\end{pmatrix}$</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>a) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>b) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>c) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\gamma$.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-5" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5">Aufgabe 5)</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>**Aufgabe 5 (10 Punkte)**</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>Es sei $\gamma(u)=(e^u-1,0,\sqrt{u})^T$ mit $u\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\gamma$ um die z-Achse  rotiert wird.</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>Gegeben sei ausserdem das Vektorfeld</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>$$ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} xz\\yz \\x^2+y^2 \end{pmatrix} $$</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>a) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>b) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u&gt;0$. </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-6" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6">Aufgabe 6)</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 6 (10 Punkte)**</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Es sei die Kugel $K$ gegeben durch</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>$$ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4 \right\}$$</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>und $S$ ihre Oberfläche.</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>Weiterhin sei das Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ gegeben durch</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>$$F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x \\xy+z \end{pmatrix}$$</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>b) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\int_{\partial K}F\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>c) Berechnen Sie  $\int_{S}rot(F)\cdot dn$.</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>d) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\int_{S_O}rot(F)\cdot dn$ und $\int_{S_M}rot(F)\cdot dn$ mit Hilfe des Sates von Stokes.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

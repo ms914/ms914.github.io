@@ -15,13 +15,13 @@ Die HM3 ist die Grundlage für die Theorie der Strömungsdynamik.
 
 Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:  
 
-| **Eigenschaft**      | **Skalarfeld \( u(x,t) \) oder \( \phi(x,y,z) \)** | **Vektorfeld \( \mathbf{F}(x,y,z) \)** |
+| **Eigenschaft**      | **Skalarfeld $u(x,t)$ oder $\phi(x,y,z)$** | **Vektorfeld $\mathbf{F}(x,y,z)$** |
 |----------------------|--------------------------------------------------|----------------------------------|
 | **Definition**       | Ordnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung) | Ordnet jedem Punkt einen Vektor zu (Wert + Richtung) |
-| **Beispiele**       | Temperatur \( T(x,y,z) \), Druck \( p(x,y,z) \), elektrisches Potential \( \phi(x,y,z) \) | Kraftfeld \( \mathbf{F} = (F_x, F_y, F_z) \), elektrisches Feld \( \mathbf{E} \), Strömungsgeschwindigkeit \( \mathbf{v} \) |
-| **Typische Gleichung** | Wärmeleitungsgleichung \( \frac{\partial u}{\partial t} = \alpha \nabla^2 u \) | Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder |
-| **Mathematische Operationen** | Gradient (\( \nabla u \)) → erzeugt ein Vektorfeld aus einem Skalarfeld | Divergenz (\( \nabla \cdot \mathbf{F} \)), Rotation (\( \nabla \times \mathbf{F} \)) |
+| **Beispiele**       | Temperatur $T(x,y,z)$, Druck $p(x,y,z)$, elektrisches Potential $\phi(x,y,z)$ | Kraftfeld $\mathbf{F} = (F_x, F_y, F_z)$, elektrisches Feld $\mathbf{E}$, Strömungsgeschwindigkeit $\mathbf{v}$|
+| **Typische Gleichung** | Wärmeleitungsgleichung $\frac{\partial u}{\partial t} = \alpha \nabla^2 u$ | Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder |
+| **Mathematische Operationen** | Gradient ($\nabla u$) → erzeugt ein Vektorfeld aus einem Skalarfeld | Divergenz ($\nabla \cdot \mathbf{F}$), Rotation ($\nabla \times \mathbf{F}$) |
 | **Verwendung in der Physik** | Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck | Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder |
-| **Buchstabenherkunft** | \( u \) historisch von Fourier für Temperatur, \( \phi \) für Potentiale | \( \mathbf{F} \) von „Force“ (Kraft) in der Mechanik |
+| **Buchstabenherkunft** | $u$ historisch von Fourier für Temperatur, $\phi$ für Potentiale | $\mathbf{F}$ von „Force“ (Kraft) in der Mechanik |
 
 Diese Tabelle hilft dabei, die beiden Konzepte klar voneinander abzugrenzen und zu verstehen, wie sie in der Mathematik und Physik verwendet werden.

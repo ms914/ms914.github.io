@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ms914.github.io - HM3 Website</title>
+<title>ms914.github.io - Solutions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -165,7 +165,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#herzlich-willkommen-zur-hm3-website" id="toc-herzlich-willkommen-zur-hm3-website" class="nav-link active" data-scroll-target="#herzlich-willkommen-zur-hm3-website">Herzlich Willkommen zur HM3 Website</a></li>
+  <li><a href="#hm3-kurzlösungen" id="toc-hm3-kurzlösungen" class="nav-link active" data-scroll-target="#hm3-kurzlösungen">HM3: Kurzlösungen</a></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +174,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HM3 Website</h1>
+<h1 class="title">Solutions</h1>
 </div>
 
 
@@ -191,63 +191,100 @@ window.Quarto = {
 </header>
 
 
-<section id="herzlich-willkommen-zur-hm3-website" class="level1">
-<h1>Herzlich Willkommen zur HM3 Website</h1>
-<p>Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.</p>
-<ul>
-<li><a href="./exam-questions.html">Exam Questions</a></li>
-<li><a href="./solutions.html">Solutions</a></li>
-<li><a href="./hm3_python.html">sympy code examples</a></li>
-</ul>
-<p>Die HM3 ist die Grundlage für die Theorie der Strömungsdynamik.</p>
-<p>Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:</p>
+<section id="hm3-kurzlösungen" class="level1">
+<h1>HM3: Kurzlösungen</h1>
+<p>Im Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:</p>
 <table class="table">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 47%">
-<col style="width: 32%">
+<col style="width: 42%">
+<col style="width: 57%">
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Eigenschaft</strong></th>
-<th><strong>Skalarfeld <span class="math inline">\(u(x,t)\)</span> oder <span class="math inline">\(\phi(x,y,z)\)</span></strong></th>
-<th><strong>Vektorfeld <span class="math inline">\(\mathbf{F}(x,y,z)\)</span></strong></th>
+<th><strong>Aufgabe / Teil</strong></th>
+<th><strong>Kurzlösung / Ergebnis</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Definition</strong></td>
-<td>Ordnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)</td>
-<td>Ordnet jedem Punkt einen Vektor zu (Wert + Richtung)</td>
+<td><strong>1(a)</strong></td>
+<td><strong>Gegeben:</strong> <span class="math inline">\(x' = t\,x^2 + t\)</span> mit <span class="math inline">\(x(0)=0\)</span>. <br> <strong>Umformung:</strong> <span class="math inline">\(x' = t\,(x^2+1)\)</span>. <br> <strong>Trennung:</strong> <span class="math inline">\(\displaystyle \frac{dx}{1+x^2}=t\,dt\)</span>. <br> <strong>Integration:</strong> <span class="math inline">\(\arctan(x)=\frac{t^2}{2}+C\)</span>. <br> Mit <span class="math inline">\(x(0)=0\)</span> folgt <span class="math inline">\(C=0\)</span>. <br> <strong>Lösung:</strong> <span class="math inline">\(x(t)=\tan\Bigl(\frac{t^2}{2}\Bigr)\)</span>. <br> <strong>Definitionsbereich:</strong> <span class="math inline">\(t\in(-\sqrt{\pi},\sqrt{\pi})\)</span>.</td>
 </tr>
 <tr class="even">
-<td><strong>Beispiele</strong></td>
-<td>Temperatur <span class="math inline">\(T(x,y,z)\)</span>, Druck <span class="math inline">\(p(x,y,z)\)</span>, elektrisches Potential <span class="math inline">\(\phi(x,y,z)\)</span></td>
-<td>Kraftfeld <span class="math inline">\(\mathbf{F} = (F_x, F_y, F_z)\)</span>, elektrisches Feld <span class="math inline">\(\mathbf{E}\)</span>, Strömungsgeschwindigkeit <span class="math inline">\(\mathbf{v}\)</span></td>
+<td><strong>1(b)(i)</strong></td>
+<td>DGL: <span class="math inline">\(2t(x^3-1)+3t^2x^2x'=0\)</span>. <br> Setze <span class="math inline">\(M(t,x)=2t(x^3-1)\)</span> und <span class="math inline">\(N(t,x)=3t^2x^2\)</span>. <br> Ableiten: <span class="math inline">\(M_x=6tx^2\)</span> und <span class="math inline">\(N_t=6tx^2\)</span> ⇒ exakt.</td>
 </tr>
 <tr class="odd">
-<td><strong>Typische Gleichung</strong></td>
-<td>Wärmeleitungsgleichung <span class="math inline">\(\frac{\partial u}{\partial t} = \alpha \nabla^2 u\)</span></td>
-<td>Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder</td>
+<td><strong>1(b)(ii)</strong></td>
+<td>Gesucht: <span class="math inline">\(\Phi\)</span> mit <span class="math inline">\(\Phi_t=M\)</span> und <span class="math inline">\(\Phi_x=N\)</span>. <br> Integriere <span class="math inline">\(N\)</span> nach <span class="math inline">\(x\)</span>: <span class="math inline">\(\Phi(t,x)=t^2x^3+g(t)\)</span>. <br> Ableiten nach <span class="math inline">\(t\)</span>: <span class="math inline">\(\Phi_t=2tx^3+g'(t)\)</span>. <br> Da <span class="math inline">\(M=2t(x^3-1)\)</span> muss <span class="math inline">\(g'(t)=-2t\)</span> sein, also <span class="math inline">\(g(t)=-t^2\)</span>. <br> <strong>Potential:</strong> <span class="math inline">\(\Phi(t,x)=t^2(x^3-1)\)</span>.</td>
 </tr>
 <tr class="even">
-<td><strong>Mathematische Operationen</strong></td>
-<td>Gradient (<span class="math inline">\(\nabla u\)</span>) → erzeugt ein Vektorfeld aus einem Skalarfeld</td>
-<td>Divergenz (<span class="math inline">\(\nabla \cdot \mathbf{F}\)</span>), Rotation (<span class="math inline">\(\nabla \times \mathbf{F}\)</span>)</td>
+<td><strong>1(b)(iii)</strong></td>
+<td><span class="math inline">\(\Phi(t,x)=\)</span> konstant; mit <span class="math inline">\(x(1)=0\)</span> folgt <span class="math inline">\(\Phi(1,0)=-1\)</span>. <br> <strong>Lösung:</strong> <span class="math inline">\(t^2(x^3-1)=-1\)</span> ⇔ <span class="math inline">\(x^3=1-\frac{1}{t^2}\)</span> ⇔ <span class="math inline">\(x(t)=\sqrt[3]{1-\frac{1}{t^2}}\)</span>. <br> Für <span class="math inline">\(t\to\infty\)</span> konvergiert <span class="math inline">\(x(t)\to 1\)</span>.</td>
 </tr>
 <tr class="odd">
-<td><strong>Verwendung in der Physik</strong></td>
-<td>Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck</td>
-<td>Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder</td>
+<td><strong>2(a)</strong></td>
+<td>Gegeben: <span class="math inline">\(A=\begin{pmatrix}3&amp;-1\\5&amp;-1\end{pmatrix}\)</span>. <br> Charakteristik: <span class="math inline">\(\det(A-\lambda I)=\lambda^2-2\lambda+2=0\)</span> ⇒ <span class="math inline">\(\lambda=1\pm i\)</span>. <br> Eigenvektor zu <span class="math inline">\(\lambda=1+i\)</span>: <span class="math inline">\(v=(1,\,2-i)^T\)</span>. <br> Zerlegung: <span class="math inline">\(a=(1,2)^T\)</span>, <span class="math inline">\(b=(0,-1)^T\)</span>. <br> Reelles Fundamentalsystem: <br> <span class="math inline">\(x_1(t)=e^t\Bigl[a\cos t-b\sin t\Bigr]\)</span>, <br> <span class="math inline">\(x_2(t)=e^t\Bigl[a\sin t+b\cos t\Bigr]\)</span>.</td>
 </tr>
 <tr class="even">
-<td><strong>Buchstabenherkunft</strong></td>
-<td><span class="math inline">\(u\)</span> historisch von Fourier für Temperatur, <span class="math inline">\(\phi\)</span> für Potentiale</td>
-<td><span class="math inline">\(\mathbf{F}\)</span> von „Force“ (Kraft) in der Mechanik</td>
+<td><strong>2(b)</strong></td>
+<td><strong>Partikulär:</strong> Finde <span class="math inline">\(x_p\)</span> mit <span class="math inline">\(Ax_p=-b\)</span> (wobei <span class="math inline">\(b=(1,0)^T\)</span>). <br> Lösen: <span class="math inline">\(3x-y=-1\)</span> und <span class="math inline">\(5x-y=0\)</span> ⇒ <span class="math inline">\(x=\frac{1}{2}\)</span>, <span class="math inline">\(y=\frac{5}{2}\)</span>. <br> Somit: <span class="math inline">\(x_p=\begin{pmatrix}\frac{1}{2}\\\frac{5}{2}\end{pmatrix}\)</span>. <br> <strong>Allgemeine Lösung:</strong> <span class="math inline">\(x(t)=c_1\,x_1(t)+c_2\,x_2(t)+x_p\)</span>. <br> <strong>Matrixform:</strong> <span class="math inline">\(X=\begin{pmatrix}x_1(t)&amp;&amp;x_2(t)\end{pmatrix}\begin{pmatrix}c_1\\c_2\end{pmatrix}=\begin{pmatrix}\cos(t)&amp;&amp;\sin(t)\\a_2\cos(t)-b_2\sin(t)&amp;&amp;a_2\sin(t)+b_2\cos(t)\end{pmatrix}\begin{pmatrix}c_1\\c_2\end{pmatrix} +\begin{pmatrix}\frac{1}{2}\\\frac{5}{2}\end{pmatrix}\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><strong>3(a)</strong></td>
+<td>Die PDE <span class="math inline">\(2u_t-u_{xx}=0\)</span> kann umgeschrieben werden als <span class="math inline">\(u_t=\frac{1}{2}u_{xx}\)</span> – die klassische Wärmeleitungsgleichung. <br> <strong>Klassifikation:</strong> parabolisch.</td>
+</tr>
+<tr class="even">
+<td><strong>3(b)</strong></td>
+<td>Für <span class="math inline">\(f(x)=1\)</span> (auf <span class="math inline">\([0,\pi]\)</span>) ungerade periodisch fortgesetzt: <br> Fourier-Sinus-Koeffizient: <span class="math inline">\(\displaystyle b_k=\frac{2}{\pi}\int_0^\pi \sin(kx)\,dx=\frac{2(1-\cos(k\pi))}{\pi k}\)</span>. <br> Damit: <span class="math inline">\(b_k=\frac{4}{\pi k}\)</span> für ungerade <span class="math inline">\(k\)</span> und 0 für gerade <span class="math inline">\(k\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><strong>3(c)</strong></td>
+<td>Ansatz: <span class="math inline">\(u(t,x)=T(t)\sin(kx)\)</span>. <br> Einsetzen in <span class="math inline">\(2u_t-u_{xx}=0\)</span> ergibt <span class="math inline">\(2T'(t)+k^2T(t)=0\)</span>. <br> <strong>Lösung:</strong> <span class="math inline">\(T(t)=\exp\Bigl(-\frac{k^2}{2}t\Bigr)\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(u(t,x)=\sin(kx)\exp\Bigl(-\frac{k^2}{2}t\Bigr)\)</span>.<br> <strong>Ergebnis:</strong> <span class="math inline">\(u(t,x)=\sum_\text{k ungerade}^n\frac{4}{\pi k}\sin(kx)\exp\Bigl(-\frac{k^2}{2}t\Bigr)\)</span>.</td>
+</tr>
+<tr class="even">
+<td><strong>4(a)</strong></td>
+<td>Vektorfeld: <span class="math inline">\(F=\begin{pmatrix} x\frac{y^3}{3}\\x^2\Bigl(z^2+\frac{y^2}{2}\Bigr)-\alpha x^2z^2\\(1-\alpha)2x^2yz+z^2 \end{pmatrix}\)</span>. <br> Notwendige Bedingung (z. B. <span class="math inline">\(P_y=Q_x\)</span>): <br> <span class="math inline">\(P_y=x\,y^2\)</span> und <span class="math inline">\(Q_x=xy^2+2x(1-\alpha)z^2\)</span>. <br> → Für alle <span class="math inline">\(x,z\)</span> folgt <span class="math inline">\(1-\alpha=0\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\alpha=1\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><strong>4(b)</strong></td>
+<td>Für <span class="math inline">\(\alpha=1\)</span> vereinfacht sich <span class="math inline">\(Q(x,y,z)=x^2\frac{y^2}{2}\)</span> und <span class="math inline">\(R(x,y,z)=z^2\)</span>. <br> Integriere <span class="math inline">\(P\)</span>: <span class="math inline">\(\Phi(x,y,z)=\frac{x^2y^3}{6}+g(y,z)\)</span>. <br> Da <span class="math inline">\(\Phi_y=\frac{x^2y^2}{2}+g_y(y,z)=Q\)</span> ⇒ <span class="math inline">\(g_y(y,z)=0\)</span> und <span class="math inline">\(g(y,z)=h(z)\)</span>. <br> <span class="math inline">\(h'(z)=z^2\)</span> ⇒ <span class="math inline">\(h(z)=\frac{z^3}{3}+C\)</span>. <br> <strong>Potential:</strong> <span class="math inline">\(\Phi(x,y,z)=\frac{x^2y^3}{6}+\frac{z^3}{3}\)</span>.</td>
+</tr>
+<tr class="even">
+<td><strong>4(c)</strong></td>
+<td>Mit <span class="math inline">\(F=\nabla\Phi\)</span> ist das Kurvenintegral wegunabhängig. <br> Berechne: <span class="math inline">\(\gamma(0)=(1,0,0)^T\)</span> und <span class="math inline">\(\gamma(1)=(0,1,1)^T\)</span>. <br> <span class="math inline">\(\Phi(1,0,0)=0\)</span> und <span class="math inline">\(\Phi(0,1,1)=\frac{1}{3}\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_\gamma F\cdot d\gamma=\frac{1}{3}\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><strong>5(a)</strong></td>
+<td>Rotationsfläche zu <span class="math inline">\(\gamma(u)=(e^u-1,0,u)^T\)</span>. <br> <strong>Parametrisierung:</strong> <span class="math inline">\(f(u,v)=\Bigl((e^u-1)\cos v,\,(e^u-1)\sin v,\,u\Bigr)\)</span> mit <span class="math inline">\(u\in[0,1]\)</span>, <span class="math inline">\(v\in[0,2\pi]\)</span>.</td>
+</tr>
+<tr class="even">
+<td><strong>5(b)</strong></td>
+<td>Tangentialvektoren: <br> <span class="math inline">\(f_u=(e^u\cos v,\,e^u\sin v,\,1)\)</span>, <br> <span class="math inline">\(f_v=(- (e^u-1)\sin v,\,(e^u-1)\cos v,\,0)\)</span>. <br> <strong>Normale (nicht normiert):</strong> <span class="math inline">\(n=f_u\times f_v=(- (e^u-1)\cos v,\,- (e^u-1)\sin v,\,e^u(e^u-1))\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><strong>5(c)</strong></td>
+<td>Mit <span class="math inline">\(F(x,y,z)=(x+y,\,y-x,\,2)^T\)</span> erhält man nach Einsetzen und Kürzen: <br> <span class="math inline">\(F(f(u,v))\cdot (f_u\times f_v)= e^{2u}-1\)</span>. <br> <strong>Oberflächenintegral:</strong> <span class="math inline">\(\displaystyle \int_{u=0}^1\int_{v=0}^{2\pi}(e^{2u}-1)\,dv\,du=\pi(e^2-3)\)</span>.</td>
+</tr>
+<tr class="even">
+<td><strong>6(a)</strong></td>
+<td>Kugelsegment <span class="math inline">\(K=\{(x,y,z):x^2+y^2+z^2\le4,\; y\ge0,\; z\ge0\}\)</span> in Kugelkoordinaten: <br> <span class="math inline">\(x=r\sin\varphi\cos\theta,\; y=r\sin\varphi\sin\theta,\; z=r\cos\varphi\)</span>. <br> Bereiche: <span class="math inline">\(r\in[0,2]\)</span>, <span class="math inline">\(\varphi\in[0,\pi/2]\)</span> (wegen <span class="math inline">\(z\ge0\)</span>) und <span class="math inline">\(\theta\in[0,\pi]\)</span> (wegen <span class="math inline">\(y\ge0\)</span>).</td>
+</tr>
+<tr class="odd">
+<td><strong>6(b)</strong></td>
+<td>Divergenz: <span class="math inline">\(\operatorname{div}F=1+1+1=3\)</span>. <br> Volumen des Balls (Radius 2): <span class="math inline">\(\frac{32\pi}{3}\)</span>; <span class="math inline">\(K\)</span> ist ein Viertel davon: <span class="math inline">\(V_K=\frac{8\pi}{3}\)</span>. <br> <strong>Fluss:</strong> <span class="math inline">\(3\cdot\frac{8\pi}{3}=8\pi\)</span>.</td>
+</tr>
+<tr class="even">
+<td><strong>6(c)</strong></td>
+<td>Da <span class="math inline">\(\operatorname{div}(\operatorname{rot}F)=0\)</span>, gilt: <br> <span class="math inline">\(\displaystyle \int_{\partial K}\operatorname{rot}F\cdot n\,dS=0\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><strong>6(d)</strong></td>
+<td>Sei <span class="math inline">\(B\)</span> der Boden (<span class="math inline">\(z=0\)</span>) des Kugelsegments. <br> Es gilt: <span class="math inline">\(\int_{\partial K}\operatorname {rot} F\cdot n\,dS = \int_{\partial K\setminus B}\operatorname {rot}\cdot n\,dS+\int_B \operatorname {rot}\cdot n\,dS\)</span>. <br> Auf <span class="math inline">\(B\)</span> ist <span class="math inline">\(n=(0,0,-1)\)</span> und <span class="math inline">\(\operatorname {rot}(x,y,0)=(x,-y,2)\)</span> ⇒ <span class="math inline">\(F\cdot n=-2\)</span>. <br> <span class="math inline">\(\int_B (-2)dA=-2*2\pi=-4\pi\)</span>. <br> <strong>Ergebnis:</strong> <span class="math inline">\(\displaystyle \int_{\partial K\setminus B}rot(F)\cdot n\,dS=4\pi\)</span>. (weil Summe <span class="math inline">\(= 0\)</span> aus 6 (c) )</td>
 </tr>
 </tbody>
 </table>
-<p>Diese Tabelle hilft dabei, die beiden Konzepte klar voneinander abzugrenzen und zu verstehen, wie sie in der Mathematik und Physik verwendet werden.</p>
+<p><a href="https://colab.research.google.com/drive/1yMC6mkhiUe6dk9Kfzyma7kfPXMiWwhFI?usp=sharing">colab</a></p>
 
 
 </section>

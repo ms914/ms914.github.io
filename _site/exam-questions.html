@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ms914.github.io - HM3 Website</title>
+<title>ms914.github.io - Exam Questions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -165,7 +165,15 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#herzlich-willkommen-zur-hm3-website" id="toc-herzlich-willkommen-zur-hm3-website" class="nav-link active" data-scroll-target="#herzlich-willkommen-zur-hm3-website">Herzlich Willkommen zur HM3 Website</a></li>
+  <li><a href="#hm3-exam-questions" id="toc-hm3-exam-questions" class="nav-link active" data-scroll-target="#hm3-exam-questions">HM3 Exam Questions</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-10-punkte" id="toc-aufgabe-1-10-punkte" class="nav-link" data-scroll-target="#aufgabe-1-10-punkte">Aufgabe 1 (10 Punkte)</a></li>
+  <li><a href="#aufgabe-2-10-punkte" id="toc-aufgabe-2-10-punkte" class="nav-link" data-scroll-target="#aufgabe-2-10-punkte">Aufgabe 2 (10 Punkte)</a></li>
+  <li><a href="#aufgabe-3-10-punkte" id="toc-aufgabe-3-10-punkte" class="nav-link" data-scroll-target="#aufgabe-3-10-punkte">Aufgabe 3 (10 Punkte)</a></li>
+  <li><a href="#aufgabe-4-10-punkte" id="toc-aufgabe-4-10-punkte" class="nav-link" data-scroll-target="#aufgabe-4-10-punkte">Aufgabe 4 (10 Punkte)</a></li>
+  <li><a href="#aufgabe-5-10-punkte" id="toc-aufgabe-5-10-punkte" class="nav-link" data-scroll-target="#aufgabe-5-10-punkte">Aufgabe 5 (10 Punkte)</a></li>
+  <li><a href="#aufgabe-6-10-punkte" id="toc-aufgabe-6-10-punkte" class="nav-link" data-scroll-target="#aufgabe-6-10-punkte">Aufgabe 6 (10 Punkte)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +182,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HM3 Website</h1>
+<h1 class="title">Exam Questions</h1>
 </div>
 
 
@@ -191,65 +199,82 @@ window.Quarto = {
 </header>
 
 
-<section id="herzlich-willkommen-zur-hm3-website" class="level1">
-<h1>Herzlich Willkommen zur HM3 Website</h1>
-<p>Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.</p>
-<ul>
-<li><a href="./exam-questions.html">Exam Questions</a></li>
-<li><a href="./solutions.html">Solutions</a></li>
-<li><a href="./hm3_python.html">sympy code examples</a></li>
-</ul>
-<p>Die HM3 ist die Grundlage für die Theorie der Strömungsdynamik.</p>
-<p>Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:</p>
-<table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 47%">
-<col style="width: 32%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Eigenschaft</strong></th>
-<th><strong>Skalarfeld <span class="math inline">\(u(x,t)\)</span> oder <span class="math inline">\(\phi(x,y,z)\)</span></strong></th>
-<th><strong>Vektorfeld <span class="math inline">\(\mathbf{F}(x,y,z)\)</span></strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Definition</strong></td>
-<td>Ordnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)</td>
-<td>Ordnet jedem Punkt einen Vektor zu (Wert + Richtung)</td>
-</tr>
-<tr class="even">
-<td><strong>Beispiele</strong></td>
-<td>Temperatur <span class="math inline">\(T(x,y,z)\)</span>, Druck <span class="math inline">\(p(x,y,z)\)</span>, elektrisches Potential <span class="math inline">\(\phi(x,y,z)\)</span></td>
-<td>Kraftfeld <span class="math inline">\(\mathbf{F} = (F_x, F_y, F_z)\)</span>, elektrisches Feld <span class="math inline">\(\mathbf{E}\)</span>, Strömungsgeschwindigkeit <span class="math inline">\(\mathbf{v}\)</span></td>
-</tr>
-<tr class="odd">
-<td><strong>Typische Gleichung</strong></td>
-<td>Wärmeleitungsgleichung <span class="math inline">\(\frac{\partial u}{\partial t} = \alpha \nabla^2 u\)</span></td>
-<td>Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder</td>
-</tr>
-<tr class="even">
-<td><strong>Mathematische Operationen</strong></td>
-<td>Gradient (<span class="math inline">\(\nabla u\)</span>) → erzeugt ein Vektorfeld aus einem Skalarfeld</td>
-<td>Divergenz (<span class="math inline">\(\nabla \cdot \mathbf{F}\)</span>), Rotation (<span class="math inline">\(\nabla \times \mathbf{F}\)</span>)</td>
-</tr>
-<tr class="odd">
-<td><strong>Verwendung in der Physik</strong></td>
-<td>Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck</td>
-<td>Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder</td>
-</tr>
-<tr class="even">
-<td><strong>Buchstabenherkunft</strong></td>
-<td><span class="math inline">\(u\)</span> historisch von Fourier für Temperatur, <span class="math inline">\(\phi\)</span> für Potentiale</td>
-<td><span class="math inline">\(\mathbf{F}\)</span> von „Force“ (Kraft) in der Mechanik</td>
-</tr>
-</tbody>
-</table>
-<p>Diese Tabelle hilft dabei, die beiden Konzepte klar voneinander abzugrenzen und zu verstehen, wie sie in der Mathematik und Physik verwendet werden.</p>
+<section id="hm3-exam-questions" class="level1">
+<h1>HM3 Exam Questions</h1>
+<button onclick="window.print()">
+Download as PDF
+</button>
+<section id="aufgabe-1-10-punkte" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-10-punkte">Aufgabe 1 (10 Punkte)</h2>
+<p><strong>a)</strong> Lösen Sie das Anfangswertproblem<br>
+<span class="math display">\[
+x' = t\,x^2 + t,\quad x(0)=0,
+\]</span> Hinweis: <span class="math inline">\(\arctan'(x)=\frac{1}{1+x^2}\)</span>.</p>
+<p><strong>b)</strong> Betrachten Sie die Differentialgleichung <span class="math display">\[
+2tx^3-2t+3t^2x^2x'=0,\quad x(1)=0.
+\]</span> (i) Zeigen Sie, dass die DGL exakt ist.<br>
+(ii) Geben Sie eine Funktion <span class="math inline">\(\Phi=\Phi(t,x)\)</span> an, so dass <span class="math inline">\(\Phi_t(t,x)+\Phi_x(t,x)\dot x=0\)</span>.<br>
+(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für <span class="math inline">\(t \rightarrow \infty\)</span>.</p>
+</section>
+<section id="aufgabe-2-10-punkte" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-10-punkte">Aufgabe 2 (10 Punkte)</h2>
+<p>Gegeben ist das lineare System <span class="math display">\[
+\dot x=\begin{pmatrix}3 &amp; -1\\5 &amp; -1\end{pmatrix}x.
+\]</span> <strong>a)</strong> Geben Sie ein reelles Fundamentalsystem an.<br>
+<strong>b)</strong> Geben Sie die allgemeine reelle Lösung des Anfangswertproblems <span class="math inline">\(\dot x=Ax+b\)</span> mit<br>
+<span class="math display">\[
+b=\begin{pmatrix}1\\0\end{pmatrix}
+\]</span> an.</p>
+</section>
+<section id="aufgabe-3-10-punkte" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-10-punkte">Aufgabe 3 (10 Punkte)</h2>
+<p>Gegeben sei die partielle Differentialgleichung <span class="math display">\[
+2u_t-u_{xx}=0,
+\]</span> mit <span class="math inline">\(x\in[0,\pi]\)</span> und <span class="math inline">\(t&gt;0\)</span>.</p>
+<p><strong>a)</strong> Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).<br>
+<strong>b)</strong> Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion<br>
+<span class="math display">\[
+f(x)=1\quad \text{für } x\in [0,\pi].
+\]</span><br>
+<strong>c)</strong> Bestimmen Sie für alle <span class="math inline">\(k\in\mathbb{N}\)</span> eine Lösung der PDE mit der Anfangsbedingung <span class="math display">\[
+u(0,x)=\sin(kx)\quad (x\in[0,\pi]),
+\]</span> die die Randbedingungen <span class="math inline">\(u(t,0)=u(t,\pi)=0,\;t&gt;0\)</span> erfüllt.</p>
+</section>
+<section id="aufgabe-4-10-punkte" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-10-punkte">Aufgabe 4 (10 Punkte)</h2>
+<p>Gegeben sei das parameterabhängige Vektorfeld <span class="math display">\[
+F:\mathbb{R}^3\to\mathbb{R}^3,\quad F=\begin{pmatrix} x\frac{y^3}{3}\\x^2\Bigl(z^2+\frac{y^2}{2}\Bigr)-\alpha x^2z^2\\(1-\alpha)2x^2yz+z^2 \end{pmatrix},
+\]</span> und der Weg <span class="math display">\[
+\gamma:[0,1]\to\mathbb{R}^3,\quad \gamma(t)=\begin{pmatrix}1-t^2\\t^2\\t\end{pmatrix}.
+\]</span> <strong>a)</strong> Bestimmen Sie alle <span class="math inline">\(\alpha\in\mathbb{R}\)</span>, sodass <span class="math inline">\(F\)</span> ein Potential besitzt.<br>
+<strong>b)</strong> Geben Sie für <span class="math inline">\(\alpha=1\)</span> ein Potential an.<br>
+<strong>c)</strong> Berechnen Sie für <span class="math inline">\(\alpha=1\)</span> das Kurvenintegral 2. Art von <span class="math inline">\(F\)</span> entlang <span class="math inline">\(\gamma\)</span>.</p>
+</section>
+<section id="aufgabe-5-10-punkte" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5-10-punkte">Aufgabe 5 (10 Punkte)</h2>
+<p>Es sei <span class="math display">\[
+\gamma(u)=(e^u-1,0,u)^T,\quad u\in[0,1],
+\]</span> ein planarer Weg in der x‑z-Ebene. Mit <span class="math inline">\(A\)</span> bezeichnen wir die Rotationsfläche, die entsteht, wenn <span class="math inline">\(\gamma\)</span> um die z‑Achse rotiert wird.</p>
+<p>Gegeben sei außerdem das Vektorfeld <span class="math display">\[
+F:\mathbb{R}^3\to\mathbb{R}^3,\quad F(x,y,z)=\begin{pmatrix} x+y\\y-x\\2 \end{pmatrix}.
+\]</span> <strong>a)</strong> Geben Sie eine Parametrisierung <span class="math inline">\(f(u,v)\)</span> der Fläche <span class="math inline">\(A\)</span> an.<br>
+<strong>b)</strong> Bestimmen Sie Tangentialvektoren und den Normalenvektor an <span class="math inline">\(A\)</span>.<br>
+<strong>c)</strong> Bestimmen Sie das Oberflächenintegral 2. Art <span class="math inline">\(\int_A F\cdot dn\)</span>.</p>
+</section>
+<section id="aufgabe-6-10-punkte" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6-10-punkte">Aufgabe 6 (10 Punkte)</h2>
+<p>Es sei <span class="math display">\[
+K=\{(x,y,z)^T\in\mathbb{R}^3 : x^2+y^2+z^2\leq4,\; y\geq0,\; z\geq0
+\]</span> das Kugelsegment und <span class="math inline">\(\partial K\)</span> die Vereinigung aller Oberflächen des Segments.<br>
+Weiterhin sei <span class="math display">\[
+F:\mathbb{R}^3\to\mathbb{R}^3,\quad F(x,y,z)=\begin{pmatrix} x-y\\x+y\\z+xy \end{pmatrix}.
+\]</span> <strong>a)</strong> Parametrisieren Sie das Volumen in Kugelkoordinaten.<br>
+<strong>b)</strong> Berechnen Sie den Fluss <span class="math inline">\(\int_{\partial K}F\cdot n\,dS\)</span>, wobei <span class="math inline">\(n\)</span> die nach außen gerichtete Normale ist.<br>
+<strong>c)</strong> Berechnen Sie <span class="math inline">\(\int_{\partial K}\operatorname{rot}(F)\cdot n\,dS\)</span>.<br>
+<strong>d)</strong> Berechnen Sie mit dem Satz von Stokes das Integral <span class="math inline">\(\int_{\partial K\setminus B}rot F\cdot n\,dS\)</span>, wobei <span class="math inline">\(B\)</span> der Boden des Kugelsegments in der (x‑y)-Ebene ist.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
