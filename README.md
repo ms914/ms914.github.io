@@ -11,3 +11,4 @@ ToDos:
 - Fourierintegral
 
 - Literature: Thomas Calculus
+- Calculus made easy: https://www.gutenberg.org/files/33283/33283-pdf.pdf
