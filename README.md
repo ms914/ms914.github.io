@@ -9,3 +9,5 @@ ToDos:
 - Ausführung Volumenintegral mit Divergenz als Funktion
 - Wellengleichung allgemeine Lösung Ergebnis und Herleitung
 - Fourierintegral
+
+- Literature: Thomas Calculus
