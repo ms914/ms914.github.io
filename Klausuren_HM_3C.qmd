@@ -2,7 +2,7 @@
 title: "Klausur HM 1"
 format: html
 editor: visual
-jupyter: python3
+#jupyter: python3
 fontsize: small
 #pdf-engine: pdflatex
 ---
