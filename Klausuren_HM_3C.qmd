@@ -1,0 +1,673 @@
+---
+title: "Klausur HM 1"
+format: html
+editor: visual
+jupyter: python3
+fontsize: small
+#pdf-engine: pdflatex
+---
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3 }
+**Aufgabe 1 (7 Punkte).**
+
+Bestimmen Sie alle $x\in R$ für die die Reihe
+
+$$\sum_{n=1}^{\infty} \frac{1}{n 3^n} {(x-1)^n}$$
+
+konvergiert.
+
+```{python}
+import sympy as sp
+n = sp.symbols('n', integer=True)
+x = sp.symbols('x')
+a_n = 1 / (n * 3**n)
+# Das Verhältnis a_{n+1} / a_n wird zu:
+ratio = sp.simplify(a_n.subs(n, n+1) / a_n)
+limit_ratio = sp.limit(ratio, n, sp.oo)
+radius_of_convergence = 1 / limit_ratio
+radius_of_convergence
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 2 (14 Punkte).** Gegeben sei die Funktion
+
+$$f(x)=\frac{1}{x^2(x-3)}$$
+
+Geben Sie den maximalen Definitionsbereich von $f$ an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall $[-2,5]$.
+
+```{python}
+import sympy as sp
+x = sp.symbols('x')
+f=1/(x**2*(x-3))
+f0=sp.solve(f)
+fp0=sp.solve(f.diff(x))
+print(sp.limit(f,x,"oo"))
+print(sp.limit(f,x,"0"))
+#sp.plot(f, (x, -2, 5), ylim=(-10,10))
+
+import numpy as np
+import matplotlib.pyplot as plt
+f_lambdified = sp.lambdify(x, f, 'numpy')
+x_vals = np.linspace(-3, 5, 400)
+y_vals = f_lambdified(x_vals)
+fig, ax = plt.subplots(figsize=(3, 2), dpi=100)
+ax.plot(x_vals, y_vals)
+ax.set_ylim(-5, 2)
+ax.set_title("Plot")
+plt.show()
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 3 (5+5 Punkte).** a) Stellen Sie
+
+$$\frac{(\sqrt{2} + i \sqrt{2})^3}{(2 e^{i \pi/3})^6}$$
+
+in Polarform dar.
+
+b)  Bestimmen Sie alle komplexen Lösungen der Gleichung
+
+$$ z^6 - (\sqrt2 + \sqrt2 i) z^2 = 0 $$
+
+Geben Sie die Lösungen dabei in Polarform an.
+
+```{python}
+import sympy as sp
+i = sp.I  # imaginäre Einheit
+pi = sp.pi
+solutions = [0, 0]
+r_expr = 2      # Betrag
+phi_expr = pi/4 # Winkel
+r_root = r_expr**(1/sp.Integer(4))
+solutions_nonzero = [r_root * sp.exp(i*(phi_expr + 2*pi*k)/4) for k in range(4)]
+solutions.extend(solutions_nonzero)
+solutions
+
+
+```
+
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3}
+**Aufgabe 4 (6+4 Punkte)**
+
+a)  Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion
+
+$$ g(x)=x^2ln (x) $$
+
+im Entwicklungspunkt $x=e$
+
+b)  Schätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall $[e,2e]$ ab.
+
+
+```{python}
+import sympy as sp
+x, xi = sp.symbols('x xi', real=True, positive=True)
+e = sp.E
+i = sp.I
+pi = sp.pi
+g = x**2 * sp.log(x)
+a = e
+g0 = g.subs(x, a)                      # g(e)
+g1 = sp.diff(g, x).subs(x, a)            # g'(e)
+g2 = sp.diff(g, x, 2).subs(x, a)         # g''(e)
+g3 = sp.diff(g, x, 3).subs(x, a)         # g'''(e)
+g4 = sp.diff(g, x, 4)                    # g^(4)(x) allgemein
+T3 = g0 + g1*(x-a) + g2/2*(x-a)**2 + g3/6*(x-a)**3
+max_g4 = 2/e**2
+R3_bound = max_g4/sp.factorial(4) * (x-a)**4
+R3_max = R3_bound.subs(x, 2*e)
+R3_max
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 5 (7+2 Punkte).**
+
+Gegeben sei die Funktion
+
+$$h(x)=\frac{x^2+4x-3}{x^3-3x-2}. $$
+
+a)  Berechnen Sie die Partialbruchzerlegung von $h(x)$.
+
+b)  Bestimmen Sie eine Stammfunktion von $h(x)$.
+
+```{python}
+from sympy import *
+
+x = symbols('x')
+
+Z=x**2+4*x-3
+N=x**3-3*x-2
+h=Z/N
+N.factor()
+integrate(h.apart(), x)
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 6 (4+6 Punkte).**
+
+a)  Berechnen Sie den Grenzwert
+
+$$\lim_{y->1}\sqrt{1-y^2}ln(\sqrt{1-y^2}). $$
+
+b)  Berechnen Sie für $y\in (0,1)$ das Integral
+
+$$ I(y)=\int_0^yln(\sqrt{1-x^2})\frac{x}{\sqrt{1-x^2}}dx .$$
+
+*Hinweis: Für* $x>0$ gilt: $xln(x)'=ln(x)$
+
+```{python}
+import sympy as sp
+
+# Definition der Variablen
+y, x, u = sp.symbols('y x u', real=True, positive=True)
+u_expr = sp.sqrt(1 - y**2)
+L = sp.limit(u_expr * sp.log(u_expr), y, 1)
+sp.pprint(L)
+
+integrand = sp.log(sp.sqrt(1 - x**2)) * (x/sp.sqrt(1 - x**2))
+I = sp.integrate(integrand, (x, 0, y))
+I_simpl = sp.simplify(I)
+I_simpl
+```
+:::
+:::
+
+## Klausur HM2
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3}
+
+**Aufgabe 1 (8 Punkte)**
+
+Gegeben sei ein lineares Gleichungssystem  ***Ax=b*** mit der Koeffizientenmatrix und der rechten Seite
+
+$$
+A=
+\begin{pmatrix}
+   1&1& 3& 1\\
+   2& -1& 0& 1&\\
+   -3& 2& 1& -2&\\
+   4& 1& 6& 1&
+\end{pmatrix}
+$$
+
+$$
+b=
+\begin{pmatrix}
+   6\\
+   -1\\
+   1\\
+   3
+\end{pmatrix}
+$$
+
+Bestimmen Sie die Lösung des Gleichungssystems. Wie ist der Rang der Matrix ***A***?
+
+
+
+
+```{python}
+import sympy as sp; 
+A = sp.Matrix([[1,1,3,1],[2,-1,0,1],[-3,2,1,-2],[4,1,6,1]]); 
+b = sp.Matrix([6,-1,1,3]); 
+print(A.gauss_jordan_solve(b))
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 2 (7+3 Punkte)**
+
+Im dreidimensionalen Raum $R3$ seien eine Gerade in Koordinatendarstellung
+
+$g: \frac{4-x_1}{2}=\frac{4+x_2}{3}=\frac{2-x_3}{2}$
+
+sowie eine Ebene E durch die drei Punkte (3,1,2), (-1,3,2), (5,-2,4).
+
+a) Geben Sie eine Parameterdarstellung der Geraden $g$ und die Hesse-Normalform der Ebene $E$ an.
+
+b) Entscheiden Sie ob die Gerade $g$ und die Ebene $E$ sich in einem Punkt schneiden.
+
+- Wenn ja, berechnen Sie die Koordinaten des Schnittpunkts.
+
+- Wenn nein, berechnen Sie denAbstand der Geraden von der Ebene. 
+
+
+```{python}
+import sympy as sp
+
+# Parameterdarstellung der Geraden g:
+t = sp.symbols('t', real=True)
+g = sp.Line3D(sp.Point3D(4, -4, 2), sp.Point3D(4, -4, 2) + sp.Point3D(-2, 3, -2))
+print("g: (4,-4,2) + t*(-2,3,-2)")
+
+# Ebene E durch Punkte A, B, C:
+A = sp.Point3D(3, 1, 2)
+B = sp.Point3D(-1, 3, 2)
+C = sp.Point3D(5, -2, 4)
+E = sp.Plane(A, B, C)
+
+# Hesse-Normalform: n0 · x = d, wobei n0 der normierte Normalenvektor ist
+n = sp.Matrix(E.normal_vector)
+n0 = n / n.norm()
+d = sp.simplify(n0.dot(sp.Matrix(A)))
+print("\nHesse-Normalform der Ebene E:")
+print("{} · (x,y,z) = {}".format(n0, d))
+
+# Schnittpunkt von g und E bzw. Abstand:
+pt = g.intersection(E)
+if pt:
+    print("\nSchnittpunkt von g und E:")
+    sp.pprint(pt[0])
+else:
+    print("\nAbstand der Geraden g von der Ebene E:")
+    sp.pprint(sp.simplify(E.distance(g)))
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 3 (8 + 3 Punkte)**
+
+Gegeben sei die Matrix
+
+$$
+A=
+\begin{pmatrix}
+   1& -2& 3\\
+   1& 0& 1&\\
+   0& 4& -2&
+\end{pmatrix}
+$$
+
+a) Berechnen Sie alle Eigenwerte und zugehörigen Eigenvektoren von $A$.
+
+b) Drücken Sie die lineare Abbildung $y=Ax$ in einer Basis $B$ aus, die durch die Eigenvektoren von $A$ gebildet wird.
+
+
+
+
+
+
+```{python}
+import sympy as sp
+
+A = sp.Matrix([[1, -2, 3], [1, 0, 1], [0, 4, -2]])
+A.diagonalize()
+```
+
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3}
+**Aufgabe 4 (4+4+3 Punkte)**
+Gegeben sei die Funktion $f(x,y)=(y^2-x)ln(x)$ mit $x>0$ und $y\in ℝ$.
+
+a) Berechnen Sie alle stationären Punkte von $f$.
+
+b) Überprüfen Sie, bei welchen stationären Punkten es sich um lokale Extrema handelt und geben Sie gegebenenfalls an, ob es sich jeweils um ein lokales Minimum oder Maximum handelt.
+
+c) Bestimmen sie das Taylor-Polynom zweiten Grades von $f$ mit Entwicklungspunkt $(x_0, y_0)=(1,2)$.
+
+
+
+
+
+```{python}
+import sympy as sp
+
+# Definition der Variablen und Funktion
+x, y, t = sp.symbols('x y t', real=True)
+f = (y**2 - x)*sp.log(x)
+fx = sp.diff(f, x)
+fy = sp.diff(f, y)
+stationary_system = [sp.Eq(fx, 0), sp.Eq(fy, 0)]
+stat_points = sp.solve(stationary_system, (x, y), dict=True)
+print("Stationäre Punkte:")
+sp.pprint(stat_points)
+fxx = sp.diff(fx, x)
+fxy = sp.diff(fx, y)
+fyy = sp.diff(fy, y)
+H = sp.Matrix([[fxx, fxy],
+               [fxy, fyy]])
+print("Hesse-Matrix:")
+sp.pprint(sp.simplify(H))
+for sol in stat_points:
+    H_eval = H.subs(sol)
+    detH = H_eval.det()
+    fxx_eval = fxx.subs(sol)
+    print("An Punkt", sol, ":")
+    sp.pprint(H_eval)
+    print("Determinante =", sp.simplify(detH))
+    if detH < 0:
+        print("-> Sattelpunkt\n")
+    elif detH > 0:
+        if fxx_eval > 0:
+            print("-> Lokales Minimum\n")
+        elif fxx_eval < 0:
+            print("-> Lokales Maximum\n")
+        else:
+            print("-> Unklare Situation\n")
+    else:
+        print("-> Keine eindeutige Aussage\n")
+
+# c) Taylor-Polynom 2. Grades von f an (1,2)
+a, b = 1, 2
+f_val = f.subs({x:a, y:b})
+fx_val = fx.subs({x:a, y:b})
+fy_val = fy.subs({x:a, y:b})
+fxx_val = fxx.subs({x:a, y:b})
+fxy_val = fxy.subs({x:a, y:b})
+fyy_val = fyy.subs({x:a, y:b})
+T2 = (f_val +
+      fx_val*(x - a) +
+      fy_val*(y - b) +
+      1/sp.Integer(2) * (fxx_val*(x - a)**2 + 2*fxy_val*(x - a)*(y - b) + fyy_val*(y - b)**2))
+T2_simpl = sp.simplify(T2)
+T2_simpl
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 5 (7 + 3 Punkte)**
+
+a) Bestimmen Sie mit der Methode der Lagrange-Multiplikatoren die Kandidaten für lokale Extrema der Funktion
+
+$f(x,y)=(3x+2y)x$
+
+unter der Nebenbedingung
+
+$2x^3+3x^2y=40$
+
+b) Berechnen Sie die Ableitung der Funktion $f$ entlang der implizit durch die Nebenbedingungen gegebenen Kurve $x \mapsto (x,(y(x))$.
+
+
+
+
+```{python}
+import sympy as sp
+
+# Define symbols
+x, y, l = sp.symbols('x y l')
+f = (3*x + 2*y) * x
+g = 2*x**3 + 3*x**2*y - 40
+L = f - l * g
+grad_L = [sp.diff(L, var) for var in [x, y, l]]
+stationary_points = sp.solve(grad_L, [x, y, l])
+print(f"Candidate extrema: {stationary_points}")
+
+
+y_constraint = sp.solve(g, y)[0]
+f_constrained = f.subs(y, y_constraint)
+df_dx = sp.diff(f_constrained, x)
+print(f"Derivative of f along the curve: {df_dx}")
+     
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 6 (10 Punkte)**
+
+Berechnen Sie das Integral der Funktion $f(x,y)=2y/x$ über das Kreissegment $B$, das von der Kreislinie mit der Gleichung $(x-2)^2+y^2=4$ und der Geraden mit der Gleichung $x+2y=4$ begrenzt wird (siehe Abbildung 1).
+
+
+
+```{python}
+
+```
+:::
+:::
+
+
+## Klausur HM3
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3}
+**Aufgabe 1 (10 Punkte)**
+
+a) Lösen Sie das Anfangswertproblem $$ x'=tx^2+t\quad\text{ x(0)=0}$$
+und geben Sie den maximalen Definitionsbereich an.
+
+Hinweis $\arctan'(x)=\frac{1}{1+x^2}$
+
+b) Betrachten Sie die Differentialgleichung
+
+$$2tx^3-2t+3t^2x^2x'=0,\quad x(1)=0$$
+  (i) Zeigen Sie das die DGL exakt ist.
+
+  (ii) Geben Sie eine Funktion $\Phi=\Phi(t,x)$ an, so dass $\Phi_t(t,x)+\Phi_x(t,x)\dot x=0$
+
+  (iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für $t \rightarrow \infty$.
+
+
+
+```{python}
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 2 (10 Punkte)** 
+Gegeben ist das lineare System
+$$ \dot x=\begin{pmatrix} 3&-1\\5&-1 \end{pmatrix}x$$
+
+a) Geben Sie ein reelles Fundamentalsystem an.
+
+b) Geben sie die allgemeine reelle Lösung des Anfangswertproblems $\dot x=Ax+b$ mit
+$b=\begin{pmatrix}1\\0\end{pmatrix}$
+an.
+
+```{python}
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 3 (10 Punkte)**
+Gegeben sei die partielle Differentialgleichung
+$$ 2u_t-u_{xx}=0$$
+mit $x\in[0,\pi]$ und $t>0$
+
+a) Klassifizieren Sie die Differentialgleichung. Verwenden Sie dazu die Begriffe elliptisch, parabolisch, hyperbolisch. Begründen Sie ihre Aussage.
+
+b) Bestimmen Sie die Koeffizienten der Fouriereihe der ungerade periodisch fortgesetzten Funktion
+$$f(x)=1\quad  \text{für } x\in [0,\pi]$$.
+c) Bestimmen Sie für alle $k\in ℕ $ eine Lösung der PDE mit der Anfangsbedingung
+$$u(0,x)=sin(kx)\quad x\in[0,\pi]$$
+die die Randbedingungen $u(t,0)=u(t,\pi)=0, t>0$ erfüllt.
+
+
+
+```{python}
+
+```
+
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3}
+**Aufgabe 4 (10 Punkte)**
+
+Gegeben seine das parameterabhängige Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ und der Weg $\gamma: [0,1]\rightarrow ℝ$.
+
+$F=\begin{pmatrix} x\frac{y^3}{3}\\x^2(z^2+\frac{y^2}{2})-\alpha x^2z^2\\(1-\alpha)2x^2yz+z^2 \end{pmatrix}$ und $\gamma(t)=\begin{pmatrix} 1-t^2\\ t^2\\ t\end{pmatrix}$
+
+a) Bestimen Sie alle $\alpha\in ℝ$, so dass $F$ ein Potential besitzt. 4P
+
+b) Geben Sie für $\alpha=1$ ein  Potential an. 4P
+
+c) Berechnen Sie für $\alpha=1$ das Kurvenintegral 2. Art des Vektorfelds $F$ entlang $\gamma$. 2P
+
+
+
+
+```{python}
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 5 (10 Punkte)**
+
+Es sei $\gamma(u)=(e^u-1,0,u)^T$ mit $u\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\gamma$ um die z-Achse  rotiert wird.
+
+Gegeben sei außerdem das Vektorfeld
+
+$$ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} x+y\\ y-x \\2 \end{pmatrix} $$
+
+a) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. 3P
+
+b) Bestimmen Sie Tangentialvektoren und Normenvektor an die Fläche $A$. 3P
+
+c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. 3P
+
+
+```{python}
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 6 (10 Punkte)**
+
+Es sei das Kugelsegment $K$ durch
+
+$$ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4, y\geq0, z\geq0\right\}$$
+
+gegeben und $\partial K$ sei die Vereinigung aller Oberflächen des Kugelsegments.
+
+Weiterhin sei das Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ gegeben durch
+
+$$F(x,y,z)=\begin{pmatrix} x-y\\x+y \\z+xy \end{pmatrix}$$
+
+a) Parametrisieren Sie das Volumen in Kugelkoordinaten.
+
+b) Berechnen Sie den Fluss von $F$ durch $\partial K$, also $\int_{\partial K}F\cdot dn$, wobei die Normale $n$ nach außen zeigt.
+
+c) Berechnen Sie  $\int_{\partial K}rot(F)\cdot dn$.
+
+d) Berechnen Sie mit Hilfe des Satzes von Stokes das Integral $\int_{\partial K \text{\B}}rot F\cdot dn$, wobei $B$ der Boden des Kugelsegments in der ($x$-$y$)-Ebene ist.
+
+
+
+```{python}
+
+```
+:::
+:::
+
+# Klausur HM4
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3}
+**Aufgabe 1 (10 Punkte)**
+Gegeben ist die Matrix $$A=\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}$$
+
+a) Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragsgrößten Eigenwertes von $A$ mit dem Startvektor $x_0=(1,1)^T$ durch.
+
+b) Führen Sie zwei Iterationen des Vektoriterationsalgorithmus zur Approximation des betragskleinsten Eigenwertes von $A$ mit dem Startvektor $x_0=(1,-1)^T$ durch.
+
+
+
+```{python}
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 2 (10 Punkte)** 
+Gegeben sind die Wertepaare
+
+$$
+\begin{array}{ccc}
+i&0&1&2&3\\
+\hline
+x_i&-1&0&1&2\\
+f_i&5&1&1&-1
+\end{array}
+$$
+
+a) Berechnen Sie das Interpolationspolynom in der Newton-Basis
+
+b) Bestimmen Sie das Interpolationspolynom $p(x)$ in der Monom-Basis
+
+c) Approximieren Sie den Wert der Nullstelle von $p(x)$ im Intervall $[1,2]$ mit zwei Schritten des Bisektionsverfahrens
+
+d) Approximeren Sie das Integral $\int_{-1}^1 p(x) dx$ mit der Simpson-Regel, wobei $p(x)$ das Polynom aus Aufgabenteil b) ist.
+
+```{python}
+
+```
+:::
+
+::: {.g-col-4 .border .p-3}
+**Aufgabe 3 (10 Punkte)**
+
+Gegeben seien die Messwerte
+
+$$
+\begin{array}{ccc}
+x_i&-2&-1&0&1&2\\
+\hline
+f_i&0&0&0&-1&1
+\end{array}
+$$
+
+a) Die Messwerte sollen durch ein Polynom 2.ter Ordnung approximiert werden. Stellen Sie das zugehörige lineare Ausgleichsproblem und die Normalengleichungen auf. 
+
+b) Lösen Sie das Gleichungssystem $Ax=b$ mit 
+
+$A=\begin{pmatrix} 5 & 0 & 10 \\ 0 & 10 & 0 \\ 10 & 0 & 34 \end{pmatrix}$,
+
+$b=\begin{pmatrix} 0  \\ 1  \\ 3 \end{pmatrix}$
+
+mit Hilfe der Cholesky-Zerlegung.
+
+
+```{python}
+
+```
+
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: grid
+::: {.g-col-4 .small-text .border .p-3}
+**Aufgabe 4 (10 Punkte)**
+
+Gegebn sind die folgenden drei Wertepaare $t_1,y_1)=(-1,2)$, $t_2,y_2)=(0,1)$, $t_3,y_3)=(1,0)$ und die Funktion $y=f(x_1, x_2, t)=(t+x_2)^2x_1$.
+
+a) Formulieren Sie ein nichtlineares Ausgleichsproblem, so dass die Funktion $f$ die Werte $y_i$ and den Stellen $t_i$ möglichst gut approximiert.
+
+b) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausgleichsproblem von a) mit dem Startwert $x_1,x_2=(1,1)^T. Liefert der berechnete Wert eine Verbesserung für das Ausgleichsproblem im Vergleich zum Startwert?
+
+
+
+
+:::
+
+::: {.g-col-4 .border .p-3}
+
+:::
+
+::: {.g-col-4 .border .p-3}
+:::
+:::
