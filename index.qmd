@@ -24,4 +24,4 @@ Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge z
 | **Verwendung in der Physik** | Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck | Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder |
 | **Buchstabenherkunft** | $u$ historisch von Fourier für Temperatur, $\phi$ für Potentiale | $\mathbf{F}$ von „Force“ (Kraft) in der Mechanik |
 
-Diese Tabelle hilft dabei, die beiden Konzepte klar voneinander abzugrenzen und zu verstehen, wie sie in der Mathematik und Physik verwendet werden.
+Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in GC.

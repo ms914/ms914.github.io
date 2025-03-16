@@ -1,0 +1,1429 @@
+---
+title: "Klausur_HM3_WS2425_Lösung"
+output:
+  pdf_document: default
+  html_document: default
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+**Aufgabe 1 (10 Punkte)**
+
+a)  Lösen Sie das Anfangswertproblem
+    
+$$ x'=(1-\alpha)t\frac{x^2}{t^3} 
+$$
+$$\quad x(1)=\frac{2}{1-2\alpha}
+$$
+$$\quad \alpha\in(0,\frac{1}{2})$$
+und geben Sie den maximalen Definitionsbereich $t\in[1,T)$ der Lösung in Abhängigkeit von $\alpha$ an. 
+    
+Was passiert für $\alpha \to 0$?
+
+b)  Betrachten Sie die Differentialgleichung
+
+$$2xe^{x^2-t}\dot x-e^{x^2-t}-1=0,\quad x(1)=1$$ (i) Zeigen Sie das die
+DGL exakt ist.
+
+(ii) Geben Sie eine Funktion $\Phi=\Phi(t,x)$ an, so dass
+$\Phi_t(t,x)+\Phi_x(t,x)\dot x=0$
+
+(iii) Geben Sie die Lösung des Anfangswertproblems an.
+
+
+### **Aufgabe 1a: Lösung des Anfangswertproblems**
+
+Die Differentialgleichung lautet: 
+$$
+x' = (1-\alpha)t\frac{x^2}{t^3} = (1-\alpha) \frac{x^2}{t^2}
+$$ Diese ist eine separierbare Differentialgleichung: 
+
+$$
+\frac{dx}{x^2} = (1-\alpha) \frac{dt}{t^2}
+$$ 
+Durch Integrieren erhalten wir: 
+
+$$
+-\frac{1}{x} = -(1-\alpha) \frac{1}{t} + C
+$$ 
+
+$$
+\frac{1}{x} = (1-\alpha) \frac{1}{t} - C
+$$ 
+Die Anfangsbedingung $x(1) = \frac{2}{1-2\alpha}$ liefert: 
+$$
+\frac{1}{\frac{2}{1-2\alpha}} = (1-\alpha) - C
+$$ $$
+\frac{1-2\alpha}{2} = (1-\alpha) - C
+$$ 
+
+$$
+C = 1 - \alpha - \frac{1-2\alpha}{2} = \frac{1-2\alpha}{2}
+$$ 
+Somit ergibt sich: $$
+\frac{1}{x} = (1-\alpha) \frac{1}{t} - \frac{1-2\alpha}{2}
+$$ 
+
+$$
+x(t) = \frac{1}{(1-\alpha)\frac{1}{t} - \frac{1-2\alpha}{2}}
+$$
+
+Der maximale Definitionsbereich wird bestimmt durch die Singularität,
+d.h. den Nenner: 
+
+$$
+(1-\alpha) \frac{1}{t} - \frac{1-2\alpha}{2} = 0
+$$ 
+
+$$
+(1-\alpha) \frac{1}{t} = \frac{1-2\alpha}{2}
+$$ 
+$$
+t = \frac{2(1-\alpha)}{1-2\alpha}
+$$ Daher ist der maximale Definitionsbereich $t \in [1, T)$ mit 
+
+$$
+T = \frac{2(1-\alpha)}{1-2\alpha}.
+$$
+
+Für $\alpha \to 0$ folgt: 
+
+$$
+T = \frac{2(1-0)}{1-0} = 2.
+$$
+
+### **Aufgabe 1b: Exakte Differentialgleichung**
+
+Die gegebene Differentialgleichung lautet: $$
+2xe^{x^2-t} \dot{x} - e^{x^2-t} - 1 = 0.
+$$
+
+#### **(i) Exaktheit nachweisen**
+
+Schreiben wir sie in der Form: $$
+M(t,x) + N(t,x) \dot{x} = 0.
+$$ Hier setzen wir: $$
+M(t,x) = -e^{x^2-t} - 1, \quad N(t,x) = 2xe^{x^2-t}.
+$$
+
+Prüfen wir die Exaktheitsbedingung: $$
+\frac{\partial M}{\partial x} = \frac{\partial}{\partial x} \left( -e^{x^2-t} - 1 \right) = -2xe^{x^2-t}.
+$$
+
+$$
+\frac{\partial N}{\partial t} = \frac{\partial}{\partial t} \left( 2xe^{x^2-t} \right) = -2xe^{x^2-t}.
+$$
+
+Da beide Ableitungen übereinstimmen, ist die Differentialgleichung
+exakt.
+
+#### **(ii) Bestimmung von** $\Phi(t,x)$
+
+Da die DGL exakt ist, existiert eine Funktion $\Phi(t,x)$ mit $$
+\Phi_t = M, \quad \Phi_x = N.
+$$
+
+Zunächst aus $\Phi_x = 2xe^{x^2-t}$ durch Integration: $$
+\Phi(t,x) = \int 2xe^{x^2-t} dx.
+$$ Substituieren wir $u = x^2 - t \Rightarrow du = 2x dx$: $$
+\Phi(t,x) = \int e^u du = e^{x^2-t} + g(t).
+$$
+
+Nun aus $\Phi_t = -e^{x^2-t} - 1$: $$
+\frac{d}{dt} \left( e^{x^2-t} + g(t) \right) = -e^{x^2-t} - 1.
+$$ $$
+- e^{x^2-t} + g'(t) = -e^{x^2-t} - 1.
+$$ $$
+g'(t) = -1.
+$$ $$
+g(t) = -t + C.
+$$
+
+Somit ist eine Potentialfunktion: $$
+\Phi(t,x) = e^{x^2-t} - t + C.
+$$
+
+#### **(iii) Lösung des Anfangswertproblems**
+
+Da $\Phi(t,x)$ konstant sein muss, setzen wir die Anfangsbedingung
+$x(1) = 1$ ein: $$
+e^{1^2 - 1} - 1 + C = 0.
+$$ $$
+e^0 - 1 + C = 0.
+$$ $$
+C = 1.
+$$
+
+Die allgemeine Lösung ist also: $$
+e^{x^2 - t} - t + 1 = 0.
+$$
+
+Lösen nach $x$: $$
+e^{x^2 - t} = t - 1.
+$$ $$
+x^2 - t = \ln (t - 1).
+$$ $$
+x^2 = t + \ln (t - 1).
+$$ $$
+x = \pm \sqrt{t + \ln (t-1)}.
+$$
+
+Da $x(1) = 1$, wählen wir das positive Vorzeichen: $$
+x(t) = \sqrt{t + \ln (t-1)}.
+$$
+
+Dies ist die Lösung des Anfangswertproblems für $t > 1$.
+
+---
+
+\newpage
+
+**Aufgabe 2 (10 Punkte)**
+Gegeben ist das lineare System
+$$ \dot x=\begin{pmatrix} -2&-5\\1&4 \end{pmatrix}x\quad \text{ und}\quad b(t)=4\begin{pmatrix} e^t\\0\end{pmatrix}$$
+
+a) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.
+
+b) Geben sie die allgemeine Lösung des Anfangswertproblems $\dot x=Ax+b(t)$ an.
+
+---
+
+Hier sind die Lösungen zu den Aufgaben:
+
+### **Teil a: Fundamentalsystem der homogenen Gleichung**
+
+Die homogene Gleichung lautet: $$
+\dot{x} = A x, \quad \text{mit} \quad A = \begin{pmatrix} -2 & -5 \\ 1 & 4 \end{pmatrix}.
+$$ Bestimmen wir die Eigenwerte von $A$ durch Lösen der
+charakteristischen Gleichung: $$
+\det(A - \lambda I) = \begin{vmatrix} -2 - \lambda & -5 \\ 1 & 4 - \lambda \end{vmatrix} = (-2 - \lambda)(4 - \lambda) - (-5 \cdot 1).
+$$ $$
+= (-2 - \lambda)(4 - \lambda) + 5 = -8 + 2\lambda - 4\lambda + \lambda^2 + 5.
+$$ $$
+= \lambda^2 - 2\lambda - 3.
+$$ Die Nullstellen der charakteristischen Gleichung
+$\lambda^2 - 2\lambda - 3 = 0$ sind: $$
+\lambda_{1,2} = \frac{2 \pm \sqrt{4 + 12}}{2} = \frac{2 \pm 4}{2} = \{3, -1\}.
+$$
+
+Für $\lambda_1 = 3$, lösen wir $(A - 3I)v = 0$: $$
+\begin{pmatrix} -2 - 3 & -5 \\ 1 & 4 - 3 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} -5 & -5 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = 0.
+$$ Die erste Zeile liefert $-5 v_1 - 5 v_2 = 0$
+$\Rightarrow v_1 = -v_2$. Setzen wir $v_2 = 1$, dann ist $v_1 = -1$,
+also: $$
+v_1 = \begin{pmatrix} -1 \\ 1 \end{pmatrix}.
+$$
+
+Für $\lambda_2 = -1$, lösen wir $(A + I)v = 0$: $$
+\begin{pmatrix} -2 + 1 & -5 \\ 1 & 4 + 1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} -1 & -5 \\ 1 & 5 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = 0.
+$$ Die erste Zeile liefert $-v_1 - 5v_2 = 0$ $\Rightarrow v_1 = -5v_2$.
+Setzen wir $v_2 = 1$, dann ist $v_1 = -5$, also: $$
+v_2 = \begin{pmatrix} -5 \\ 1 \end{pmatrix}.
+$$
+
+Ein Fundamentalsystem ist dann: $$
+\Phi(t) = \begin{pmatrix} -1 & -5 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} e^{3t} & 0 \\ 0 & e^{-t} \end{pmatrix} = \begin{pmatrix} -e^{3t} & -5e^{-t} \\ e^{3t} & e^{-t} \end{pmatrix}.
+$$
+
+### **Teil b: Allgemeine Lösung des Anfangswertproblems**
+
+Die allgemeine Lösung der inhomogenen Gleichung ist: $$
+x(t) = \Phi(t) C + \Phi(t) \int \Phi^{-1}(t) b(t) dt.
+$$ Berechnen wir $\Phi^{-1}(t)$:
+
+$$
+\Phi^{-1}(t) = \frac{1}{\det(\Phi(t))} \begin{pmatrix} e^{-t} & 5e^{-t} \\ -e^{3t} & -e^{3t} \end{pmatrix}.
+$$
+
+$\det(\Phi(t)) = (-e^{3t})e^{-t} - (-5e^{-t}e^{3t}) = -e^{2t} + 5e^{2t} = 4e^{2t}$,
+also: $$
+\Phi^{-1}(t) = \frac{1}{4e^{2t}} \begin{pmatrix} e^{-t} & 5e^{-t} \\ -e^{3t} & -e^{3t} \end{pmatrix}.
+$$
+
+Setzen wir $b(t) = 4 \begin{pmatrix} e^t \\ 0 \end{pmatrix}$ ein: $$
+\Phi^{-1}(t) b(t) = \frac{1}{4e^{2t}} \begin{pmatrix} e^{-t} & 5e^{-t} \\ -e^{3t} & -e^{3t} \end{pmatrix} \begin{pmatrix} 4e^t \\ 0 \end{pmatrix}.
+$$
+
+$$
+= \frac{1}{4e^{2t}} \begin{pmatrix} 4e^{-t} e^t \\ -4e^{3t} e^t \end{pmatrix}
+= \frac{1}{4e^{2t}} \begin{pmatrix} 4 \\ -4e^{4t} \end{pmatrix}
+= \begin{pmatrix} 1/e^{2t} \\ -e^{2t} \end{pmatrix}.
+$$
+
+Die Integralberechnung liefert: $$
+\int \begin{pmatrix} e^{-2t} \\ -e^{2t} \end{pmatrix} dt = \begin{pmatrix} -\frac{1}{2}e^{-2t} \\ -\frac{1}{2} e^{2t} \end{pmatrix}.
+$$
+
+Somit ist die partikuläre Lösung: $$
+x_p(t) = \Phi(t) \begin{pmatrix} -\frac{1}{2}e^{-2t} \\ -\frac{1}{2} e^{2t} \end{pmatrix}.
+$$
+
+Die allgemeine Lösung ist dann: 
+$$
+x(t) = \Phi(t) C + x_p(t).
+$$
+
+
+---
+
+\newpage
+
+**Aufgabe 3 (10 Punkte)**
+Gegeben sei die partielle Differentialgleichung
+$$ u_{tt}-u_{xx}=0$$
+mit $x\in[0,\pi]$ und $t>0$
+
+a) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.
+
+b) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion
+$$f(x)=1\quad  \text{für } x\in [0,\pi]$$.
+
+c) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung
+
+$$u(0,x)=x\quad x\in[0,\pi],$$
+
+
+$$u_t(0,x)=0\quad x\in[0,\pi],$$
+
+und den Randbedingungen $u(t,0)=u(t,\pi)=0, t>0$.
+---
+
+Hier sind die Lösungen zu den Aufgaben:
+
+------------------------------------------------------------------------
+
+### **Teil a: Klassifikation der PDE**
+
+Die gegebene partielle Differentialgleichung ist: $$
+u_{tt} - u_{xx} = 0.
+$$ Dies ist eine **lineare, homogene, partielle Differentialgleichung
+zweiter Ordnung**. Um die Klassifikation zu bestimmen, betrachten wir
+die allgemeine Form einer PDE zweiter Ordnung: $$
+A u_{xx} + 2B u_{xt} + C u_{tt} = 0.
+$$ Für unsere Gleichung sind die Koeffizienten: $$
+A = -1, \quad B = 0, \quad C = 1.
+$$ Die Diskriminante ist gegeben durch: $$
+B^2 - AC = 0^2 - (1 \cdot (-1)) = 1.
+$$ Da die Diskriminante positiv ist ($B^2 - AC > 0$), handelt es sich um
+eine **hyperbolische** Differentialgleichung.
+
+------------------------------------------------------------------------
+
+### **Teil b: Fourierkoeffizienten der ungerade periodischen Fortsetzung von** $f(x)$
+
+Die Funktion $f(x) = 1$ auf $[0, \pi]$ soll ungerade periodisch
+fortgesetzt werden. Dies bedeutet: $$
+f(-x) = -f(x).
+$$ Die Fourierreihe einer ungeraden $2\pi$-periodischen Funktion hat nur
+**Sinus-Terme**: $$
+f(x) = \sum_{n=1}^{\infty} b_n \sin(n x),
+$$ mit den Koeffizienten: $$
+b_n = \frac{2}{\pi} \int_0^\pi 1 \cdot \sin(n x) \,dx.
+$$ Die Integralberechnung ergibt: $$
+b_n = \frac{2}{\pi} \left[ -\frac{1}{n} \cos(n x) \right]_0^\pi.
+$$ Da $\cos(n\pi) = (-1)^n$ und $\cos(0) = 1$, folgt: $$
+b_n = \frac{2}{\pi} \left( -\frac{1}{n} \left( (-1)^n - 1 \right) \right).
+$$ $$
+= \frac{2}{\pi} \cdot \frac{1}{n} (1 - (-1)^n).
+$$ Für **ungerades** $n$ ist $1 - (-1)^n = 2$, für **gerades** $n$ ist
+$1 - (-1)^n = 0$, also: $$
+b_n =
+\begin{cases}
+\frac{4}{n\pi}, & n \text{ ungerade}, \\
+0, & n \text{ gerade}.
+\end{cases}
+$$
+
+------------------------------------------------------------------------
+
+### **Teil c: Lösung der Wellengleichung**
+
+Die Wellengleichung lautet: 
+$$
+u_{tt} - u_{xx} = 0, \quad x \in [0, \pi], \quad t > 0.
+$$ mit den Anfangsbedingungen: 
+$$
+u(0, x) = x, \quad u_t(0, x) = 0,
+$$ und den Randbedingungen: $$
+u(t,0) = u(t,\pi) = 0.
+$$
+
+#### **Schritt 1: Separation der Variablen**
+
+Wir setzen $u(t, x) = X(x) T(t)$ an und erhalten durch Trennung: 
+$$
+\frac{T''(t)}{T(t)} = \frac{X''(x)}{X(x)}.
+$$ Beide Seiten müssen gleich einer Konstanten $-\lambda$ sein. Für
+$X(x)$ folgt die Sturm-Liouville-Gleichung: $$
+X'' + \lambda X = 0, \quad X(0) = X(\pi) = 0.
+$$ Die Lösungen sind: $$
+X_n(x) = \sin(n x), \quad \lambda_n = n^2, \quad n \in \mathbb{N}.
+$$
+
+Für $T_n(t)$ gilt: $$
+T_n'' + n^2 T_n = 0.
+$$ Die Lösung ist: $$
+T_n(t) = A_n \cos(n t) + B_n \sin(n t).
+$$
+
+#### **Schritt 2: Anfangsbedingung** $u(0,x) = x$
+
+Die Lösung hat die Form: 
+$$
+u(t,x) = \sum_{n=1}^{\infty} \left( A_n \cos(n t) + B_n \sin(n t) \right) \sin(n x).
+$$ Setzen wir $t = 0$, ergibt sich: $$
+x = \sum_{n=1}^{\infty} A_n \sin(n x).
+$$ Die Fourier-Koeffizienten $A_n$ berechnen sich durch: $$
+A_n = \frac{2}{\pi} \int_0^\pi x \sin(n x) \,dx.
+$$ Integration durch Teile liefert: $$
+A_n = \frac{2}{\pi} \left( \frac{\pi (-1)^n}{n} - \frac{1}{n^2} \right) = \frac{2}{n} (-1)^n.
+$$
+
+#### **Schritt 3: Anfangsbedingung** $u_t(0,x) = 0$
+
+Die Ableitung ist: 
+$$
+u_t(0, x) = \sum_{n=1}^{\infty} B_n n \sin(n x) = 0.
+$$ Da die Sinusfunktionen linear unabhängig sind, folgt $B_n = 0$.
+
+#### **Schritt 4: Endgültige Lösung**
+
+$$
+u(t,x) = \sum_{n=1}^{\infty} \frac{2}{n} (-1)^n \cos(n t) \sin(n x).
+$$
+
+------------------------------------------------------------------------
+
+\newpage
+
+**Aufgabe 4 (10 Punkte)**
+
+Gegeben seine die beiden Vektorfelder $F_k:R^3\rightarrow R^3$ mit
+$k=0,1$ und der Weg $\gamma: [0,1]\rightarrow R^3$.
+
+$F=\begin{pmatrix} z\cos(k(x+y))\\z\cos(k(x+y))\\\sin(k(x+y))+2z \end{pmatrix}$
+und $\gamma(t)=\begin{pmatrix} \pi t\\\pi t\\ t^2\end{pmatrix}$
+
+a)  Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$.
+
+b)  Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein
+    Potentialfeld sind und geben Sie gegebenenfalls ein Potential an.
+
+c)  Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder
+    $F_0$ und $F_1$ entlang $\gamma$.
+
+------------------------------------------------------------------------
+
+Hier sind die ausführlichen Lösungen zur Aufgabe 4:
+
+------------------------------------------------------------------------
+
+### **Teil a: Berechnung der Rotation von** $F_k$
+
+Die Rotation eines Vektorfeldes $F$ ist definiert als: $$
+\operatorname{rot} F = \nabla \times F = 
+\begin{vmatrix} 
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+F_1 & F_2 & F_3
+\end{vmatrix}.
+$$ Für $F_k$ ist gegeben: $$
+F_k =
+\begin{pmatrix}
+z\cos(k(x+y)) \\
+z\cos(k(x+y)) \\
+\sin(k(x+y)) + 2z
+\end{pmatrix}.
+$$
+
+#### **Rotation für** $F_0$
+
+Setzen wir $k=0$, dann wird $\cos(k(x+y)) = \cos(0) = 1$ und
+$\sin(k(x+y)) = \sin(0) = 0$, sodass: $$
+F_0 =
+\begin{pmatrix}
+z \\
+z \\
+2z
+\end{pmatrix}.
+$$
+
+Nun berechnen wir die Rotation: $$
+\operatorname{rot} F_0 =
+\begin{vmatrix} 
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+z & z & 2z
+\end{vmatrix}.
+$$ Die Komponenten sind: $$
+\frac{\partial}{\partial y} (2z) - \frac{\partial}{\partial z} (z) = 0 - 1 = -1,
+$$ $$
+\frac{\partial}{\partial z} (z) - \frac{\partial}{\partial x} (2z) = 1 - 0 = 1,
+$$ $$
+\frac{\partial}{\partial x} (z) - \frac{\partial}{\partial y} (z) = 0 - 0 = 0.
+$$
+
+Somit: $$
+\operatorname{rot} F_0 = \begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}.
+$$
+
+#### **Rotation für** $F_1$
+
+Für $k=1$ haben wir: $$
+F_1 =
+\begin{pmatrix}
+z\cos(x+y) \\
+z\cos(x+y) \\
+\sin(x+y) + 2z
+\end{pmatrix}.
+$$
+
+Berechnen der Rotation: $$
+\operatorname{rot} F_1 =
+\begin{vmatrix} 
+\hat{i} & \hat{j} & \hat{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+z\cos(x+y) & z\cos(x+y) & \sin(x+y) + 2z
+\end{vmatrix}.
+$$ Die Komponenten sind: $$
+\frac{\partial}{\partial y} (\sin(x+y) + 2z) - \frac{\partial}{\partial z} (z\cos(x+y)) = \cos(x+y) - \cos(x+y) = 0.
+$$ $$
+\frac{\partial}{\partial z} (z\cos(x+y)) - \frac{\partial}{\partial x} (\sin(x+y) + 2z) = \cos(x+y) - \cos(x+y) = 0.
+$$ $$
+\frac{\partial}{\partial x} (z\cos(x+y)) - \frac{\partial}{\partial y} (z\cos(x+y)) = -z\sin(x+y) + z\sin(x+y) = 0.
+$$
+
+Da alle Komponenten null sind, ist: $$
+\operatorname{rot} F_1 = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}.
+$$
+
+------------------------------------------------------------------------
+
+### **Teil b: Existenz eines Potentials**
+
+Ein Vektorfeld ist konservativ (also ein Potentialfeld), wenn seine
+Rotation null ist.
+
+-   Für $F_0$ ist $\operatorname{rot} F_0 \neq 0$, also **kein
+    Potentialfeld**.
+-   Für $F_1$ ist $\operatorname{rot} F_1 = 0$, also **gibt es ein
+    Potential** $\Phi(x,y,z)$ mit $\nabla \Phi = F_1$.
+
+Um $\Phi$ zu bestimmen, lösen wir: $$
+\frac{\partial \Phi}{\partial x} = z\cos(x+y),
+$$ $$
+\frac{\partial \Phi}{\partial y} = z\cos(x+y),
+$$ $$
+\frac{\partial \Phi}{\partial z} = \sin(x+y) + 2z.
+$$
+
+Integration der ersten Gleichung nach $x$: $$
+\Phi(x,y,z) = z\sin(x+y) + C(y,z).
+$$
+
+Ableitung nach $y$ ergibt: $$
+\frac{\partial \Phi}{\partial y} = z\cos(x+y) + \frac{\partial C}{\partial y} = z\cos(x+y).
+$$ Daraus folgt $\frac{\partial C}{\partial y} = 0$, also ist
+$C(y,z) = C(z)$.
+
+Nun Integration der dritten Gleichung: $$
+\frac{\partial \Phi}{\partial z} = \sin(x+y) + 2z.
+$$ Einsetzen von $\Phi = z\sin(x+y) + C(z)$: $$
+\sin(x+y) + C'(z) = \sin(x+y) + 2z.
+$$ Daraus folgt $C'(z) = 2z$, also $C(z) = z^2 + C_0$.
+
+Das Potential ist: $$
+\Phi(x,y,z) = z\sin(x+y) + z^2 + C_0.
+$$
+
+------------------------------------------------------------------------
+
+### **Teil c: Berechnung der Kurvenintegrale**
+
+Das Kurvenintegral eines Vektorfeldes entlang $\gamma(t)$ ist: $$
+\int_{\gamma} F \cdot d\gamma = \int_0^1 F(\gamma(t)) \cdot \gamma'(t) dt.
+$$
+
+Die Ableitung des Weges: $$
+\gamma(t) = \begin{pmatrix} \pi t \\ \pi t \\ t^2 \end{pmatrix}, \quad
+\gamma'(t) = \begin{pmatrix} \pi \\ \pi \\ 2t \end{pmatrix}.
+$$
+
+#### **Integral für** $F_0$
+
+$$
+F_0(\gamma(t)) =
+\begin{pmatrix}
+t^2 \\
+t^2 \\
+2t^2
+\end{pmatrix}.
+$$
+
+$$
+F_0 \cdot \gamma' = (\pi t^2) \pi + (\pi t^2) \pi + (2t^2)(2t).
+$$ $$
+= \pi^2 t^2 + \pi^2 t^2 + 4t^3 = 2\pi^2 t^2 + 4t^3.
+$$
+
+Das Integral ist: $$
+\int_0^1 (2\pi^2 t^2 + 4t^3) dt = \frac{2\pi^2}{3} + t^4\Big|_0^1 = \frac{2\pi^2}{3} + 1.
+$$
+
+#### **Integral für** $F_1$
+
+Da $F_1$ ein Potentialfeld ist, ist das Kurvenintegral entlang einer
+geschlossenen oder zwischen zwei Punkten definierten Bahn einfach die
+Differenz des Potentials: $$
+\Phi(\gamma(1)) - \Phi(\gamma(0)).
+$$
+
+Durch Einsetzen erhält man: $$
+\Phi(\pi, \pi, 1) - \Phi(0,0,0) = (1\sin(2\pi) + 1^2) - (0\sin(0) + 0^2) = 1 - 0 = 1.
+$$
+
+
+\newpage
+
+**Aufgabe 5 (10 Punkte)**
+
+Es sei $\gamma(u)=(e^u-1,0,\sqrt{u})^T$ mit $u\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\gamma$ um die z-Achse  rotiert wird.
+
+Gegeben sei ausserdem das Vektorfeld
+
+$$ F:R^3\rightarrow R^3, F(x,y,z)=\begin{pmatrix} xz\\yz \\x^2+y^2 \end{pmatrix} $$
+
+a) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. 
+
+b) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u>0$. 
+
+c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. 
+
+---
+
+Wir betrachten zunächst den Weg
+\[
+\gamma(u)=(e^u-1,\,0,\,\sqrt{u})^T,\quad u\in[0,1],
+\]
+der in der \(x\)-\(z\)-Ebene liegt. Durch Rotation um die \(z\)-Achse erhalten wir eine Rotationsfläche \(A\) und dazu das Vektorfeld
+\[
+F(x,y,z)=\begin{pmatrix} xz \\ yz \\ x^2+y^2 \end{pmatrix}\,.
+\]
+Im Folgenden geben wir eine mögliche Lösung der Aufgaben (a)–(c) an.
+
+---
+
+## a) Parametrisierung der Fläche \(A\)
+
+Da die Rotation um die \(z\)-Achse die \(x\)- und \(y\)-Koordinaten in Polarkoordinaten „ausbreitet“, verwendet man für den Rotationswinkel \(v\) (mit \(v\in[0,2\pi]\)) die übliche Darstellung:
+\[
+x=(e^u-1)\cos v,\quad y=(e^u-1)\sin v,\quad z=\sqrt{u}\,.
+\]
+Damit lautet eine Parametrisierung der Fläche
+\[
+\boxed{f(u,v)=\bigl((e^u-1)\cos v,\,(e^u-1)\sin v,\,\sqrt{u}\bigr)^T,\quad u\in[0,1],\; v\in[0,2\pi]\,.}
+\]
+
+---
+
+## b) Tangentialvektoren und Normalenvektor (für \(u>0\))
+
+Wir leiten \(f(u,v)\) partiell nach \(u\) und \(v\) ab.
+
+**Partielle Ableitung nach \(u\):**
+\[
+\begin{aligned}
+f_u(u,v)&=\frac{\partial}{\partial u}\Bigl((e^u-1)\cos v,\,(e^u-1)\sin v,\,\sqrt{u}\Bigr)\\[1mm]
+&=\Bigl(e^u\cos v,\; e^u\sin v,\; \frac{1}{2\sqrt{u}}\Bigr)^T\,.
+\end{aligned}
+\]
+
+**Partielle Ableitung nach \(v\):**
+\[
+\begin{aligned}
+f_v(u,v)&=\frac{\partial}{\partial v}\Bigl((e^u-1)\cos v,\,(e^u-1)\sin v,\,\sqrt{u}\Bigr)\\[1mm]
+&=\Bigl(- (e^u-1)\sin v,\; (e^u-1)\cos v,\; 0\Bigr)^T\,.
+\end{aligned}
+\]
+
+Der (nicht unbedingt normierte) Normalenvektor wird durch das Kreuzprodukt bestimmt:
+\[
+n(u,v)=f_u(u,v)\times f_v(u,v).
+\]
+Wir schreiben zur Übersicht kurz
+\[
+A=e^u,\quad r=e^u-1,\quad B=\frac{1}{2\sqrt{u}},
+\]
+so dass
+\[
+f_u(u,v)=(A\cos v,\, A\sin v,\, B)^T\quad \text{und}\quad f_v(u,v)=(-r\sin v,\, r\cos v,\,0)^T\,.
+\]
+Berechnen wir das Kreuzprodukt:
+\[
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k}\\[1mm]
+A\cos v & A\sin v & B\\[1mm]
+- r\sin v & r\cos v & 0
+\end{vmatrix}
+=
+\Bigl(-B\,r\cos v,\; -B\,r\sin v,\; A\,r\Bigr)^T\,.
+\]
+Das heißt
+\[
+\boxed{n(u,v)=\Bigl(-\frac{e^u-1}{2\sqrt{u}}\cos v,\; -\frac{e^u-1}{2\sqrt{u}}\sin v,\; e^u(e^u-1)\Bigr)^T\,.}
+\]
+(Dieser Vektor ist (bis auf eine Vorzeichenwahl) die Orientierung der Fläche.)
+
+---
+
+## c) Berechnung des Oberflächenintegrals 2. Art
+
+Wir sollen
+\[
+\iint_A F\cdot dn
+\]
+berechnen. (Hierbei entspricht \(F\cdot dn\) der klassischen Darstellung \(F\cdot n\,dS\) mit \(n\) als Einheitsnormalvektor; da
+\[
+dS=|f_u\times f_v|\,du\,dv,
+\]
+und \(n=\frac{f_u\times f_v}{|f_u\times f_v|}\), erhält man nämlich
+\[
+F\cdot n\,dS =F\cdot (f_u\times f_v)\,du\,dv\,.)
+\]
+
+### Vorbereitung: Darstellung von \(F\) auf der Fläche
+
+Setzt man
+\[
+f(u,v)=\bigl((e^u-1)\cos v,\,(e^u-1)\sin v,\,\sqrt{u}\bigr)^T,
+\]
+so hat man
+\[
+x=(e^u-1)\cos v,\quad y=(e^u-1)\sin v,\quad z=\sqrt{u}\,.
+\]
+Daraus folgt
+\[
+\begin{aligned}
+F(f(u,v))&=\begin{pmatrix}xz\\ yz \\x^2+y^2 \end{pmatrix} \\
+&=\begin{pmatrix}(e^u-1)\cos v\cdot\sqrt{u}\\ (e^u-1)\sin v\cdot\sqrt{u}\\ (e^u-1)^2\cos^2 v+(e^u-1)^2\sin^2 v \end{pmatrix}\\[1mm]
+&=\begin{pmatrix}(e^u-1)\sqrt{u}\cos v\\ (e^u-1)\sqrt{u}\sin v\\ (e^u-1)^2 \end{pmatrix}\,.
+\end{aligned}
+\]
+
+### Berechnung des Skalarprodukts
+
+Wir erinnern uns, dass
+\[
+f_u\times f_v=\Bigl(-\frac{e^u-1}{2\sqrt{u}}\cos v,\; -\frac{e^u-1}{2\sqrt{u}}\sin v,\; e^u(e^u-1)\Bigr)^T\,.
+\]
+Das Skalarprodukt \(F(f(u,v))\cdot (f_u\times f_v)\) lautet dann
+\[
+\begin{aligned}
+F\cdot (f_u\times f_v)
+&=\Bigl[(e^u-1)\sqrt{u}\cos v\Bigr]\Bigl[-\frac{e^u-1}{2\sqrt{u}}\cos v\Bigr]\\[1mm]
+&\quad+\Bigl[(e^u-1)\sqrt{u}\sin v\Bigr]\Bigl[-\frac{e^u-1}{2\sqrt{u}}\sin v\Bigr]\\[1mm]
+&\quad+\Bigl[(e^u-1)^2\Bigr]\Bigl[e^u(e^u-1)\Bigr]\\[1mm]
+&=-\frac{(e^u-1)^2}{2}\Bigl(\cos^2v+\sin^2v\Bigr)
++e^u(e^u-1)^3\\[1mm]
+&=-\frac{(e^u-1)^2}{2}+e^u(e^u-1)^3\,.
+\end{aligned}
+\]
+
+### Aufstellen des Integrals
+
+Da der Ausdruck keine \(v\)-Abhängigkeit mehr enthält, lässt sich das Integral als
+\[
+\iint_AF\cdot dn=\int_{v=0}^{2\pi}\int_{u=0}^{1}\Bigl(e^u(e^u-1)^3-\frac{(e^u-1)^2}{2}\Bigr)du\,dv
+\]
+schreiben. Die Integration über \(v\) liefert den Faktor \(2\pi\), sodass
+\[
+\iint_AF\cdot dn=2\pi\int_{0}^{1}\left(e^u(e^u-1)^3-\frac{(e^u-1)^2}{2}\right)du\,.
+\]
+
+### Umformung des \(u\)-Integrals
+
+Setzen wir
+\[
+t=e^u-1\quad\Longrightarrow\quad dt=e^u\,du,\quad e^u=t+1\,,
+\]
+so gilt für \(u=0\) : \(t=0\) und für \(u=1\) : \(t=e-1\). Außerdem ist
+\[
+du=\frac{dt}{t+1}\,.
+\]
+Damit wird der erste Term
+\[
+e^u(e^u-1)^3\,du=(t+1)t^3\,\frac{dt}{t+1}=t^3\,dt\,,
+\]
+und der zweite Term
+\[
+\frac{(e^u-1)^2}{2}\,du=\frac{t^2}{2}\,\frac{dt}{t+1}\,.
+\]
+Somit lautet das \(u\)-Integral
+\[
+I=\int_{t=0}^{e-1}\left(t^3-\frac{t^2}{2(t+1)}\right)dt\,.
+\]
+
+Der erste Teil ist
+\[
+\int_0^{e-1}t^3\,dt=\frac{(e-1)^4}{4}\,.
+\]
+Für den zweiten Term bemerken wir, dass
+\[
+\frac{t^2}{t+1}=t-1+\frac{1}{t+1}\,,
+\]
+denn
+\[
+t^2=(t-1)(t+1)+1\,.
+\]
+Daher
+\[
+\int_0^{e-1}\frac{t^2}{t+1}\,dt
+=\int_0^{e-1}\Bigl(t-1+\frac{1}{t+1}\Bigr)dt
+=\left[\frac{t^2}{2}-t+\ln|t+1|\right]_0^{e-1}\,.
+\]
+Einsetzen der Grenzen liefert
+\[
+\frac{(e-1)^2}{2}-(e-1)+\ln e
+=\frac{(e-1)^2}{2}-(e-1)+1\,.
+\]
+Also ist
+\[
+I=\frac{(e-1)^4}{4}-\frac{1}{2}\left(\frac{(e-1)^2}{2}-(e-1)+1\right)
+=\frac{(e-1)^4-(e-1)^2+2(e-1)-2}{4}\,.
+\]
+
+Schließlich erhalten wir für das Oberflächenintegral:
+\[
+\iint_AF\cdot dn=2\pi\;I
+=\frac{\pi}{2}\Bigl[(e-1)^4-(e-1)^2+2(e-1)-2\Bigr]\,.
+\]
+
+---
+
+## Zusammenfassung der Lösung
+
+**a) Parametrisierung:**
+\[
+\boxed{f(u,v)=\bigl((e^u-1)\cos v,\,(e^u-1)\sin v,\,\sqrt{u}\bigr)^T,\quad u\in[0,1],\;v\in[0,2\pi]\,.}
+\]
+
+**b) Tangentialvektoren und Normalenvektor (für \(u>0\)):**
+\[
+\begin{aligned}
+f_u(u,v)&=\Bigl(e^u\cos v,\; e^u\sin v,\; \frac{1}{2\sqrt{u}}\Bigr)^T\,,\\[1mm]
+f_v(u,v)&=\Bigl(- (e^u-1)\sin v,\; (e^u-1)\cos v,\; 0\Bigr)^T\,,\\[1mm]
+n(u,v)&=f_u\times f_v=\Bigl(-\frac{e^u-1}{2\sqrt{u}}\cos v,\; -\frac{e^u-1}{2\sqrt{u}}\sin v,\; e^u(e^u-1)\Bigr)^T\,.
+\end{aligned}
+\]
+
+**c) Oberflächenintegral 2. Art:**
+\[
+\boxed{\iint_AF\cdot dn
+= \frac{\pi}{2}\Bigl[(e-1)^4-(e-1)^2+2(e-1)-2\Bigr]\,.}
+\]
+
+Jede Antwort, die zu einem äquivalent algebraisch vereinfachten Ergebnis führt, ist richtig.
+
+---
+
+\newpage
+
+**Aufgabe 6 (10 Punkte)**
+
+Es sei die Kugel $K$ gegeben durch
+
+$$ K=\left\{(x,y,z)^T\in R^3:x^2+y^2+z^2\leq4 \right\}$$
+
+und $S$ ihre Oberfläche.
+
+Weiterhin sei das Vektorfeld $F:R^3\rightarrow R^3$ gegeben durch
+
+
+
+$$F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x \\xy+z \end{pmatrix}$$
+
+
+b) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\int_{\partial K}F\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.
+
+c) Berechnen Sie  $\int_{S}rot(F)\cdot dn$.
+
+d) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\int_{S_O}rot(F)\cdot dn$ und $\int_{S_M}rot(F)\cdot dn$ mit Hilfe des Sates von Stokes.
+
+---
+
+Wir betrachten zunächst die Kugel
+
+\[
+K=\{(x,y,z)^T\in\mathbb{R}^3: x^2+y^2+z^2\le4\},
+\]
+
+mit Oberfläche
+
+\[
+S=\partial K,
+\]
+
+und das Vektorfeld
+
+\[
+F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x\\ xy+z \end{pmatrix}\,.
+\]
+
+Im Folgenden lösen wir (b)–(d) Schritt für Schritt.
+
+---
+
+## b) Fluss von \(F\) durch \(S\) mit Hilfe des Satzes von Gauss
+
+Der Satz von Gauss (Divergenz‑Satz) besagt
+\[
+\iint_{S} F\cdot n\,dS=\iiint_{K}\operatorname{div}(F)\,dV\,.
+\]
+Zunächst berechnen wir die Divergenz von \(F\):
+
+\[
+\begin{array}{rcl}
+\operatorname{div}(F)
+&=&\dfrac{\partial}{\partial x}(xz-y)
++\dfrac{\partial}{\partial y}(yz+x)
++\dfrac{\partial}{\partial z}(xy+z)\\[1mm]
+&=& z + 0\quad (\text{denn } \partial_x(xz)=z,\;\partial_x(-y)=0)\\[1mm]
+&&\quad +\, z + 0\quad (\text{denn } \partial_y(yz)=z,\;\partial_y(x)=0)\\[1mm]
+&&\quad +\, 0+1\quad (\text{denn } \partial_z(xy)=0,\;\partial_z(z)=1)\\[1mm]
+&=& 2z+1\,.
+\end{array}
+\]
+
+Für den Fluss erhalten wir damit
+
+\[
+\iint_{S} F\cdot n\,dS=\iiint_{K}(2z+1)\,dV\,.
+\]
+
+Da \(K\) eine Kugel ist, überwiegt hier die Symmetrie: Das Integralsymbol über \(z\) eines ungeraden Terms (hier \(2z\)) verschwindet, also
+
+\[
+\iiint_{K}2z\,dV=0.
+\]
+
+Somit bleibt
+
+\[
+\iint_{S} F\cdot n\,dS=\iiint_{K}1\,dV=\operatorname{Vol}(K)\,.
+\]
+
+Da die Kugel vom Radius \(R=2\) ist, gilt
+
+\[
+\operatorname{Vol}(K)=\frac{4}{3}\pi R^3=\frac{4}{3}\pi\cdot8=\frac{32\pi}{3}\,.
+\]
+
+**Ergebnis (b):**
+
+\[
+\boxed{\int_{S} F\cdot n\,dS=\frac{32\pi}{3}\,.}
+\]
+
+---
+
+## c) Berechnung des Integrals \(\int_{S}\operatorname{rot}(F)\cdot n\,dS\)
+
+Allgemein gilt (für beliebig differenzierbare Felder) der Vektoridentitätssatz
+
+\[
+\operatorname{div}(\operatorname{rot}(F))=0\,.
+\]
+
+Wendet man den Divergenz‑Satz auf das Vektorfeld \(\operatorname{rot}(F)\) an, so erhält man
+
+\[
+\int_{S}\operatorname{rot}(F)\cdot n\,dS=\iiint_{K}\operatorname{div}(\operatorname{rot}(F))\,dV=0\,.
+\]
+
+**Ergebnis (c):**
+
+\[
+\boxed{\int_{S}\operatorname{rot}(F)\cdot n\,dS=0\,.}
+\]
+
+---
+
+## d) Berechnung der Integrale auf Teilflächen mittels Stokes’ Theorem
+
+Die Kugeloberfläche \(S\) wird durch die Ebenen \(z=1\) und \(z=-1\) in drei Teilflächen zerlegt, die wir bezeichnen durch
+- \(S_O\): der obere Kugelkappenanteil (\(z\ge1\)),
+- \(S_M\): der mittlere Teil (\(-1\le z\le1\)),
+- \(S_U\): der untere Kugelkappenanteil (\(z\le -1\)).
+
+Wir sollen nun mittels des Stokes’schen Satzes die Flächenintegrale
+
+\[
+\int_{S_O}\operatorname{rot}(F)\cdot n\,dS\quad\text{und}\quad \int_{S_M}\operatorname{rot}(F)\cdot n\,dS
+\]
+
+berechnen.
+
+### Vorbereitung: Bestimmung von \(\operatorname{rot}(F)\)
+
+Wir berechnen zuerst den Rotationsvektor (Curl) von \(F\). Mit
+
+\[
+F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x\\ xy+z \end{pmatrix}\,,
+\]
+
+gelten die Komponenten
+
+- \((\operatorname{rot}F)_1 = \frac{\partial}{\partial y}(xy+z)-\frac{\partial}{\partial z}(yz+x)
+= x - y\),
+- \((\operatorname{rot}F)_2 = \frac{\partial}{\partial z}(xz-y)-\frac{\partial}{\partial x}(xy+z)
+= x - y\),
+- \((\operatorname{rot}F)_3 = \frac{\partial}{\partial x}(yz+x)-\frac{\partial}{\partial y}(xz-y)
+= 1-(-1)=2\,.
+\)
+
+Also erhalten wir
+
+\[
+\operatorname{rot}(F)(x,y,z)=\begin{pmatrix} x-y\\ x-y\\ 2 \end{pmatrix}\,.
+\]
+
+### Anwendung des Stokes’schen Satzes
+
+Der Satz von Stokes besagt, dass für eine orientierbare Fläche \(S'\) mit glatten Randkurven \(\partial S'\) gilt
+
+\[
+\int_{S'}\operatorname{rot}(F)\cdot n\,dS=\oint_{\partial S'} F\cdot dr\,,
+\]
+
+sofern die Orientierung von \(S'\) und \(\partial S'\) (durch die Rechtshandregel) zueinander passen.
+
+#### (d1) Integral über \(S_O\) (obere Kappe)
+
+Die obere Teilfläche \(S_O\) hat als Rand die Kreislinie \(C_1\), die entsteht als Schnitt von \(S\) mit der Ebene \(z=1\). Auf \(z=1\) gilt aus \(x^2+y^2+1=4\) also
+
+\[
+x^2+y^2=3\,.
+\]
+
+Eine natürliche Parameterisierung von \(C_1\) ist
+
+\[
+\begin{cases}
+x=\sqrt{3}\cos t,\\[1mm]
+y=\sqrt{3}\sin t,\\[1mm]
+z=1,
+\end{cases}\quad t\in[0,2\pi]\,.
+\]
+
+Entsprechend ist
+
+\[
+dr=(-\sqrt{3}\sin t,\,\sqrt{3}\cos t,\,0)^T\,dt\,.
+\]
+
+Wir benötigen außerdem \(F\) entlang von \(C_1\). Setzt man \(z=1\) ein, so erhält man
+
+\[
+F(x,y,1)=\begin{pmatrix} x-y\\ y+x\\ xy+1 \end{pmatrix}\,.
+\]
+
+Mit \(x=\sqrt{3}\cos t\) und \(y=\sqrt{3}\sin t\) folgt
+
+\[
+F(\sqrt{3}\cos t,\sqrt{3}\sin t,1)
+=\begin{pmatrix}
+\sqrt{3}\cos t-\sqrt{3}\sin t\\[1mm]
+\sqrt{3}\sin t+\sqrt{3}\cos t\\[1mm]
+3\cos t\sin t+1
+\end{pmatrix}\,.
+\]
+
+Nun ist das Skalarprodukt
+
+\[
+\begin{array}{rcl}
+F\cdot dr &=& \Bigl[\sqrt{3}(\cos t-\sin t)\Bigr]\Bigl[-\sqrt{3}\sin t\Bigr]
++\Bigl[\sqrt{3}(\sin t+\cos t)\Bigr]\Bigl[\sqrt{3}\cos t\Bigr] \\[1mm]
+&&\quad +\;\bigl(3\cos t\sin t+1\bigr)\cdot 0\\[1mm]
+&=& -3\sin t\cos t+3\sin^2t+3\cos t\sin t+3\cos^2t\\[1mm]
+&=& 3\bigl(\sin^2t+\cos^2t\bigr)=3\,.
+\end{array}
+\]
+
+Da \(3\) konstant ist, ergibt sich
+
+\[
+\oint_{C_1} F\cdot dr=\int_{0}^{2\pi}3\,dt=6\pi\,.
+\]
+
+Mit der passenden Orientierung (diejenige, die durch den „äußeren“ Normalvektor der Kugel gegeben ist) erhalten wir also
+
+\[
+\int_{S_O}\operatorname{rot}(F)\cdot n\,dS=6\pi\,.
+\]
+
+#### (d2) Integral über \(S_M\) (mittlerer Teil)
+
+Die mittlere Fläche \(S_M\) hat zwei Randkurven: \(C_1\) (oben, Schnitt bei \(z=1\)) und \(C_2\) (unten, Schnitt bei \(z=-1\)). Für \(C_2\) gilt aus \(x^2+y^2+(-1)^2=4\) wieder \(x^2+y^2=3\). Eine Parameterisierung von \(C_2\) ist
+
+\[
+\begin{cases}
+x=\sqrt{3}\cos t,\\[1mm]
+y=\sqrt{3}\sin t,\\[1mm]
+z=-1,
+\end{cases}\quad t\in[0,2\pi]\,.
+\]
+
+Die Berechnung von \(F\) entlang \(C_2\) verläuft analog. Auf \(z=-1\) erhalten wir
+
+\[
+F(x,y,-1)=\begin{pmatrix} -x-y\\ -y+x\\ xy-1 \end{pmatrix}\,.
+\]
+
+Berechnet man den zugehörigen Linienintegral, so erhält man – bei Wahl der Standardparameterisierung, die \(C_2\) in positiver (d.h. gegen den Uhrzeigersinn sichtbarer) Richtung beschreibt – analog
+
+\[
+\oint_{C_2} F\cdot dr=6\pi\,.
+\]
+
+**Achtung bei der Orientierung:**  
+Der Stokes’sche Satz liefert für eine gegebene, orientierte Fläche \(S'\) mit Rand \(\partial S'\) gilt
+\[
+\int_{S'}\operatorname{rot}(F)\cdot n\,dS=\oint_{\partial S'} F\cdot dr\,.
+\]
+Für \(S_M\) induziert die natürliche Orientierung (also diejenige, die aus dem äußeren Normalvektor der Kugel resultiert) folgende Randorientierungen:
+- An der oberen Grenze \(C_1\) ist die Orientierung **umgekehrt** zu der bei \(S_O\), d.h. es wird \(-6\pi\) beitragen.
+- An der unteren Grenze \(C_2\) (bei \(z=-1\)) wird ebenfalls – nach der induzierten Orientierung – das Vorzeichen umgekehrt, also ebenfalls \(-6\pi\).
+
+Die Gesamtkurvenintegrale (unter Berücksichtigung der Orientierung) lauten also
+
+\[
+\oint_{\partial S_M} F\cdot dr=(-6\pi)+(-6\pi)=-12\pi\,.
+\]
+
+Somit folgt
+
+\[
+\int_{S_M}\operatorname{rot}(F)\cdot n\,dS=-12\pi\,.
+\]
+
+Da \(S\) als geschlossene Fläche gilt und (c) gezeigt hat, dass
+
+\[
+\int_{S}\operatorname{rot}(F)\cdot n\,dS=0\,,
+\]
+
+muss für den verbleibenden Teil \(S_U\) (untere Kappe) automatisch
+
+\[
+\int_{S_U}\operatorname{rot}(F)\cdot n\,dS=6\pi
+\]
+
+gelten (was auch der Symmetrie entspricht).
+
+**Ergebnisse (d):**
+
+\[
+\boxed{\int_{S_O}\operatorname{rot}(F)\cdot n\,dS=6\pi\quad\text{und}\quad \int_{S_M}\operatorname{rot}(F)\cdot n\,dS=-12\pi\,.}
+\]
+
+---
+
+## Zusammenfassung der Ergebnisse
+
+- **(b)**: \(\displaystyle \int_{S}F\cdot n\,dS=\frac{32\pi}{3}\).
+- **(c)**: \(\displaystyle \int_{S}\operatorname{rot}(F)\cdot n\,dS=0\).
+- **(d)**:  
+  \(\displaystyle \int_{S_O}\operatorname{rot}(F)\cdot n\,dS=6\pi\)  
+  \(\displaystyle \int_{S_M}\operatorname{rot}(F)\cdot n\,dS=-12\pi\).
+
+Jede Lösung, die zu äquivalenten Resultaten führt (bezüglich Vorzeichen bei richtiger Orientierung), ist korrekt.
+
+Wir betrachten zunächst die Kugel
+
+\[
+K=\{(x,y,z)^T\in\mathbb{R}^3: x^2+y^2+z^2\le4\},
+\]
+
+mit Oberfläche
+
+\[
+S=\partial K,
+\]
+
+und das Vektorfeld
+
+\[
+F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x\\ xy+z \end{pmatrix}\,.
+\]
+
+Im Folgenden lösen wir (b)–(d) Schritt für Schritt.
+
+---
+
+## b) Fluss von \(F\) durch \(S\) mit Hilfe des Satzes von Gauss
+
+Der Satz von Gauss (Divergenz‑Satz) besagt
+\[
+\iint_{S} F\cdot n\,dS=\iiint_{K}\operatorname{div}(F)\,dV\,.
+\]
+Zunächst berechnen wir die Divergenz von \(F\):
+
+\[
+\begin{array}{rcl}
+\operatorname{div}(F)
+&=&\dfrac{\partial}{\partial x}(xz-y)
++\dfrac{\partial}{\partial y}(yz+x)
++\dfrac{\partial}{\partial z}(xy+z)\\[1mm]
+&=& z + 0\quad (\text{denn } \partial_x(xz)=z,\;\partial_x(-y)=0)\\[1mm]
+&&\quad +\, z + 0\quad (\text{denn } \partial_y(yz)=z,\;\partial_y(x)=0)\\[1mm]
+&&\quad +\, 0+1\quad (\text{denn } \partial_z(xy)=0,\;\partial_z(z)=1)\\[1mm]
+&=& 2z+1\,.
+\end{array}
+\]
+
+Für den Fluss erhalten wir damit
+
+\[
+\iint_{S} F\cdot n\,dS=\iiint_{K}(2z+1)\,dV\,.
+\]
+
+Da \(K\) eine Kugel ist, überwiegt hier die Symmetrie: Das Integralsymbol über \(z\) eines ungeraden Terms (hier \(2z\)) verschwindet, also
+
+\[
+\iiint_{K}2z\,dV=0.
+\]
+
+Somit bleibt
+
+\[
+\iint_{S} F\cdot n\,dS=\iiint_{K}1\,dV=\operatorname{Vol}(K)\,.
+\]
+
+Da die Kugel vom Radius \(R=2\) ist, gilt
+
+\[
+\operatorname{Vol}(K)=\frac{4}{3}\pi R^3=\frac{4}{3}\pi\cdot8=\frac{32\pi}{3}\,.
+\]
+
+**Ergebnis (b):**
+
+\[
+\boxed{\int_{S} F\cdot n\,dS=\frac{32\pi}{3}\,.}
+\]
+
+---
+
+## c) Berechnung des Integrals \(\int_{S}\operatorname{rot}(F)\cdot n\,dS\)
+
+Allgemein gilt (für beliebig differenzierbare Felder) der Vektoridentitätssatz
+
+\[
+\operatorname{div}(\operatorname{rot}(F))=0\,.
+\]
+
+Wendet man den Divergenz‑Satz auf das Vektorfeld \(\operatorname{rot}(F)\) an, so erhält man
+
+\[
+\int_{S}\operatorname{rot}(F)\cdot n\,dS=\iiint_{K}\operatorname{div}(\operatorname{rot}(F))\,dV=0\,.
+\]
+
+**Ergebnis (c):**
+
+\[
+\boxed{\int_{S}\operatorname{rot}(F)\cdot n\,dS=0\,.}
+\]
+
+---
+
+## d) Berechnung der Integrale auf Teilflächen mittels Stokes’ Theorem
+
+Die Kugeloberfläche \(S\) wird durch die Ebenen \(z=1\) und \(z=-1\) in drei Teilflächen zerlegt, die wir bezeichnen durch
+- \(S_O\): der obere Kugelkappenanteil (\(z\ge1\)),
+- \(S_M\): der mittlere Teil (\(-1\le z\le1\)),
+- \(S_U\): der untere Kugelkappenanteil (\(z\le -1\)).
+
+Wir sollen nun mittels des Stokes’schen Satzes die Flächenintegrale
+
+\[
+\int_{S_O}\operatorname{rot}(F)\cdot n\,dS\quad\text{und}\quad \int_{S_M}\operatorname{rot}(F)\cdot n\,dS
+\]
+
+berechnen.
+
+### Vorbereitung: Bestimmung von \(\operatorname{rot}(F)\)
+
+Wir berechnen zuerst den Rotationsvektor (Curl) von \(F\). Mit
+
+\[
+F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x\\ xy+z \end{pmatrix}\,,
+\]
+
+gelten die Komponenten
+
+- \((\operatorname{rot}F)_1 = \frac{\partial}{\partial y}(xy+z)-\frac{\partial}{\partial z}(yz+x)
+= x - y\),
+- \((\operatorname{rot}F)_2 = \frac{\partial}{\partial z}(xz-y)-\frac{\partial}{\partial x}(xy+z)
+= x - y\),
+- \((\operatorname{rot}F)_3 = \frac{\partial}{\partial x}(yz+x)-\frac{\partial}{\partial y}(xz-y)
+= 1-(-1)=2\,.
+\)
+
+Also erhalten wir
+
+\[
+\operatorname{rot}(F)(x,y,z)=\begin{pmatrix} x-y\\ x-y\\ 2 \end{pmatrix}\,.
+\]
+
+### Anwendung des Stokes’schen Satzes
+
+Der Satz von Stokes besagt, dass für eine orientierbare Fläche \(S'\) mit glatten Randkurven \(\partial S'\) gilt
+
+\[
+\int_{S'}\operatorname{rot}(F)\cdot n\,dS=\oint_{\partial S'} F\cdot dr\,,
+\]
+
+sofern die Orientierung von \(S'\) und \(\partial S'\) (durch die Rechtshandregel) zueinander passen.
+
+#### (d1) Integral über \(S_O\) (obere Kappe)
+
+Die obere Teilfläche \(S_O\) hat als Rand die Kreislinie \(C_1\), die entsteht als Schnitt von \(S\) mit der Ebene \(z=1\). Auf \(z=1\) gilt aus \(x^2+y^2+1=4\) also
+
+\[
+x^2+y^2=3\,.
+\]
+
+Eine natürliche Parameterisierung von \(C_1\) ist
+
+\[
+\begin{cases}
+x=\sqrt{3}\cos t,\\[1mm]
+y=\sqrt{3}\sin t,\\[1mm]
+z=1,
+\end{cases}\quad t\in[0,2\pi]\,.
+\]
+
+Entsprechend ist
+
+\[
+dr=(-\sqrt{3}\sin t,\,\sqrt{3}\cos t,\,0)^T\,dt\,.
+\]
+
+Wir benötigen außerdem \(F\) entlang von \(C_1\). Setzt man \(z=1\) ein, so erhält man
+
+\[
+F(x,y,1)=\begin{pmatrix} x-y\\ y+x\\ xy+1 \end{pmatrix}\,.
+\]
+
+Mit \(x=\sqrt{3}\cos t\) und \(y=\sqrt{3}\sin t\) folgt
+
+\[
+F(\sqrt{3}\cos t,\sqrt{3}\sin t,1)
+=\begin{pmatrix}
+\sqrt{3}\cos t-\sqrt{3}\sin t\\[1mm]
+\sqrt{3}\sin t+\sqrt{3}\cos t\\[1mm]
+3\cos t\sin t+1
+\end{pmatrix}\,.
+\]
+
+Nun ist das Skalarprodukt
+
+\[
+\begin{array}{rcl}
+F\cdot dr &=& \Bigl[\sqrt{3}(\cos t-\sin t)\Bigr]\Bigl[-\sqrt{3}\sin t\Bigr]
++\Bigl[\sqrt{3}(\sin t+\cos t)\Bigr]\Bigl[\sqrt{3}\cos t\Bigr] \\[1mm]
+&&\quad +\;\bigl(3\cos t\sin t+1\bigr)\cdot 0\\[1mm]
+&=& -3\sin t\cos t+3\sin^2t+3\cos t\sin t+3\cos^2t\\[1mm]
+&=& 3\bigl(\sin^2t+\cos^2t\bigr)=3\,.
+\end{array}
+\]
+
+Da \(3\) konstant ist, ergibt sich
+
+\[
+\oint_{C_1} F\cdot dr=\int_{0}^{2\pi}3\,dt=6\pi\,.
+\]
+
+Mit der passenden Orientierung (diejenige, die durch den „äußeren“ Normalvektor der Kugel gegeben ist) erhalten wir also
+
+\[
+\int_{S_O}\operatorname{rot}(F)\cdot n\,dS=6\pi\,.
+\]
+
+#### (d2) Integral über \(S_M\) (mittlerer Teil)
+
+Die mittlere Fläche \(S_M\) hat zwei Randkurven: \(C_1\) (oben, Schnitt bei \(z=1\)) und \(C_2\) (unten, Schnitt bei \(z=-1\)). Für \(C_2\) gilt aus \(x^2+y^2+(-1)^2=4\) wieder \(x^2+y^2=3\). Eine Parameterisierung von \(C_2\) ist
+
+\[
+\begin{cases}
+x=\sqrt{3}\cos t,\\[1mm]
+y=\sqrt{3}\sin t,\\[1mm]
+z=-1,
+\end{cases}\quad t\in[0,2\pi]\,.
+\]
+
+Die Berechnung von \(F\) entlang \(C_2\) verläuft analog. Auf \(z=-1\) erhalten wir
+
+\[
+F(x,y,-1)=\begin{pmatrix} -x-y\\ -y+x\\ xy-1 \end{pmatrix}\,.
+\]
+
+Berechnet man den zugehörigen Linienintegral, so erhält man – bei Wahl der Standardparameterisierung, die \(C_2\) in positiver (d.h. gegen den Uhrzeigersinn sichtbarer) Richtung beschreibt – analog
+
+\[
+\oint_{C_2} F\cdot dr=6\pi\,.
+\]
+
+**Achtung bei der Orientierung:**  
+Der Stokes’sche Satz liefert für eine gegebene, orientierte Fläche \(S'\) mit Rand \(\partial S'\) gilt
+\[
+\int_{S'}\operatorname{rot}(F)\cdot n\,dS=\oint_{\partial S'} F\cdot dr\,.
+\]
+Für \(S_M\) induziert die natürliche Orientierung (also diejenige, die aus dem äußeren Normalvektor der Kugel resultiert) folgende Randorientierungen:
+- An der oberen Grenze \(C_1\) ist die Orientierung **umgekehrt** zu der bei \(S_O\), d.h. es wird \(-6\pi\) beitragen.
+- An der unteren Grenze \(C_2\) (bei \(z=-1\)) wird ebenfalls – nach der induzierten Orientierung – das Vorzeichen umgekehrt, also ebenfalls \(-6\pi\).
+
+Die Gesamtkurvenintegrale (unter Berücksichtigung der Orientierung) lauten also
+
+\[
+\oint_{\partial S_M} F\cdot dr=(-6\pi)+(-6\pi)=-12\pi\,.
+\]
+
+Somit folgt
+
+\[
+\int_{S_M}\operatorname{rot}(F)\cdot n\,dS=-12\pi\,.
+\]
+
+Da \(S\) als geschlossene Fläche gilt und (c) gezeigt hat, dass
+
+\[
+\int_{S}\operatorname{rot}(F)\cdot n\,dS=0\,,
+\]
+
+muss für den verbleibenden Teil \(S_U\) (untere Kappe) automatisch
+
+\[
+\int_{S_U}\operatorname{rot}(F)\cdot n\,dS=6\pi
+\]
+
+gelten (was auch der Symmetrie entspricht).
+
+**Ergebnisse (d):**
+
+\[
+\boxed{\int_{S_O}\operatorname{rot}(F)\cdot n\,dS=6\pi\quad\text{und}\quad \int_{S_M}\operatorname{rot}(F)\cdot n\,dS=-12\pi\,.}
+\]
+
+---
+
+## Zusammenfassung der Ergebnisse
+
+- **(b)**: \(\displaystyle \int_{S}F\cdot n\,dS=\frac{32\pi}{3}\).
+- **(c)**: \(\displaystyle \int_{S}\operatorname{rot}(F)\cdot n\,dS=0\).
+- **(d)**:  
+  \(\displaystyle \int_{S_O}\operatorname{rot}(F)\cdot n\,dS=6\pi\)  
+  \(\displaystyle \int_{S_M}\operatorname{rot}(F)\cdot n\,dS=-12\pi\).
+
+Jede Lösung, die zu äquivalenten Resultaten führt (bezüglich Vorzeichen bei richtiger Orientierung), ist korrekt.
