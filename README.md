@@ -15,4 +15,38 @@ Höhere Mathematik
 </a>
 
 - Calculus made easy: https://www.gutenberg.org/files/33283/33283-pdf.pdf
-- Math for machine learning: 
+- Math for machine learning:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Table</title>
+    <style>
+        table {
+            width: 200px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>xx</td><td>xx</td><td>xx</td>
+        </tr>
+        <tr>
+            <td>xx</td><td>xx</td><td>xx</td>
+        </tr>
+        <tr>
+            <td>xx</td><td>xx</td><td>xx</td>
+        </tr>
+    </table>
+</body>
+</html>
+
