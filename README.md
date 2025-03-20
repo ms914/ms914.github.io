@@ -28,7 +28,7 @@ Höhere Mathematik
         <tr>
             <td><a href="https://colab.research.google.com/"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
             <td><a href="https://colab.research.google.com/"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-            <td><a href="https://colab.research.google.com/"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
+            <td><a href="https://colab.research.google.com/github/"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
         </tr>
     </table>
 </body>
