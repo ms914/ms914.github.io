@@ -3,15 +3,19 @@ title: "HM3 Website"
 format: html
 ---
 
-# Herzlich Willkommen zur HM3 Website
+# Herzlich Willkommen zur HM Website
 
-Diese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.
+HM1 dient zur Festigung der Grundlagen
+HM2 behandelt Lineare Algebra und 2D Analysis
+HM3 behandelt Vectoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik.
+
+Prüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.
 
 - [Exam Questions](exam-questions.qmd)
 - [Solutions](solutions.qmd)
 - [sympy code examples](hm3_python.qmd)
 
-Die HM3 ist die Grundlage für die Theorie der Strömungsdynamik. 
+ 
 
 Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:  
 
