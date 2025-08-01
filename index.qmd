@@ -7,7 +7,8 @@ format: html
 
 HM1 dient zur Festigung der Grundlagen
 HM2 behandelt Lineare Algebra und 2D Analysis
-HM3 behandelt Vectoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik.
+HM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik.
+HM4 führt in numerische Methoden ein
 
 Prüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.
 
