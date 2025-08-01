@@ -1,59 +1,17 @@
 [
   {
-    "objectID": "exam-questions.html",
-    "href": "exam-questions.html",
-    "title": "Exam Questions",
-    "section": "",
-    "text": "Download as PDF\n\n\n\na) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\).\n\n\n\nGegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an.\n\n\n\nGegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt.\n\n\n\nGegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\).\n\n\n\nEs sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\).\n\n\n\nEs sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
-  },
-  {
-    "objectID": "exam-questions.html#aufgabe-1-10-punkte",
-    "href": "exam-questions.html#aufgabe-1-10-punkte",
-    "title": "Exam Questions",
-    "section": "",
-    "text": "a) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\)."
-  },
-  {
-    "objectID": "exam-questions.html#aufgabe-2-10-punkte",
-    "href": "exam-questions.html#aufgabe-2-10-punkte",
-    "title": "Exam Questions",
-    "section": "",
-    "text": "Gegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an."
-  },
-  {
-    "objectID": "exam-questions.html#aufgabe-3-10-punkte",
-    "href": "exam-questions.html#aufgabe-3-10-punkte",
-    "title": "Exam Questions",
-    "section": "",
-    "text": "Gegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt."
-  },
-  {
-    "objectID": "exam-questions.html#aufgabe-4-10-punkte",
-    "href": "exam-questions.html#aufgabe-4-10-punkte",
-    "title": "Exam Questions",
-    "section": "",
-    "text": "Gegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\)."
-  },
-  {
-    "objectID": "exam-questions.html#aufgabe-5-10-punkte",
-    "href": "exam-questions.html#aufgabe-5-10-punkte",
-    "title": "Exam Questions",
-    "section": "",
-    "text": "Es sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\)."
-  },
-  {
-    "objectID": "exam-questions.html#aufgabe-6-10-punkte",
-    "href": "exam-questions.html#aufgabe-6-10-punkte",
-    "title": "Exam Questions",
-    "section": "",
-    "text": "Es sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
-  },
-  {
     "objectID": "Klausur_HM3_WS2425_Loesung.html",
     "href": "Klausur_HM3_WS2425_Loesung.html",
     "title": "Klausur_HM3_WS2425_Lösung",
     "section": "",
     "text": "Aufgabe 1 (10 Punkte)\n\\[ x'=(1-\\alpha)t\\frac{x^2}{t^3}\n\\] \\[\\quad x(1)=\\frac{2}{1-2\\alpha}\n\\] \\[\\quad \\alpha\\in(0,\\frac{1}{2})\\] und geben Sie den maximalen Definitionsbereich \\(t\\in[1,T)\\) der Lösung in Abhängigkeit von \\(\\alpha\\) an.\nWas passiert für \\(\\alpha \\to 0\\)?\n\\[2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1\\] (i) Zeigen Sie das die DGL exakt ist."
+  },
+  {
+    "objectID": "Klausur_HM3_WS2425_Loesung.html#und-den-randbedingungen-ut0utpi0-t0.",
+    "href": "Klausur_HM3_WS2425_Loesung.html#und-den-randbedingungen-ut0utpi0-t0.",
+    "title": "Klausur_HM3_WS2425_Lösung",
+    "section": "und den Randbedingungen \\(u(t,0)=u(t,\\pi)=0, t>0\\).",
+    "text": "und den Randbedingungen \\(u(t,0)=u(t,\\pi)=0, t&gt;0\\).\nHier sind die Lösungen zu den Aufgaben:\n\n\nTeil a: Klassifikation der PDE\nDie gegebene partielle Differentialgleichung ist: \\[\nu_{tt} - u_{xx} = 0.\n\\] Dies ist eine lineare, homogene, partielle Differentialgleichung zweiter Ordnung. Um die Klassifikation zu bestimmen, betrachten wir die allgemeine Form einer PDE zweiter Ordnung: \\[\nA u_{xx} + 2B u_{xt} + C u_{tt} = 0.\n\\] Für unsere Gleichung sind die Koeffizienten: \\[\nA = -1, \\quad B = 0, \\quad C = 1.\n\\] Die Diskriminante ist gegeben durch: \\[\nB^2 - AC = 0^2 - (1 \\cdot (-1)) = 1.\n\\] Da die Diskriminante positiv ist (\\(B^2 - AC &gt; 0\\)), handelt es sich um eine hyperbolische Differentialgleichung.\n\n\n\nTeil b: Fourierkoeffizienten der ungerade periodischen Fortsetzung von \\(f(x)\\)\nDie Funktion \\(f(x) = 1\\) auf \\([0, \\pi]\\) soll ungerade periodisch fortgesetzt werden. Dies bedeutet: \\[\nf(-x) = -f(x).\n\\] Die Fourierreihe einer ungeraden \\(2\\pi\\)-periodischen Funktion hat nur Sinus-Terme: \\[\nf(x) = \\sum_{n=1}^{\\infty} b_n \\sin(n x),\n\\] mit den Koeffizienten: \\[\nb_n = \\frac{2}{\\pi} \\int_0^\\pi 1 \\cdot \\sin(n x) \\,dx.\n\\] Die Integralberechnung ergibt: \\[\nb_n = \\frac{2}{\\pi} \\left[ -\\frac{1}{n} \\cos(n x) \\right]_0^\\pi.\n\\] Da \\(\\cos(n\\pi) = (-1)^n\\) und \\(\\cos(0) = 1\\), folgt: \\[\nb_n = \\frac{2}{\\pi} \\left( -\\frac{1}{n} \\left( (-1)^n - 1 \\right) \\right).\n\\] \\[\n= \\frac{2}{\\pi} \\cdot \\frac{1}{n} (1 - (-1)^n).\n\\] Für ungerades \\(n\\) ist \\(1 - (-1)^n = 2\\), für gerades \\(n\\) ist \\(1 - (-1)^n = 0\\), also: \\[\nb_n =\n\\begin{cases}\n\\frac{4}{n\\pi}, & n \\text{ ungerade}, \\\\\n0, & n \\text{ gerade}.\n\\end{cases}\n\\]\n\n\n\nTeil c: Lösung der Wellengleichung\nDie Wellengleichung lautet: \\[\nu_{tt} - u_{xx} = 0, \\quad x \\in [0, \\pi], \\quad t &gt; 0.\n\\] mit den Anfangsbedingungen: \\[\nu(0, x) = x, \\quad u_t(0, x) = 0,\n\\] und den Randbedingungen: \\[\nu(t,0) = u(t,\\pi) = 0.\n\\]\n\nSchritt 1: Separation der Variablen\nWir setzen \\(u(t, x) = X(x) T(t)\\) an und erhalten durch Trennung: \\[\n\\frac{T''(t)}{T(t)} = \\frac{X''(x)}{X(x)}.\n\\] Beide Seiten müssen gleich einer Konstanten \\(-\\lambda\\) sein. Für \\(X(x)\\) folgt die Sturm-Liouville-Gleichung: \\[\nX'' + \\lambda X = 0, \\quad X(0) = X(\\pi) = 0.\n\\] Die Lösungen sind: \\[\nX_n(x) = \\sin(n x), \\quad \\lambda_n = n^2, \\quad n \\in \\mathbb{N}.\n\\]\nFür \\(T_n(t)\\) gilt: \\[\nT_n'' + n^2 T_n = 0.\n\\] Die Lösung ist: \\[\nT_n(t) = A_n \\cos(n t) + B_n \\sin(n t).\n\\]\n\n\nSchritt 2: Anfangsbedingung \\(u(0,x) = x\\)\nDie Lösung hat die Form: \\[\nu(t,x) = \\sum_{n=1}^{\\infty} \\left( A_n \\cos(n t) + B_n \\sin(n t) \\right) \\sin(n x).\n\\] Setzen wir \\(t = 0\\), ergibt sich: \\[\nx = \\sum_{n=1}^{\\infty} A_n \\sin(n x).\n\\] Die Fourier-Koeffizienten \\(A_n\\) berechnen sich durch: \\[\nA_n = \\frac{2}{\\pi} \\int_0^\\pi x \\sin(n x) \\,dx.\n\\] Integration durch Teile liefert: \\[\nA_n = \\frac{2}{\\pi} \\left( \\frac{\\pi (-1)^n}{n} - \\frac{1}{n^2} \\right) = \\frac{2}{n} (-1)^n.\n\\]\n\n\nSchritt 3: Anfangsbedingung \\(u_t(0,x) = 0\\)\nDie Ableitung ist: \\[\nu_t(0, x) = \\sum_{n=1}^{\\infty} B_n n \\sin(n x) = 0.\n\\] Da die Sinusfunktionen linear unabhängig sind, folgt \\(B_n = 0\\).\n\n\nSchritt 4: Endgültige Lösung\n\\[\nu(t,x) = \\sum_{n=1}^{\\infty} \\frac{2}{n} (-1)^n \\cos(n t) \\sin(n x).\n\\]\n\n\nAufgabe 4 (10 Punkte)\nGegeben seine die beiden Vektorfelder \\(F_k:R^3\\rightarrow R^3\\) mit \\(k=0,1\\) und der Weg \\(\\gamma: [0,1]\\rightarrow R^3\\).\n\\(F=\\begin{pmatrix} z\\cos(k(x+y))\\\\z\\cos(k(x+y))\\\\\\sin(k(x+y))+2z \\end{pmatrix}\\) und \\(\\gamma(t)=\\begin{pmatrix} \\pi t\\\\\\pi t\\\\ t^2\\end{pmatrix}\\)\n\nBestimen Sie jeweils die Rotation von \\(F_0\\) und \\(F_1\\).\nUntersuchen Sie, ob die Vektorfelder \\(F_0\\) und \\(F_1\\) ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an.\nBerechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder \\(F_0\\) und \\(F_1\\) entlang \\(\\gamma\\).\n\n\nHier sind die ausführlichen Lösungen zur Aufgabe 4:\n\n\n\n\nTeil a: Berechnung der Rotation von \\(F_k\\)\nDie Rotation eines Vektorfeldes \\(F\\) ist definiert als: \\[\n\\operatorname{rot} F = \\nabla \\times F =\n\\begin{vmatrix}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n\\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\\nF_1 & F_2 & F_3\n\\end{vmatrix}.\n\\] Für \\(F_k\\) ist gegeben: \\[\nF_k =\n\\begin{pmatrix}\nz\\cos(k(x+y)) \\\\\nz\\cos(k(x+y)) \\\\\n\\sin(k(x+y)) + 2z\n\\end{pmatrix}.\n\\]\n\nRotation für \\(F_0\\)\nSetzen wir \\(k=0\\), dann wird \\(\\cos(k(x+y)) = \\cos(0) = 1\\) und \\(\\sin(k(x+y)) = \\sin(0) = 0\\), sodass: \\[\nF_0 =\n\\begin{pmatrix}\nz \\\\\nz \\\\\n2z\n\\end{pmatrix}.\n\\]\nNun berechnen wir die Rotation: \\[\n\\operatorname{rot} F_0 =\n\\begin{vmatrix}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n\\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\\nz & z & 2z\n\\end{vmatrix}.\n\\] Die Komponenten sind: \\[\n\\frac{\\partial}{\\partial y} (2z) - \\frac{\\partial}{\\partial z} (z) = 0 - 1 = -1,\n\\] \\[\n\\frac{\\partial}{\\partial z} (z) - \\frac{\\partial}{\\partial x} (2z) = 1 - 0 = 1,\n\\] \\[\n\\frac{\\partial}{\\partial x} (z) - \\frac{\\partial}{\\partial y} (z) = 0 - 0 = 0.\n\\]\nSomit: \\[\n\\operatorname{rot} F_0 = \\begin{pmatrix} -1 \\\\ 1 \\\\ 0 \\end{pmatrix}.\n\\]\n\n\nRotation für \\(F_1\\)\nFür \\(k=1\\) haben wir: \\[\nF_1 =\n\\begin{pmatrix}\nz\\cos(x+y) \\\\\nz\\cos(x+y) \\\\\n\\sin(x+y) + 2z\n\\end{pmatrix}.\n\\]\nBerechnen der Rotation: \\[\n\\operatorname{rot} F_1 =\n\\begin{vmatrix}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n\\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\\nz\\cos(x+y) & z\\cos(x+y) & \\sin(x+y) + 2z\n\\end{vmatrix}.\n\\] Die Komponenten sind: \\[\n\\frac{\\partial}{\\partial y} (\\sin(x+y) + 2z) - \\frac{\\partial}{\\partial z} (z\\cos(x+y)) = \\cos(x+y) - \\cos(x+y) = 0.\n\\] \\[\n\\frac{\\partial}{\\partial z} (z\\cos(x+y)) - \\frac{\\partial}{\\partial x} (\\sin(x+y) + 2z) = \\cos(x+y) - \\cos(x+y) = 0.\n\\] \\[\n\\frac{\\partial}{\\partial x} (z\\cos(x+y)) - \\frac{\\partial}{\\partial y} (z\\cos(x+y)) = -z\\sin(x+y) + z\\sin(x+y) = 0.\n\\]\nDa alle Komponenten null sind, ist: \\[\n\\operatorname{rot} F_1 = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}.\n\\]\n\n\n\n\nTeil b: Existenz eines Potentials\nEin Vektorfeld ist konservativ (also ein Potentialfeld), wenn seine Rotation null ist.\n\nFür \\(F_0\\) ist \\(\\operatorname{rot} F_0 \\neq 0\\), also kein Potentialfeld.\nFür \\(F_1\\) ist \\(\\operatorname{rot} F_1 = 0\\), also gibt es ein Potential \\(\\Phi(x,y,z)\\) mit \\(\\nabla \\Phi = F_1\\).\n\nUm \\(\\Phi\\) zu bestimmen, lösen wir: \\[\n\\frac{\\partial \\Phi}{\\partial x} = z\\cos(x+y),\n\\] \\[\n\\frac{\\partial \\Phi}{\\partial y} = z\\cos(x+y),\n\\] \\[\n\\frac{\\partial \\Phi}{\\partial z} = \\sin(x+y) + 2z.\n\\]\nIntegration der ersten Gleichung nach \\(x\\): \\[\n\\Phi(x,y,z) = z\\sin(x+y) + C(y,z).\n\\]\nAbleitung nach \\(y\\) ergibt: \\[\n\\frac{\\partial \\Phi}{\\partial y} = z\\cos(x+y) + \\frac{\\partial C}{\\partial y} = z\\cos(x+y).\n\\] Daraus folgt \\(\\frac{\\partial C}{\\partial y} = 0\\), also ist \\(C(y,z) = C(z)\\).\nNun Integration der dritten Gleichung: \\[\n\\frac{\\partial \\Phi}{\\partial z} = \\sin(x+y) + 2z.\n\\] Einsetzen von \\(\\Phi = z\\sin(x+y) + C(z)\\): \\[\n\\sin(x+y) + C'(z) = \\sin(x+y) + 2z.\n\\] Daraus folgt \\(C'(z) = 2z\\), also \\(C(z) = z^2 + C_0\\).\nDas Potential ist: \\[\n\\Phi(x,y,z) = z\\sin(x+y) + z^2 + C_0.\n\\]\n\n\n\nTeil c: Berechnung der Kurvenintegrale\nDas Kurvenintegral eines Vektorfeldes entlang \\(\\gamma(t)\\) ist: \\[\n\\int_{\\gamma} F \\cdot d\\gamma = \\int_0^1 F(\\gamma(t)) \\cdot \\gamma'(t) dt.\n\\]\nDie Ableitung des Weges: \\[\n\\gamma(t) = \\begin{pmatrix} \\pi t \\\\ \\pi t \\\\ t^2 \\end{pmatrix}, \\quad\n\\gamma'(t) = \\begin{pmatrix} \\pi \\\\ \\pi \\\\ 2t \\end{pmatrix}.\n\\]\n\nIntegral für \\(F_0\\)\n\\[\nF_0(\\gamma(t)) =\n\\begin{pmatrix}\nt^2 \\\\\nt^2 \\\\\n2t^2\n\\end{pmatrix}.\n\\]\n\\[\nF_0 \\cdot \\gamma' = (\\pi t^2) \\pi + (\\pi t^2) \\pi + (2t^2)(2t).\n\\] \\[\n= \\pi^2 t^2 + \\pi^2 t^2 + 4t^3 = 2\\pi^2 t^2 + 4t^3.\n\\]\nDas Integral ist: \\[\n\\int_0^1 (2\\pi^2 t^2 + 4t^3) dt = \\frac{2\\pi^2}{3} + t^4\\Big|_0^1 = \\frac{2\\pi^2}{3} + 1.\n\\]\n\n\nIntegral für \\(F_1\\)\nDa \\(F_1\\) ein Potentialfeld ist, ist das Kurvenintegral entlang einer geschlossenen oder zwischen zwei Punkten definierten Bahn einfach die Differenz des Potentials: \\[\n\\Phi(\\gamma(1)) - \\Phi(\\gamma(0)).\n\\]\nDurch Einsetzen erhält man: \\[\n\\Phi(\\pi, \\pi, 1) - \\Phi(0,0,0) = (1\\sin(2\\pi) + 1^2) - (0\\sin(0) + 0^2) = 1 - 0 = 1.\n\\]\n\nAufgabe 5 (10 Punkte)\nEs sei \\(\\gamma(u)=(e^u-1,0,\\sqrt{u})^T\\) mit \\(u\\in[0,1]\\) ein planarer Weg in der x-z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z-Achse rotiert wird.\nGegeben sei ausserdem das Vektorfeld\n\\[ F:R^3\\rightarrow R^3, F(x,y,z)=\\begin{pmatrix} xz\\\\yz \\\\x^2+y^2 \\end{pmatrix} \\]\n\nGeben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nBestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche \\(A\\) für \\(u&gt;0\\).\nBestimmen Sie das Oberflächenintegral 2.Art \\(\\int_AF\\cdot dn\\).\n\n\nWir betrachten zunächst den Weg [ (u)=(eu-1,,0,,)T,u, ] der in der (x)-(z)-Ebene liegt. Durch Rotation um die (z)-Achse erhalten wir eine Rotationsfläche (A) und dazu das Vektorfeld [ F(x,y,z)=\n\\[\\begin{pmatrix} xz \\\\ yz \\\\ x^2+y^2 \\end{pmatrix}\\]\n,. ] Im Folgenden geben wir eine mögliche Lösung der Aufgaben (a)–(c) an."
   },
   {
     "objectID": "Klausur_HM3_WS2425_Loesung.html#a-parametrisierung-der-fläche-a",
@@ -189,60 +147,102 @@
     "text": "Aufgabe 4: Nichtlineare Regression\na) Formulierung als Fehlerquadratsumme \\[ r_i(x_1, x_2) = f(x_1, x_2, t_i) - y_i \\] Minimiere $ r_i^2 $.\nb) Gauß-Newton-Verfahren Berechnung der Jacobi-Matrix und Iteration $x^{(1)} = x^{(0)} - (J^T J)^{-1} J^T r $. Vergleich der Fehlerquadratsumme zur Beurteilung der Verbesserung."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "exam-questions.html",
+    "href": "exam-questions.html",
+    "title": "Exam Questions",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Download as PDF\n\n\n\na) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\).\n\n\n\nGegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an.\n\n\n\nGegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt.\n\n\n\nGegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\).\n\n\n\nEs sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\).\n\n\n\nEs sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
   },
   {
-    "objectID": "hm3_python.html#aufgabe-1",
-    "href": "hm3_python.html#aufgabe-1",
-    "title": "sympy",
-    "section": "Aufgabe 1",
-    "text": "Aufgabe 1\n# Aufgabe 1\nimport sympy as sp\n\n# Koordinaten in kartesischen Variablen\nx, t = sp.symbols('x t', real=True)\n\n# Koeffizienten bestimmen\nM = 2*t*x**3 - 2*t\nN = 3*t**2*x**2\n\n#M = 3*t*x**2\n#N = t*(2*x**3-2)\n\n# Exaktheit prüfen: dM/dx = dN/dt ?\ndMdx = sp.diff(M, x)\ndNdt = sp.diff(N, t)\nis_exact = sp.simplify(dMdx - dNdt) == 0\nprint(\"Die DGL ist exakt:\", is_exact)\n\n# Potenzialfunktion Phi finden\nPhi = sp.integrate(M, t) + sp.integrate(N - sp.diff(sp.integrate(M, t), x), x)\nprint(\"Potenzialfunktion Phi:\", Phi)\n# Lösung der DGL bestimmen\nsolution = sp.Eq(Phi, sp.Symbol('C'))\nprint(\"Allgemeine Lösung:\", solution)\n\n# Test\n# N\nPhi.diff(x)-M\n# erwartet: 0\n# M\nPhi.diff(t)-N\n# erwartet: 0\n\n# Anfangswertproblem lösen\nC_value = sp.solve(solution.subs([(t, 1), (x, 0)]), sp.Symbol('C'))\nfinal_solution = solution.subs(sp.Symbol('C'), C_value[0])\nprint(\"Lösung des Anfangswertproblems:\", final_solution)\n\n# Grenzwert für t -&gt; ∞ bestimmen\nx_infinity = sp.limit(final_solution.rhs, t, sp.oo)\nprint(\"Grenzwert der Lösung für t -&gt; ∞:\", x_infinity)"
-  },
-  {
-    "objectID": "hm3_python.html#aufgabe-2",
-    "href": "hm3_python.html#aufgabe-2",
-    "title": "sympy",
-    "section": "Aufgabe 2",
-    "text": "Aufgabe 2\n# Aufgabe 2\n# System von ODE\nimport sympy as sp\n\n# variables\nx,y,c1,c2 = sp.symbols('x y c_1 c_2')\nt = sp.symbols('t', positive = True)\nA=sp.Matrix([(3,-1),(5, -1)])\n#A=sp.Matrix([(0,-1),(5, 4)])\n\n\n# calculate only one eigenvalue\n# the other one is complex conjugate\nEV=(sp.trace(A)+sp.sqrt(sp.trace(A)**2-4*sp.det(A)))/2\nprint(EV)\n\n# calculate one eigenvector\nX=sp.Matrix((x,y))\nM=A-EV*sp.eye(2)\nM1=M*X\n\n# solve only first row, set x=1\ny=sp.solve(M1[0], y)\n# choose x=1 and calculate y\nX=sp.Matrix((1,(y[0].subs(x,1))))\n\n# express all variables (a=re(X),b=im(X)) and (re(EV), im(EV) in the real solution of the system of ODEs\n#a=X.as_real_imag()[0]\n#b=X.as_real_imag()[1]\na, b = X.as_real_imag()\nprint(a)\nprint(b)\n#ev_real=EV.as_real_imag()[0]\n#ev_imag=EV.as_real_imag()[1]\nev_real, ev_imag = EV.as_real_imag()\n# solution\nx1=sp.exp(ev_real*t)*(a*sp.cos(ev_imag*t)-b*sp.sin(ev_imag*t))\nx2=sp.exp(ev_real*t)*(a*sp.sin(ev_imag*t)+b*sp.cos(ev_imag*t))\nmatrix = sp.Matrix([(x1,x2)])\n#print(matrix)\nsolution=c1*x1+c2*x2\n#print(solution)\nsolution\n\n# partikuläre Lösung\nB=sp.Matrix((1,0))\nxp=-A.inv()*B\nxp\nprint (xp)\n\n\n# Test ob EV korrekt ist\nassert sp.simplify(M*X)==sp.Matrix([0,0]), 'Eigenvektor nok'\nmatrix\n\nA=sp.Matrix([(3,-1),(5, -1)])\nλ1,λ2=A.eigenvals()\nprint(λ1,λ2)\nv1,v2=A.eigenvects()\nprint(v1,v2)\n\nsol=5/2*v1[2][0]*sp.exp(λ1*t)+5/2*v2[2][0]*sp.exp(λ2*t)\nsol1, sol2 = sol.as_real_imag()\nsol\n# short sympy solution\nA=sp.Matrix([(3,-1),(5, -1)])\n\n# Berechne Eigenwerte und Eigenvektoren\neigen_data = A.eigenvects()\n\n# Skaliere die Eigenvektoren so, dass der erste Eintrag 1 wird\n# man teilt durch den ersten Eintrag (hier komplex)\neigenvectors = []\nfor eigenvalue, multiplicity, eigenvecs in eigen_data:\n    for vec in eigenvecs:\n        if vec[0] != 0:  # Verhindern, dass durch 0 geteilt wird\n            vec = vec / vec[0]  # Normierung auf ersten Eintrag = 1\n            \n        eigenvectors.append((eigenvalue, vec))\n\n# Komplexe Lösung\nλ1, v1  = eigenvectors[0]\n#λ2, v2  = eigenvectors[1]\nv1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0]\nsol1=v1*sp.exp(λ1*t) # es genügt eine komplexe Lösung zu betrachten; Rotor\n\n# Umschreiben als Matrix von reellen Lösungen\nsol_list=sol1.as_real_imag() # ergibt eine Liste von Vektoren\nmatrix=sp.Matrix([sol_list]) # als Matrix\n#sp.simplify(matrix/sp.exp(t))\nmatrix\n# noch kürzer\n# Eigenvektor und Eigenwert\nv1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0] # erster Eintrag auf 1 normiert\nλ1, _ = A.eigenvals() \n# reelles System\nsp.Matrix([(v1*sp.exp(λ1*t)).as_real_imag()])"
-  },
-  {
-    "objectID": "hm3_python.html#aufgabe-3",
-    "href": "hm3_python.html#aufgabe-3",
-    "title": "sympy",
-    "section": "Aufgabe 3",
-    "text": "Aufgabe 3\n# Aufgabe 3\nimport sympy as sp\n\n# Parabolic PDE\n\n# Define symbols\nx, t, k, a = sp.symbols('x t k a', real=True, positive=True)\n\n# Fourier coefficients for f(x) = 1 on [0, pi]\nb_k = (2/sp.pi) * sp.integrate(sp.sin(k*x), (x, 0, sp.pi))\nb_k = sp.simplify(b_k)\n\n# Solution for u(0,x) = sin(kx)\nu_k = sp.exp(-a * k**2 * t) * sp.sin(k*x)\n\n# General solution for u(0,x) = 1 (sum over odd k)\nn = sp.symbols('n', integer=True, positive=True)\nk_n = 2*n - 1  # Only odd indices\nu_series = sp.Sum((4 / (k_n * sp.pi)) * sp.exp(-a * k_n**2 * t) * sp.sin(k_n * x), (n, 1, sp.oo))\n\n# Display results\nprint(\"Fourier coefficient b_k:\", b_k)\nprint(\"Solution for u(0,x) = sin(kx):\", u_k)\nprint(\"General solution u(t,x):\", sp.simplify(u_series))\nb_k\nu_k\nu_series"
-  },
-  {
-    "objectID": "hm3_python.html#aufgabe-4",
-    "href": "hm3_python.html#aufgabe-4",
-    "title": "sympy",
-    "section": "Aufgabe 4",
-    "text": "Aufgabe 4\nimport sympy as sp\n\n# Definition der Variablen\nx, y, z, t, beta = sp.symbols('x y z t beta')\n\n# Definition des Vektorfeldes F\nF = sp.Matrix([\n    y**2 - 2*beta*z*sp.exp(x*z),\n    2*x*y + 3*z,\n    3*y - 2*x*sp.exp(x*z)\n])\n\n# Berechnung der Rotation von F\nrot_F = sp.simplify(sp.Matrix([sp.diff(F[2], y) - sp.diff(F[1], z),\n                               sp.diff(F[0], z) - sp.diff(F[2], x),\n                               sp.diff(F[1], x) - sp.diff(F[0], y)]))\n\n# Lösung für beta, sodass rot F = 0\nbeta_solution = sp.solve(rot_F, beta)\n\n# Einsetzen von beta = 1\nF_conservative = F.subs(beta, 1)\n\n# Bestimmung des Potentials phi\nphi_x = sp.integrate(F_conservative[0], x)\nphi = phi_x + sp.Function('g')(y, z)\n\n# Ableitung von phi nach y und Vergleich mit F[1]\ng_yz = sp.simplify(sp.diff(phi, y) - F_conservative[1])\ng_y_solution = sp.integrate(3*z, y)  # Lösung für g(y, z)\nphi = phi_x + g_y_solution + sp.Function('h')(z)\n\n# Ableitung von phi nach z und Vergleich mit F[2]\nh_z = sp.simplify(sp.diff(phi, z) - F_conservative[2])\nh_solution = sp.integrate(0, z)  # h(z) ist konstant\nphi = phi.subs(sp.Function('h')(z), h_solution)\n\n# Definition der Kurve gamma\ngamma = sp.Matrix([\n    sp.cos(t) - t/(2*sp.pi),\n    sp.cos(t),\n    sp.sin(t)\n])\n\n# Evaluierung des Potentials an den Endpunkten\nphi_start = phi.subs({x: gamma[0].subs(t, 0), y: gamma[1].subs(t, 0), z: gamma[2].subs(t, 0)})\nphi_end = phi.subs({x: gamma[0].subs(t, 2*sp.pi), y: gamma[1].subs(t, 2*sp.pi), z: gamma[2].subs(t, 2*sp.pi)})\n\n# Berechnung des Kurvenintegrals\nintegral_value = phi_end - phi_start\n\n# Ausgabe der Ergebnisse\nprint(\"Lösungen für beta, sodass F konservativ ist:\")\nprint(beta_solution)\nprint(\"\\nPotential phi(x,y,z) für beta=1:\")\nprint(phi)\nprint(\"\\nWert des Kurvenintegrals:\")\nprint(integral_value)"
-  },
-  {
-    "objectID": "hm3_python.html#aufgabe-5",
-    "href": "hm3_python.html#aufgabe-5",
-    "title": "sympy",
-    "section": "Aufgabe 5",
-    "text": "Aufgabe 5\n# Aufgabe 5\n# mühsam von Hand\n# Parametrisierung\nu,v = sp.symbols('u v')\n#g_u = sp.Matrix([sp.exp(u)-1,0,u])\n#g_u = sp.Matrix([u**2,0,u])\n#g_u=sp.Matrix([u**2-1,0,u])\ng_u=sp.Matrix([u,0,-u**2])\ng_uv =sp.Matrix([ g_u[0]*sp.cos(v), g_u[0]*sp.sin (v), u])\nf_u=g_uv.diff(u)\nf_v=g_uv.diff(v)\nn=sp.simplify(f_u.cross(f_v))\nprint('Normal vector: ')\nn\n# Substitution F(x,y,z)-&gt;F(gamma(u,v))\nx,y,z = sp.symbols('x y z')\n#F_xyz=sp.Matrix([x+y,y-x,2]) # Typical vector field with div F = 2\n#F_xyz=sp.Matrix([x,y,z])\nF_xyz=-sp.Matrix([y,-x,z])\nF_uv=F_xyz.subs(x,g_uv[0]).subs(y,g_uv[1]).subs(z,g_uv[2])\nprint('Parametrisiertes Vektorfeld: ')\nF_uv\nintegrand=F_uv.dot(n)\n#integrand=F_uv.dot(n).simplify()\nprint(integrand)\nprint(integrand.simplify())\nintegrand.simplify()\nsp.simplify(sp.integrate(integrand,(u,0,2), (v,0,2*sp.pi)))"
-  },
-  {
-    "objectID": "hm3_python.html#aufgabe-6",
-    "href": "hm3_python.html#aufgabe-6",
-    "title": "sympy",
-    "section": "Aufgabe 6",
-    "text": "Aufgabe 6\nimport sympy as sp\n\n# Variablen definieren\nx, y, z, r, phi = sp.symbols('x y z r phi')\n\n# Vektorfelder definieren\nF = sp.Matrix([2*y*sp.exp(z) + x, y - 2*x*z + 9, z*x + sp.sin(y)])\nG = sp.Matrix([-y*z, x*z, z])\n\n# Divergenz von F berechnen\ndiv_F = sp.simplify(sp.diff(F[0], x) + sp.diff(F[1], y) + sp.diff(F[2], z))\n\n# Volumenelement in Zylinderkoordinaten\ndV = r * sp.diff(x, x) * sp.diff(r, r) * sp.diff(phi, phi)\n\n# Volumenintegral für den Fluss\nflux_integral = sp.integrate(\n    sp.integrate(\n        sp.integrate((x + 2) * r, (r, 0, x)),\n        (phi, 0, 2*sp.pi)\n    ),\n    (x, 1, 3)\n)\n\n# Rotation von G berechnen\nrot_G = sp.simplify(sp.Matrix([\n    sp.diff(G[2], y) - sp.diff(G[1], z),\n    sp.diff(G[0], z) - sp.diff(G[2], x),\n    sp.diff(G[1], x) - sp.diff(G[0], y)\n]))\n\n# Divergenz der Rotation von G\ndiv_rot_G = sp.simplify(sp.diff(rot_G[0], x) + sp.diff(rot_G[1], y) + sp.diff(rot_G[2], z))\n\n# Ausgabe\nprint(\"Divergenz von F:\", div_F)\nprint(\"Fluss durch K:\", flux_integral)\nprint(\"Rotation von G:\", rot_G)\nprint(\"Divergenz der Rotation von G:\", div_rot_G)\nimport sympy as sp\n\n# Parameter für den Kreisrand\nr, t = sp.symbols('r t')\nr = 2\nx = r * sp.cos(t)\ny = r * sp.sin(t)\nz = 0  # Kreis liegt in der xy-Ebene\n\n\n\n# Vektorfeld F\nF = sp.Matrix([x - y, x + y, z + x*y])\n\n# Tangentialvektor dr/dt\nr_t = sp.Matrix([x, y, z])\ndr_dt = sp.diff(r_t, t)\n\n# Skalarprodukt F · dr/dt\nintegrand = F.dot(dr_dt)\n\n# Kurvenintegral entlang des Kreises\nintegral = sp.integrate(integrand, (t, sp.pi, 0))\n\n# Kurvenintegral \n\n# Ergebnis ausgeben\nsp.pprint(integral.simplify())"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "HM3 Website",
+    "objectID": "exam-questions.html#aufgabe-1-10-punkte",
+    "href": "exam-questions.html#aufgabe-1-10-punkte",
+    "title": "Exam Questions",
     "section": "",
-    "text": "Herzlich Willkommen zur HM3 Website\nDiese Website enthält die Prüfungsaufgaben (Exam Questions) und die zugehörigen Kurzlösungen (Solutions) zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n\nDie HM3 ist die Grundlage für die Theorie der Strömungsdynamik.\nHier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:\n\n\n\n\n\n\n\n\nEigenschaft\nSkalarfeld \\(u(x,t)\\) oder \\(\\phi(x,y,z)\\)\nVektorfeld \\(\\mathbf{F}(x,y,z)\\)\n\n\n\n\nDefinition\nOrdnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)\nOrdnet jedem Punkt einen Vektor zu (Wert + Richtung)\n\n\nBeispiele\nTemperatur \\(T(x,y,z)\\), Druck \\(p(x,y,z)\\), elektrisches Potential \\(\\phi(x,y,z)\\)\nKraftfeld \\(\\mathbf{F} = (F_x, F_y, F_z)\\), elektrisches Feld \\(\\mathbf{E}\\), Strömungsgeschwindigkeit \\(\\mathbf{v}\\)\n\n\nTypische Gleichung\nWärmeleitungsgleichung \\(\\frac{\\partial u}{\\partial t} = \\alpha \\nabla^2 u\\)\nNavier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder\n\n\nMathematische Operationen\nGradient (\\(\\nabla u\\)) → erzeugt ein Vektorfeld aus einem Skalarfeld\nDivergenz (\\(\\nabla \\cdot \\mathbf{F}\\)), Rotation (\\(\\nabla \\times \\mathbf{F}\\))\n\n\nVerwendung in der Physik\nBeschreibt Zustandsgrößen wie Temperatur, Energie, Druck\nBeschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder\n\n\nBuchstabenherkunft\n\\(u\\) historisch von Fourier für Temperatur, \\(\\phi\\) für Potentiale\n\\(\\mathbf{F}\\) von „Force“ (Kraft) in der Mechanik\n\n\n\nDiese Unterscheidung verschwindet durch die Einführung von Multivektoren in GC."
+    "text": "a) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\)."
+  },
+  {
+    "objectID": "exam-questions.html#aufgabe-2-10-punkte",
+    "href": "exam-questions.html#aufgabe-2-10-punkte",
+    "title": "Exam Questions",
+    "section": "",
+    "text": "Gegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an."
+  },
+  {
+    "objectID": "exam-questions.html#aufgabe-3-10-punkte",
+    "href": "exam-questions.html#aufgabe-3-10-punkte",
+    "title": "Exam Questions",
+    "section": "",
+    "text": "Gegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt."
+  },
+  {
+    "objectID": "exam-questions.html#aufgabe-4-10-punkte",
+    "href": "exam-questions.html#aufgabe-4-10-punkte",
+    "title": "Exam Questions",
+    "section": "",
+    "text": "Gegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\)."
+  },
+  {
+    "objectID": "exam-questions.html#aufgabe-5-10-punkte",
+    "href": "exam-questions.html#aufgabe-5-10-punkte",
+    "title": "Exam Questions",
+    "section": "",
+    "text": "Es sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\)."
+  },
+  {
+    "objectID": "exam-questions.html#aufgabe-6-10-punkte",
+    "href": "exam-questions.html#aufgabe-6-10-punkte",
+    "title": "Exam Questions",
+    "section": "",
+    "text": "Es sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
+  },
+  {
+    "objectID": "hm3_klausur_ws2425.html",
+    "href": "hm3_klausur_ws2425.html",
+    "title": "HM3_Klausur_WS2425",
+    "section": "",
+    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
+  },
+  {
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-1",
+    "href": "hm3_klausur_ws2425.html#aufgabe-1",
+    "title": "HM3_Klausur_WS2425",
+    "section": "",
+    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
+  },
+  {
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-2",
+    "href": "hm3_klausur_ws2425.html#aufgabe-2",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 2)",
+    "text": "Aufgabe 2)\n**Aufgabe 2 (10 Punkte)**\nGegeben ist das lineare System\n$$ \\dot x=\\begin{pmatrix} -2&-5\\\\1&4 \\end{pmatrix}x\\quad \\text{ und}\\quad b(t)=4\\begin{pmatrix} e^t\\\\0\\end{pmatrix}$$\n\na) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.\n\nb) Geben sie die allgemeine Lösung des Anfangswertproblems $\\dot x=Ax+b(t)$ an."
+  },
+  {
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-3",
+    "href": "hm3_klausur_ws2425.html#aufgabe-3",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 3)",
+    "text": "Aufgabe 3)\n**Aufgabe 3 (10 Punkte)**\nGegeben sei die partielle Differentialgleichung\n$$ u_{tt}-u_{xx}=0$$\nmit $x\\in[0,\\pi]$ und $t&gt;0$\n\na) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.\n\nb) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion\n$$f(x)=1\\quad  \\text{für } x\\in [0,\\pi]$$.\n\nc) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung\n\n$$u(0,x)=x\\quad x\\in[0,\\pi],$$\n\n\n$$u_t(0,x)=0\\quad x\\in[0,\\pi],$$\n\nund den Randbedingungen $u(t,0)=u(t,\\pi)=0, t&gt;0$."
+  },
+  {
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-4",
+    "href": "hm3_klausur_ws2425.html#aufgabe-4",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 4)",
+    "text": "Aufgabe 4)\n**Aufgabe 4 (10 Punkte)**\n\nGegeben seine die beiden Vektorfelder $F_k:ℝ^3\\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\\gamma: [0,1]\\rightarrow ℝ^3$.\n\n$F=\\begin{pmatrix} z\\cos(k(x+y))\\\\z\\cos(k(x+y))\\\\\\sin(k(x+y))+2z \\end{pmatrix}$ und $\\gamma(t)=\\begin{pmatrix} \\pi t\\\\\\pi t\\\\ t^2\\end{pmatrix}$\n\na) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. \n\nb) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. \n\nc) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\\gamma$."
+  },
+  {
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-5",
+    "href": "hm3_klausur_ws2425.html#aufgabe-5",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 5)",
+    "text": "Aufgabe 5)\n\n**Aufgabe 5 (10 Punkte)**\n\nEs sei $\\gamma(u)=(e^u-1,0,\\sqrt{u})^T$ mit $u\\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\\gamma$ um die z-Achse  rotiert wird.\n\nGegeben sei ausserdem das Vektorfeld\n\n$$ F:ℝ^3\\rightarrow ℝ^3, F(x,y,z)=\\begin{pmatrix} xz\\\\yz \\\\x^2+y^2 \\end{pmatrix} $$\n\na) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. \n\nb) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u&gt;0$. \n\nc) Bestimmen Sie das Oberflächenintegral 2.Art $\\int_AF\\cdot dn$."
+  },
+  {
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-6",
+    "href": "hm3_klausur_ws2425.html#aufgabe-6",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 6)",
+    "text": "Aufgabe 6)\n**Aufgabe 6 (10 Punkte)**\n\nEs sei die Kugel $K$ gegeben durch\n\n$$ K=\\left\\{(x,y,z)^T\\in ℝ^3:x^2+y^2+z^2\\leq4 \\right\\}$$\n\nund $S$ ihre Oberfläche.\n\nWeiterhin sei das Vektorfeld $F:ℝ^3\\rightarrow ℝ^3$ gegeben durch\n\n\n\n$$F(x,y,z)=\\begin{pmatrix} xz-y\\\\ yz+x \\\\xy+z \\end{pmatrix}$$\n\n\nb) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\\int_{\\partial K}F\\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.\n\nc) Berechnen Sie  $\\int_{S}rot(F)\\cdot dn$.\n\nd) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\\int_{S_O}rot(F)\\cdot dn$ und $\\int_{S_M}rot(F)\\cdot dn$ mit Hilfe des Sates von Stokes."
   },
   {
     "objectID": "hm3_codecopy.html",
@@ -406,6 +406,76 @@
     "text": "Aufgabe 4\n**Aufgabe 4 (10 Punkte)**\n\nGegeben sind die folgenden drei Wertepaare $t_1,y_1)=(-1,2)$, $t_2,y_2)=(0,1)$, $t_3,y_3)=(1,0)$ und die Funktion $y=f(x_1, x_2, t)=(t+x_2)^2x_1$.\n\na) Formulieren Sie ein nichtlineares Ausgleichsproblem, so dass die Funktion $f$ die Werte $y_i$ and den Stellen $t_i$ möglichst gut approximiert.\n\nb) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausgleichsproblem von a) mit dem Startwert $x_1,x_2=(1,1)^T. Liefert der berechnete Wert eine Verbesserung für das Ausgleichsproblem im Vergleich zum Startwert?"
   },
   {
+    "objectID": "klausuren.html",
+    "href": "klausuren.html",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert.\n\n\n\nGegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\).\n\n\n\n\nStellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an.\n\n\n\n\nBestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab.\n\n\n\n\nGegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\).\n\n\n\n\n\nBerechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-1-7-punkte",
+    "href": "klausuren.html#aufgabe-1-7-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-2-14-punkte",
+    "href": "klausuren.html#aufgabe-2-14-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Gegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-3-55-punkte",
+    "href": "klausuren.html#aufgabe-3-55-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Stellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-4-64-punkte",
+    "href": "klausuren.html#aufgabe-4-64-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-5-72-punkte",
+    "href": "klausuren.html#aufgabe-5-72-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Gegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-6-46-punkte",
+    "href": "klausuren.html#aufgabe-6-46-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Berechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HM3 Website",
+    "section": "",
+    "text": "Herzlich Willkommen zur HM Website\nHM1 dient zur Festigung der Grundlagen HM2 behandelt Lineare Algebra und 2D Analysis HM3 behandelt Vectoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik.\nPrüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n\nHier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:\n\n\n\n\n\n\n\n\nEigenschaft\nSkalarfeld \\(u(x,t)\\) oder \\(\\phi(x,y,z)\\)\nVektorfeld \\(\\mathbf{F}(x,y,z)\\)\n\n\n\n\nDefinition\nOrdnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)\nOrdnet jedem Punkt einen Vektor zu (Wert + Richtung)\n\n\nBeispiele\nTemperatur \\(T(x,y,z)\\), Druck \\(p(x,y,z)\\), elektrisches Potential \\(\\phi(x,y,z)\\)\nKraftfeld \\(\\mathbf{F} = (F_x, F_y, F_z)\\), elektrisches Feld \\(\\mathbf{E}\\), Strömungsgeschwindigkeit \\(\\mathbf{v}\\)\n\n\nTypische Gleichung\nWärmeleitungsgleichung \\(\\frac{\\partial u}{\\partial t} = \\alpha \\nabla^2 u\\)\nNavier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder\n\n\nMathematische Operationen\nGradient (\\(\\nabla u\\)) → erzeugt ein Vektorfeld aus einem Skalarfeld\nDivergenz (\\(\\nabla \\cdot \\mathbf{F}\\)), Rotation (\\(\\nabla \\times \\mathbf{F}\\))\n\n\nVerwendung in der Physik\nBeschreibt Zustandsgrößen wie Temperatur, Energie, Druck\nBeschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder\n\n\nBuchstabenherkunft\n\\(u\\) historisch von Fourier für Temperatur, \\(\\phi\\) für Potentiale\n\\(\\mathbf{F}\\) von „Force“ (Kraft) in der Mechanik\n\n\n\nDiese Unterscheidung verschwindet durch die Einführung von Multivektoren in GC."
+  },
+  {
+    "objectID": "solutions.html",
+    "href": "solutions.html",
+    "title": "Solutions",
+    "section": "",
+    "text": "HM3: Kurzlösungen\nIm Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:\n\n\n\n\n\n\n\nAufgabe / Teil\nKurzlösung / Ergebnis\n\n\n\n\n1(a)\nGegeben: \\(x' = t\\,x^2 + t\\) mit \\(x(0)=0\\).  Umformung: \\(x' = t\\,(x^2+1)\\).  Trennung: \\(\\displaystyle \\frac{dx}{1+x^2}=t\\,dt\\).  Integration: \\(\\arctan(x)=\\frac{t^2}{2}+C\\).  Mit \\(x(0)=0\\) folgt \\(C=0\\).  Lösung: \\(x(t)=\\tan\\Bigl(\\frac{t^2}{2}\\Bigr)\\).  Definitionsbereich: \\(t\\in(-\\sqrt{\\pi},\\sqrt{\\pi})\\).\n\n\n1(b)(i)\nDGL: \\(2t(x^3-1)+3t^2x^2x'=0\\).  Setze \\(M(t,x)=2t(x^3-1)\\) und \\(N(t,x)=3t^2x^2\\).  Ableiten: \\(M_x=6tx^2\\) und \\(N_t=6tx^2\\) ⇒ exakt.\n\n\n1(b)(ii)\nGesucht: \\(\\Phi\\) mit \\(\\Phi_t=M\\) und \\(\\Phi_x=N\\).  Integriere \\(N\\) nach \\(x\\): \\(\\Phi(t,x)=t^2x^3+g(t)\\).  Ableiten nach \\(t\\): \\(\\Phi_t=2tx^3+g'(t)\\).  Da \\(M=2t(x^3-1)\\) muss \\(g'(t)=-2t\\) sein, also \\(g(t)=-t^2\\).  Potential: \\(\\Phi(t,x)=t^2(x^3-1)\\).\n\n\n1(b)(iii)\n\\(\\Phi(t,x)=\\) konstant; mit \\(x(1)=0\\) folgt \\(\\Phi(1,0)=-1\\).  Lösung: \\(t^2(x^3-1)=-1\\) ⇔ \\(x^3=1-\\frac{1}{t^2}\\) ⇔ \\(x(t)=\\sqrt[3]{1-\\frac{1}{t^2}}\\).  Für \\(t\\to\\infty\\) konvergiert \\(x(t)\\to 1\\).\n\n\n2(a)\nGegeben: \\(A=\\begin{pmatrix}3&-1\\\\5&-1\\end{pmatrix}\\).  Charakteristik: \\(\\det(A-\\lambda I)=\\lambda^2-2\\lambda+2=0\\) ⇒ \\(\\lambda=1\\pm i\\).  Eigenvektor zu \\(\\lambda=1+i\\): \\(v=(1,\\,2-i)^T\\).  Zerlegung: \\(a=(1,2)^T\\), \\(b=(0,-1)^T\\).  Reelles Fundamentalsystem:  \\(x_1(t)=e^t\\Bigl[a\\cos t-b\\sin t\\Bigr]\\),  \\(x_2(t)=e^t\\Bigl[a\\sin t+b\\cos t\\Bigr]\\).\n\n\n2(b)\nPartikulär: Finde \\(x_p\\) mit \\(Ax_p=-b\\) (wobei \\(b=(1,0)^T\\)).  Lösen: \\(3x-y=-1\\) und \\(5x-y=0\\) ⇒ \\(x=\\frac{1}{2}\\), \\(y=\\frac{5}{2}\\).  Somit: \\(x_p=\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).  Allgemeine Lösung: \\(x(t)=c_1\\,x_1(t)+c_2\\,x_2(t)+x_p\\).  Matrixform: \\(X=\\begin{pmatrix}x_1(t)&&x_2(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix}=\\begin{pmatrix}\\cos(t)&&\\sin(t)\\\\a_2\\cos(t)-b_2\\sin(t)&&a_2\\sin(t)+b_2\\cos(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix} +\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).\n\n\n3(a)\nDie PDE \\(2u_t-u_{xx}=0\\) kann umgeschrieben werden als \\(u_t=\\frac{1}{2}u_{xx}\\) – die klassische Wärmeleitungsgleichung.  Klassifikation: parabolisch.\n\n\n3(b)\nFür \\(f(x)=1\\) (auf \\([0,\\pi]\\)) ungerade periodisch fortgesetzt:  Fourier-Sinus-Koeffizient: \\(\\displaystyle b_k=\\frac{2}{\\pi}\\int_0^\\pi \\sin(kx)\\,dx=\\frac{2(1-\\cos(k\\pi))}{\\pi k}\\).  Damit: \\(b_k=\\frac{4}{\\pi k}\\) für ungerade \\(k\\) und 0 für gerade \\(k\\).\n\n\n3(c)\nAnsatz: \\(u(t,x)=T(t)\\sin(kx)\\).  Einsetzen in \\(2u_t-u_{xx}=0\\) ergibt \\(2T'(t)+k^2T(t)=0\\).  Lösung: \\(T(t)=\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).  Ergebnis: \\(u(t,x)=\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\). Ergebnis: \\(u(t,x)=\\sum_\\text{k ungerade}^n\\frac{4}{\\pi k}\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).\n\n\n4(a)\nVektorfeld: \\(F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix}\\).  Notwendige Bedingung (z. B. \\(P_y=Q_x\\)):  \\(P_y=x\\,y^2\\) und \\(Q_x=xy^2+2x(1-\\alpha)z^2\\).  → Für alle \\(x,z\\) folgt \\(1-\\alpha=0\\).  Ergebnis: \\(\\alpha=1\\).\n\n\n4(b)\nFür \\(\\alpha=1\\) vereinfacht sich \\(Q(x,y,z)=x^2\\frac{y^2}{2}\\) und \\(R(x,y,z)=z^2\\).  Integriere \\(P\\): \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+g(y,z)\\).  Da \\(\\Phi_y=\\frac{x^2y^2}{2}+g_y(y,z)=Q\\) ⇒ \\(g_y(y,z)=0\\) und \\(g(y,z)=h(z)\\).  \\(h'(z)=z^2\\) ⇒ \\(h(z)=\\frac{z^3}{3}+C\\).  Potential: \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+\\frac{z^3}{3}\\).\n\n\n4(c)\nMit \\(F=\\nabla\\Phi\\) ist das Kurvenintegral wegunabhängig.  Berechne: \\(\\gamma(0)=(1,0,0)^T\\) und \\(\\gamma(1)=(0,1,1)^T\\).  \\(\\Phi(1,0,0)=0\\) und \\(\\Phi(0,1,1)=\\frac{1}{3}\\).  Ergebnis: \\(\\displaystyle \\int_\\gamma F\\cdot d\\gamma=\\frac{1}{3}\\).\n\n\n5(a)\nRotationsfläche zu \\(\\gamma(u)=(e^u-1,0,u)^T\\).  Parametrisierung: \\(f(u,v)=\\Bigl((e^u-1)\\cos v,\\,(e^u-1)\\sin v,\\,u\\Bigr)\\) mit \\(u\\in[0,1]\\), \\(v\\in[0,2\\pi]\\).\n\n\n5(b)\nTangentialvektoren:  \\(f_u=(e^u\\cos v,\\,e^u\\sin v,\\,1)\\),  \\(f_v=(- (e^u-1)\\sin v,\\,(e^u-1)\\cos v,\\,0)\\).  Normale (nicht normiert): \\(n=f_u\\times f_v=(- (e^u-1)\\cos v,\\,- (e^u-1)\\sin v,\\,e^u(e^u-1))\\).\n\n\n5(c)\nMit \\(F(x,y,z)=(x+y,\\,y-x,\\,2)^T\\) erhält man nach Einsetzen und Kürzen:  \\(F(f(u,v))\\cdot (f_u\\times f_v)= e^{2u}-1\\).  Oberflächenintegral: \\(\\displaystyle \\int_{u=0}^1\\int_{v=0}^{2\\pi}(e^{2u}-1)\\,dv\\,du=\\pi(e^2-3)\\).\n\n\n6(a)\nKugelsegment \\(K=\\{(x,y,z):x^2+y^2+z^2\\le4,\\; y\\ge0,\\; z\\ge0\\}\\) in Kugelkoordinaten:  \\(x=r\\sin\\varphi\\cos\\theta,\\; y=r\\sin\\varphi\\sin\\theta,\\; z=r\\cos\\varphi\\).  Bereiche: \\(r\\in[0,2]\\), \\(\\varphi\\in[0,\\pi/2]\\) (wegen \\(z\\ge0\\)) und \\(\\theta\\in[0,\\pi]\\) (wegen \\(y\\ge0\\)).\n\n\n6(b)\nDivergenz: \\(\\operatorname{div}F=1+1+1=3\\).  Volumen des Balls (Radius 2): \\(\\frac{32\\pi}{3}\\); \\(K\\) ist ein Viertel davon: \\(V_K=\\frac{8\\pi}{3}\\).  Fluss: \\(3\\cdot\\frac{8\\pi}{3}=8\\pi\\).\n\n\n6(c)\nDa \\(\\operatorname{div}(\\operatorname{rot}F)=0\\), gilt:  \\(\\displaystyle \\int_{\\partial K}\\operatorname{rot}F\\cdot n\\,dS=0\\).\n\n\n6(d)\nSei \\(B\\) der Boden (\\(z=0\\)) des Kugelsegments.  Es gilt: \\(\\int_{\\partial K}\\operatorname {rot} F\\cdot n\\,dS = \\int_{\\partial K\\setminus B}\\operatorname {rot}\\cdot n\\,dS+\\int_B \\operatorname {rot}\\cdot n\\,dS\\).  Auf \\(B\\) ist \\(n=(0,0,-1)\\) und \\(\\operatorname {rot}(x,y,0)=(x,-y,2)\\) ⇒ \\(F\\cdot n=-2\\).  \\(\\int_B (-2)dA=-2*2\\pi=-4\\pi\\).  Ergebnis: \\(\\displaystyle \\int_{\\partial K\\setminus B}rot(F)\\cdot n\\,dS=4\\pi\\). (weil Summe \\(= 0\\) aus 6 (c) )\n\n\n\ncolab"
+  },
+  {
     "objectID": "karteikarten.html",
     "href": "karteikarten.html",
     "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
@@ -518,108 +588,45 @@
     "text": "Frage: Wie lautet der Satz von Stokes?\n\n\\[\n\\int_{\\partial K} \\operatorname{rot}(F) \\cdot n \\, dS = \\oint_{\\partial(\\partial K)} F \\cdot dr\n\\] wobei \\(\\partial K\\) die Oberfläche und \\(\\partial(\\partial K)\\) der Rand der Oberfläche ist."
   },
   {
-    "objectID": "solutions.html",
-    "href": "solutions.html",
-    "title": "Solutions",
-    "section": "",
-    "text": "HM3: Kurzlösungen\nIm Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:\n\n\n\n\n\n\n\nAufgabe / Teil\nKurzlösung / Ergebnis\n\n\n\n\n1(a)\nGegeben: \\(x' = t\\,x^2 + t\\) mit \\(x(0)=0\\).  Umformung: \\(x' = t\\,(x^2+1)\\).  Trennung: \\(\\displaystyle \\frac{dx}{1+x^2}=t\\,dt\\).  Integration: \\(\\arctan(x)=\\frac{t^2}{2}+C\\).  Mit \\(x(0)=0\\) folgt \\(C=0\\).  Lösung: \\(x(t)=\\tan\\Bigl(\\frac{t^2}{2}\\Bigr)\\).  Definitionsbereich: \\(t\\in(-\\sqrt{\\pi},\\sqrt{\\pi})\\).\n\n\n1(b)(i)\nDGL: \\(2t(x^3-1)+3t^2x^2x'=0\\).  Setze \\(M(t,x)=2t(x^3-1)\\) und \\(N(t,x)=3t^2x^2\\).  Ableiten: \\(M_x=6tx^2\\) und \\(N_t=6tx^2\\) ⇒ exakt.\n\n\n1(b)(ii)\nGesucht: \\(\\Phi\\) mit \\(\\Phi_t=M\\) und \\(\\Phi_x=N\\).  Integriere \\(N\\) nach \\(x\\): \\(\\Phi(t,x)=t^2x^3+g(t)\\).  Ableiten nach \\(t\\): \\(\\Phi_t=2tx^3+g'(t)\\).  Da \\(M=2t(x^3-1)\\) muss \\(g'(t)=-2t\\) sein, also \\(g(t)=-t^2\\).  Potential: \\(\\Phi(t,x)=t^2(x^3-1)\\).\n\n\n1(b)(iii)\n\\(\\Phi(t,x)=\\) konstant; mit \\(x(1)=0\\) folgt \\(\\Phi(1,0)=-1\\).  Lösung: \\(t^2(x^3-1)=-1\\) ⇔ \\(x^3=1-\\frac{1}{t^2}\\) ⇔ \\(x(t)=\\sqrt[3]{1-\\frac{1}{t^2}}\\).  Für \\(t\\to\\infty\\) konvergiert \\(x(t)\\to 1\\).\n\n\n2(a)\nGegeben: \\(A=\\begin{pmatrix}3&-1\\\\5&-1\\end{pmatrix}\\).  Charakteristik: \\(\\det(A-\\lambda I)=\\lambda^2-2\\lambda+2=0\\) ⇒ \\(\\lambda=1\\pm i\\).  Eigenvektor zu \\(\\lambda=1+i\\): \\(v=(1,\\,2-i)^T\\).  Zerlegung: \\(a=(1,2)^T\\), \\(b=(0,-1)^T\\).  Reelles Fundamentalsystem:  \\(x_1(t)=e^t\\Bigl[a\\cos t-b\\sin t\\Bigr]\\),  \\(x_2(t)=e^t\\Bigl[a\\sin t+b\\cos t\\Bigr]\\).\n\n\n2(b)\nPartikulär: Finde \\(x_p\\) mit \\(Ax_p=-b\\) (wobei \\(b=(1,0)^T\\)).  Lösen: \\(3x-y=-1\\) und \\(5x-y=0\\) ⇒ \\(x=\\frac{1}{2}\\), \\(y=\\frac{5}{2}\\).  Somit: \\(x_p=\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).  Allgemeine Lösung: \\(x(t)=c_1\\,x_1(t)+c_2\\,x_2(t)+x_p\\).  Matrixform: \\(X=\\begin{pmatrix}x_1(t)&&x_2(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix}=\\begin{pmatrix}\\cos(t)&&\\sin(t)\\\\a_2\\cos(t)-b_2\\sin(t)&&a_2\\sin(t)+b_2\\cos(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix} +\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).\n\n\n3(a)\nDie PDE \\(2u_t-u_{xx}=0\\) kann umgeschrieben werden als \\(u_t=\\frac{1}{2}u_{xx}\\) – die klassische Wärmeleitungsgleichung.  Klassifikation: parabolisch.\n\n\n3(b)\nFür \\(f(x)=1\\) (auf \\([0,\\pi]\\)) ungerade periodisch fortgesetzt:  Fourier-Sinus-Koeffizient: \\(\\displaystyle b_k=\\frac{2}{\\pi}\\int_0^\\pi \\sin(kx)\\,dx=\\frac{2(1-\\cos(k\\pi))}{\\pi k}\\).  Damit: \\(b_k=\\frac{4}{\\pi k}\\) für ungerade \\(k\\) und 0 für gerade \\(k\\).\n\n\n3(c)\nAnsatz: \\(u(t,x)=T(t)\\sin(kx)\\).  Einsetzen in \\(2u_t-u_{xx}=0\\) ergibt \\(2T'(t)+k^2T(t)=0\\).  Lösung: \\(T(t)=\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).  Ergebnis: \\(u(t,x)=\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\). Ergebnis: \\(u(t,x)=\\sum_\\text{k ungerade}^n\\frac{4}{\\pi k}\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).\n\n\n4(a)\nVektorfeld: \\(F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix}\\).  Notwendige Bedingung (z. B. \\(P_y=Q_x\\)):  \\(P_y=x\\,y^2\\) und \\(Q_x=xy^2+2x(1-\\alpha)z^2\\).  → Für alle \\(x,z\\) folgt \\(1-\\alpha=0\\).  Ergebnis: \\(\\alpha=1\\).\n\n\n4(b)\nFür \\(\\alpha=1\\) vereinfacht sich \\(Q(x,y,z)=x^2\\frac{y^2}{2}\\) und \\(R(x,y,z)=z^2\\).  Integriere \\(P\\): \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+g(y,z)\\).  Da \\(\\Phi_y=\\frac{x^2y^2}{2}+g_y(y,z)=Q\\) ⇒ \\(g_y(y,z)=0\\) und \\(g(y,z)=h(z)\\).  \\(h'(z)=z^2\\) ⇒ \\(h(z)=\\frac{z^3}{3}+C\\).  Potential: \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+\\frac{z^3}{3}\\).\n\n\n4(c)\nMit \\(F=\\nabla\\Phi\\) ist das Kurvenintegral wegunabhängig.  Berechne: \\(\\gamma(0)=(1,0,0)^T\\) und \\(\\gamma(1)=(0,1,1)^T\\).  \\(\\Phi(1,0,0)=0\\) und \\(\\Phi(0,1,1)=\\frac{1}{3}\\).  Ergebnis: \\(\\displaystyle \\int_\\gamma F\\cdot d\\gamma=\\frac{1}{3}\\).\n\n\n5(a)\nRotationsfläche zu \\(\\gamma(u)=(e^u-1,0,u)^T\\).  Parametrisierung: \\(f(u,v)=\\Bigl((e^u-1)\\cos v,\\,(e^u-1)\\sin v,\\,u\\Bigr)\\) mit \\(u\\in[0,1]\\), \\(v\\in[0,2\\pi]\\).\n\n\n5(b)\nTangentialvektoren:  \\(f_u=(e^u\\cos v,\\,e^u\\sin v,\\,1)\\),  \\(f_v=(- (e^u-1)\\sin v,\\,(e^u-1)\\cos v,\\,0)\\).  Normale (nicht normiert): \\(n=f_u\\times f_v=(- (e^u-1)\\cos v,\\,- (e^u-1)\\sin v,\\,e^u(e^u-1))\\).\n\n\n5(c)\nMit \\(F(x,y,z)=(x+y,\\,y-x,\\,2)^T\\) erhält man nach Einsetzen und Kürzen:  \\(F(f(u,v))\\cdot (f_u\\times f_v)= e^{2u}-1\\).  Oberflächenintegral: \\(\\displaystyle \\int_{u=0}^1\\int_{v=0}^{2\\pi}(e^{2u}-1)\\,dv\\,du=\\pi(e^2-3)\\).\n\n\n6(a)\nKugelsegment \\(K=\\{(x,y,z):x^2+y^2+z^2\\le4,\\; y\\ge0,\\; z\\ge0\\}\\) in Kugelkoordinaten:  \\(x=r\\sin\\varphi\\cos\\theta,\\; y=r\\sin\\varphi\\sin\\theta,\\; z=r\\cos\\varphi\\).  Bereiche: \\(r\\in[0,2]\\), \\(\\varphi\\in[0,\\pi/2]\\) (wegen \\(z\\ge0\\)) und \\(\\theta\\in[0,\\pi]\\) (wegen \\(y\\ge0\\)).\n\n\n6(b)\nDivergenz: \\(\\operatorname{div}F=1+1+1=3\\).  Volumen des Balls (Radius 2): \\(\\frac{32\\pi}{3}\\); \\(K\\) ist ein Viertel davon: \\(V_K=\\frac{8\\pi}{3}\\).  Fluss: \\(3\\cdot\\frac{8\\pi}{3}=8\\pi\\).\n\n\n6(c)\nDa \\(\\operatorname{div}(\\operatorname{rot}F)=0\\), gilt:  \\(\\displaystyle \\int_{\\partial K}\\operatorname{rot}F\\cdot n\\,dS=0\\).\n\n\n6(d)\nSei \\(B\\) der Boden (\\(z=0\\)) des Kugelsegments.  Es gilt: \\(\\int_{\\partial K}\\operatorname {rot} F\\cdot n\\,dS = \\int_{\\partial K\\setminus B}\\operatorname {rot}\\cdot n\\,dS+\\int_B \\operatorname {rot}\\cdot n\\,dS\\).  Auf \\(B\\) ist \\(n=(0,0,-1)\\) und \\(\\operatorname {rot}(x,y,0)=(x,-y,2)\\) ⇒ \\(F\\cdot n=-2\\).  \\(\\int_B (-2)dA=-2*2\\pi=-4\\pi\\).  Ergebnis: \\(\\displaystyle \\int_{\\partial K\\setminus B}rot(F)\\cdot n\\,dS=4\\pi\\). (weil Summe \\(= 0\\) aus 6 (c) )\n\n\n\ncolab"
+    "objectID": "hm3_python.html#aufgabe-1",
+    "href": "hm3_python.html#aufgabe-1",
+    "title": "sympy",
+    "section": "Aufgabe 1",
+    "text": "Aufgabe 1\n# Aufgabe 1\nimport sympy as sp\n\n# Koordinaten in kartesischen Variablen\nx, t = sp.symbols('x t', real=True)\n\n# Koeffizienten bestimmen\nM = 2*t*x**3 - 2*t\nN = 3*t**2*x**2\n\n#M = 3*t*x**2\n#N = t*(2*x**3-2)\n\n# Exaktheit prüfen: dM/dx = dN/dt ?\ndMdx = sp.diff(M, x)\ndNdt = sp.diff(N, t)\nis_exact = sp.simplify(dMdx - dNdt) == 0\nprint(\"Die DGL ist exakt:\", is_exact)\n\n# Potenzialfunktion Phi finden\nPhi = sp.integrate(M, t) + sp.integrate(N - sp.diff(sp.integrate(M, t), x), x)\nprint(\"Potenzialfunktion Phi:\", Phi)\n# Lösung der DGL bestimmen\nsolution = sp.Eq(Phi, sp.Symbol('C'))\nprint(\"Allgemeine Lösung:\", solution)\n\n# Test\n# N\nPhi.diff(x)-M\n# erwartet: 0\n# M\nPhi.diff(t)-N\n# erwartet: 0\n\n# Anfangswertproblem lösen\nC_value = sp.solve(solution.subs([(t, 1), (x, 0)]), sp.Symbol('C'))\nfinal_solution = solution.subs(sp.Symbol('C'), C_value[0])\nprint(\"Lösung des Anfangswertproblems:\", final_solution)\n\n# Grenzwert für t -&gt; ∞ bestimmen\nx_infinity = sp.limit(final_solution.rhs, t, sp.oo)\nprint(\"Grenzwert der Lösung für t -&gt; ∞:\", x_infinity)"
   },
   {
-    "objectID": "klausuren.html",
-    "href": "klausuren.html",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert.\n\n\n\nGegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\).\n\n\n\n\nStellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an.\n\n\n\n\nBestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab.\n\n\n\n\nGegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\).\n\n\n\n\n\nBerechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+    "objectID": "hm3_python.html#aufgabe-2",
+    "href": "hm3_python.html#aufgabe-2",
+    "title": "sympy",
+    "section": "Aufgabe 2",
+    "text": "Aufgabe 2\n# Aufgabe 2\n# System von ODE\nimport sympy as sp\n\n# variables\nx,y,c1,c2 = sp.symbols('x y c_1 c_2')\nt = sp.symbols('t', positive = True)\nA=sp.Matrix([(3,-1),(5, -1)])\n#A=sp.Matrix([(0,-1),(5, 4)])\n\n\n# calculate only one eigenvalue\n# the other one is complex conjugate\nEV=(sp.trace(A)+sp.sqrt(sp.trace(A)**2-4*sp.det(A)))/2\nprint(EV)\n\n# calculate one eigenvector\nX=sp.Matrix((x,y))\nM=A-EV*sp.eye(2)\nM1=M*X\n\n# solve only first row, set x=1\ny=sp.solve(M1[0], y)\n# choose x=1 and calculate y\nX=sp.Matrix((1,(y[0].subs(x,1))))\n\n# express all variables (a=re(X),b=im(X)) and (re(EV), im(EV) in the real solution of the system of ODEs\n#a=X.as_real_imag()[0]\n#b=X.as_real_imag()[1]\na, b = X.as_real_imag()\nprint(a)\nprint(b)\n#ev_real=EV.as_real_imag()[0]\n#ev_imag=EV.as_real_imag()[1]\nev_real, ev_imag = EV.as_real_imag()\n# solution\nx1=sp.exp(ev_real*t)*(a*sp.cos(ev_imag*t)-b*sp.sin(ev_imag*t))\nx2=sp.exp(ev_real*t)*(a*sp.sin(ev_imag*t)+b*sp.cos(ev_imag*t))\nmatrix = sp.Matrix([(x1,x2)])\n#print(matrix)\nsolution=c1*x1+c2*x2\n#print(solution)\nsolution\n\n# partikuläre Lösung\nB=sp.Matrix((1,0))\nxp=-A.inv()*B\nxp\nprint (xp)\n\n\n# Test ob EV korrekt ist\nassert sp.simplify(M*X)==sp.Matrix([0,0]), 'Eigenvektor nok'\nmatrix\n\nA=sp.Matrix([(3,-1),(5, -1)])\nλ1,λ2=A.eigenvals()\nprint(λ1,λ2)\nv1,v2=A.eigenvects()\nprint(v1,v2)\n\nsol=5/2*v1[2][0]*sp.exp(λ1*t)+5/2*v2[2][0]*sp.exp(λ2*t)\nsol1, sol2 = sol.as_real_imag()\nsol\n# short sympy solution\nA=sp.Matrix([(3,-1),(5, -1)])\n\n# Berechne Eigenwerte und Eigenvektoren\neigen_data = A.eigenvects()\n\n# Skaliere die Eigenvektoren so, dass der erste Eintrag 1 wird\n# man teilt durch den ersten Eintrag (hier komplex)\neigenvectors = []\nfor eigenvalue, multiplicity, eigenvecs in eigen_data:\n    for vec in eigenvecs:\n        if vec[0] != 0:  # Verhindern, dass durch 0 geteilt wird\n            vec = vec / vec[0]  # Normierung auf ersten Eintrag = 1\n            \n        eigenvectors.append((eigenvalue, vec))\n\n# Komplexe Lösung\nλ1, v1  = eigenvectors[0]\n#λ2, v2  = eigenvectors[1]\nv1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0]\nsol1=v1*sp.exp(λ1*t) # es genügt eine komplexe Lösung zu betrachten; Rotor\n\n# Umschreiben als Matrix von reellen Lösungen\nsol_list=sol1.as_real_imag() # ergibt eine Liste von Vektoren\nmatrix=sp.Matrix([sol_list]) # als Matrix\n#sp.simplify(matrix/sp.exp(t))\nmatrix\n# noch kürzer\n# Eigenvektor und Eigenwert\nv1 = A.eigenvects()[0][2][0]/A.eigenvects()[0][2][0][0] # erster Eintrag auf 1 normiert\nλ1, _ = A.eigenvals() \n# reelles System\nsp.Matrix([(v1*sp.exp(λ1*t)).as_real_imag()])"
   },
   {
-    "objectID": "klausuren.html#aufgabe-1-7-punkte",
-    "href": "klausuren.html#aufgabe-1-7-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert."
+    "objectID": "hm3_python.html#aufgabe-3",
+    "href": "hm3_python.html#aufgabe-3",
+    "title": "sympy",
+    "section": "Aufgabe 3",
+    "text": "Aufgabe 3\n# Aufgabe 3\nimport sympy as sp\n\n# Parabolic PDE\n\n# Define symbols\nx, t, k, a = sp.symbols('x t k a', real=True, positive=True)\n\n# Fourier coefficients for f(x) = 1 on [0, pi]\nb_k = (2/sp.pi) * sp.integrate(sp.sin(k*x), (x, 0, sp.pi))\nb_k = sp.simplify(b_k)\n\n# Solution for u(0,x) = sin(kx)\nu_k = sp.exp(-a * k**2 * t) * sp.sin(k*x)\n\n# General solution for u(0,x) = 1 (sum over odd k)\nn = sp.symbols('n', integer=True, positive=True)\nk_n = 2*n - 1  # Only odd indices\nu_series = sp.Sum((4 / (k_n * sp.pi)) * sp.exp(-a * k_n**2 * t) * sp.sin(k_n * x), (n, 1, sp.oo))\n\n# Display results\nprint(\"Fourier coefficient b_k:\", b_k)\nprint(\"Solution for u(0,x) = sin(kx):\", u_k)\nprint(\"General solution u(t,x):\", sp.simplify(u_series))\nb_k\nu_k\nu_series"
   },
   {
-    "objectID": "klausuren.html#aufgabe-2-14-punkte",
-    "href": "klausuren.html#aufgabe-2-14-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Gegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\)."
+    "objectID": "hm3_python.html#aufgabe-4",
+    "href": "hm3_python.html#aufgabe-4",
+    "title": "sympy",
+    "section": "Aufgabe 4",
+    "text": "Aufgabe 4\nimport sympy as sp\n\n# Definition der Variablen\nx, y, z, t, beta = sp.symbols('x y z t beta')\n\n# Definition des Vektorfeldes F\nF = sp.Matrix([\n    y**2 - 2*beta*z*sp.exp(x*z),\n    2*x*y + 3*z,\n    3*y - 2*x*sp.exp(x*z)\n])\n\n# Berechnung der Rotation von F\nrot_F = sp.simplify(sp.Matrix([sp.diff(F[2], y) - sp.diff(F[1], z),\n                               sp.diff(F[0], z) - sp.diff(F[2], x),\n                               sp.diff(F[1], x) - sp.diff(F[0], y)]))\n\n# Lösung für beta, sodass rot F = 0\nbeta_solution = sp.solve(rot_F, beta)\n\n# Einsetzen von beta = 1\nF_conservative = F.subs(beta, 1)\n\n# Bestimmung des Potentials phi\nphi_x = sp.integrate(F_conservative[0], x)\nphi = phi_x + sp.Function('g')(y, z)\n\n# Ableitung von phi nach y und Vergleich mit F[1]\ng_yz = sp.simplify(sp.diff(phi, y) - F_conservative[1])\ng_y_solution = sp.integrate(3*z, y)  # Lösung für g(y, z)\nphi = phi_x + g_y_solution + sp.Function('h')(z)\n\n# Ableitung von phi nach z und Vergleich mit F[2]\nh_z = sp.simplify(sp.diff(phi, z) - F_conservative[2])\nh_solution = sp.integrate(0, z)  # h(z) ist konstant\nphi = phi.subs(sp.Function('h')(z), h_solution)\n\n# Definition der Kurve gamma\ngamma = sp.Matrix([\n    sp.cos(t) - t/(2*sp.pi),\n    sp.cos(t),\n    sp.sin(t)\n])\n\n# Evaluierung des Potentials an den Endpunkten\nphi_start = phi.subs({x: gamma[0].subs(t, 0), y: gamma[1].subs(t, 0), z: gamma[2].subs(t, 0)})\nphi_end = phi.subs({x: gamma[0].subs(t, 2*sp.pi), y: gamma[1].subs(t, 2*sp.pi), z: gamma[2].subs(t, 2*sp.pi)})\n\n# Berechnung des Kurvenintegrals\nintegral_value = phi_end - phi_start\n\n# Ausgabe der Ergebnisse\nprint(\"Lösungen für beta, sodass F konservativ ist:\")\nprint(beta_solution)\nprint(\"\\nPotential phi(x,y,z) für beta=1:\")\nprint(phi)\nprint(\"\\nWert des Kurvenintegrals:\")\nprint(integral_value)"
   },
   {
-    "objectID": "klausuren.html#aufgabe-3-55-punkte",
-    "href": "klausuren.html#aufgabe-3-55-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Stellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an."
+    "objectID": "hm3_python.html#aufgabe-5",
+    "href": "hm3_python.html#aufgabe-5",
+    "title": "sympy",
+    "section": "Aufgabe 5",
+    "text": "Aufgabe 5\n# Aufgabe 5\n# mühsam von Hand\n# Parametrisierung\nu,v = sp.symbols('u v')\n#g_u = sp.Matrix([sp.exp(u)-1,0,u])\n#g_u = sp.Matrix([u**2,0,u])\n#g_u=sp.Matrix([u**2-1,0,u])\ng_u=sp.Matrix([u,0,-u**2])\ng_uv =sp.Matrix([ g_u[0]*sp.cos(v), g_u[0]*sp.sin (v), u])\nf_u=g_uv.diff(u)\nf_v=g_uv.diff(v)\nn=sp.simplify(f_u.cross(f_v))\nprint('Normal vector: ')\nn\n# Substitution F(x,y,z)-&gt;F(gamma(u,v))\nx,y,z = sp.symbols('x y z')\n#F_xyz=sp.Matrix([x+y,y-x,2]) # Typical vector field with div F = 2\n#F_xyz=sp.Matrix([x,y,z])\nF_xyz=-sp.Matrix([y,-x,z])\nF_uv=F_xyz.subs(x,g_uv[0]).subs(y,g_uv[1]).subs(z,g_uv[2])\nprint('Parametrisiertes Vektorfeld: ')\nF_uv\nintegrand=F_uv.dot(n)\n#integrand=F_uv.dot(n).simplify()\nprint(integrand)\nprint(integrand.simplify())\nintegrand.simplify()\nsp.simplify(sp.integrate(integrand,(u,0,2), (v,0,2*sp.pi)))"
   },
   {
-    "objectID": "klausuren.html#aufgabe-4-64-punkte",
-    "href": "klausuren.html#aufgabe-4-64-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab."
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-5-72-punkte",
-    "href": "klausuren.html#aufgabe-5-72-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Gegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\)."
-  },
-  {
-    "objectID": "klausuren.html#aufgabe-6-46-punkte",
-    "href": "klausuren.html#aufgabe-6-46-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Berechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
-  },
-  {
-    "objectID": "hm3_klausur_ws2425.html",
-    "href": "hm3_klausur_ws2425.html",
-    "title": "HM3_Klausur_WS2425",
-    "section": "",
-    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
-  },
-  {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-1",
-    "href": "hm3_klausur_ws2425.html#aufgabe-1",
-    "title": "HM3_Klausur_WS2425",
-    "section": "",
-    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
-  },
-  {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-2",
-    "href": "hm3_klausur_ws2425.html#aufgabe-2",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 2)",
-    "text": "Aufgabe 2)\n**Aufgabe 2 (10 Punkte)**\nGegeben ist das lineare System\n$$ \\dot x=\\begin{pmatrix} -2&-5\\\\1&4 \\end{pmatrix}x\\quad \\text{ und}\\quad b(t)=4\\begin{pmatrix} e^t\\\\0\\end{pmatrix}$$\n\na) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.\n\nb) Geben sie die allgemeine Lösung des Anfangswertproblems $\\dot x=Ax+b(t)$ an."
-  },
-  {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-3",
-    "href": "hm3_klausur_ws2425.html#aufgabe-3",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 3)",
-    "text": "Aufgabe 3)\n**Aufgabe 3 (10 Punkte)**\nGegeben sei die partielle Differentialgleichung\n$$ u_{tt}-u_{xx}=0$$\nmit $x\\in[0,\\pi]$ und $t&gt;0$\n\na) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.\n\nb) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion\n$$f(x)=1\\quad  \\text{für } x\\in [0,\\pi]$$.\n\nc) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung\n\n$$u(0,x)=x\\quad x\\in[0,\\pi],$$\n\n\n$$u_t(0,x)=0\\quad x\\in[0,\\pi],$$\n\nund den Randbedingungen $u(t,0)=u(t,\\pi)=0, t&gt;0$."
-  },
-  {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-4",
-    "href": "hm3_klausur_ws2425.html#aufgabe-4",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 4)",
-    "text": "Aufgabe 4)\n**Aufgabe 4 (10 Punkte)**\n\nGegeben seine die beiden Vektorfelder $F_k:ℝ^3\\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\\gamma: [0,1]\\rightarrow ℝ^3$.\n\n$F=\\begin{pmatrix} z\\cos(k(x+y))\\\\z\\cos(k(x+y))\\\\\\sin(k(x+y))+2z \\end{pmatrix}$ und $\\gamma(t)=\\begin{pmatrix} \\pi t\\\\\\pi t\\\\ t^2\\end{pmatrix}$\n\na) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. \n\nb) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. \n\nc) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\\gamma$."
-  },
-  {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-5",
-    "href": "hm3_klausur_ws2425.html#aufgabe-5",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 5)",
-    "text": "Aufgabe 5)\n\n**Aufgabe 5 (10 Punkte)**\n\nEs sei $\\gamma(u)=(e^u-1,0,\\sqrt{u})^T$ mit $u\\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\\gamma$ um die z-Achse  rotiert wird.\n\nGegeben sei ausserdem das Vektorfeld\n\n$$ F:ℝ^3\\rightarrow ℝ^3, F(x,y,z)=\\begin{pmatrix} xz\\\\yz \\\\x^2+y^2 \\end{pmatrix} $$\n\na) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. \n\nb) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u&gt;0$. \n\nc) Bestimmen Sie das Oberflächenintegral 2.Art $\\int_AF\\cdot dn$."
-  },
-  {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-6",
-    "href": "hm3_klausur_ws2425.html#aufgabe-6",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 6)",
-    "text": "Aufgabe 6)\n**Aufgabe 6 (10 Punkte)**\n\nEs sei die Kugel $K$ gegeben durch\n\n$$ K=\\left\\{(x,y,z)^T\\in ℝ^3:x^2+y^2+z^2\\leq4 \\right\\}$$\n\nund $S$ ihre Oberfläche.\n\nWeiterhin sei das Vektorfeld $F:ℝ^3\\rightarrow ℝ^3$ gegeben durch\n\n\n\n$$F(x,y,z)=\\begin{pmatrix} xz-y\\\\ yz+x \\\\xy+z \\end{pmatrix}$$\n\n\nb) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\\int_{\\partial K}F\\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.\n\nc) Berechnen Sie  $\\int_{S}rot(F)\\cdot dn$.\n\nd) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\\int_{S_O}rot(F)\\cdot dn$ und $\\int_{S_M}rot(F)\\cdot dn$ mit Hilfe des Sates von Stokes."
+    "objectID": "hm3_python.html#aufgabe-6",
+    "href": "hm3_python.html#aufgabe-6",
+    "title": "sympy",
+    "section": "Aufgabe 6",
+    "text": "Aufgabe 6\nimport sympy as sp\n\n# Variablen definieren\nx, y, z, r, phi = sp.symbols('x y z r phi')\n\n# Vektorfelder definieren\nF = sp.Matrix([2*y*sp.exp(z) + x, y - 2*x*z + 9, z*x + sp.sin(y)])\nG = sp.Matrix([-y*z, x*z, z])\n\n# Divergenz von F berechnen\ndiv_F = sp.simplify(sp.diff(F[0], x) + sp.diff(F[1], y) + sp.diff(F[2], z))\n\n# Volumenelement in Zylinderkoordinaten\ndV = r * sp.diff(x, x) * sp.diff(r, r) * sp.diff(phi, phi)\n\n# Volumenintegral für den Fluss\nflux_integral = sp.integrate(\n    sp.integrate(\n        sp.integrate((x + 2) * r, (r, 0, x)),\n        (phi, 0, 2*sp.pi)\n    ),\n    (x, 1, 3)\n)\n\n# Rotation von G berechnen\nrot_G = sp.simplify(sp.Matrix([\n    sp.diff(G[2], y) - sp.diff(G[1], z),\n    sp.diff(G[0], z) - sp.diff(G[2], x),\n    sp.diff(G[1], x) - sp.diff(G[0], y)\n]))\n\n# Divergenz der Rotation von G\ndiv_rot_G = sp.simplify(sp.diff(rot_G[0], x) + sp.diff(rot_G[1], y) + sp.diff(rot_G[2], z))\n\n# Ausgabe\nprint(\"Divergenz von F:\", div_F)\nprint(\"Fluss durch K:\", flux_integral)\nprint(\"Rotation von G:\", rot_G)\nprint(\"Divergenz der Rotation von G:\", div_rot_G)\nimport sympy as sp\n\n# Parameter für den Kreisrand\nr, t = sp.symbols('r t')\nr = 2\nx = r * sp.cos(t)\ny = r * sp.sin(t)\nz = 0  # Kreis liegt in der xy-Ebene\n\n\n\n# Vektorfeld F\nF = sp.Matrix([x - y, x + y, z + x*y])\n\n# Tangentialvektor dr/dt\nr_t = sp.Matrix([x, y, z])\ndr_dt = sp.diff(r_t, t)\n\n# Skalarprodukt F · dr/dt\nintegrand = F.dot(dr_dt)\n\n# Kurvenintegral entlang des Kreises\nintegral = sp.integrate(integrand, (t, sp.pi, 0))\n\n# Kurvenintegral \n\n# Ergebnis ausgeben\nsp.pprint(integral.simplify())"
   }
 ]
