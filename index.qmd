@@ -32,4 +32,10 @@ Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge z
 | **Verwendung in der Physik** | Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck | Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder |
 | **Buchstabenherkunft** | $u$ historisch von Fourier für Temperatur, $\phi$ für Potentiale | $\mathbf{F}$ von „Force“ (Kraft) in der Mechanik |
 
-Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra.
+Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra. 
+
+[David Hestenes](https://www.youtube.com/watch?v=ItGlUbFBFfc)
+
+[Peter Joot](https://www.youtube.com/watch?v=Ktg5M7EMgoo)
+
+[mindmap](hm101_mindmap_mit_ziel.png)
