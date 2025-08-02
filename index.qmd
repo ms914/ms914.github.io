@@ -13,6 +13,8 @@ HM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der
 
 HM4 führt in numerische Methoden ein. Löse Gleichungssysteme durch Approximation. Finde eine beste Approximation zu Daten (Model).
 
+[mindmap](hm101_mindmap_mit_ziel.png)
+
 Prüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.
 
 - [Exam Questions](exam-questions.qmd)
@@ -38,4 +40,10 @@ Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der
 
 [Peter Joot](https://www.youtube.com/watch?v=Ktg5M7EMgoo)
 
-[mindmap](hm101_mindmap_mit_ziel.png)
+[Peter Joot](https://peeterjoot.com/2023/09/25/geometric-algebra-exact-and-least-squares-solutions-of-two-variable-linear-system/)
+
+[SVD](https://www.hse.ru/data/2024/07/01/2122016310/Широков_Якутск.pdf)
+
+
+
+
