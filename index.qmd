@@ -5,13 +5,13 @@ format: html
 
 # Herzlich Willkommen zur HM Website
 
-HM1 dient zur Festigung der Grundlagen.
+HM1 dient zur Festigung der Grundlagen. Approximation benötigt Konvergenz.
 
-HM2 behandelt Lineare Algebra und 2D Analysis.
+HM2 behandelt Lineare Algebra und 2D Analysis. Finde Lösungen für mehr als eine Gleichung und Approximation in mehr als einer Variable. Vektor Räume und Abbildungen darin.
 
-HM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik.
+HM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik. Differentialoperatoren und Integraltheoreme und Differentialgleichungen mit mehr als einer Variablen, oft Ort und Zeit.
 
-HM4 führt in numerische Methoden ein.
+HM4 führt in numerische Methoden ein. Löse Gleichungssysteme durch Approximation. Finde eine beste Approximation zu Daten (Model).
 
 Prüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.
 
