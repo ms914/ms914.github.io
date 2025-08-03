@@ -15,14 +15,14 @@ Dadurch werden viele geometrische Operationen deutlich einfacher.
 
 ## Grundidee
 
-Das zentrale neue Konzept ist das **geometrische Produkt** zweier Vektoren \( a \) und \( b \):
+Das zentrale neue Konzept ist das **geometrische Produkt** zweier Vektoren $a$ und $b$:
 
-\[
+$$
 ab = a \cdot b + a \wedge b
-\]
+$$
 
-- \( a \cdot b \): Skalarprodukt (Längen, Winkel)
-- \( a \wedge b \): Äußeres Produkt (Flächen, Orientierung)
+- $a \cdot b$: Skalarprodukt (Längen, Winkel)
+- $a \wedge b$: Äußeres Produkt (Flächen, Orientierung)
 
 **Multivektoren** entstehen als Kombination:
 - Skalar (0D)
@@ -44,17 +44,17 @@ ab = a \cdot b + a \wedge b
 
 Eine Drehung kann in GA mit einem sogenannten **Rotor** ausgedrückt werden:
 
-1. Wähle eine Dreh-Ebene (Bivektor \( B \))
+1. Wähle eine Dreh-Ebene (Bivektor $B$)
 2. Baue den Rotor:
-\[
+$$
 R = e^{-B \theta / 2}
-\]
-3. Wende den Rotor auf einen Vektor \( v \) an:
-\[
+$$
+3. Wende den Rotor auf einen Vektor $v$ an:
+$$
 v' = R v \tilde{R}
-\]
+$$
 
-(\( \tilde{R} \) = Reverse von \( R \))
+($\tilde{R}$ = Reverse von $R$)
 
 ---
 

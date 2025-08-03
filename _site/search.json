@@ -627,14 +627,14 @@
     "href": "ga_einfuehrung.html",
     "title": "Geometrische Algebra",
     "section": "",
-    "text": "Die Geometrische Algebra (GA) ist eine Erweiterung der klassischen Vektorrechnung. Sie vereint Vektoren, komplexe Zahlen, Quaternionen und Matrizen in einem einheitlichen Rahmen.\nDadurch werden viele geometrische Operationen deutlich einfacher.\n\n\n\nDas zentrale neue Konzept ist das geometrische Produkt zweier Vektoren ( a ) und ( b ):\n[ ab = a b + a b ]\n\n( a b ): Skalarprodukt (Längen, Winkel)\n( a b ): Äußeres Produkt (Flächen, Orientierung)\n\nMultivektoren entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)\n\n\n\n\n\nMechanik/Robotik: Elegante Berechnung von Drehungen, Spiegelungen und Projektionen\nElektrotechnik: Verallgemeinerung komplexer Zahlen und Quaternionen\nComputer Vision / CAD: Einheitliche Darstellung von 3D-Geometrien\n\n\n\n\n\nEine Drehung kann in GA mit einem sogenannten Rotor ausgedrückt werden:\n\nWähle eine Dreh-Ebene (Bivektor ( B ))\nBaue den Rotor: [ R = e^{-B / 2} ]\nWende den Rotor auf einen Vektor ( v ) an: [ v’ = R v ]\n\n(( ) = Reverse von ( R ))\n\n\n\n\n\nPython: Pakete clifford, galgebra\nMATLAB: Clifford Toolbox\nWeb: ganja.js (für schnelle Visualisierungen)\n\n\n\n\n\n\nDoran & Lasenby: Geometric Algebra for Physicists\nDorst, Fontijne & Mann: Geometric Algebra for Computer Science\nYouTube: Geometric Algebra Tutorial – Steven De Keninck\n\nDavid Hestenes hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt\nPeter Joot zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet\nPeter Joot\nSVD zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können"
+    "text": "Die Geometrische Algebra (GA) ist eine Erweiterung der klassischen Vektorrechnung. Sie vereint Vektoren, komplexe Zahlen, Quaternionen und Matrizen in einem einheitlichen Rahmen.\nDadurch werden viele geometrische Operationen deutlich einfacher.\n\n\n\nDas zentrale neue Konzept ist das geometrische Produkt zweier Vektoren \\(a\\) und \\(b\\):\n\\[\nab = a \\cdot b + a \\wedge b\n\\]\n\n\\(a \\cdot b\\): Skalarprodukt (Längen, Winkel)\n\\(a \\wedge b\\): Äußeres Produkt (Flächen, Orientierung)\n\nMultivektoren entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)\n\n\n\n\n\nMechanik/Robotik: Elegante Berechnung von Drehungen, Spiegelungen und Projektionen\nElektrotechnik: Verallgemeinerung komplexer Zahlen und Quaternionen\nComputer Vision / CAD: Einheitliche Darstellung von 3D-Geometrien\n\n\n\n\n\nEine Drehung kann in GA mit einem sogenannten Rotor ausgedrückt werden:\n\nWähle eine Dreh-Ebene (Bivektor \\(B\\))\nBaue den Rotor: \\[\nR = e^{-B \\theta / 2}\n\\]\nWende den Rotor auf einen Vektor \\(v\\) an: \\[\nv' = R v \\tilde{R}\n\\]\n\n(\\(\\tilde{R}\\) = Reverse von \\(R\\))\n\n\n\n\n\nPython: Pakete clifford, galgebra\nMATLAB: Clifford Toolbox\nWeb: ganja.js (für schnelle Visualisierungen)\n\n\n\n\n\n\nDoran & Lasenby: Geometric Algebra for Physicists\nDorst, Fontijne & Mann: Geometric Algebra for Computer Science\nYouTube: Geometric Algebra Tutorial – Steven De Keninck\n\nDavid Hestenes hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt\nPeter Joot zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet\nPeter Joot\nSVD zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können"
   },
   {
     "objectID": "ga_einfuehrung.html#grundidee",
     "href": "ga_einfuehrung.html#grundidee",
     "title": "Geometrische Algebra",
     "section": "",
-    "text": "Das zentrale neue Konzept ist das geometrische Produkt zweier Vektoren ( a ) und ( b ):\n[ ab = a b + a b ]\n\n( a b ): Skalarprodukt (Längen, Winkel)\n( a b ): Äußeres Produkt (Flächen, Orientierung)\n\nMultivektoren entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)"
+    "text": "Das zentrale neue Konzept ist das geometrische Produkt zweier Vektoren \\(a\\) und \\(b\\):\n\\[\nab = a \\cdot b + a \\wedge b\n\\]\n\n\\(a \\cdot b\\): Skalarprodukt (Längen, Winkel)\n\\(a \\wedge b\\): Äußeres Produkt (Flächen, Orientierung)\n\nMultivektoren entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)"
   },
   {
     "objectID": "ga_einfuehrung.html#warum-für-ingenieure",
@@ -648,7 +648,7 @@
     "href": "ga_einfuehrung.html#beispiel-3d-drehung",
     "title": "Geometrische Algebra",
     "section": "",
-    "text": "Eine Drehung kann in GA mit einem sogenannten Rotor ausgedrückt werden:\n\nWähle eine Dreh-Ebene (Bivektor ( B ))\nBaue den Rotor: [ R = e^{-B / 2} ]\nWende den Rotor auf einen Vektor ( v ) an: [ v’ = R v ]\n\n(( ) = Reverse von ( R ))"
+    "text": "Eine Drehung kann in GA mit einem sogenannten Rotor ausgedrückt werden:\n\nWähle eine Dreh-Ebene (Bivektor \\(B\\))\nBaue den Rotor: \\[\nR = e^{-B \\theta / 2}\n\\]\nWende den Rotor auf einen Vektor \\(v\\) an: \\[\nv' = R v \\tilde{R}\n\\]\n\n(\\(\\tilde{R}\\) = Reverse von \\(R\\))"
   },
   {
     "objectID": "ga_einfuehrung.html#software-für-ga",

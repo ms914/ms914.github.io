@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -180,11 +209,13 @@ Dadurch werden viele geometrische Operationen deutlich einfacher.</p>
 <hr>
 <section id="grundidee" class="level2">
 <h2 class="anchored" data-anchor-id="grundidee">Grundidee</h2>
-<p>Das zentrale neue Konzept ist das <strong>geometrische Produkt</strong> zweier Vektoren ( a ) und ( b ):</p>
-<p>[ ab = a b + a b ]</p>
+<p>Das zentrale neue Konzept ist das <strong>geometrische Produkt</strong> zweier Vektoren <span class="math inline">\(a\)</span> und <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display">\[
+ab = a \cdot b + a \wedge b
+\]</span></p>
 <ul>
-<li>( a b ): Skalarprodukt (Längen, Winkel)</li>
-<li>( a b ): Äußeres Produkt (Flächen, Orientierung)</li>
+<li><span class="math inline">\(a \cdot b\)</span>: Skalarprodukt (Längen, Winkel)</li>
+<li><span class="math inline">\(a \wedge b\)</span>: Äußeres Produkt (Flächen, Orientierung)</li>
 </ul>
 <p><strong>Multivektoren</strong> entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)</p>
 <hr>
@@ -202,11 +233,15 @@ Dadurch werden viele geometrische Operationen deutlich einfacher.</p>
 <h2 class="anchored" data-anchor-id="beispiel-3d-drehung">Beispiel: 3D-Drehung</h2>
 <p>Eine Drehung kann in GA mit einem sogenannten <strong>Rotor</strong> ausgedrückt werden:</p>
 <ol type="1">
-<li>Wähle eine Dreh-Ebene (Bivektor ( B ))</li>
-<li>Baue den Rotor: [ R = e^{-B / 2} ]</li>
-<li>Wende den Rotor auf einen Vektor ( v ) an: [ v’ = R v ]</li>
+<li>Wähle eine Dreh-Ebene (Bivektor <span class="math inline">\(B\)</span>)</li>
+<li>Baue den Rotor: <span class="math display">\[
+R = e^{-B \theta / 2}
+\]</span></li>
+<li>Wende den Rotor auf einen Vektor <span class="math inline">\(v\)</span> an: <span class="math display">\[
+v' = R v \tilde{R}
+\]</span></li>
 </ol>
-<p>(( ) = Reverse von ( R ))</p>
+<p>(<span class="math inline">\(\tilde{R}\)</span> = Reverse von <span class="math inline">\(R\)</span>)</p>
 <hr>
 </section>
 <section id="software-für-ga" class="level2">
