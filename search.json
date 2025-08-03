@@ -98,151 +98,228 @@
     "text": "Zusammenfassung der Ergebnisse\n\n(b): (_{S}Fn,dS=).\n(c): (_{S}(F)n,dS=0).\n(d):\n({S_O}(F)n,dS=6)\n({S_M}(F)n,dS=-12).\n\nJede Lösung, die zu äquivalenten Resultaten führt (bezüglich Vorzeichen bei richtiger Orientierung), ist korrekt."
   },
   {
-    "objectID": "HM_solutions.html",
-    "href": "HM_solutions.html",
-    "title": "HM1_Lösung",
+    "objectID": "ga_einfuehrung.html",
+    "href": "ga_einfuehrung.html",
+    "title": "Geometrische Algebra",
     "section": "",
-    "text": "Die Reihe hat die Form \\[ \\sum_{n=1}^{\\infty} a_n (x-1)^n, \\quad a_n = \\frac{1}{n 3^n} \\] und ist eine Potenzreihe mit Konvergenzradius \\[ R = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right| = 3. \\] Damit konvergiert die Reihe für \\[ |x - 1| &lt; 3, \\quad \\Rightarrow \\quad -2 &lt; x &lt; 4. \\] Randpunkte prüfen: - Für $ x = -2 $ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für \\(x = 4\\) divergiert sie ebenfalls aus dem gleichen Grund.\nLösung: Die Reihe konvergiert für \\(x \\in (-2,4)\\).\n\n\n\n\nDefinitionsbereich: \\[ x^2(x-3) \\neq 0 \\Rightarrow x \\neq 0,3. \\]\nNullstellen: Keine, da der Zähler immer positiv ist.\nAbleitungen: \\[ f'(x) = \\frac{- (2x^2 - 6x)}{x^4 - 3x^3}, \\] setzen von \\(f'(x) = 0\\) liefert \\(x = 0, 3\\) (nicht im Definitionsbereich) und \\(x = 3/2\\). \\(f''(x)\\) bestätigt ein lokales Minimum bei \\(x = 3/2\\).\nAsymptoten: - Polstellen: \\(x = 0, 3\\) (senkrechte Asymptoten) - Für \\(x \\to \\pm \\infty\\) geht \\(f(x) \\to 0\\) (waagrechte Asymptote).\nSkizze: Die Funktion hat eine Minimumstelle bei \\(x = 3/2\\) und zwei Polstellen.\n\n\n\n\na) Umwandlung in Polarform: \\[ \\sqrt{2} + i \\sqrt{2} = 2 e^{i \\pi/4}. \\] Damit: \\[ (2 e^{i \\pi/4})^3 = 8 e^{i 3\\pi/4}, \\] \\[ (2 e^{i \\pi/3})^6 = 64 e^{i 2\\pi}. \\] Ergebnis: \\[ \\frac{8 e^{i 3\\pi/4}}{64 e^{i 2\\pi}} = \\frac{1}{8} e^{-i 5\\pi/4}. \\]\nb) Faktorisieren: \\[ z^6 - (\\sqrt2 + \\sqrt2 i) z^2 = 0. \\] Setzen \\(w = z^2\\) und lösen: \\[ w(w^2 - (\\sqrt2 + \\sqrt2 i)) = 0. \\] Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.\n\n\n\n\na) Taylorentwicklung von \\(g(x) = x^2 \\ln x\\) um \\(x = e\\): \\[ g(e) = e^2, \\quad g'(e) = 2e \\ln e + e = 3e, \\] \\[ g''(e) = \\frac{2e}{e} + 2 \\ln e + 1 = 5, \\] \\[ g'''(e) = \\frac{2}{e} + \\frac{2}{e} = 4/e. \\] Taylorpolynom: \\[ g(x) \\approx e^2 + 3e (x - e) + \\frac{5}{2} (x - e)^2 + \\frac{2}{3e} (x - e)^3. \\]\nb) Abschätzung des Fehlers mit der Restgliedformel.\n\n\n\n\na) Partialbruchzerlegung von: \\[ \\frac{x^2+4x-3}{x^3-3x-2} \\] Polynomdivision und Zerlegung führen zu: \\[ \\frac{x^2+4x-3}{(x+1)(x-2)(x+1)} = \\frac{A}{x+1} + \\frac{B}{x-2} + \\frac{C}{x+1}. \\] Bestimmen der Koeffizienten.\nb) Bestimmen der Stammfunktion durch Aufsummieren der Partialbruch-Integrale.\n\n\n\n\na) Grenzwert: \\[ \\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln (\\sqrt{1 - y^2}). \\] Setze \\(t = \\sqrt{1 - y^2}\\), dann ist \\(t \\to 0\\) und damit: \\[ t \\ln t \\to 0. \\]\nb) Integral: \\[ I(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}}dx. \\] Substitution \\(u = 1 - x^2\\) führt zu Lösung."
+    "text": "Die Geometrische Algebra (GA) ist eine Erweiterung der klassischen Vektorrechnung. Sie vereint Vektoren, komplexe Zahlen, Quaternionen und Matrizen in einem einheitlichen Rahmen.\nDadurch werden viele geometrische Operationen deutlich einfacher.\n\n\n\nDas zentrale neue Konzept ist das geometrische Produkt zweier Vektoren ( a ) und ( b ):\n[ ab = a b + a b ]\n\n( a b ): Skalarprodukt (Längen, Winkel)\n( a b ): Äußeres Produkt (Flächen, Orientierung)\n\nMultivektoren entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)\n\n\n\n\n\nMechanik/Robotik: Elegante Berechnung von Drehungen, Spiegelungen und Projektionen\nElektrotechnik: Verallgemeinerung komplexer Zahlen und Quaternionen\nComputer Vision / CAD: Einheitliche Darstellung von 3D-Geometrien\n\n\n\n\n\nEine Drehung kann in GA mit einem sogenannten Rotor ausgedrückt werden:\n\nWähle eine Dreh-Ebene (Bivektor ( B ))\nBaue den Rotor: [ R = e^{-B / 2} ]\nWende den Rotor auf einen Vektor ( v ) an: [ v’ = R v ]\n\n(( ) = Reverse von ( R ))\n\n\n\n\n\nPython: Pakete clifford, galgebra\nMATLAB: Clifford Toolbox\nWeb: ganja.js (für schnelle Visualisierungen)\n\n\n\n\n\n\nDoran & Lasenby: Geometric Algebra for Physicists\nDorst, Fontijne & Mann: Geometric Algebra for Computer Science\nYouTube: Geometric Algebra Tutorial – Steven De Keninck\n\nDavid Hestenes hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt\nPeter Joot zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet\nPeter Joot\nSVD zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können"
   },
   {
-    "objectID": "HM_solutions.html#kurzlösung-zur-klausur-hm1",
-    "href": "HM_solutions.html#kurzlösung-zur-klausur-hm1",
-    "title": "HM1_Lösung",
+    "objectID": "ga_einfuehrung.html#grundidee",
+    "href": "ga_einfuehrung.html#grundidee",
+    "title": "Geometrische Algebra",
     "section": "",
-    "text": "Die Reihe hat die Form \\[ \\sum_{n=1}^{\\infty} a_n (x-1)^n, \\quad a_n = \\frac{1}{n 3^n} \\] und ist eine Potenzreihe mit Konvergenzradius \\[ R = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right| = 3. \\] Damit konvergiert die Reihe für \\[ |x - 1| &lt; 3, \\quad \\Rightarrow \\quad -2 &lt; x &lt; 4. \\] Randpunkte prüfen: - Für $ x = -2 $ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für \\(x = 4\\) divergiert sie ebenfalls aus dem gleichen Grund.\nLösung: Die Reihe konvergiert für \\(x \\in (-2,4)\\).\n\n\n\n\nDefinitionsbereich: \\[ x^2(x-3) \\neq 0 \\Rightarrow x \\neq 0,3. \\]\nNullstellen: Keine, da der Zähler immer positiv ist.\nAbleitungen: \\[ f'(x) = \\frac{- (2x^2 - 6x)}{x^4 - 3x^3}, \\] setzen von \\(f'(x) = 0\\) liefert \\(x = 0, 3\\) (nicht im Definitionsbereich) und \\(x = 3/2\\). \\(f''(x)\\) bestätigt ein lokales Minimum bei \\(x = 3/2\\).\nAsymptoten: - Polstellen: \\(x = 0, 3\\) (senkrechte Asymptoten) - Für \\(x \\to \\pm \\infty\\) geht \\(f(x) \\to 0\\) (waagrechte Asymptote).\nSkizze: Die Funktion hat eine Minimumstelle bei \\(x = 3/2\\) und zwei Polstellen.\n\n\n\n\na) Umwandlung in Polarform: \\[ \\sqrt{2} + i \\sqrt{2} = 2 e^{i \\pi/4}. \\] Damit: \\[ (2 e^{i \\pi/4})^3 = 8 e^{i 3\\pi/4}, \\] \\[ (2 e^{i \\pi/3})^6 = 64 e^{i 2\\pi}. \\] Ergebnis: \\[ \\frac{8 e^{i 3\\pi/4}}{64 e^{i 2\\pi}} = \\frac{1}{8} e^{-i 5\\pi/4}. \\]\nb) Faktorisieren: \\[ z^6 - (\\sqrt2 + \\sqrt2 i) z^2 = 0. \\] Setzen \\(w = z^2\\) und lösen: \\[ w(w^2 - (\\sqrt2 + \\sqrt2 i)) = 0. \\] Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.\n\n\n\n\na) Taylorentwicklung von \\(g(x) = x^2 \\ln x\\) um \\(x = e\\): \\[ g(e) = e^2, \\quad g'(e) = 2e \\ln e + e = 3e, \\] \\[ g''(e) = \\frac{2e}{e} + 2 \\ln e + 1 = 5, \\] \\[ g'''(e) = \\frac{2}{e} + \\frac{2}{e} = 4/e. \\] Taylorpolynom: \\[ g(x) \\approx e^2 + 3e (x - e) + \\frac{5}{2} (x - e)^2 + \\frac{2}{3e} (x - e)^3. \\]\nb) Abschätzung des Fehlers mit der Restgliedformel.\n\n\n\n\na) Partialbruchzerlegung von: \\[ \\frac{x^2+4x-3}{x^3-3x-2} \\] Polynomdivision und Zerlegung führen zu: \\[ \\frac{x^2+4x-3}{(x+1)(x-2)(x+1)} = \\frac{A}{x+1} + \\frac{B}{x-2} + \\frac{C}{x+1}. \\] Bestimmen der Koeffizienten.\nb) Bestimmen der Stammfunktion durch Aufsummieren der Partialbruch-Integrale.\n\n\n\n\na) Grenzwert: \\[ \\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln (\\sqrt{1 - y^2}). \\] Setze \\(t = \\sqrt{1 - y^2}\\), dann ist \\(t \\to 0\\) und damit: \\[ t \\ln t \\to 0. \\]\nb) Integral: \\[ I(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}}dx. \\] Substitution \\(u = 1 - x^2\\) führt zu Lösung."
+    "text": "Das zentrale neue Konzept ist das geometrische Produkt zweier Vektoren ( a ) und ( b ):\n[ ab = a b + a b ]\n\n( a b ): Skalarprodukt (Längen, Winkel)\n( a b ): Äußeres Produkt (Flächen, Orientierung)\n\nMultivektoren entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)"
   },
   {
-    "objectID": "HM_solutions.html#kurzlösung-zur-klausur-hm-2",
-    "href": "HM_solutions.html#kurzlösung-zur-klausur-hm-2",
-    "title": "HM1_Lösung",
-    "section": "Kurzlösung zur Klausur HM 2",
-    "text": "Kurzlösung zur Klausur HM 2\n\nAufgabe 1 (8 Punkte)\nGegeben: \\[\nA=\\begin{pmatrix}\n1&1&3&1\\\\\n2&-1&0&1\\\\\n-3&2&1&-2\\\\\n4&1&6&1\n\\end{pmatrix},\\quad\nb=\\begin{pmatrix}6\\\\-1\\\\1\\\\3\\end{pmatrix}.\n\\]\nLösungsschritte:\n\nGauß-Elimination:\n– Schreiben Sie das erweiterte System und eliminieren Sie \\(x_1\\) mithilfe von Zeilenoperationen.\n– Durch Einsetzen von \\(x_1\\) aus der ersten Zeile in die anderen erhält man ein System in den Variablen \\(x_2\\), \\(x_3\\) und \\(x_4\\).\nReduziertes System (nach Substitution):\nEs stellt sich folgendes Teilsystem heraus: \\[\n\\begin{aligned}\n&3x_2+6x_3+x_4=13,\\\\\n&5x_2+10x_3+x_4=19,\\\\\n&x_2+2x_3+x_4=7.\n\\end{aligned}\n\\] Aus der Differenz der ersten beiden Gleichungen folgt: \\[\n2x_2+4x_3=6\\quad\\Rightarrow\\quad x_2+2x_3=3.\n\\] Mit der dritten Gleichung: \\[\nx_2+2x_3+x_4=7\\quad\\Rightarrow\\quad x_4=4.\n\\] Setzen Sie \\(x_3=t\\) als freien Parameter ein, dann folgt: \\[\nx_2=3-2t.\n\\]\nRücksubstitution:\nAus der ersten Zeile: \\[\nx_1=6 - x_2-3x_3-x_4 = 6 - (3-2t) - 3t - 4 = -1 - t.\n\\]\n\nErgebnis:\n\\[\nx(t)=\\begin{pmatrix} -1-t\\\\ 3-2t\\\\ t\\\\ 4\\end{pmatrix},\\quad t\\in\\mathbb{R}.\n\\] Da ein freier Parameter verbleibt, ist der Rang von \\(A\\)\n\\[\n\\operatorname{rg}(A)=3.\n\\]\n\n\n\nAufgabe 2 (7+3 Punkte)\na) Parameterdarstellung der Geraden \\(g\\):\nDie Koordinatendarstellung \\[\n\\frac{4-x_1}{2}=\\frac{4+x_2}{3}=\\frac{2-x_3}{2}=t\n\\] liefert: \\[\n\\begin{aligned}\nx_1&=4-2t,\\\\\nx_2&=3t-4,\\\\\nx_3&=2-2t.\n\\end{aligned}\n\\] Also:\n\\[\ng(t)=(4-2t,\\;3t-4,\\;2-2t)^T.\n\\]\nParameterdarstellung der Ebene \\(E\\):\nGegeben durch die Punkte \\[\nP=(3,1,2),\\quad Q=(-1,3,2),\\quad R=(5,-2,4).\n\\] Berechnen Sie zwei Richtungsvektoren: \\[\n\\begin{aligned}\n\\vec{PQ}&=Q-P=(-4,2,0),\\\\\n\\vec{PR}&=R-P=(2,-3,2).\n\\end{aligned}\n\\] Der Normalenvektor ist das Kreuzprodukt: \\[\nn=\\vec{PQ}\\times\\vec{PR}=\\begin{pmatrix}4\\\\8\\\\8\\end{pmatrix}\\quad\\Rightarrow\\quad n=(1,2,2)\n\\] (bei Bedarf normiert).\nDie Ebenengleichung in Hesse-Normalform lautet dann: \\[\n1\\,(x-3)+2\\,(y-1)+2\\,(z-2)=0\\quad\\Rightarrow\\quad x+2y+2z-9=0.\n\\]\nb) Schnitt bzw. Abstand:\nSetzen Sie \\(g(t)=(4-2t,3t-4,2-2t)\\) in die Ebenengleichung ein: \\[\n(4-2t)+2(3t-4)+2(2-2t)-9=4-2t+6t-8+4-4t-9=-9.\n\\] Da \\(-9\\neq0\\) – unabhängig von \\(t\\) – liegt die Gerade nicht in der Ebene (keinen Schnittpunkt).\nAbstand:\nDer Abstand \\(d\\) eines beliebigen Punktes \\(P_g\\) der Geraden von der Ebene ist: \\[\nd=\\frac{|(4-2t)+2(3t-4)+2(2-2t)-9|}{\\sqrt{1^2+2^2+2^2}}=\\frac{9}{3}=3.\n\\]\n\n\n\nAufgabe 3 (8+3 Punkte)\nGegeben: \\[\nA=\\begin{pmatrix}\n1&-2&3\\\\\n1&0&1\\\\\n0&4&-2\n\\end{pmatrix}.\n\\]\na) Eigenwerte:\nBerechnen Sie die Determinante von \\(A-\\lambda I\\): \\[\n\\det\\Bigl(A-\\lambda I\\Bigr)=\\lambda^3+\\lambda^2-4\\lambda-4=0.\n\\] Offensichtlich ist \\(\\lambda=2\\) eine Nullstelle. Faktorisieren: \\[\n\\lambda^3+\\lambda^2-4\\lambda-4=(\\lambda-2)(\\lambda+1)(\\lambda+2)=0.\n\\] Eigenwerte:\n\\(\\lambda_1=2,\\quad \\lambda_2=-1,\\quad \\lambda_3=-2.\\)\nEigenvektoren:\n\nFür \\(\\lambda=2\\): Lösen \\((A-2I)v=0\\) führt zu\n\\[\nv=(1,\\,1,\\,1)^T.\n\\]\nFür \\(\\lambda=-1\\): Lösen \\((A+I)v=0\\) ergibt\n\\[\nv=(-5,\\,1,\\,4)^T.\n\\]\nFür \\(\\lambda=-2\\): Lösen \\((A+2I)v=0\\) liefert\n\\[\nv=(-1,\\,0,\\,1)^T.\n\\]\n\nb) Darstellung in der Eigenbasis:\nSei \\(B=\\{(1,1,1),\\,(-5,1,4),\\,(-1,0,1)\\}\\). Dann ist die Darstellung der linearen Abbildung \\[\ny=Ax\n\\] in Basis \\(B\\) diagonal: \\[\nA_B=\\begin{pmatrix}\n2&0&0\\\\\n0&-1&0\\\\\n0&0&-2\n\\end{pmatrix}.\n\\]\n\n\n\nAufgabe 4 (4+4+3 Punkte)\na) Stationäre Punkte:\nBerechnen Sie die partiellen Ableitungen: \\[\n\\begin{aligned}\nf_x(x,y)&=-\\ln x+\\frac{y^2-x}{x},\\\\\nf_y(x,y)&=2y\\,\\ln x.\n\\end{aligned}\n\\] Setzen \\(f_y=0\\): - Fall 1: \\(\\ln x=0\\) \\(\\Rightarrow x=1\\). Dann \\(f_x(1,y)=\\,(y^2-1)=0\\) \\(\\Rightarrow y=\\pm 1.\\) - Fall 2: \\(y=0\\). Dann \\(f_x(x,0)=-\\ln x-1=0\\) \\(\\Rightarrow \\ln x=-1\\) \\(\\Rightarrow x=e^{-1}.\\)\nStationäre Punkte:\n\\((1,1),\\;(1,-1),\\;(e^{-1},0).\\)\nb) Klassifizierung:\n\nBei \\((1,1)\\) und \\((1,-1)\\):\nBerechnen der Hesse-Matrix führt zu einem negativen Determinantenwert (\\(D&lt;0\\)) – Sattelpunkt.\nBei \\((e^{-1},0)\\):\nMit \\(f_{xx}(e^{-1},0)=-e\\) und \\(f_{yy}(e^{-1},0)=-2\\) ergibt sich\n\\[\nD=(-e)(-2)=2e&gt;0,\\quad f_{xx}&lt;0,\n\\] also lokales Maximum.\n\nc) Taylor-Polynom 2. Ordnung in \\((1,2)\\):\nBerechnen Sie: \\[\n\\begin{aligned}\nf(1,2)&=(4-1)\\ln1=0,\\\\\nf_x(1,2)&=-\\ln1+\\frac{4-1}{1}=3,\\\\\nf_y(1,2)&=2\\cdot2\\,\\ln1=0.\n\\end{aligned}\n\\] Zusatzableitungen: \\[\n\\begin{aligned}\nf_{xx}(x,y)&=-\\frac{1}{x}-\\frac{y^2}{x^2}\\quad\\Rightarrow\\quad f_{xx}(1,2)=-1-4=-5,\\\\\nf_{xy}(x,y)&=\\frac{2y}{x}\\quad\\Rightarrow\\quad f_{xy}(1,2)=4,\\\\\nf_{yy}(x,y)&=2\\ln x\\quad\\Rightarrow\\quad f_{yy}(1,2)=0.\n\\end{aligned}\n\\] Taylorpolynom: \\[\nT_2(x,y)=3(x-1)+\\frac{1}{2}\\Bigl[-5(x-1)^2+8(x-1)(y-2)\\Bigr].\n\\]\n\n\n\nAufgabe 5 (7+3 Punkte)\nGegeben:\n\\(f(x,y)=(3x+2y)x=3x^2+2xy\\) und Nebenbedingung\n\\[\ng(x,y)=2x^3+3x^2y-40=0.\n\\]\na) Lagrange-Funktion: \\[\n\\mathcal{L}(x,y, \\lambda)=3x^2+2xy+\\lambda\\Bigl(2x^3+3x^2y-40\\Bigr).\n\\] Ableitungen: \\[\n\\begin{aligned}\n\\mathcal{L}_x&=6x+2y+\\lambda\\,(6x^2+6xy)=0,\\\\\n\\mathcal{L}_y&=2x+3\\lambda x^2=0,\\\\\n\\mathcal{L}_\\lambda&=2x^3+3x^2y-40=0.\n\\end{aligned}\n\\] Aus \\(\\mathcal{L}_y=0\\) (bei \\(x\\neq0\\)): \\[\n2x+3\\lambda x^2=0\\quad\\Rightarrow\\quad \\lambda=-\\frac{2}{3x}.\n\\] Einsetzen in \\(\\mathcal{L}_x=0\\) liefert: \\[\n6x+2y-\\frac{2}{3x}(6x^2+6xy)=6x+2y-4x-4y=2x-2y=0,\n\\] also \\(y=x\\).\nIn die Nebenbedingung einsetzen: \\[\n2x^3+3x^3=5x^3=40\\quad\\Rightarrow\\quad x^3=8\\quad\\Rightarrow\\quad x=2,\n\\] und damit \\(y=2\\).\nKandidat:\n\\((2,2)\\).\nb) Ableitung entlang der durch die Nebenbedingung implizit gegebenen Kurve:\nGesucht ist \\[\n\\frac{d}{dx}f(x,y(x))=f_x(x,y)+f_y(x,y)\\,y'(x),\n\\] wobei \\(y'(x)\\) über die totale Differentiation der Nebenbedingung \\(g(x,y)=0\\) mit \\[\ny'(x)=-\\frac{g_x}{g_y},\\quad g_x=6x^2+6xy,\\quad g_y=3x^2.\n\\] Einsetzen liefert \\[\n\\frac{d}{dx}f(x,y(x))=2x-2y,\n\\] insbesondere bei \\((2,2)\\) gilt:\n\\(\\frac{d}{dx}f(2,2)=0\\).\n\n\n\nAufgabe 6 (10 Punkte)\nGegeben:\n\\(f(x,y)=\\frac{2y}{x}\\), und das Kreissegment \\(B\\) wird begrenzt durch\n- die Kreislinie: \\((x-2)^2+y^2=4\\)\n- die Gerade: \\(x+2y=4\\).\nLösungsschritte:\n\nPolarkoordinaten:\nVerschieben Sie das Koordinatensystem zum Kreiszentrum \\((2,0)\\): \\[\nx=2+r\\cos\\theta,\\quad y=r\\sin\\theta,\\quad r\\le2.\n\\]\nTransformation der Geradengleichung:\nEinsetzen:\n\\[\n(2+r\\cos\\theta)+2r\\sin\\theta=4\\quad\\Rightarrow\\quad r\\bigl(\\cos\\theta+2\\sin\\theta\\bigr)=2.\n\\] Dies bestimmt den radialen Grenzwert \\(r_{\\max}(\\theta)=\\dfrac{2}{\\cos\\theta+2\\sin\\theta}\\) für Winkel \\(\\theta\\) in einem bestimmten Intervall \\([\\theta_1,\\theta_2]\\).\nIntegralaufbau:\nMit \\(f(x,y)=\\frac{2r\\sin\\theta}{2+r\\cos\\theta}\\) und dem Jakobiand \\(r\\) ergibt sich: \\[\nI=\\int_{\\theta_1}^{\\theta_2}\\int_{0}^{r_{\\max}(\\theta)} \\frac{2r\\sin\\theta}{2+r\\cos\\theta}\\,r\\,dr\\,d\\theta.\n\\]\nBerechnung:\nNach Durchführung der \\(r\\)- und \\(\\theta\\)-Integration (unter Beachtung der durch den Schnitt der Kreislinie und der Geraden bestimmten Grenzen) erhält man: \\[\nI=\\frac{8}{3}\\Biggl[2\\arctan\\Bigl(\\frac{3}{4}\\Bigr)-\\ln\\Bigl(\\frac{25}{9}\\Bigr)\\Biggr].\n\\]\n\n\n\n\nEndergebnis Kurzfassung:\n\nAufgabe 1:\n\\(\\displaystyle x=(-1-t,\\;3-2t,\\;t,\\;4)^T,\\; t\\in\\mathbb{R}\\) und \\(\\operatorname{rg}(A)=3.\\)\nAufgabe 2:\nGeradendarstellung: \\(g(t)=(4-2t,\\;3t-4,\\;2-2t)^T.\\)\nEbenengleichung (Hesse-Normalform): \\(x+2y+2z-9=0.\\)\nSchnitt: Nein; Abstand: \\(3.\\)\nAufgabe 3:\nEigenwerte: \\(2,\\;-1,\\;-2.\\)\nEigenvektoren: \\((1,1,1)^T,\\;(-5,1,4)^T,\\;(-1,0,1)^T.\\)\nDarstellung in Eigenbasis: \\(A_B=\\operatorname{diag}(2,-1,-2).\\)\nAufgabe 4:\nStationäre Punkte: \\((1,1)\\) und \\((1,-1)\\) (Sattelpunkte), \\((e^{-1},0)\\) (lokales Maximum).\nTaylorpolynom 2. Ordnung in \\((1,2)\\): \\[\nT_2(x,y)=3(x-1)+\\frac{-5(x-1)^2+8(x-1)(y-2)}{2}.\n\\]\nAufgabe 5:\nMit Lagrange-Multiplikatoren: Kandidat \\((2,2)\\);\nAbleitung entlang der Nebenbedingung: \\(\\frac{d}{dx}f(x,y(x))=2(x-y)\\) (bei \\((2,2)\\) \\(=0\\)).\nAufgabe 6:\nNach Umrechnung in Polarkoordinaten und Integration: \\[\nI=\\frac{8}{3}\\Biggl[2\\arctan\\Bigl(\\frac{3}{4}\\Bigr)-\\ln\\Bigl(\\frac{25}{9}\\Bigr)\\Biggr].\n\\]"
-  },
-  {
-    "objectID": "HM_solutions.html#aufgabe-1-vektoriterationsalgorithmus",
-    "href": "HM_solutions.html#aufgabe-1-vektoriterationsalgorithmus",
-    "title": "HM1_Lösung",
-    "section": "Aufgabe 1: Vektoriterationsalgorithmus",
-    "text": "Aufgabe 1: Vektoriterationsalgorithmus\na) Approximation des betragsgrößten Eigenwertes Gegeben: \\[ A = \\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix}, \\quad x_0 = \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} \\]\n\nIteration: \\[ x_1 = A x_0 = \\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} \\] \\[ \\lambda_1 \\approx \\frac{\\|x_1\\|_\\infty}{\\|x_0\\|_\\infty} = \\frac{3}{1} = 3 \\]\nIteration: \\[ x_2 = A x_1 = \\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix} \\] \\[ \\lambda_2 \\approx \\frac{\\|x_2\\|_\\infty}{\\|x_1\\|_\\infty} = \\frac{6}{3} = 2 \\]\n\nb) Approximation des betragskleinsten Eigenwertes mit inverser Iteration Gegeben: \\[ x_0 = \\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} \\]\n\nIteration: \\[ y_1 = A^{-1} x_0 \\approx \\begin{pmatrix} 1/3 & 1/3 \\\\ 1/3 & -2/3 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 0 \\end{pmatrix} \\] \\[ \\lambda_1 \\approx \\frac{1}{\\|y_1\\|_\\infty} \\approx -1 \\]\nIteration analog."
-  },
-  {
-    "objectID": "HM_solutions.html#aufgabe-2-interpolation",
-    "href": "HM_solutions.html#aufgabe-2-interpolation",
-    "title": "HM1_Lösung",
-    "section": "Aufgabe 2: Interpolation",
-    "text": "Aufgabe 2: Interpolation\na) Newton-Interpolationspolynom Berechnung der dividierten Differenzen: \\[ f[x_0] = 5, f[x_1] = 1, f[x_2] = 1, f[x_3] = -1 \\] \\[ f[x_0,x_1] = \\frac{1-5}{0-(-1)} = -4 \\] \\[ f[x_1,x_2] = \\frac{1-1}{1-0} = 0 \\] \\[ f[x_2,x_3] = \\frac{-1-1}{2-1} = -2 \\] \\[ f[x_0,x_1,x_2] = \\frac{0-(-4)}{1-(-1)} = 2 \\] \\[ f[x_1,x_2,x_3] = \\frac{-2-0}{2-0} = -1 \\] \\[ f[x_0,x_1,x_2,x_3] = \\frac{-1-2}{2-(-1)} = -1 \\]\nNewton-Polynom: \\[ p(x) = 5 -4(x+1) + 2(x+1)x -1(x+1)x(x-1) \\]\nb) Monomdarstellung durch Umformung.\nc) Bisektionsverfahren zur Nullstellenapproximation: \\[ x_1=1, x_2=2 \\] \\[ p(1), p(1.5), p(2) \\] berechnen, bis hinreichende Genauigkeit erreicht.\nd) Simpson-Regel: \\[ \\int_{-1}^{1} p(x) dx \\approx \\frac{1-(-1)}{6} (f(-1) + 4f(0) + f(1)) \\]"
-  },
-  {
-    "objectID": "HM_solutions.html#aufgabe-3-lineare-regression",
-    "href": "HM_solutions.html#aufgabe-3-lineare-regression",
-    "title": "HM1_Lösung",
-    "section": "Aufgabe 3: Lineare Regression",
-    "text": "Aufgabe 3: Lineare Regression\na) Normalengleichungen Aufstellen der Summen für die Koeffizienten der Normalengleichung.\nb) Cholesky-Zerlegung 1. Zerlege $ A = LL^T $ mit \\[ L = \\begin{pmatrix} a & 0 & 0 \\\\ b & c & 0 \\\\ d & e & f \\end{pmatrix} \\]\n\nVorwärts- und Rückwärtseinsetzen zur Lösung von $Ax = b $."
-  },
-  {
-    "objectID": "HM_solutions.html#aufgabe-4-nichtlineare-regression",
-    "href": "HM_solutions.html#aufgabe-4-nichtlineare-regression",
-    "title": "HM1_Lösung",
-    "section": "Aufgabe 4: Nichtlineare Regression",
-    "text": "Aufgabe 4: Nichtlineare Regression\na) Formulierung als Fehlerquadratsumme \\[ r_i(x_1, x_2) = f(x_1, x_2, t_i) - y_i \\] Minimiere $ r_i^2 $.\nb) Gauß-Newton-Verfahren Berechnung der Jacobi-Matrix und Iteration $x^{(1)} = x^{(0)} - (J^T J)^{-1} J^T r $. Vergleich der Fehlerquadratsumme zur Beurteilung der Verbesserung."
-  },
-  {
-    "objectID": "exam-questions.html",
-    "href": "exam-questions.html",
-    "title": "Exam Questions",
+    "objectID": "ga_einfuehrung.html#warum-für-ingenieure",
+    "href": "ga_einfuehrung.html#warum-für-ingenieure",
+    "title": "Geometrische Algebra",
     "section": "",
-    "text": "Download as PDF\n\n\n\na) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\).\n\n\n\nGegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an.\n\n\n\nGegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt.\n\n\n\nGegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\).\n\n\n\nEs sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\).\n\n\n\nEs sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
+    "text": "Mechanik/Robotik: Elegante Berechnung von Drehungen, Spiegelungen und Projektionen\nElektrotechnik: Verallgemeinerung komplexer Zahlen und Quaternionen\nComputer Vision / CAD: Einheitliche Darstellung von 3D-Geometrien"
   },
   {
-    "objectID": "exam-questions.html#aufgabe-1-10-punkte",
-    "href": "exam-questions.html#aufgabe-1-10-punkte",
-    "title": "Exam Questions",
+    "objectID": "ga_einfuehrung.html#beispiel-3d-drehung",
+    "href": "ga_einfuehrung.html#beispiel-3d-drehung",
+    "title": "Geometrische Algebra",
     "section": "",
-    "text": "a) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\)."
+    "text": "Eine Drehung kann in GA mit einem sogenannten Rotor ausgedrückt werden:\n\nWähle eine Dreh-Ebene (Bivektor ( B ))\nBaue den Rotor: [ R = e^{-B / 2} ]\nWende den Rotor auf einen Vektor ( v ) an: [ v’ = R v ]\n\n(( ) = Reverse von ( R ))"
   },
   {
-    "objectID": "exam-questions.html#aufgabe-2-10-punkte",
-    "href": "exam-questions.html#aufgabe-2-10-punkte",
-    "title": "Exam Questions",
+    "objectID": "ga_einfuehrung.html#software-für-ga",
+    "href": "ga_einfuehrung.html#software-für-ga",
+    "title": "Geometrische Algebra",
     "section": "",
-    "text": "Gegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an."
+    "text": "Python: Pakete clifford, galgebra\nMATLAB: Clifford Toolbox\nWeb: ganja.js (für schnelle Visualisierungen)"
   },
   {
-    "objectID": "exam-questions.html#aufgabe-3-10-punkte",
-    "href": "exam-questions.html#aufgabe-3-10-punkte",
-    "title": "Exam Questions",
+    "objectID": "ga_einfuehrung.html#literatur-ressourcen",
+    "href": "ga_einfuehrung.html#literatur-ressourcen",
+    "title": "Geometrische Algebra",
     "section": "",
-    "text": "Gegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt."
+    "text": "Doran & Lasenby: Geometric Algebra for Physicists\nDorst, Fontijne & Mann: Geometric Algebra for Computer Science\nYouTube: Geometric Algebra Tutorial – Steven De Keninck\n\nDavid Hestenes hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt\nPeter Joot zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet\nPeter Joot\nSVD zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können"
   },
   {
-    "objectID": "exam-questions.html#aufgabe-4-10-punkte",
-    "href": "exam-questions.html#aufgabe-4-10-punkte",
-    "title": "Exam Questions",
+    "objectID": "karteikarten.html",
+    "href": "karteikarten.html",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
     "section": "",
-    "text": "Gegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\)."
+    "text": "Frage: Definiere den Begriff “Anfangswertproblem” und nenne die Schritte zur Lösung.\n\nEin AWP besteht aus einer Differentialgleichung und einer Anfangsbedingung. Lösungsschritte: - Differentialgleichung lösen (z.B. durch Trennung der Variablen, Finden eines Potentials). - Allgemeine Lösung finden. - Anfangsbedingung nutzen, um die spezielle Lösung zu bestimmen.\n\n\n\n\n\n\n\nFrage: Wie prüft man, ob eine Differentialgleichung exakt ist? Welche Formel ist dabei wichtig?\n\nEine DGL der Form \\(M(t, x) + N(t, x)x' = 0\\) ist exakt, wenn \\[\n\\frac{\\partial M}{\\partial x} = \\frac{\\partial N}{\\partial t}\n\\] gilt.\n\n\n\n\n\n\n\nFrage: Wie findet man die Funktion \\(\\Phi(t,x)\\) für eine exakte Differentialgleichung?\n\n\n\\(M(t, x)\\) nach \\(t\\) integrieren: \\(\\int M(t, x) dt\\)\n\\(N(t, x)\\) nach \\(x\\) integrieren: \\(\\int N(t, x) dx\\)\nBeide Ausdrücke kombinieren, um ein gemeinsames \\(\\Phi(t, x)\\) zu erhalten, wobei doppelte Terme nur einmal berücksichtigt werden.\nDie allgemeine Lösung ist dann \\(\\Phi(t, x) = C\\).\n\n\n\n\n\n\n\n\nFrage: Was ist ein Fundamentalsystem und wie bestimmt man die allgemeine reelle Lösung eines linearen Systems?\n\nEin Fundamentalsystem besteht aus linear unabhängigen Lösungen des homogenen Systems. Die allgemeine Lösung eines linearen Systems \\(\\dot{x} = Ax + b\\) setzt sich zusammen aus der allgemeinen Lösung des homogenen Systems \\(\\dot{x} = Ax\\) und einer partikulären Lösung des inhomogenen Systems.\n\n\n\n\n\n\n\nFrage: Wie klassifiziert man eine partielle Differentialgleichung (elliptisch, parabolisch, hyperbolisch)?\n\nDie Klassifizierung hängt von den Koeffizienten der höchsten Ableitungen ab. (Diese Information ist in den Quellen nicht detailliert, daher müsstest du das in deinen Unterlagen nachschlagen). Beispiel aus der Quelle: \\(2u_t - u_{xx} = 0\\) ist eine parabolische PDE.\n\n\n\n\n\n\n\nFrage: Wie bestimmt man die Koeffizienten der Fourierreihe einer Funktion?\n\nDie Koeffizienten hängen von der Symmetrie der Funktion ab (gerade, ungerade, allgemein). Für eine ungerade Funktion \\(f(x)\\) gilt: \\[\na_n = 0, \\quad b_n = \\frac{2}{\\pi} \\int_0^\\pi f(x) \\sin(nx) \\, dx\n\\]\n\n\n\n\n\n\n\nFrage: Welche Schritte sind notwendig, um eine PDE mit gegebenen Anfangs- und Randbedingungen zu lösen?\n\n\nSeparationsansatz verwenden (falls möglich).\nAllgemeine Lösung für jede Variable finden.\nRandbedingungen anwenden, um spezielle Lösungen zu finden.\nAnfangsbedingung nutzen, um die endgültige Lösung zu bestimmen.\n\n\n\n\n\n\n\n\nFrage: Wie bestimmt man, ob ein Vektorfeld ein Potential besitzt, und wie findet man dieses Potential?\n\nEin Vektorfeld \\(F\\) besitzt ein Potential, wenn \\(\\operatorname{rot}(F) = 0\\) gilt (d.h. die Rotation ist null). Das Potential \\(\\phi\\) findet man durch Integration der Komponenten von \\(F\\).\n\n\n\n\n\n\n\nFrage: Wie berechnet man ein Kurvenintegral 2. Art?\n\n\\[\n\\int_\\gamma F \\cdot dr = \\int_a^b F(\\gamma(t)) \\cdot \\gamma'(t) \\, dt\n\\] wobei \\(\\gamma(t)\\) eine Parametrisierung des Weges \\(\\gamma\\) ist.\n\n\n\n\n\n\n\nFrage: Wie parametrisiert man eine Rotationsfläche?\n\nWenn \\(\\gamma(u) = (e^u - 1, 0, u)^T\\) um die z-Achse rotiert, ist die Parametrisierung: \\[\nf(u, v) = ((e^u - 1)\\cos(v), (e^u - 1)\\sin(v), u)^T\n\\]\n\n\n\n\n\n\n\nFrage: Wie bestimmt man Tangential- und Normalenvektoren an eine parametrisierte Fläche?\n\n\nTangentialvektoren: Partielle Ableitungen der Parametrisierung \\(f(u, v)\\) nach \\(u\\) und \\(v\\): \\(f_u\\) und \\(f_v\\).\nNormalenvektor: Kreuzprodukt der Tangentialvektoren: \\(n = f_u \\times f_v\\).\n\n\n\n\n\n\n\n\nFrage: Wie berechnet man ein Oberflächenintegral 2. Art?\n\n\\[\n\\int_A F \\cdot dS = \\int_D F(f(u, v)) \\cdot (f_u \\times f_v) \\, du \\, dv\n\\] wobei \\(f(u, v)\\) die Parametrisierung der Fläche \\(A\\) ist und \\(D\\) der Parameterbereich.\n\n\n\n\n\n\n\nFrage: Wie parametrisiert man ein Volumen in Kugelkoordinaten?\n\n\\[\nx = r\\sin(\\theta)\\cos(\\phi), \\quad y = r\\sin(\\theta)\\sin(\\phi), \\quad z = r\\cos(\\theta)\n\\] wobei \\(r\\) der Radius, \\(\\theta\\) der Polarwinkel und \\(\\phi\\) der Azimutalwinkel ist.\n\n\n\n\n\n\n\nFrage: Wie berechnet man den Fluss eines Vektorfeldes durch eine Oberfläche?\n\n\\[\n\\int_{\\partial K} F \\cdot n \\, dS\n\\] wobei \\(n\\) der Normalenvektor auf der Oberfläche \\(\\partial K\\) ist. Dies kann mit dem Divergenzsatz in ein Volumenintegral umgewandelt werden: \\[\n\\int_K \\operatorname{div}(F) \\, dV\n\\]\n\n\n\n\n\n\n\nFrage: Wie lautet der Satz von Stokes?\n\n\\[\n\\int_{\\partial K} \\operatorname{rot}(F) \\cdot n \\, dS = \\oint_{\\partial(\\partial K)} F \\cdot dr\n\\] wobei \\(\\partial K\\) die Oberfläche und \\(\\partial(\\partial K)\\) der Rand der Oberfläche ist."
   },
   {
-    "objectID": "exam-questions.html#aufgabe-5-10-punkte",
-    "href": "exam-questions.html#aufgabe-5-10-punkte",
-    "title": "Exam Questions",
+    "objectID": "karteikarten.html#anfangswertprobleme-awp",
+    "href": "karteikarten.html#anfangswertprobleme-awp",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
     "section": "",
-    "text": "Es sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\)."
+    "text": "Frage: Definiere den Begriff “Anfangswertproblem” und nenne die Schritte zur Lösung.\n\nEin AWP besteht aus einer Differentialgleichung und einer Anfangsbedingung. Lösungsschritte: - Differentialgleichung lösen (z.B. durch Trennung der Variablen, Finden eines Potentials). - Allgemeine Lösung finden. - Anfangsbedingung nutzen, um die spezielle Lösung zu bestimmen."
   },
   {
-    "objectID": "exam-questions.html#aufgabe-6-10-punkte",
-    "href": "exam-questions.html#aufgabe-6-10-punkte",
-    "title": "Exam Questions",
+    "objectID": "karteikarten.html#exakte-differentialgleichungen",
+    "href": "karteikarten.html#exakte-differentialgleichungen",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
     "section": "",
-    "text": "Es sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
+    "text": "Frage: Wie prüft man, ob eine Differentialgleichung exakt ist? Welche Formel ist dabei wichtig?\n\nEine DGL der Form \\(M(t, x) + N(t, x)x' = 0\\) ist exakt, wenn \\[\n\\frac{\\partial M}{\\partial x} = \\frac{\\partial N}{\\partial t}\n\\] gilt."
   },
   {
-    "objectID": "hm3_klausur_ws2425.html",
-    "href": "hm3_klausur_ws2425.html",
-    "title": "HM3_Klausur_WS2425",
+    "objectID": "karteikarten.html#lösung-exakter-dgl",
+    "href": "karteikarten.html#lösung-exakter-dgl",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
     "section": "",
-    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
+    "text": "Frage: Wie findet man die Funktion \\(\\Phi(t,x)\\) für eine exakte Differentialgleichung?\n\n\n\\(M(t, x)\\) nach \\(t\\) integrieren: \\(\\int M(t, x) dt\\)\n\\(N(t, x)\\) nach \\(x\\) integrieren: \\(\\int N(t, x) dx\\)\nBeide Ausdrücke kombinieren, um ein gemeinsames \\(\\Phi(t, x)\\) zu erhalten, wobei doppelte Terme nur einmal berücksichtigt werden.\nDie allgemeine Lösung ist dann \\(\\Phi(t, x) = C\\)."
   },
   {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-1",
-    "href": "hm3_klausur_ws2425.html#aufgabe-1",
-    "title": "HM3_Klausur_WS2425",
+    "objectID": "karteikarten.html#lineare-systeme",
+    "href": "karteikarten.html#lineare-systeme",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
     "section": "",
-    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
+    "text": "Frage: Was ist ein Fundamentalsystem und wie bestimmt man die allgemeine reelle Lösung eines linearen Systems?\n\nEin Fundamentalsystem besteht aus linear unabhängigen Lösungen des homogenen Systems. Die allgemeine Lösung eines linearen Systems \\(\\dot{x} = Ax + b\\) setzt sich zusammen aus der allgemeinen Lösung des homogenen Systems \\(\\dot{x} = Ax\\) und einer partikulären Lösung des inhomogenen Systems."
   },
   {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-2",
-    "href": "hm3_klausur_ws2425.html#aufgabe-2",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 2)",
-    "text": "Aufgabe 2)\n**Aufgabe 2 (10 Punkte)**\nGegeben ist das lineare System\n$$ \\dot x=\\begin{pmatrix} -2&-5\\\\1&4 \\end{pmatrix}x\\quad \\text{ und}\\quad b(t)=4\\begin{pmatrix} e^t\\\\0\\end{pmatrix}$$\n\na) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.\n\nb) Geben sie die allgemeine Lösung des Anfangswertproblems $\\dot x=Ax+b(t)$ an."
+    "objectID": "karteikarten.html#partielle-differentialgleichungen-pdes",
+    "href": "karteikarten.html#partielle-differentialgleichungen-pdes",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie klassifiziert man eine partielle Differentialgleichung (elliptisch, parabolisch, hyperbolisch)?\n\nDie Klassifizierung hängt von den Koeffizienten der höchsten Ableitungen ab. (Diese Information ist in den Quellen nicht detailliert, daher müsstest du das in deinen Unterlagen nachschlagen). Beispiel aus der Quelle: \\(2u_t - u_{xx} = 0\\) ist eine parabolische PDE."
   },
   {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-3",
-    "href": "hm3_klausur_ws2425.html#aufgabe-3",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 3)",
-    "text": "Aufgabe 3)\n**Aufgabe 3 (10 Punkte)**\nGegeben sei die partielle Differentialgleichung\n$$ u_{tt}-u_{xx}=0$$\nmit $x\\in[0,\\pi]$ und $t&gt;0$\n\na) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.\n\nb) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion\n$$f(x)=1\\quad  \\text{für } x\\in [0,\\pi]$$.\n\nc) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung\n\n$$u(0,x)=x\\quad x\\in[0,\\pi],$$\n\n\n$$u_t(0,x)=0\\quad x\\in[0,\\pi],$$\n\nund den Randbedingungen $u(t,0)=u(t,\\pi)=0, t&gt;0$."
+    "objectID": "karteikarten.html#fourierreihen",
+    "href": "karteikarten.html#fourierreihen",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie bestimmt man die Koeffizienten der Fourierreihe einer Funktion?\n\nDie Koeffizienten hängen von der Symmetrie der Funktion ab (gerade, ungerade, allgemein). Für eine ungerade Funktion \\(f(x)\\) gilt: \\[\na_n = 0, \\quad b_n = \\frac{2}{\\pi} \\int_0^\\pi f(x) \\sin(nx) \\, dx\n\\]"
   },
   {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-4",
-    "href": "hm3_klausur_ws2425.html#aufgabe-4",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 4)",
-    "text": "Aufgabe 4)\n**Aufgabe 4 (10 Punkte)**\n\nGegeben seine die beiden Vektorfelder $F_k:ℝ^3\\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\\gamma: [0,1]\\rightarrow ℝ^3$.\n\n$F=\\begin{pmatrix} z\\cos(k(x+y))\\\\z\\cos(k(x+y))\\\\\\sin(k(x+y))+2z \\end{pmatrix}$ und $\\gamma(t)=\\begin{pmatrix} \\pi t\\\\\\pi t\\\\ t^2\\end{pmatrix}$\n\na) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. \n\nb) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. \n\nc) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\\gamma$."
+    "objectID": "karteikarten.html#lösen-von-pdes-mit-randbedingungen",
+    "href": "karteikarten.html#lösen-von-pdes-mit-randbedingungen",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Welche Schritte sind notwendig, um eine PDE mit gegebenen Anfangs- und Randbedingungen zu lösen?\n\n\nSeparationsansatz verwenden (falls möglich).\nAllgemeine Lösung für jede Variable finden.\nRandbedingungen anwenden, um spezielle Lösungen zu finden.\nAnfangsbedingung nutzen, um die endgültige Lösung zu bestimmen."
   },
   {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-5",
-    "href": "hm3_klausur_ws2425.html#aufgabe-5",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 5)",
-    "text": "Aufgabe 5)\n\n**Aufgabe 5 (10 Punkte)**\n\nEs sei $\\gamma(u)=(e^u-1,0,\\sqrt{u})^T$ mit $u\\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\\gamma$ um die z-Achse  rotiert wird.\n\nGegeben sei ausserdem das Vektorfeld\n\n$$ F:ℝ^3\\rightarrow ℝ^3, F(x,y,z)=\\begin{pmatrix} xz\\\\yz \\\\x^2+y^2 \\end{pmatrix} $$\n\na) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. \n\nb) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u&gt;0$. \n\nc) Bestimmen Sie das Oberflächenintegral 2.Art $\\int_AF\\cdot dn$."
+    "objectID": "karteikarten.html#potential-eines-vektorfeldes",
+    "href": "karteikarten.html#potential-eines-vektorfeldes",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie bestimmt man, ob ein Vektorfeld ein Potential besitzt, und wie findet man dieses Potential?\n\nEin Vektorfeld \\(F\\) besitzt ein Potential, wenn \\(\\operatorname{rot}(F) = 0\\) gilt (d.h. die Rotation ist null). Das Potential \\(\\phi\\) findet man durch Integration der Komponenten von \\(F\\)."
   },
   {
-    "objectID": "hm3_klausur_ws2425.html#aufgabe-6",
-    "href": "hm3_klausur_ws2425.html#aufgabe-6",
-    "title": "HM3_Klausur_WS2425",
-    "section": "Aufgabe 6)",
-    "text": "Aufgabe 6)\n**Aufgabe 6 (10 Punkte)**\n\nEs sei die Kugel $K$ gegeben durch\n\n$$ K=\\left\\{(x,y,z)^T\\in ℝ^3:x^2+y^2+z^2\\leq4 \\right\\}$$\n\nund $S$ ihre Oberfläche.\n\nWeiterhin sei das Vektorfeld $F:ℝ^3\\rightarrow ℝ^3$ gegeben durch\n\n\n\n$$F(x,y,z)=\\begin{pmatrix} xz-y\\\\ yz+x \\\\xy+z \\end{pmatrix}$$\n\n\nb) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\\int_{\\partial K}F\\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.\n\nc) Berechnen Sie  $\\int_{S}rot(F)\\cdot dn$.\n\nd) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\\int_{S_O}rot(F)\\cdot dn$ und $\\int_{S_M}rot(F)\\cdot dn$ mit Hilfe des Sates von Stokes."
+    "objectID": "karteikarten.html#kurvenintegrale-2.-art",
+    "href": "karteikarten.html#kurvenintegrale-2.-art",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie berechnet man ein Kurvenintegral 2. Art?\n\n\\[\n\\int_\\gamma F \\cdot dr = \\int_a^b F(\\gamma(t)) \\cdot \\gamma'(t) \\, dt\n\\] wobei \\(\\gamma(t)\\) eine Parametrisierung des Weges \\(\\gamma\\) ist."
+  },
+  {
+    "objectID": "karteikarten.html#parametrisierung-einer-fläche",
+    "href": "karteikarten.html#parametrisierung-einer-fläche",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie parametrisiert man eine Rotationsfläche?\n\nWenn \\(\\gamma(u) = (e^u - 1, 0, u)^T\\) um die z-Achse rotiert, ist die Parametrisierung: \\[\nf(u, v) = ((e^u - 1)\\cos(v), (e^u - 1)\\sin(v), u)^T\n\\]"
+  },
+  {
+    "objectID": "karteikarten.html#tangential--und-normalenvektoren",
+    "href": "karteikarten.html#tangential--und-normalenvektoren",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie bestimmt man Tangential- und Normalenvektoren an eine parametrisierte Fläche?\n\n\nTangentialvektoren: Partielle Ableitungen der Parametrisierung \\(f(u, v)\\) nach \\(u\\) und \\(v\\): \\(f_u\\) und \\(f_v\\).\nNormalenvektor: Kreuzprodukt der Tangentialvektoren: \\(n = f_u \\times f_v\\)."
+  },
+  {
+    "objectID": "karteikarten.html#oberflächenintegrale-2.-art",
+    "href": "karteikarten.html#oberflächenintegrale-2.-art",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie berechnet man ein Oberflächenintegral 2. Art?\n\n\\[\n\\int_A F \\cdot dS = \\int_D F(f(u, v)) \\cdot (f_u \\times f_v) \\, du \\, dv\n\\] wobei \\(f(u, v)\\) die Parametrisierung der Fläche \\(A\\) ist und \\(D\\) der Parameterbereich."
+  },
+  {
+    "objectID": "karteikarten.html#kugelkoordinaten",
+    "href": "karteikarten.html#kugelkoordinaten",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie parametrisiert man ein Volumen in Kugelkoordinaten?\n\n\\[\nx = r\\sin(\\theta)\\cos(\\phi), \\quad y = r\\sin(\\theta)\\sin(\\phi), \\quad z = r\\cos(\\theta)\n\\] wobei \\(r\\) der Radius, \\(\\theta\\) der Polarwinkel und \\(\\phi\\) der Azimutalwinkel ist."
+  },
+  {
+    "objectID": "karteikarten.html#flussberechnung",
+    "href": "karteikarten.html#flussberechnung",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie berechnet man den Fluss eines Vektorfeldes durch eine Oberfläche?\n\n\\[\n\\int_{\\partial K} F \\cdot n \\, dS\n\\] wobei \\(n\\) der Normalenvektor auf der Oberfläche \\(\\partial K\\) ist. Dies kann mit dem Divergenzsatz in ein Volumenintegral umgewandelt werden: \\[\n\\int_K \\operatorname{div}(F) \\, dV\n\\]"
+  },
+  {
+    "objectID": "karteikarten.html#satz-von-stokes",
+    "href": "karteikarten.html#satz-von-stokes",
+    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "section": "",
+    "text": "Frage: Wie lautet der Satz von Stokes?\n\n\\[\n\\int_{\\partial K} \\operatorname{rot}(F) \\cdot n \\, dS = \\oint_{\\partial(\\partial K)} F \\cdot dr\n\\] wobei \\(\\partial K\\) die Oberfläche und \\(\\partial(\\partial K)\\) der Rand der Oberfläche ist."
+  },
+  {
+    "objectID": "solutions.html",
+    "href": "solutions.html",
+    "title": "Solutions",
+    "section": "",
+    "text": "HM3: Kurzlösungen\nIm Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:\n\n\n\n\n\n\n\nAufgabe / Teil\nKurzlösung / Ergebnis\n\n\n\n\n1(a)\nGegeben: \\(x' = t\\,x^2 + t\\) mit \\(x(0)=0\\).  Umformung: \\(x' = t\\,(x^2+1)\\).  Trennung: \\(\\displaystyle \\frac{dx}{1+x^2}=t\\,dt\\).  Integration: \\(\\arctan(x)=\\frac{t^2}{2}+C\\).  Mit \\(x(0)=0\\) folgt \\(C=0\\).  Lösung: \\(x(t)=\\tan\\Bigl(\\frac{t^2}{2}\\Bigr)\\).  Definitionsbereich: \\(t\\in(-\\sqrt{\\pi},\\sqrt{\\pi})\\).\n\n\n1(b)(i)\nDGL: \\(2t(x^3-1)+3t^2x^2x'=0\\).  Setze \\(M(t,x)=2t(x^3-1)\\) und \\(N(t,x)=3t^2x^2\\).  Ableiten: \\(M_x=6tx^2\\) und \\(N_t=6tx^2\\) ⇒ exakt.\n\n\n1(b)(ii)\nGesucht: \\(\\Phi\\) mit \\(\\Phi_t=M\\) und \\(\\Phi_x=N\\).  Integriere \\(N\\) nach \\(x\\): \\(\\Phi(t,x)=t^2x^3+g(t)\\).  Ableiten nach \\(t\\): \\(\\Phi_t=2tx^3+g'(t)\\).  Da \\(M=2t(x^3-1)\\) muss \\(g'(t)=-2t\\) sein, also \\(g(t)=-t^2\\).  Potential: \\(\\Phi(t,x)=t^2(x^3-1)\\).\n\n\n1(b)(iii)\n\\(\\Phi(t,x)=\\) konstant; mit \\(x(1)=0\\) folgt \\(\\Phi(1,0)=-1\\).  Lösung: \\(t^2(x^3-1)=-1\\) ⇔ \\(x^3=1-\\frac{1}{t^2}\\) ⇔ \\(x(t)=\\sqrt[3]{1-\\frac{1}{t^2}}\\).  Für \\(t\\to\\infty\\) konvergiert \\(x(t)\\to 1\\).\n\n\n2(a)\nGegeben: \\(A=\\begin{pmatrix}3&-1\\\\5&-1\\end{pmatrix}\\).  Charakteristik: \\(\\det(A-\\lambda I)=\\lambda^2-2\\lambda+2=0\\) ⇒ \\(\\lambda=1\\pm i\\).  Eigenvektor zu \\(\\lambda=1+i\\): \\(v=(1,\\,2-i)^T\\).  Zerlegung: \\(a=(1,2)^T\\), \\(b=(0,-1)^T\\).  Reelles Fundamentalsystem:  \\(x_1(t)=e^t\\Bigl[a\\cos t-b\\sin t\\Bigr]\\),  \\(x_2(t)=e^t\\Bigl[a\\sin t+b\\cos t\\Bigr]\\).\n\n\n2(b)\nPartikulär: Finde \\(x_p\\) mit \\(Ax_p=-b\\) (wobei \\(b=(1,0)^T\\)).  Lösen: \\(3x-y=-1\\) und \\(5x-y=0\\) ⇒ \\(x=\\frac{1}{2}\\), \\(y=\\frac{5}{2}\\).  Somit: \\(x_p=\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).  Allgemeine Lösung: \\(x(t)=c_1\\,x_1(t)+c_2\\,x_2(t)+x_p\\).  Matrixform: \\(X=\\begin{pmatrix}x_1(t)&&x_2(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix}=\\begin{pmatrix}\\cos(t)&&\\sin(t)\\\\a_2\\cos(t)-b_2\\sin(t)&&a_2\\sin(t)+b_2\\cos(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix} +\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).\n\n\n3(a)\nDie PDE \\(2u_t-u_{xx}=0\\) kann umgeschrieben werden als \\(u_t=\\frac{1}{2}u_{xx}\\) – die klassische Wärmeleitungsgleichung.  Klassifikation: parabolisch.\n\n\n3(b)\nFür \\(f(x)=1\\) (auf \\([0,\\pi]\\)) ungerade periodisch fortgesetzt:  Fourier-Sinus-Koeffizient: \\(\\displaystyle b_k=\\frac{2}{\\pi}\\int_0^\\pi \\sin(kx)\\,dx=\\frac{2(1-\\cos(k\\pi))}{\\pi k}\\).  Damit: \\(b_k=\\frac{4}{\\pi k}\\) für ungerade \\(k\\) und 0 für gerade \\(k\\).\n\n\n3(c)\nAnsatz: \\(u(t,x)=T(t)\\sin(kx)\\).  Einsetzen in \\(2u_t-u_{xx}=0\\) ergibt \\(2T'(t)+k^2T(t)=0\\).  Lösung: \\(T(t)=\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).  Ergebnis: \\(u(t,x)=\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\). Ergebnis: \\(u(t,x)=\\sum_\\text{k ungerade}^n\\frac{4}{\\pi k}\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).\n\n\n4(a)\nVektorfeld: \\(F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix}\\).  Notwendige Bedingung (z. B. \\(P_y=Q_x\\)):  \\(P_y=x\\,y^2\\) und \\(Q_x=xy^2+2x(1-\\alpha)z^2\\).  → Für alle \\(x,z\\) folgt \\(1-\\alpha=0\\).  Ergebnis: \\(\\alpha=1\\).\n\n\n4(b)\nFür \\(\\alpha=1\\) vereinfacht sich \\(Q(x,y,z)=x^2\\frac{y^2}{2}\\) und \\(R(x,y,z)=z^2\\).  Integriere \\(P\\): \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+g(y,z)\\).  Da \\(\\Phi_y=\\frac{x^2y^2}{2}+g_y(y,z)=Q\\) ⇒ \\(g_y(y,z)=0\\) und \\(g(y,z)=h(z)\\).  \\(h'(z)=z^2\\) ⇒ \\(h(z)=\\frac{z^3}{3}+C\\).  Potential: \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+\\frac{z^3}{3}\\).\n\n\n4(c)\nMit \\(F=\\nabla\\Phi\\) ist das Kurvenintegral wegunabhängig.  Berechne: \\(\\gamma(0)=(1,0,0)^T\\) und \\(\\gamma(1)=(0,1,1)^T\\).  \\(\\Phi(1,0,0)=0\\) und \\(\\Phi(0,1,1)=\\frac{1}{3}\\).  Ergebnis: \\(\\displaystyle \\int_\\gamma F\\cdot d\\gamma=\\frac{1}{3}\\).\n\n\n5(a)\nRotationsfläche zu \\(\\gamma(u)=(e^u-1,0,u)^T\\).  Parametrisierung: \\(f(u,v)=\\Bigl((e^u-1)\\cos v,\\,(e^u-1)\\sin v,\\,u\\Bigr)\\) mit \\(u\\in[0,1]\\), \\(v\\in[0,2\\pi]\\).\n\n\n5(b)\nTangentialvektoren:  \\(f_u=(e^u\\cos v,\\,e^u\\sin v,\\,1)\\),  \\(f_v=(- (e^u-1)\\sin v,\\,(e^u-1)\\cos v,\\,0)\\).  Normale (nicht normiert): \\(n=f_u\\times f_v=(- (e^u-1)\\cos v,\\,- (e^u-1)\\sin v,\\,e^u(e^u-1))\\).\n\n\n5(c)\nMit \\(F(x,y,z)=(x+y,\\,y-x,\\,2)^T\\) erhält man nach Einsetzen und Kürzen:  \\(F(f(u,v))\\cdot (f_u\\times f_v)= e^{2u}-1\\).  Oberflächenintegral: \\(\\displaystyle \\int_{u=0}^1\\int_{v=0}^{2\\pi}(e^{2u}-1)\\,dv\\,du=\\pi(e^2-3)\\).\n\n\n6(a)\nKugelsegment \\(K=\\{(x,y,z):x^2+y^2+z^2\\le4,\\; y\\ge0,\\; z\\ge0\\}\\) in Kugelkoordinaten:  \\(x=r\\sin\\varphi\\cos\\theta,\\; y=r\\sin\\varphi\\sin\\theta,\\; z=r\\cos\\varphi\\).  Bereiche: \\(r\\in[0,2]\\), \\(\\varphi\\in[0,\\pi/2]\\) (wegen \\(z\\ge0\\)) und \\(\\theta\\in[0,\\pi]\\) (wegen \\(y\\ge0\\)).\n\n\n6(b)\nDivergenz: \\(\\operatorname{div}F=1+1+1=3\\).  Volumen des Balls (Radius 2): \\(\\frac{32\\pi}{3}\\); \\(K\\) ist ein Viertel davon: \\(V_K=\\frac{8\\pi}{3}\\).  Fluss: \\(3\\cdot\\frac{8\\pi}{3}=8\\pi\\).\n\n\n6(c)\nDa \\(\\operatorname{div}(\\operatorname{rot}F)=0\\), gilt:  \\(\\displaystyle \\int_{\\partial K}\\operatorname{rot}F\\cdot n\\,dS=0\\).\n\n\n6(d)\nSei \\(B\\) der Boden (\\(z=0\\)) des Kugelsegments.  Es gilt: \\(\\int_{\\partial K}\\operatorname {rot} F\\cdot n\\,dS = \\int_{\\partial K\\setminus B}\\operatorname {rot}\\cdot n\\,dS+\\int_B \\operatorname {rot}\\cdot n\\,dS\\).  Auf \\(B\\) ist \\(n=(0,0,-1)\\) und \\(\\operatorname {rot}(x,y,0)=(x,-y,2)\\) ⇒ \\(F\\cdot n=-2\\).  \\(\\int_B (-2)dA=-2*2\\pi=-4\\pi\\).  Ergebnis: \\(\\displaystyle \\int_{\\partial K\\setminus B}rot(F)\\cdot n\\,dS=4\\pi\\). (weil Summe \\(= 0\\) aus 6 (c) )\n\n\n\ncolab"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HM Website",
+    "section": "",
+    "text": "Herzlich Willkommen zur HM Website\nHM1 dient zur Festigung der Grundlagen. Approximation benötigt Konvergenz.\nHM2 behandelt Lineare Algebra und 2D Analysis. Finde Lösungen für mehr als eine Gleichung und Approximation in mehr als einer Variable. Vektor Räume und Abbildungen darin.\nHM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik. Differentialoperatoren und Integraltheoreme und Differentialgleichungen mit mehr als einer Variablen, oft Ort und Zeit.\nHM4 führt in numerische Methoden ein. Löse Gleichungssysteme durch Approximation. Finde eine beste Approximation zu Daten (Model).\nmindmap\n\nPrüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n\nHier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:\n\n\n\n\n\n\n\n\nEigenschaft\nSkalarfeld \\(u(x,t)\\) oder \\(\\phi(x,y,z)\\)\nVektorfeld \\(\\mathbf{F}(x,y,z)\\)\n\n\n\n\nDefinition\nOrdnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)\nOrdnet jedem Punkt einen Vektor zu (Wert + Richtung)\n\n\nBeispiele\nTemperatur \\(T(x,y,z)\\), Druck \\(p(x,y,z)\\), elektrisches Potential \\(\\phi(x,y,z)\\)\nKraftfeld \\(\\mathbf{F} = (F_x, F_y, F_z)\\), elektrisches Feld \\(\\mathbf{E}\\), Strömungsgeschwindigkeit \\(\\mathbf{v}\\)\n\n\nTypische Gleichung\nWärmeleitungsgleichung \\(\\frac{\\partial u}{\\partial t} = \\alpha \\nabla^2 u\\)\nNavier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder\n\n\nMathematische Operationen\nGradient (\\(\\nabla u\\)) → erzeugt ein Vektorfeld aus einem Skalarfeld\nDivergenz (\\(\\nabla \\cdot \\mathbf{F}\\)), Rotation (\\(\\nabla \\times \\mathbf{F}\\))\n\n\nVerwendung in der Physik\nBeschreibt Zustandsgrößen wie Temperatur, Energie, Druck\nBeschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder\n\n\nBuchstabenherkunft\n\\(u\\) historisch von Fourier für Temperatur, \\(\\phi\\) für Potentiale\n\\(\\mathbf{F}\\) von „Force“ (Kraft) in der Mechanik\n\n\n\nDiese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra.\nGeometrische Algebra vereint Lineare Algebra, Analysis und numerische Methoden in einem Formalismus.\nDavid Hestenes hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt\nPeter Joot zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet\nPeter Joot\nSVD zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "klausuren.html",
+    "href": "klausuren.html",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert.\n\n\n\nGegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\).\n\n\n\n\nStellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an.\n\n\n\n\nBestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab.\n\n\n\n\nGegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\).\n\n\n\n\n\nBerechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-1-7-punkte",
+    "href": "klausuren.html#aufgabe-1-7-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-2-14-punkte",
+    "href": "klausuren.html#aufgabe-2-14-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Gegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-3-55-punkte",
+    "href": "klausuren.html#aufgabe-3-55-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Stellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-4-64-punkte",
+    "href": "klausuren.html#aufgabe-4-64-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-5-72-punkte",
+    "href": "klausuren.html#aufgabe-5-72-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Gegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\)."
+  },
+  {
+    "objectID": "klausuren.html#aufgabe-6-46-punkte",
+    "href": "klausuren.html#aufgabe-6-46-punkte",
+    "title": "Höhere Mathematik Klausuren",
+    "section": "",
+    "text": "Berechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
   },
   {
     "objectID": "hm3_codecopy.html",
@@ -406,186 +483,151 @@
     "text": "Aufgabe 4\n**Aufgabe 4 (10 Punkte)**\n\nGegeben sind die folgenden drei Wertepaare $t_1,y_1)=(-1,2)$, $t_2,y_2)=(0,1)$, $t_3,y_3)=(1,0)$ und die Funktion $y=f(x_1, x_2, t)=(t+x_2)^2x_1$.\n\na) Formulieren Sie ein nichtlineares Ausgleichsproblem, so dass die Funktion $f$ die Werte $y_i$ and den Stellen $t_i$ möglichst gut approximiert.\n\nb) Berechnen Sie den ersten Schritt des Gauß-Newton-Verfahrens für das Ausgleichsproblem von a) mit dem Startwert $x_1,x_2=(1,1)^T. Liefert der berechnete Wert eine Verbesserung für das Ausgleichsproblem im Vergleich zum Startwert?"
   },
   {
-    "objectID": "klausuren.html",
-    "href": "klausuren.html",
-    "title": "Höhere Mathematik Klausuren",
+    "objectID": "hm3_klausur_ws2425.html",
+    "href": "hm3_klausur_ws2425.html",
+    "title": "HM3_Klausur_WS2425",
     "section": "",
-    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert.\n\n\n\nGegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\).\n\n\n\n\nStellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an.\n\n\n\n\nBestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab.\n\n\n\n\nGegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\).\n\n\n\n\n\nBerechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
   },
   {
-    "objectID": "klausuren.html#aufgabe-1-7-punkte",
-    "href": "klausuren.html#aufgabe-1-7-punkte",
-    "title": "Höhere Mathematik Klausuren",
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-1",
+    "href": "hm3_klausur_ws2425.html#aufgabe-1",
+    "title": "HM3_Klausur_WS2425",
     "section": "",
-    "text": "Bestimmen Sie alle \\(x \\in \\mathbb{R}\\), für die die Reihe\n\\[\n\\sum_{n=1}^{\\infty} \\frac{1}{n 3^n} (x-1)^n\n\\]\nkonvergiert."
+    "text": "**Aufgabe 1 (10 Punkte)**\n\na) Lösen Sie das Anfangswertproblem $$ x'=(1-\\alpha)t\\frac{x^2}{t^3}\\quad\\text{ x(1)=\\frac{2}{1-2\\alpha}},\\quad \\alpha\\in(0,\\frac{1}{2}$$\nund geben Sie den maximalen Definitionsbereich $t\\in[1,T)$ der Lösung in Abhängigkeit von $\\alpha$ an. Was passiert für $\\alpha \\to 0$?\n\n\n\nb) Betrachten Sie die Differentialgleichung\n\n$$2xe^{x^2-t}\\dot x-e^{x^2-t}-1=0,\\quad x(1)=1$$\n  (i) Zeigen Sie das die DGL exakt ist.\n\n  (ii) Geben Sie eine Funktion $\\Phi=\\Phi(t,x)$ an, so dass $\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0$\n\n  (iii) Geben Sie die Lösung des Anfangswertproblems an."
   },
   {
-    "objectID": "klausuren.html#aufgabe-2-14-punkte",
-    "href": "klausuren.html#aufgabe-2-14-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Gegeben sei die Funktion\n\\[\nf(x) = \\frac{1}{x^2(x-3)}\n\\]\nGeben Sie den maximalen Definitionsbereich von \\(f\\) an. Untersuchen Sie die Funktion auf Nullstellen, Extrema (inklusive Klassifizierung und Funktionswert), Monotonieverhalten und Verhalten an den Rändern des Definitionsbereichs. Skizzieren Sie die Funktion auf dem Intervall \\([-2,5]\\)."
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-2",
+    "href": "hm3_klausur_ws2425.html#aufgabe-2",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 2)",
+    "text": "Aufgabe 2)\n**Aufgabe 2 (10 Punkte)**\nGegeben ist das lineare System\n$$ \\dot x=\\begin{pmatrix} -2&-5\\\\1&4 \\end{pmatrix}x\\quad \\text{ und}\\quad b(t)=4\\begin{pmatrix} e^t\\\\0\\end{pmatrix}$$\n\na) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.\n\nb) Geben sie die allgemeine Lösung des Anfangswertproblems $\\dot x=Ax+b(t)$ an."
   },
   {
-    "objectID": "klausuren.html#aufgabe-3-55-punkte",
-    "href": "klausuren.html#aufgabe-3-55-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Stellen Sie\n\n\\[\n\\frac{(\\sqrt{2} + i \\sqrt{2})^3}{(2 e^{i \\pi/3})^6}\n\\]\nin Polarform dar.\n\nBestimmen Sie alle komplexen Lösungen der Gleichung\n\n\\[\nz^6 - (\\sqrt{2} + \\sqrt{2} i) z^2 = 0\n\\]\nGeben Sie die Lösungen dabei in Polarform an."
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-3",
+    "href": "hm3_klausur_ws2425.html#aufgabe-3",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 3)",
+    "text": "Aufgabe 3)\n**Aufgabe 3 (10 Punkte)**\nGegeben sei die partielle Differentialgleichung\n$$ u_{tt}-u_{xx}=0$$\nmit $x\\in[0,\\pi]$ und $t&gt;0$\n\na) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.\n\nb) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion\n$$f(x)=1\\quad  \\text{für } x\\in [0,\\pi]$$.\n\nc) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung\n\n$$u(0,x)=x\\quad x\\in[0,\\pi],$$\n\n\n$$u_t(0,x)=0\\quad x\\in[0,\\pi],$$\n\nund den Randbedingungen $u(t,0)=u(t,\\pi)=0, t&gt;0$."
   },
   {
-    "objectID": "klausuren.html#aufgabe-4-64-punkte",
-    "href": "klausuren.html#aufgabe-4-64-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Bestimmen Sie das Taylorpolynom dritter Ordnung der Funktion\n\n\\[\ng(x) = x^2 \\ln(x)\n\\]\nim Entwicklungspunkt \\(x = e\\).\n\nSchätzen Sie mit Hilfe der Restgliedformel den Fehler auf dem Intervall \\([e, 2e]\\) ab."
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-4",
+    "href": "hm3_klausur_ws2425.html#aufgabe-4",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 4)",
+    "text": "Aufgabe 4)\n**Aufgabe 4 (10 Punkte)**\n\nGegeben seine die beiden Vektorfelder $F_k:ℝ^3\\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\\gamma: [0,1]\\rightarrow ℝ^3$.\n\n$F=\\begin{pmatrix} z\\cos(k(x+y))\\\\z\\cos(k(x+y))\\\\\\sin(k(x+y))+2z \\end{pmatrix}$ und $\\gamma(t)=\\begin{pmatrix} \\pi t\\\\\\pi t\\\\ t^2\\end{pmatrix}$\n\na) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. \n\nb) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. \n\nc) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\\gamma$."
   },
   {
-    "objectID": "klausuren.html#aufgabe-5-72-punkte",
-    "href": "klausuren.html#aufgabe-5-72-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Gegeben sei die Funktion\n\\[\nh(x) = \\frac{x^2 + 4x - 3}{x^3 - 3x - 2}\n\\]\n\nBerechnen Sie die Partialbruchzerlegung von \\(h(x)\\).\nBestimmen Sie eine Stammfunktion von \\(h(x)\\)."
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-5",
+    "href": "hm3_klausur_ws2425.html#aufgabe-5",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 5)",
+    "text": "Aufgabe 5)\n\n**Aufgabe 5 (10 Punkte)**\n\nEs sei $\\gamma(u)=(e^u-1,0,\\sqrt{u})^T$ mit $u\\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\\gamma$ um die z-Achse  rotiert wird.\n\nGegeben sei ausserdem das Vektorfeld\n\n$$ F:ℝ^3\\rightarrow ℝ^3, F(x,y,z)=\\begin{pmatrix} xz\\\\yz \\\\x^2+y^2 \\end{pmatrix} $$\n\na) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. \n\nb) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u&gt;0$. \n\nc) Bestimmen Sie das Oberflächenintegral 2.Art $\\int_AF\\cdot dn$."
   },
   {
-    "objectID": "klausuren.html#aufgabe-6-46-punkte",
-    "href": "klausuren.html#aufgabe-6-46-punkte",
-    "title": "Höhere Mathematik Klausuren",
-    "section": "",
-    "text": "Berechnen Sie den Grenzwert\n\n\\[\n\\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln(\\sqrt{1 - y^2})\n\\]\n\nBerechnen Sie für \\(y \\in (0, 1)\\) das Integral\n\n\\[\nI(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}} \\, dx\n\\]"
+    "objectID": "hm3_klausur_ws2425.html#aufgabe-6",
+    "href": "hm3_klausur_ws2425.html#aufgabe-6",
+    "title": "HM3_Klausur_WS2425",
+    "section": "Aufgabe 6)",
+    "text": "Aufgabe 6)\n**Aufgabe 6 (10 Punkte)**\n\nEs sei die Kugel $K$ gegeben durch\n\n$$ K=\\left\\{(x,y,z)^T\\in ℝ^3:x^2+y^2+z^2\\leq4 \\right\\}$$\n\nund $S$ ihre Oberfläche.\n\nWeiterhin sei das Vektorfeld $F:ℝ^3\\rightarrow ℝ^3$ gegeben durch\n\n\n\n$$F(x,y,z)=\\begin{pmatrix} xz-y\\\\ yz+x \\\\xy+z \\end{pmatrix}$$\n\n\nb) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\\int_{\\partial K}F\\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.\n\nc) Berechnen Sie  $\\int_{S}rot(F)\\cdot dn$.\n\nd) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\\int_{S_O}rot(F)\\cdot dn$ und $\\int_{S_M}rot(F)\\cdot dn$ mit Hilfe des Sates von Stokes."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "exam-questions.html",
+    "href": "exam-questions.html",
+    "title": "Exam Questions",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Download as PDF\n\n\n\na) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\).\n\n\n\nGegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an.\n\n\n\nGegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt.\n\n\n\nGegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\).\n\n\n\nEs sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\).\n\n\n\nEs sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "HM Website",
+    "objectID": "exam-questions.html#aufgabe-1-10-punkte",
+    "href": "exam-questions.html#aufgabe-1-10-punkte",
+    "title": "Exam Questions",
     "section": "",
-    "text": "Herzlich Willkommen zur HM Website\nHM1 dient zur Festigung der Grundlagen. Approximation benötigt Konvergenz.\nHM2 behandelt Lineare Algebra und 2D Analysis. Finde Lösungen für mehr als eine Gleichung und Approximation in mehr als einer Variable. Vektor Räume und Abbildungen darin.\nHM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik. Differentialoperatoren und Integraltheoreme und Differentialgleichungen mit mehr als einer Variablen, oft Ort und Zeit.\nHM4 führt in numerische Methoden ein. Löse Gleichungssysteme durch Approximation. Finde eine beste Approximation zu Daten (Model).\nmindmap\n\nPrüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.\n\nExam Questions\nSolutions\nsympy code examples\n\nHier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:\n\n\n\n\n\n\n\n\nEigenschaft\nSkalarfeld \\(u(x,t)\\) oder \\(\\phi(x,y,z)\\)\nVektorfeld \\(\\mathbf{F}(x,y,z)\\)\n\n\n\n\nDefinition\nOrdnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)\nOrdnet jedem Punkt einen Vektor zu (Wert + Richtung)\n\n\nBeispiele\nTemperatur \\(T(x,y,z)\\), Druck \\(p(x,y,z)\\), elektrisches Potential \\(\\phi(x,y,z)\\)\nKraftfeld \\(\\mathbf{F} = (F_x, F_y, F_z)\\), elektrisches Feld \\(\\mathbf{E}\\), Strömungsgeschwindigkeit \\(\\mathbf{v}\\)\n\n\nTypische Gleichung\nWärmeleitungsgleichung \\(\\frac{\\partial u}{\\partial t} = \\alpha \\nabla^2 u\\)\nNavier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder\n\n\nMathematische Operationen\nGradient (\\(\\nabla u\\)) → erzeugt ein Vektorfeld aus einem Skalarfeld\nDivergenz (\\(\\nabla \\cdot \\mathbf{F}\\)), Rotation (\\(\\nabla \\times \\mathbf{F}\\))\n\n\nVerwendung in der Physik\nBeschreibt Zustandsgrößen wie Temperatur, Energie, Druck\nBeschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder\n\n\nBuchstabenherkunft\n\\(u\\) historisch von Fourier für Temperatur, \\(\\phi\\) für Potentiale\n\\(\\mathbf{F}\\) von „Force“ (Kraft) in der Mechanik\n\n\n\nDiese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra.\nDavid Hestenes\nPeter Joot\nPeter Joot\nSVD"
+    "text": "a) Lösen Sie das Anfangswertproblem\n\\[\nx' = t\\,x^2 + t,\\quad x(0)=0,\n\\] Hinweis: \\(\\arctan'(x)=\\frac{1}{1+x^2}\\).\nb) Betrachten Sie die Differentialgleichung \\[\n2tx^3-2t+3t^2x^2x'=0,\\quad x(1)=0.\n\\] (i) Zeigen Sie, dass die DGL exakt ist.\n(ii) Geben Sie eine Funktion \\(\\Phi=\\Phi(t,x)\\) an, so dass \\(\\Phi_t(t,x)+\\Phi_x(t,x)\\dot x=0\\).\n(iii) Geben Sie die Lösung des Anfangswertproblems an. Gegen welchen Wert konvergiert die Lösung für \\(t \\rightarrow \\infty\\)."
   },
   {
-    "objectID": "solutions.html",
-    "href": "solutions.html",
-    "title": "Solutions",
+    "objectID": "exam-questions.html#aufgabe-2-10-punkte",
+    "href": "exam-questions.html#aufgabe-2-10-punkte",
+    "title": "Exam Questions",
     "section": "",
-    "text": "HM3: Kurzlösungen\nIm Folgenden finden Sie die Kurzlösungen zu den HM3-Aufgaben in Tabellenform:\n\n\n\n\n\n\n\nAufgabe / Teil\nKurzlösung / Ergebnis\n\n\n\n\n1(a)\nGegeben: \\(x' = t\\,x^2 + t\\) mit \\(x(0)=0\\).  Umformung: \\(x' = t\\,(x^2+1)\\).  Trennung: \\(\\displaystyle \\frac{dx}{1+x^2}=t\\,dt\\).  Integration: \\(\\arctan(x)=\\frac{t^2}{2}+C\\).  Mit \\(x(0)=0\\) folgt \\(C=0\\).  Lösung: \\(x(t)=\\tan\\Bigl(\\frac{t^2}{2}\\Bigr)\\).  Definitionsbereich: \\(t\\in(-\\sqrt{\\pi},\\sqrt{\\pi})\\).\n\n\n1(b)(i)\nDGL: \\(2t(x^3-1)+3t^2x^2x'=0\\).  Setze \\(M(t,x)=2t(x^3-1)\\) und \\(N(t,x)=3t^2x^2\\).  Ableiten: \\(M_x=6tx^2\\) und \\(N_t=6tx^2\\) ⇒ exakt.\n\n\n1(b)(ii)\nGesucht: \\(\\Phi\\) mit \\(\\Phi_t=M\\) und \\(\\Phi_x=N\\).  Integriere \\(N\\) nach \\(x\\): \\(\\Phi(t,x)=t^2x^3+g(t)\\).  Ableiten nach \\(t\\): \\(\\Phi_t=2tx^3+g'(t)\\).  Da \\(M=2t(x^3-1)\\) muss \\(g'(t)=-2t\\) sein, also \\(g(t)=-t^2\\).  Potential: \\(\\Phi(t,x)=t^2(x^3-1)\\).\n\n\n1(b)(iii)\n\\(\\Phi(t,x)=\\) konstant; mit \\(x(1)=0\\) folgt \\(\\Phi(1,0)=-1\\).  Lösung: \\(t^2(x^3-1)=-1\\) ⇔ \\(x^3=1-\\frac{1}{t^2}\\) ⇔ \\(x(t)=\\sqrt[3]{1-\\frac{1}{t^2}}\\).  Für \\(t\\to\\infty\\) konvergiert \\(x(t)\\to 1\\).\n\n\n2(a)\nGegeben: \\(A=\\begin{pmatrix}3&-1\\\\5&-1\\end{pmatrix}\\).  Charakteristik: \\(\\det(A-\\lambda I)=\\lambda^2-2\\lambda+2=0\\) ⇒ \\(\\lambda=1\\pm i\\).  Eigenvektor zu \\(\\lambda=1+i\\): \\(v=(1,\\,2-i)^T\\).  Zerlegung: \\(a=(1,2)^T\\), \\(b=(0,-1)^T\\).  Reelles Fundamentalsystem:  \\(x_1(t)=e^t\\Bigl[a\\cos t-b\\sin t\\Bigr]\\),  \\(x_2(t)=e^t\\Bigl[a\\sin t+b\\cos t\\Bigr]\\).\n\n\n2(b)\nPartikulär: Finde \\(x_p\\) mit \\(Ax_p=-b\\) (wobei \\(b=(1,0)^T\\)).  Lösen: \\(3x-y=-1\\) und \\(5x-y=0\\) ⇒ \\(x=\\frac{1}{2}\\), \\(y=\\frac{5}{2}\\).  Somit: \\(x_p=\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).  Allgemeine Lösung: \\(x(t)=c_1\\,x_1(t)+c_2\\,x_2(t)+x_p\\).  Matrixform: \\(X=\\begin{pmatrix}x_1(t)&&x_2(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix}=\\begin{pmatrix}\\cos(t)&&\\sin(t)\\\\a_2\\cos(t)-b_2\\sin(t)&&a_2\\sin(t)+b_2\\cos(t)\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix} +\\begin{pmatrix}\\frac{1}{2}\\\\\\frac{5}{2}\\end{pmatrix}\\).\n\n\n3(a)\nDie PDE \\(2u_t-u_{xx}=0\\) kann umgeschrieben werden als \\(u_t=\\frac{1}{2}u_{xx}\\) – die klassische Wärmeleitungsgleichung.  Klassifikation: parabolisch.\n\n\n3(b)\nFür \\(f(x)=1\\) (auf \\([0,\\pi]\\)) ungerade periodisch fortgesetzt:  Fourier-Sinus-Koeffizient: \\(\\displaystyle b_k=\\frac{2}{\\pi}\\int_0^\\pi \\sin(kx)\\,dx=\\frac{2(1-\\cos(k\\pi))}{\\pi k}\\).  Damit: \\(b_k=\\frac{4}{\\pi k}\\) für ungerade \\(k\\) und 0 für gerade \\(k\\).\n\n\n3(c)\nAnsatz: \\(u(t,x)=T(t)\\sin(kx)\\).  Einsetzen in \\(2u_t-u_{xx}=0\\) ergibt \\(2T'(t)+k^2T(t)=0\\).  Lösung: \\(T(t)=\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).  Ergebnis: \\(u(t,x)=\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\). Ergebnis: \\(u(t,x)=\\sum_\\text{k ungerade}^n\\frac{4}{\\pi k}\\sin(kx)\\exp\\Bigl(-\\frac{k^2}{2}t\\Bigr)\\).\n\n\n4(a)\nVektorfeld: \\(F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix}\\).  Notwendige Bedingung (z. B. \\(P_y=Q_x\\)):  \\(P_y=x\\,y^2\\) und \\(Q_x=xy^2+2x(1-\\alpha)z^2\\).  → Für alle \\(x,z\\) folgt \\(1-\\alpha=0\\).  Ergebnis: \\(\\alpha=1\\).\n\n\n4(b)\nFür \\(\\alpha=1\\) vereinfacht sich \\(Q(x,y,z)=x^2\\frac{y^2}{2}\\) und \\(R(x,y,z)=z^2\\).  Integriere \\(P\\): \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+g(y,z)\\).  Da \\(\\Phi_y=\\frac{x^2y^2}{2}+g_y(y,z)=Q\\) ⇒ \\(g_y(y,z)=0\\) und \\(g(y,z)=h(z)\\).  \\(h'(z)=z^2\\) ⇒ \\(h(z)=\\frac{z^3}{3}+C\\).  Potential: \\(\\Phi(x,y,z)=\\frac{x^2y^3}{6}+\\frac{z^3}{3}\\).\n\n\n4(c)\nMit \\(F=\\nabla\\Phi\\) ist das Kurvenintegral wegunabhängig.  Berechne: \\(\\gamma(0)=(1,0,0)^T\\) und \\(\\gamma(1)=(0,1,1)^T\\).  \\(\\Phi(1,0,0)=0\\) und \\(\\Phi(0,1,1)=\\frac{1}{3}\\).  Ergebnis: \\(\\displaystyle \\int_\\gamma F\\cdot d\\gamma=\\frac{1}{3}\\).\n\n\n5(a)\nRotationsfläche zu \\(\\gamma(u)=(e^u-1,0,u)^T\\).  Parametrisierung: \\(f(u,v)=\\Bigl((e^u-1)\\cos v,\\,(e^u-1)\\sin v,\\,u\\Bigr)\\) mit \\(u\\in[0,1]\\), \\(v\\in[0,2\\pi]\\).\n\n\n5(b)\nTangentialvektoren:  \\(f_u=(e^u\\cos v,\\,e^u\\sin v,\\,1)\\),  \\(f_v=(- (e^u-1)\\sin v,\\,(e^u-1)\\cos v,\\,0)\\).  Normale (nicht normiert): \\(n=f_u\\times f_v=(- (e^u-1)\\cos v,\\,- (e^u-1)\\sin v,\\,e^u(e^u-1))\\).\n\n\n5(c)\nMit \\(F(x,y,z)=(x+y,\\,y-x,\\,2)^T\\) erhält man nach Einsetzen und Kürzen:  \\(F(f(u,v))\\cdot (f_u\\times f_v)= e^{2u}-1\\).  Oberflächenintegral: \\(\\displaystyle \\int_{u=0}^1\\int_{v=0}^{2\\pi}(e^{2u}-1)\\,dv\\,du=\\pi(e^2-3)\\).\n\n\n6(a)\nKugelsegment \\(K=\\{(x,y,z):x^2+y^2+z^2\\le4,\\; y\\ge0,\\; z\\ge0\\}\\) in Kugelkoordinaten:  \\(x=r\\sin\\varphi\\cos\\theta,\\; y=r\\sin\\varphi\\sin\\theta,\\; z=r\\cos\\varphi\\).  Bereiche: \\(r\\in[0,2]\\), \\(\\varphi\\in[0,\\pi/2]\\) (wegen \\(z\\ge0\\)) und \\(\\theta\\in[0,\\pi]\\) (wegen \\(y\\ge0\\)).\n\n\n6(b)\nDivergenz: \\(\\operatorname{div}F=1+1+1=3\\).  Volumen des Balls (Radius 2): \\(\\frac{32\\pi}{3}\\); \\(K\\) ist ein Viertel davon: \\(V_K=\\frac{8\\pi}{3}\\).  Fluss: \\(3\\cdot\\frac{8\\pi}{3}=8\\pi\\).\n\n\n6(c)\nDa \\(\\operatorname{div}(\\operatorname{rot}F)=0\\), gilt:  \\(\\displaystyle \\int_{\\partial K}\\operatorname{rot}F\\cdot n\\,dS=0\\).\n\n\n6(d)\nSei \\(B\\) der Boden (\\(z=0\\)) des Kugelsegments.  Es gilt: \\(\\int_{\\partial K}\\operatorname {rot} F\\cdot n\\,dS = \\int_{\\partial K\\setminus B}\\operatorname {rot}\\cdot n\\,dS+\\int_B \\operatorname {rot}\\cdot n\\,dS\\).  Auf \\(B\\) ist \\(n=(0,0,-1)\\) und \\(\\operatorname {rot}(x,y,0)=(x,-y,2)\\) ⇒ \\(F\\cdot n=-2\\).  \\(\\int_B (-2)dA=-2*2\\pi=-4\\pi\\).  Ergebnis: \\(\\displaystyle \\int_{\\partial K\\setminus B}rot(F)\\cdot n\\,dS=4\\pi\\). (weil Summe \\(= 0\\) aus 6 (c) )\n\n\n\ncolab"
+    "text": "Gegeben ist das lineare System \\[\n\\dot x=\\begin{pmatrix}3 & -1\\\\5 & -1\\end{pmatrix}x.\n\\] a) Geben Sie ein reelles Fundamentalsystem an.\nb) Geben Sie die allgemeine reelle Lösung des Anfangswertproblems \\(\\dot x=Ax+b\\) mit\n\\[\nb=\\begin{pmatrix}1\\\\0\\end{pmatrix}\n\\] an."
   },
   {
-    "objectID": "karteikarten.html",
-    "href": "karteikarten.html",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "objectID": "exam-questions.html#aufgabe-3-10-punkte",
+    "href": "exam-questions.html#aufgabe-3-10-punkte",
+    "title": "Exam Questions",
     "section": "",
-    "text": "Frage: Definiere den Begriff “Anfangswertproblem” und nenne die Schritte zur Lösung.\n\nEin AWP besteht aus einer Differentialgleichung und einer Anfangsbedingung. Lösungsschritte: - Differentialgleichung lösen (z.B. durch Trennung der Variablen, Finden eines Potentials). - Allgemeine Lösung finden. - Anfangsbedingung nutzen, um die spezielle Lösung zu bestimmen.\n\n\n\n\n\n\n\nFrage: Wie prüft man, ob eine Differentialgleichung exakt ist? Welche Formel ist dabei wichtig?\n\nEine DGL der Form \\(M(t, x) + N(t, x)x' = 0\\) ist exakt, wenn \\[\n\\frac{\\partial M}{\\partial x} = \\frac{\\partial N}{\\partial t}\n\\] gilt.\n\n\n\n\n\n\n\nFrage: Wie findet man die Funktion \\(\\Phi(t,x)\\) für eine exakte Differentialgleichung?\n\n\n\\(M(t, x)\\) nach \\(t\\) integrieren: \\(\\int M(t, x) dt\\)\n\\(N(t, x)\\) nach \\(x\\) integrieren: \\(\\int N(t, x) dx\\)\nBeide Ausdrücke kombinieren, um ein gemeinsames \\(\\Phi(t, x)\\) zu erhalten, wobei doppelte Terme nur einmal berücksichtigt werden.\nDie allgemeine Lösung ist dann \\(\\Phi(t, x) = C\\).\n\n\n\n\n\n\n\n\nFrage: Was ist ein Fundamentalsystem und wie bestimmt man die allgemeine reelle Lösung eines linearen Systems?\n\nEin Fundamentalsystem besteht aus linear unabhängigen Lösungen des homogenen Systems. Die allgemeine Lösung eines linearen Systems \\(\\dot{x} = Ax + b\\) setzt sich zusammen aus der allgemeinen Lösung des homogenen Systems \\(\\dot{x} = Ax\\) und einer partikulären Lösung des inhomogenen Systems.\n\n\n\n\n\n\n\nFrage: Wie klassifiziert man eine partielle Differentialgleichung (elliptisch, parabolisch, hyperbolisch)?\n\nDie Klassifizierung hängt von den Koeffizienten der höchsten Ableitungen ab. (Diese Information ist in den Quellen nicht detailliert, daher müsstest du das in deinen Unterlagen nachschlagen). Beispiel aus der Quelle: \\(2u_t - u_{xx} = 0\\) ist eine parabolische PDE.\n\n\n\n\n\n\n\nFrage: Wie bestimmt man die Koeffizienten der Fourierreihe einer Funktion?\n\nDie Koeffizienten hängen von der Symmetrie der Funktion ab (gerade, ungerade, allgemein). Für eine ungerade Funktion \\(f(x)\\) gilt: \\[\na_n = 0, \\quad b_n = \\frac{2}{\\pi} \\int_0^\\pi f(x) \\sin(nx) \\, dx\n\\]\n\n\n\n\n\n\n\nFrage: Welche Schritte sind notwendig, um eine PDE mit gegebenen Anfangs- und Randbedingungen zu lösen?\n\n\nSeparationsansatz verwenden (falls möglich).\nAllgemeine Lösung für jede Variable finden.\nRandbedingungen anwenden, um spezielle Lösungen zu finden.\nAnfangsbedingung nutzen, um die endgültige Lösung zu bestimmen.\n\n\n\n\n\n\n\n\nFrage: Wie bestimmt man, ob ein Vektorfeld ein Potential besitzt, und wie findet man dieses Potential?\n\nEin Vektorfeld \\(F\\) besitzt ein Potential, wenn \\(\\operatorname{rot}(F) = 0\\) gilt (d.h. die Rotation ist null). Das Potential \\(\\phi\\) findet man durch Integration der Komponenten von \\(F\\).\n\n\n\n\n\n\n\nFrage: Wie berechnet man ein Kurvenintegral 2. Art?\n\n\\[\n\\int_\\gamma F \\cdot dr = \\int_a^b F(\\gamma(t)) \\cdot \\gamma'(t) \\, dt\n\\] wobei \\(\\gamma(t)\\) eine Parametrisierung des Weges \\(\\gamma\\) ist.\n\n\n\n\n\n\n\nFrage: Wie parametrisiert man eine Rotationsfläche?\n\nWenn \\(\\gamma(u) = (e^u - 1, 0, u)^T\\) um die z-Achse rotiert, ist die Parametrisierung: \\[\nf(u, v) = ((e^u - 1)\\cos(v), (e^u - 1)\\sin(v), u)^T\n\\]\n\n\n\n\n\n\n\nFrage: Wie bestimmt man Tangential- und Normalenvektoren an eine parametrisierte Fläche?\n\n\nTangentialvektoren: Partielle Ableitungen der Parametrisierung \\(f(u, v)\\) nach \\(u\\) und \\(v\\): \\(f_u\\) und \\(f_v\\).\nNormalenvektor: Kreuzprodukt der Tangentialvektoren: \\(n = f_u \\times f_v\\).\n\n\n\n\n\n\n\n\nFrage: Wie berechnet man ein Oberflächenintegral 2. Art?\n\n\\[\n\\int_A F \\cdot dS = \\int_D F(f(u, v)) \\cdot (f_u \\times f_v) \\, du \\, dv\n\\] wobei \\(f(u, v)\\) die Parametrisierung der Fläche \\(A\\) ist und \\(D\\) der Parameterbereich.\n\n\n\n\n\n\n\nFrage: Wie parametrisiert man ein Volumen in Kugelkoordinaten?\n\n\\[\nx = r\\sin(\\theta)\\cos(\\phi), \\quad y = r\\sin(\\theta)\\sin(\\phi), \\quad z = r\\cos(\\theta)\n\\] wobei \\(r\\) der Radius, \\(\\theta\\) der Polarwinkel und \\(\\phi\\) der Azimutalwinkel ist.\n\n\n\n\n\n\n\nFrage: Wie berechnet man den Fluss eines Vektorfeldes durch eine Oberfläche?\n\n\\[\n\\int_{\\partial K} F \\cdot n \\, dS\n\\] wobei \\(n\\) der Normalenvektor auf der Oberfläche \\(\\partial K\\) ist. Dies kann mit dem Divergenzsatz in ein Volumenintegral umgewandelt werden: \\[\n\\int_K \\operatorname{div}(F) \\, dV\n\\]\n\n\n\n\n\n\n\nFrage: Wie lautet der Satz von Stokes?\n\n\\[\n\\int_{\\partial K} \\operatorname{rot}(F) \\cdot n \\, dS = \\oint_{\\partial(\\partial K)} F \\cdot dr\n\\] wobei \\(\\partial K\\) die Oberfläche und \\(\\partial(\\partial K)\\) der Rand der Oberfläche ist."
+    "text": "Gegeben sei die partielle Differentialgleichung \\[\n2u_t-u_{xx}=0,\n\\] mit \\(x\\in[0,\\pi]\\) und \\(t&gt;0\\).\na) Klassifizieren Sie die Differentialgleichung (elliptisch, parabolisch, hyperbolisch).\nb) Bestimmen Sie die Koeffizienten der Fouriereihe der ungeraden periodisch fortgesetzten Funktion\n\\[\nf(x)=1\\quad \\text{für } x\\in [0,\\pi].\n\\]\nc) Bestimmen Sie für alle \\(k\\in\\mathbb{N}\\) eine Lösung der PDE mit der Anfangsbedingung \\[\nu(0,x)=\\sin(kx)\\quad (x\\in[0,\\pi]),\n\\] die die Randbedingungen \\(u(t,0)=u(t,\\pi)=0,\\;t&gt;0\\) erfüllt."
   },
   {
-    "objectID": "karteikarten.html#anfangswertprobleme-awp",
-    "href": "karteikarten.html#anfangswertprobleme-awp",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "objectID": "exam-questions.html#aufgabe-4-10-punkte",
+    "href": "exam-questions.html#aufgabe-4-10-punkte",
+    "title": "Exam Questions",
     "section": "",
-    "text": "Frage: Definiere den Begriff “Anfangswertproblem” und nenne die Schritte zur Lösung.\n\nEin AWP besteht aus einer Differentialgleichung und einer Anfangsbedingung. Lösungsschritte: - Differentialgleichung lösen (z.B. durch Trennung der Variablen, Finden eines Potentials). - Allgemeine Lösung finden. - Anfangsbedingung nutzen, um die spezielle Lösung zu bestimmen."
+    "text": "Gegeben sei das parameterabhängige Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F=\\begin{pmatrix} x\\frac{y^3}{3}\\\\x^2\\Bigl(z^2+\\frac{y^2}{2}\\Bigr)-\\alpha x^2z^2\\\\(1-\\alpha)2x^2yz+z^2 \\end{pmatrix},\n\\] und der Weg \\[\n\\gamma:[0,1]\\to\\mathbb{R}^3,\\quad \\gamma(t)=\\begin{pmatrix}1-t^2\\\\t^2\\\\t\\end{pmatrix}.\n\\] a) Bestimmen Sie alle \\(\\alpha\\in\\mathbb{R}\\), sodass \\(F\\) ein Potential besitzt.\nb) Geben Sie für \\(\\alpha=1\\) ein Potential an.\nc) Berechnen Sie für \\(\\alpha=1\\) das Kurvenintegral 2. Art von \\(F\\) entlang \\(\\gamma\\)."
   },
   {
-    "objectID": "karteikarten.html#exakte-differentialgleichungen",
-    "href": "karteikarten.html#exakte-differentialgleichungen",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "objectID": "exam-questions.html#aufgabe-5-10-punkte",
+    "href": "exam-questions.html#aufgabe-5-10-punkte",
+    "title": "Exam Questions",
     "section": "",
-    "text": "Frage: Wie prüft man, ob eine Differentialgleichung exakt ist? Welche Formel ist dabei wichtig?\n\nEine DGL der Form \\(M(t, x) + N(t, x)x' = 0\\) ist exakt, wenn \\[\n\\frac{\\partial M}{\\partial x} = \\frac{\\partial N}{\\partial t}\n\\] gilt."
+    "text": "Es sei \\[\n\\gamma(u)=(e^u-1,0,u)^T,\\quad u\\in[0,1],\n\\] ein planarer Weg in der x‑z-Ebene. Mit \\(A\\) bezeichnen wir die Rotationsfläche, die entsteht, wenn \\(\\gamma\\) um die z‑Achse rotiert wird.\nGegeben sei außerdem das Vektorfeld \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x+y\\\\y-x\\\\2 \\end{pmatrix}.\n\\] a) Geben Sie eine Parametrisierung \\(f(u,v)\\) der Fläche \\(A\\) an.\nb) Bestimmen Sie Tangentialvektoren und den Normalenvektor an \\(A\\).\nc) Bestimmen Sie das Oberflächenintegral 2. Art \\(\\int_A F\\cdot dn\\)."
   },
   {
-    "objectID": "karteikarten.html#lösung-exakter-dgl",
-    "href": "karteikarten.html#lösung-exakter-dgl",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "objectID": "exam-questions.html#aufgabe-6-10-punkte",
+    "href": "exam-questions.html#aufgabe-6-10-punkte",
+    "title": "Exam Questions",
     "section": "",
-    "text": "Frage: Wie findet man die Funktion \\(\\Phi(t,x)\\) für eine exakte Differentialgleichung?\n\n\n\\(M(t, x)\\) nach \\(t\\) integrieren: \\(\\int M(t, x) dt\\)\n\\(N(t, x)\\) nach \\(x\\) integrieren: \\(\\int N(t, x) dx\\)\nBeide Ausdrücke kombinieren, um ein gemeinsames \\(\\Phi(t, x)\\) zu erhalten, wobei doppelte Terme nur einmal berücksichtigt werden.\nDie allgemeine Lösung ist dann \\(\\Phi(t, x) = C\\)."
+    "text": "Es sei \\[\nK=\\{(x,y,z)^T\\in\\mathbb{R}^3 : x^2+y^2+z^2\\leq4,\\; y\\geq0,\\; z\\geq0\n\\] das Kugelsegment und \\(\\partial K\\) die Vereinigung aller Oberflächen des Segments.\nWeiterhin sei \\[\nF:\\mathbb{R}^3\\to\\mathbb{R}^3,\\quad F(x,y,z)=\\begin{pmatrix} x-y\\\\x+y\\\\z+xy \\end{pmatrix}.\n\\] a) Parametrisieren Sie das Volumen in Kugelkoordinaten.\nb) Berechnen Sie den Fluss \\(\\int_{\\partial K}F\\cdot n\\,dS\\), wobei \\(n\\) die nach außen gerichtete Normale ist.\nc) Berechnen Sie \\(\\int_{\\partial K}\\operatorname{rot}(F)\\cdot n\\,dS\\).\nd) Berechnen Sie mit dem Satz von Stokes das Integral \\(\\int_{\\partial K\\setminus B}rot F\\cdot n\\,dS\\), wobei \\(B\\) der Boden des Kugelsegments in der (x‑y)-Ebene ist."
   },
   {
-    "objectID": "karteikarten.html#lineare-systeme",
-    "href": "karteikarten.html#lineare-systeme",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "objectID": "HM_solutions.html",
+    "href": "HM_solutions.html",
+    "title": "HM1_Lösung",
     "section": "",
-    "text": "Frage: Was ist ein Fundamentalsystem und wie bestimmt man die allgemeine reelle Lösung eines linearen Systems?\n\nEin Fundamentalsystem besteht aus linear unabhängigen Lösungen des homogenen Systems. Die allgemeine Lösung eines linearen Systems \\(\\dot{x} = Ax + b\\) setzt sich zusammen aus der allgemeinen Lösung des homogenen Systems \\(\\dot{x} = Ax\\) und einer partikulären Lösung des inhomogenen Systems."
+    "text": "Die Reihe hat die Form \\[ \\sum_{n=1}^{\\infty} a_n (x-1)^n, \\quad a_n = \\frac{1}{n 3^n} \\] und ist eine Potenzreihe mit Konvergenzradius \\[ R = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right| = 3. \\] Damit konvergiert die Reihe für \\[ |x - 1| &lt; 3, \\quad \\Rightarrow \\quad -2 &lt; x &lt; 4. \\] Randpunkte prüfen: - Für $ x = -2 $ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für \\(x = 4\\) divergiert sie ebenfalls aus dem gleichen Grund.\nLösung: Die Reihe konvergiert für \\(x \\in (-2,4)\\).\n\n\n\n\nDefinitionsbereich: \\[ x^2(x-3) \\neq 0 \\Rightarrow x \\neq 0,3. \\]\nNullstellen: Keine, da der Zähler immer positiv ist.\nAbleitungen: \\[ f'(x) = \\frac{- (2x^2 - 6x)}{x^4 - 3x^3}, \\] setzen von \\(f'(x) = 0\\) liefert \\(x = 0, 3\\) (nicht im Definitionsbereich) und \\(x = 3/2\\). \\(f''(x)\\) bestätigt ein lokales Minimum bei \\(x = 3/2\\).\nAsymptoten: - Polstellen: \\(x = 0, 3\\) (senkrechte Asymptoten) - Für \\(x \\to \\pm \\infty\\) geht \\(f(x) \\to 0\\) (waagrechte Asymptote).\nSkizze: Die Funktion hat eine Minimumstelle bei \\(x = 3/2\\) und zwei Polstellen.\n\n\n\n\na) Umwandlung in Polarform: \\[ \\sqrt{2} + i \\sqrt{2} = 2 e^{i \\pi/4}. \\] Damit: \\[ (2 e^{i \\pi/4})^3 = 8 e^{i 3\\pi/4}, \\] \\[ (2 e^{i \\pi/3})^6 = 64 e^{i 2\\pi}. \\] Ergebnis: \\[ \\frac{8 e^{i 3\\pi/4}}{64 e^{i 2\\pi}} = \\frac{1}{8} e^{-i 5\\pi/4}. \\]\nb) Faktorisieren: \\[ z^6 - (\\sqrt2 + \\sqrt2 i) z^2 = 0. \\] Setzen \\(w = z^2\\) und lösen: \\[ w(w^2 - (\\sqrt2 + \\sqrt2 i)) = 0. \\] Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.\n\n\n\n\na) Taylorentwicklung von \\(g(x) = x^2 \\ln x\\) um \\(x = e\\): \\[ g(e) = e^2, \\quad g'(e) = 2e \\ln e + e = 3e, \\] \\[ g''(e) = \\frac{2e}{e} + 2 \\ln e + 1 = 5, \\] \\[ g'''(e) = \\frac{2}{e} + \\frac{2}{e} = 4/e. \\] Taylorpolynom: \\[ g(x) \\approx e^2 + 3e (x - e) + \\frac{5}{2} (x - e)^2 + \\frac{2}{3e} (x - e)^3. \\]\nb) Abschätzung des Fehlers mit der Restgliedformel.\n\n\n\n\na) Partialbruchzerlegung von: \\[ \\frac{x^2+4x-3}{x^3-3x-2} \\] Polynomdivision und Zerlegung führen zu: \\[ \\frac{x^2+4x-3}{(x+1)(x-2)(x+1)} = \\frac{A}{x+1} + \\frac{B}{x-2} + \\frac{C}{x+1}. \\] Bestimmen der Koeffizienten.\nb) Bestimmen der Stammfunktion durch Aufsummieren der Partialbruch-Integrale.\n\n\n\n\na) Grenzwert: \\[ \\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln (\\sqrt{1 - y^2}). \\] Setze \\(t = \\sqrt{1 - y^2}\\), dann ist \\(t \\to 0\\) und damit: \\[ t \\ln t \\to 0. \\]\nb) Integral: \\[ I(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}}dx. \\] Substitution \\(u = 1 - x^2\\) führt zu Lösung."
   },
   {
-    "objectID": "karteikarten.html#partielle-differentialgleichungen-pdes",
-    "href": "karteikarten.html#partielle-differentialgleichungen-pdes",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
+    "objectID": "HM_solutions.html#kurzlösung-zur-klausur-hm1",
+    "href": "HM_solutions.html#kurzlösung-zur-klausur-hm1",
+    "title": "HM1_Lösung",
     "section": "",
-    "text": "Frage: Wie klassifiziert man eine partielle Differentialgleichung (elliptisch, parabolisch, hyperbolisch)?\n\nDie Klassifizierung hängt von den Koeffizienten der höchsten Ableitungen ab. (Diese Information ist in den Quellen nicht detailliert, daher müsstest du das in deinen Unterlagen nachschlagen). Beispiel aus der Quelle: \\(2u_t - u_{xx} = 0\\) ist eine parabolische PDE."
+    "text": "Die Reihe hat die Form \\[ \\sum_{n=1}^{\\infty} a_n (x-1)^n, \\quad a_n = \\frac{1}{n 3^n} \\] und ist eine Potenzreihe mit Konvergenzradius \\[ R = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right| = 3. \\] Damit konvergiert die Reihe für \\[ |x - 1| &lt; 3, \\quad \\Rightarrow \\quad -2 &lt; x &lt; 4. \\] Randpunkte prüfen: - Für $ x = -2 $ divergiert die Reihe, da sie zur harmonischen Reihe führt. - Für \\(x = 4\\) divergiert sie ebenfalls aus dem gleichen Grund.\nLösung: Die Reihe konvergiert für \\(x \\in (-2,4)\\).\n\n\n\n\nDefinitionsbereich: \\[ x^2(x-3) \\neq 0 \\Rightarrow x \\neq 0,3. \\]\nNullstellen: Keine, da der Zähler immer positiv ist.\nAbleitungen: \\[ f'(x) = \\frac{- (2x^2 - 6x)}{x^4 - 3x^3}, \\] setzen von \\(f'(x) = 0\\) liefert \\(x = 0, 3\\) (nicht im Definitionsbereich) und \\(x = 3/2\\). \\(f''(x)\\) bestätigt ein lokales Minimum bei \\(x = 3/2\\).\nAsymptoten: - Polstellen: \\(x = 0, 3\\) (senkrechte Asymptoten) - Für \\(x \\to \\pm \\infty\\) geht \\(f(x) \\to 0\\) (waagrechte Asymptote).\nSkizze: Die Funktion hat eine Minimumstelle bei \\(x = 3/2\\) und zwei Polstellen.\n\n\n\n\na) Umwandlung in Polarform: \\[ \\sqrt{2} + i \\sqrt{2} = 2 e^{i \\pi/4}. \\] Damit: \\[ (2 e^{i \\pi/4})^3 = 8 e^{i 3\\pi/4}, \\] \\[ (2 e^{i \\pi/3})^6 = 64 e^{i 2\\pi}. \\] Ergebnis: \\[ \\frac{8 e^{i 3\\pi/4}}{64 e^{i 2\\pi}} = \\frac{1}{8} e^{-i 5\\pi/4}. \\]\nb) Faktorisieren: \\[ z^6 - (\\sqrt2 + \\sqrt2 i) z^2 = 0. \\] Setzen \\(w = z^2\\) und lösen: \\[ w(w^2 - (\\sqrt2 + \\sqrt2 i)) = 0. \\] Finden der Wurzeln und Umwandlung in Polarform ergibt 6 Lösungen.\n\n\n\n\na) Taylorentwicklung von \\(g(x) = x^2 \\ln x\\) um \\(x = e\\): \\[ g(e) = e^2, \\quad g'(e) = 2e \\ln e + e = 3e, \\] \\[ g''(e) = \\frac{2e}{e} + 2 \\ln e + 1 = 5, \\] \\[ g'''(e) = \\frac{2}{e} + \\frac{2}{e} = 4/e. \\] Taylorpolynom: \\[ g(x) \\approx e^2 + 3e (x - e) + \\frac{5}{2} (x - e)^2 + \\frac{2}{3e} (x - e)^3. \\]\nb) Abschätzung des Fehlers mit der Restgliedformel.\n\n\n\n\na) Partialbruchzerlegung von: \\[ \\frac{x^2+4x-3}{x^3-3x-2} \\] Polynomdivision und Zerlegung führen zu: \\[ \\frac{x^2+4x-3}{(x+1)(x-2)(x+1)} = \\frac{A}{x+1} + \\frac{B}{x-2} + \\frac{C}{x+1}. \\] Bestimmen der Koeffizienten.\nb) Bestimmen der Stammfunktion durch Aufsummieren der Partialbruch-Integrale.\n\n\n\n\na) Grenzwert: \\[ \\lim_{y \\to 1} \\sqrt{1 - y^2} \\ln (\\sqrt{1 - y^2}). \\] Setze \\(t = \\sqrt{1 - y^2}\\), dann ist \\(t \\to 0\\) und damit: \\[ t \\ln t \\to 0. \\]\nb) Integral: \\[ I(y) = \\int_0^y \\ln(\\sqrt{1 - x^2}) \\frac{x}{\\sqrt{1 - x^2}}dx. \\] Substitution \\(u = 1 - x^2\\) führt zu Lösung."
   },
   {
-    "objectID": "karteikarten.html#fourierreihen",
-    "href": "karteikarten.html#fourierreihen",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie bestimmt man die Koeffizienten der Fourierreihe einer Funktion?\n\nDie Koeffizienten hängen von der Symmetrie der Funktion ab (gerade, ungerade, allgemein). Für eine ungerade Funktion \\(f(x)\\) gilt: \\[\na_n = 0, \\quad b_n = \\frac{2}{\\pi} \\int_0^\\pi f(x) \\sin(nx) \\, dx\n\\]"
+    "objectID": "HM_solutions.html#kurzlösung-zur-klausur-hm-2",
+    "href": "HM_solutions.html#kurzlösung-zur-klausur-hm-2",
+    "title": "HM1_Lösung",
+    "section": "Kurzlösung zur Klausur HM 2",
+    "text": "Kurzlösung zur Klausur HM 2\n\nAufgabe 1 (8 Punkte)\nGegeben: \\[\nA=\\begin{pmatrix}\n1&1&3&1\\\\\n2&-1&0&1\\\\\n-3&2&1&-2\\\\\n4&1&6&1\n\\end{pmatrix},\\quad\nb=\\begin{pmatrix}6\\\\-1\\\\1\\\\3\\end{pmatrix}.\n\\]\nLösungsschritte:\n\nGauß-Elimination:\n– Schreiben Sie das erweiterte System und eliminieren Sie \\(x_1\\) mithilfe von Zeilenoperationen.\n– Durch Einsetzen von \\(x_1\\) aus der ersten Zeile in die anderen erhält man ein System in den Variablen \\(x_2\\), \\(x_3\\) und \\(x_4\\).\nReduziertes System (nach Substitution):\nEs stellt sich folgendes Teilsystem heraus: \\[\n\\begin{aligned}\n&3x_2+6x_3+x_4=13,\\\\\n&5x_2+10x_3+x_4=19,\\\\\n&x_2+2x_3+x_4=7.\n\\end{aligned}\n\\] Aus der Differenz der ersten beiden Gleichungen folgt: \\[\n2x_2+4x_3=6\\quad\\Rightarrow\\quad x_2+2x_3=3.\n\\] Mit der dritten Gleichung: \\[\nx_2+2x_3+x_4=7\\quad\\Rightarrow\\quad x_4=4.\n\\] Setzen Sie \\(x_3=t\\) als freien Parameter ein, dann folgt: \\[\nx_2=3-2t.\n\\]\nRücksubstitution:\nAus der ersten Zeile: \\[\nx_1=6 - x_2-3x_3-x_4 = 6 - (3-2t) - 3t - 4 = -1 - t.\n\\]\n\nErgebnis:\n\\[\nx(t)=\\begin{pmatrix} -1-t\\\\ 3-2t\\\\ t\\\\ 4\\end{pmatrix},\\quad t\\in\\mathbb{R}.\n\\] Da ein freier Parameter verbleibt, ist der Rang von \\(A\\)\n\\[\n\\operatorname{rg}(A)=3.\n\\]\n\n\n\nAufgabe 2 (7+3 Punkte)\na) Parameterdarstellung der Geraden \\(g\\):\nDie Koordinatendarstellung \\[\n\\frac{4-x_1}{2}=\\frac{4+x_2}{3}=\\frac{2-x_3}{2}=t\n\\] liefert: \\[\n\\begin{aligned}\nx_1&=4-2t,\\\\\nx_2&=3t-4,\\\\\nx_3&=2-2t.\n\\end{aligned}\n\\] Also:\n\\[\ng(t)=(4-2t,\\;3t-4,\\;2-2t)^T.\n\\]\nParameterdarstellung der Ebene \\(E\\):\nGegeben durch die Punkte \\[\nP=(3,1,2),\\quad Q=(-1,3,2),\\quad R=(5,-2,4).\n\\] Berechnen Sie zwei Richtungsvektoren: \\[\n\\begin{aligned}\n\\vec{PQ}&=Q-P=(-4,2,0),\\\\\n\\vec{PR}&=R-P=(2,-3,2).\n\\end{aligned}\n\\] Der Normalenvektor ist das Kreuzprodukt: \\[\nn=\\vec{PQ}\\times\\vec{PR}=\\begin{pmatrix}4\\\\8\\\\8\\end{pmatrix}\\quad\\Rightarrow\\quad n=(1,2,2)\n\\] (bei Bedarf normiert).\nDie Ebenengleichung in Hesse-Normalform lautet dann: \\[\n1\\,(x-3)+2\\,(y-1)+2\\,(z-2)=0\\quad\\Rightarrow\\quad x+2y+2z-9=0.\n\\]\nb) Schnitt bzw. Abstand:\nSetzen Sie \\(g(t)=(4-2t,3t-4,2-2t)\\) in die Ebenengleichung ein: \\[\n(4-2t)+2(3t-4)+2(2-2t)-9=4-2t+6t-8+4-4t-9=-9.\n\\] Da \\(-9\\neq0\\) – unabhängig von \\(t\\) – liegt die Gerade nicht in der Ebene (keinen Schnittpunkt).\nAbstand:\nDer Abstand \\(d\\) eines beliebigen Punktes \\(P_g\\) der Geraden von der Ebene ist: \\[\nd=\\frac{|(4-2t)+2(3t-4)+2(2-2t)-9|}{\\sqrt{1^2+2^2+2^2}}=\\frac{9}{3}=3.\n\\]\n\n\n\nAufgabe 3 (8+3 Punkte)\nGegeben: \\[\nA=\\begin{pmatrix}\n1&-2&3\\\\\n1&0&1\\\\\n0&4&-2\n\\end{pmatrix}.\n\\]\na) Eigenwerte:\nBerechnen Sie die Determinante von \\(A-\\lambda I\\): \\[\n\\det\\Bigl(A-\\lambda I\\Bigr)=\\lambda^3+\\lambda^2-4\\lambda-4=0.\n\\] Offensichtlich ist \\(\\lambda=2\\) eine Nullstelle. Faktorisieren: \\[\n\\lambda^3+\\lambda^2-4\\lambda-4=(\\lambda-2)(\\lambda+1)(\\lambda+2)=0.\n\\] Eigenwerte:\n\\(\\lambda_1=2,\\quad \\lambda_2=-1,\\quad \\lambda_3=-2.\\)\nEigenvektoren:\n\nFür \\(\\lambda=2\\): Lösen \\((A-2I)v=0\\) führt zu\n\\[\nv=(1,\\,1,\\,1)^T.\n\\]\nFür \\(\\lambda=-1\\): Lösen \\((A+I)v=0\\) ergibt\n\\[\nv=(-5,\\,1,\\,4)^T.\n\\]\nFür \\(\\lambda=-2\\): Lösen \\((A+2I)v=0\\) liefert\n\\[\nv=(-1,\\,0,\\,1)^T.\n\\]\n\nb) Darstellung in der Eigenbasis:\nSei \\(B=\\{(1,1,1),\\,(-5,1,4),\\,(-1,0,1)\\}\\). Dann ist die Darstellung der linearen Abbildung \\[\ny=Ax\n\\] in Basis \\(B\\) diagonal: \\[\nA_B=\\begin{pmatrix}\n2&0&0\\\\\n0&-1&0\\\\\n0&0&-2\n\\end{pmatrix}.\n\\]\n\n\n\nAufgabe 4 (4+4+3 Punkte)\na) Stationäre Punkte:\nBerechnen Sie die partiellen Ableitungen: \\[\n\\begin{aligned}\nf_x(x,y)&=-\\ln x+\\frac{y^2-x}{x},\\\\\nf_y(x,y)&=2y\\,\\ln x.\n\\end{aligned}\n\\] Setzen \\(f_y=0\\): - Fall 1: \\(\\ln x=0\\) \\(\\Rightarrow x=1\\). Dann \\(f_x(1,y)=\\,(y^2-1)=0\\) \\(\\Rightarrow y=\\pm 1.\\) - Fall 2: \\(y=0\\). Dann \\(f_x(x,0)=-\\ln x-1=0\\) \\(\\Rightarrow \\ln x=-1\\) \\(\\Rightarrow x=e^{-1}.\\)\nStationäre Punkte:\n\\((1,1),\\;(1,-1),\\;(e^{-1},0).\\)\nb) Klassifizierung:\n\nBei \\((1,1)\\) und \\((1,-1)\\):\nBerechnen der Hesse-Matrix führt zu einem negativen Determinantenwert (\\(D&lt;0\\)) – Sattelpunkt.\nBei \\((e^{-1},0)\\):\nMit \\(f_{xx}(e^{-1},0)=-e\\) und \\(f_{yy}(e^{-1},0)=-2\\) ergibt sich\n\\[\nD=(-e)(-2)=2e&gt;0,\\quad f_{xx}&lt;0,\n\\] also lokales Maximum.\n\nc) Taylor-Polynom 2. Ordnung in \\((1,2)\\):\nBerechnen Sie: \\[\n\\begin{aligned}\nf(1,2)&=(4-1)\\ln1=0,\\\\\nf_x(1,2)&=-\\ln1+\\frac{4-1}{1}=3,\\\\\nf_y(1,2)&=2\\cdot2\\,\\ln1=0.\n\\end{aligned}\n\\] Zusatzableitungen: \\[\n\\begin{aligned}\nf_{xx}(x,y)&=-\\frac{1}{x}-\\frac{y^2}{x^2}\\quad\\Rightarrow\\quad f_{xx}(1,2)=-1-4=-5,\\\\\nf_{xy}(x,y)&=\\frac{2y}{x}\\quad\\Rightarrow\\quad f_{xy}(1,2)=4,\\\\\nf_{yy}(x,y)&=2\\ln x\\quad\\Rightarrow\\quad f_{yy}(1,2)=0.\n\\end{aligned}\n\\] Taylorpolynom: \\[\nT_2(x,y)=3(x-1)+\\frac{1}{2}\\Bigl[-5(x-1)^2+8(x-1)(y-2)\\Bigr].\n\\]\n\n\n\nAufgabe 5 (7+3 Punkte)\nGegeben:\n\\(f(x,y)=(3x+2y)x=3x^2+2xy\\) und Nebenbedingung\n\\[\ng(x,y)=2x^3+3x^2y-40=0.\n\\]\na) Lagrange-Funktion: \\[\n\\mathcal{L}(x,y, \\lambda)=3x^2+2xy+\\lambda\\Bigl(2x^3+3x^2y-40\\Bigr).\n\\] Ableitungen: \\[\n\\begin{aligned}\n\\mathcal{L}_x&=6x+2y+\\lambda\\,(6x^2+6xy)=0,\\\\\n\\mathcal{L}_y&=2x+3\\lambda x^2=0,\\\\\n\\mathcal{L}_\\lambda&=2x^3+3x^2y-40=0.\n\\end{aligned}\n\\] Aus \\(\\mathcal{L}_y=0\\) (bei \\(x\\neq0\\)): \\[\n2x+3\\lambda x^2=0\\quad\\Rightarrow\\quad \\lambda=-\\frac{2}{3x}.\n\\] Einsetzen in \\(\\mathcal{L}_x=0\\) liefert: \\[\n6x+2y-\\frac{2}{3x}(6x^2+6xy)=6x+2y-4x-4y=2x-2y=0,\n\\] also \\(y=x\\).\nIn die Nebenbedingung einsetzen: \\[\n2x^3+3x^3=5x^3=40\\quad\\Rightarrow\\quad x^3=8\\quad\\Rightarrow\\quad x=2,\n\\] und damit \\(y=2\\).\nKandidat:\n\\((2,2)\\).\nb) Ableitung entlang der durch die Nebenbedingung implizit gegebenen Kurve:\nGesucht ist \\[\n\\frac{d}{dx}f(x,y(x))=f_x(x,y)+f_y(x,y)\\,y'(x),\n\\] wobei \\(y'(x)\\) über die totale Differentiation der Nebenbedingung \\(g(x,y)=0\\) mit \\[\ny'(x)=-\\frac{g_x}{g_y},\\quad g_x=6x^2+6xy,\\quad g_y=3x^2.\n\\] Einsetzen liefert \\[\n\\frac{d}{dx}f(x,y(x))=2x-2y,\n\\] insbesondere bei \\((2,2)\\) gilt:\n\\(\\frac{d}{dx}f(2,2)=0\\).\n\n\n\nAufgabe 6 (10 Punkte)\nGegeben:\n\\(f(x,y)=\\frac{2y}{x}\\), und das Kreissegment \\(B\\) wird begrenzt durch\n- die Kreislinie: \\((x-2)^2+y^2=4\\)\n- die Gerade: \\(x+2y=4\\).\nLösungsschritte:\n\nPolarkoordinaten:\nVerschieben Sie das Koordinatensystem zum Kreiszentrum \\((2,0)\\): \\[\nx=2+r\\cos\\theta,\\quad y=r\\sin\\theta,\\quad r\\le2.\n\\]\nTransformation der Geradengleichung:\nEinsetzen:\n\\[\n(2+r\\cos\\theta)+2r\\sin\\theta=4\\quad\\Rightarrow\\quad r\\bigl(\\cos\\theta+2\\sin\\theta\\bigr)=2.\n\\] Dies bestimmt den radialen Grenzwert \\(r_{\\max}(\\theta)=\\dfrac{2}{\\cos\\theta+2\\sin\\theta}\\) für Winkel \\(\\theta\\) in einem bestimmten Intervall \\([\\theta_1,\\theta_2]\\).\nIntegralaufbau:\nMit \\(f(x,y)=\\frac{2r\\sin\\theta}{2+r\\cos\\theta}\\) und dem Jakobiand \\(r\\) ergibt sich: \\[\nI=\\int_{\\theta_1}^{\\theta_2}\\int_{0}^{r_{\\max}(\\theta)} \\frac{2r\\sin\\theta}{2+r\\cos\\theta}\\,r\\,dr\\,d\\theta.\n\\]\nBerechnung:\nNach Durchführung der \\(r\\)- und \\(\\theta\\)-Integration (unter Beachtung der durch den Schnitt der Kreislinie und der Geraden bestimmten Grenzen) erhält man: \\[\nI=\\frac{8}{3}\\Biggl[2\\arctan\\Bigl(\\frac{3}{4}\\Bigr)-\\ln\\Bigl(\\frac{25}{9}\\Bigr)\\Biggr].\n\\]\n\n\n\n\nEndergebnis Kurzfassung:\n\nAufgabe 1:\n\\(\\displaystyle x=(-1-t,\\;3-2t,\\;t,\\;4)^T,\\; t\\in\\mathbb{R}\\) und \\(\\operatorname{rg}(A)=3.\\)\nAufgabe 2:\nGeradendarstellung: \\(g(t)=(4-2t,\\;3t-4,\\;2-2t)^T.\\)\nEbenengleichung (Hesse-Normalform): \\(x+2y+2z-9=0.\\)\nSchnitt: Nein; Abstand: \\(3.\\)\nAufgabe 3:\nEigenwerte: \\(2,\\;-1,\\;-2.\\)\nEigenvektoren: \\((1,1,1)^T,\\;(-5,1,4)^T,\\;(-1,0,1)^T.\\)\nDarstellung in Eigenbasis: \\(A_B=\\operatorname{diag}(2,-1,-2).\\)\nAufgabe 4:\nStationäre Punkte: \\((1,1)\\) und \\((1,-1)\\) (Sattelpunkte), \\((e^{-1},0)\\) (lokales Maximum).\nTaylorpolynom 2. Ordnung in \\((1,2)\\): \\[\nT_2(x,y)=3(x-1)+\\frac{-5(x-1)^2+8(x-1)(y-2)}{2}.\n\\]\nAufgabe 5:\nMit Lagrange-Multiplikatoren: Kandidat \\((2,2)\\);\nAbleitung entlang der Nebenbedingung: \\(\\frac{d}{dx}f(x,y(x))=2(x-y)\\) (bei \\((2,2)\\) \\(=0\\)).\nAufgabe 6:\nNach Umrechnung in Polarkoordinaten und Integration: \\[\nI=\\frac{8}{3}\\Biggl[2\\arctan\\Bigl(\\frac{3}{4}\\Bigr)-\\ln\\Bigl(\\frac{25}{9}\\Bigr)\\Biggr].\n\\]"
   },
   {
-    "objectID": "karteikarten.html#lösen-von-pdes-mit-randbedingungen",
-    "href": "karteikarten.html#lösen-von-pdes-mit-randbedingungen",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Welche Schritte sind notwendig, um eine PDE mit gegebenen Anfangs- und Randbedingungen zu lösen?\n\n\nSeparationsansatz verwenden (falls möglich).\nAllgemeine Lösung für jede Variable finden.\nRandbedingungen anwenden, um spezielle Lösungen zu finden.\nAnfangsbedingung nutzen, um die endgültige Lösung zu bestimmen."
+    "objectID": "HM_solutions.html#aufgabe-1-vektoriterationsalgorithmus",
+    "href": "HM_solutions.html#aufgabe-1-vektoriterationsalgorithmus",
+    "title": "HM1_Lösung",
+    "section": "Aufgabe 1: Vektoriterationsalgorithmus",
+    "text": "Aufgabe 1: Vektoriterationsalgorithmus\na) Approximation des betragsgrößten Eigenwertes Gegeben: \\[ A = \\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix}, \\quad x_0 = \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} \\]\n\nIteration: \\[ x_1 = A x_0 = \\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} \\] \\[ \\lambda_1 \\approx \\frac{\\|x_1\\|_\\infty}{\\|x_0\\|_\\infty} = \\frac{3}{1} = 3 \\]\nIteration: \\[ x_2 = A x_1 = \\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix} \\] \\[ \\lambda_2 \\approx \\frac{\\|x_2\\|_\\infty}{\\|x_1\\|_\\infty} = \\frac{6}{3} = 2 \\]\n\nb) Approximation des betragskleinsten Eigenwertes mit inverser Iteration Gegeben: \\[ x_0 = \\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} \\]\n\nIteration: \\[ y_1 = A^{-1} x_0 \\approx \\begin{pmatrix} 1/3 & 1/3 \\\\ 1/3 & -2/3 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 0 \\end{pmatrix} \\] \\[ \\lambda_1 \\approx \\frac{1}{\\|y_1\\|_\\infty} \\approx -1 \\]\nIteration analog."
   },
   {
-    "objectID": "karteikarten.html#potential-eines-vektorfeldes",
-    "href": "karteikarten.html#potential-eines-vektorfeldes",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie bestimmt man, ob ein Vektorfeld ein Potential besitzt, und wie findet man dieses Potential?\n\nEin Vektorfeld \\(F\\) besitzt ein Potential, wenn \\(\\operatorname{rot}(F) = 0\\) gilt (d.h. die Rotation ist null). Das Potential \\(\\phi\\) findet man durch Integration der Komponenten von \\(F\\)."
+    "objectID": "HM_solutions.html#aufgabe-2-interpolation",
+    "href": "HM_solutions.html#aufgabe-2-interpolation",
+    "title": "HM1_Lösung",
+    "section": "Aufgabe 2: Interpolation",
+    "text": "Aufgabe 2: Interpolation\na) Newton-Interpolationspolynom Berechnung der dividierten Differenzen: \\[ f[x_0] = 5, f[x_1] = 1, f[x_2] = 1, f[x_3] = -1 \\] \\[ f[x_0,x_1] = \\frac{1-5}{0-(-1)} = -4 \\] \\[ f[x_1,x_2] = \\frac{1-1}{1-0} = 0 \\] \\[ f[x_2,x_3] = \\frac{-1-1}{2-1} = -2 \\] \\[ f[x_0,x_1,x_2] = \\frac{0-(-4)}{1-(-1)} = 2 \\] \\[ f[x_1,x_2,x_3] = \\frac{-2-0}{2-0} = -1 \\] \\[ f[x_0,x_1,x_2,x_3] = \\frac{-1-2}{2-(-1)} = -1 \\]\nNewton-Polynom: \\[ p(x) = 5 -4(x+1) + 2(x+1)x -1(x+1)x(x-1) \\]\nb) Monomdarstellung durch Umformung.\nc) Bisektionsverfahren zur Nullstellenapproximation: \\[ x_1=1, x_2=2 \\] \\[ p(1), p(1.5), p(2) \\] berechnen, bis hinreichende Genauigkeit erreicht.\nd) Simpson-Regel: \\[ \\int_{-1}^{1} p(x) dx \\approx \\frac{1-(-1)}{6} (f(-1) + 4f(0) + f(1)) \\]"
   },
   {
-    "objectID": "karteikarten.html#kurvenintegrale-2.-art",
-    "href": "karteikarten.html#kurvenintegrale-2.-art",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie berechnet man ein Kurvenintegral 2. Art?\n\n\\[\n\\int_\\gamma F \\cdot dr = \\int_a^b F(\\gamma(t)) \\cdot \\gamma'(t) \\, dt\n\\] wobei \\(\\gamma(t)\\) eine Parametrisierung des Weges \\(\\gamma\\) ist."
+    "objectID": "HM_solutions.html#aufgabe-3-lineare-regression",
+    "href": "HM_solutions.html#aufgabe-3-lineare-regression",
+    "title": "HM1_Lösung",
+    "section": "Aufgabe 3: Lineare Regression",
+    "text": "Aufgabe 3: Lineare Regression\na) Normalengleichungen Aufstellen der Summen für die Koeffizienten der Normalengleichung.\nb) Cholesky-Zerlegung 1. Zerlege $ A = LL^T $ mit \\[ L = \\begin{pmatrix} a & 0 & 0 \\\\ b & c & 0 \\\\ d & e & f \\end{pmatrix} \\]\n\nVorwärts- und Rückwärtseinsetzen zur Lösung von $Ax = b $."
   },
   {
-    "objectID": "karteikarten.html#parametrisierung-einer-fläche",
-    "href": "karteikarten.html#parametrisierung-einer-fläche",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie parametrisiert man eine Rotationsfläche?\n\nWenn \\(\\gamma(u) = (e^u - 1, 0, u)^T\\) um die z-Achse rotiert, ist die Parametrisierung: \\[\nf(u, v) = ((e^u - 1)\\cos(v), (e^u - 1)\\sin(v), u)^T\n\\]"
-  },
-  {
-    "objectID": "karteikarten.html#tangential--und-normalenvektoren",
-    "href": "karteikarten.html#tangential--und-normalenvektoren",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie bestimmt man Tangential- und Normalenvektoren an eine parametrisierte Fläche?\n\n\nTangentialvektoren: Partielle Ableitungen der Parametrisierung \\(f(u, v)\\) nach \\(u\\) und \\(v\\): \\(f_u\\) und \\(f_v\\).\nNormalenvektor: Kreuzprodukt der Tangentialvektoren: \\(n = f_u \\times f_v\\)."
-  },
-  {
-    "objectID": "karteikarten.html#oberflächenintegrale-2.-art",
-    "href": "karteikarten.html#oberflächenintegrale-2.-art",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie berechnet man ein Oberflächenintegral 2. Art?\n\n\\[\n\\int_A F \\cdot dS = \\int_D F(f(u, v)) \\cdot (f_u \\times f_v) \\, du \\, dv\n\\] wobei \\(f(u, v)\\) die Parametrisierung der Fläche \\(A\\) ist und \\(D\\) der Parameterbereich."
-  },
-  {
-    "objectID": "karteikarten.html#kugelkoordinaten",
-    "href": "karteikarten.html#kugelkoordinaten",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie parametrisiert man ein Volumen in Kugelkoordinaten?\n\n\\[\nx = r\\sin(\\theta)\\cos(\\phi), \\quad y = r\\sin(\\theta)\\sin(\\phi), \\quad z = r\\cos(\\theta)\n\\] wobei \\(r\\) der Radius, \\(\\theta\\) der Polarwinkel und \\(\\phi\\) der Azimutalwinkel ist."
-  },
-  {
-    "objectID": "karteikarten.html#flussberechnung",
-    "href": "karteikarten.html#flussberechnung",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie berechnet man den Fluss eines Vektorfeldes durch eine Oberfläche?\n\n\\[\n\\int_{\\partial K} F \\cdot n \\, dS\n\\] wobei \\(n\\) der Normalenvektor auf der Oberfläche \\(\\partial K\\) ist. Dies kann mit dem Divergenzsatz in ein Volumenintegral umgewandelt werden: \\[\n\\int_K \\operatorname{div}(F) \\, dV\n\\]"
-  },
-  {
-    "objectID": "karteikarten.html#satz-von-stokes",
-    "href": "karteikarten.html#satz-von-stokes",
-    "title": "Karteikarten zur Vektoranalysis und Differentialgleichungen",
-    "section": "",
-    "text": "Frage: Wie lautet der Satz von Stokes?\n\n\\[\n\\int_{\\partial K} \\operatorname{rot}(F) \\cdot n \\, dS = \\oint_{\\partial(\\partial K)} F \\cdot dr\n\\] wobei \\(\\partial K\\) die Oberfläche und \\(\\partial(\\partial K)\\) der Rand der Oberfläche ist."
+    "objectID": "HM_solutions.html#aufgabe-4-nichtlineare-regression",
+    "href": "HM_solutions.html#aufgabe-4-nichtlineare-regression",
+    "title": "HM1_Lösung",
+    "section": "Aufgabe 4: Nichtlineare Regression",
+    "text": "Aufgabe 4: Nichtlineare Regression\na) Formulierung als Fehlerquadratsumme \\[ r_i(x_1, x_2) = f(x_1, x_2, t_i) - y_i \\] Minimiere $ r_i^2 $.\nb) Gauß-Newton-Verfahren Berechnung der Jacobi-Matrix und Iteration $x^{(1)} = x^{(0)} - (J^T J)^{-1} J^T r $. Vergleich der Fehlerquadratsumme zur Beurteilung der Verbesserung."
   },
   {
     "objectID": "hm3_python.html#aufgabe-1",

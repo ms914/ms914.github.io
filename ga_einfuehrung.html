@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HM3_Klausur_WS2425 – ms914.github.io</title>
+<title>Geometrische Algebra – ms914.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -145,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">code</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./hm3_klausur_ws2425.html" aria-current="page"> 
+    <a class="nav-link" href="./hm3_klausur_ws2425.html"> 
 <span class="menu-text">Klausur WS 24/25</span></a>
   </li>  
   <li class="nav-item">
@@ -153,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Sympy</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ga_einfuehrung.html"> 
+    <a class="nav-link active" href="./ga_einfuehrung.html" aria-current="page"> 
 <span class="menu-text">Geometrische Algebra</span></a>
   </li>  
   <li class="nav-item">
@@ -176,12 +141,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#aufgabe-1" id="toc-aufgabe-1" class="nav-link active" data-scroll-target="#aufgabe-1">Aufgabe 1)</a></li>
-  <li><a href="#aufgabe-2" id="toc-aufgabe-2" class="nav-link" data-scroll-target="#aufgabe-2">Aufgabe 2)</a></li>
-  <li><a href="#aufgabe-3" id="toc-aufgabe-3" class="nav-link" data-scroll-target="#aufgabe-3">Aufgabe 3)</a></li>
-  <li><a href="#aufgabe-4" id="toc-aufgabe-4" class="nav-link" data-scroll-target="#aufgabe-4">Aufgabe 4)</a></li>
-  <li><a href="#aufgabe-5" id="toc-aufgabe-5" class="nav-link" data-scroll-target="#aufgabe-5">Aufgabe 5)</a></li>
-  <li><a href="#aufgabe-6" id="toc-aufgabe-6" class="nav-link" data-scroll-target="#aufgabe-6">Aufgabe 6)</a></li>
+  <li><a href="#einführung" id="toc-einführung" class="nav-link active" data-scroll-target="#einführung">Einführung</a>
+  <ul class="collapse">
+  <li><a href="#grundidee" id="toc-grundidee" class="nav-link" data-scroll-target="#grundidee">Grundidee</a></li>
+  <li><a href="#warum-für-ingenieure" id="toc-warum-für-ingenieure" class="nav-link" data-scroll-target="#warum-für-ingenieure">Warum für Ingenieure?</a></li>
+  <li><a href="#beispiel-3d-drehung" id="toc-beispiel-3d-drehung" class="nav-link" data-scroll-target="#beispiel-3d-drehung">Beispiel: 3D-Drehung</a></li>
+  <li><a href="#software-für-ga" id="toc-software-für-ga" class="nav-link" data-scroll-target="#software-für-ga">Software für GA</a></li>
+  <li><a href="#literatur-ressourcen" id="toc-literatur-ressourcen" class="nav-link" data-scroll-target="#literatur-ressourcen">Literatur &amp; Ressourcen</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -190,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HM3_Klausur_WS2425</h1>
+<h1 class="title">Geometrische Algebra</h1>
 </div>
 
 
@@ -207,113 +174,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="aufgabe-1" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-1">Aufgabe 1)</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 1 (10 Punkte)**</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>a) Lösen Sie das Anfangswertproblem $$ x'=(1-\alpha)t\frac{x^2}{t^3}\quad\text{ x(1)=\frac{2}{1-2\alpha}},\quad \alpha\in(0,\frac{1}{2}$$</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>und geben Sie den maximalen Definitionsbereich $t\in[1,T)$ der Lösung in Abhängigkeit von $\alpha$ an. Was passiert für $\alpha \to 0$?</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>b) Betrachten Sie die Differentialgleichung</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>$$2xe^{x^2-t}\dot x-e^{x^2-t}-1=0,\quad x(1)=1$$</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  (i) Zeigen Sie das die DGL exakt ist.</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  (ii) Geben Sie eine Funktion $\Phi=\Phi(t,x)$ an, so dass $\Phi_t(t,x)+\Phi_x(t,x)\dot x=0$</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  (iii) Geben Sie die Lösung des Anfangswertproblems an. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="einführung" class="level1">
+<h1>Einführung</h1>
+<p>Die <strong>Geometrische Algebra (GA)</strong> ist eine Erweiterung der klassischen Vektorrechnung. Sie vereint Vektoren, komplexe Zahlen, Quaternionen und Matrizen in einem einheitlichen Rahmen.<br>
+Dadurch werden viele geometrische Operationen deutlich einfacher.</p>
+<hr>
+<section id="grundidee" class="level2">
+<h2 class="anchored" data-anchor-id="grundidee">Grundidee</h2>
+<p>Das zentrale neue Konzept ist das <strong>geometrische Produkt</strong> zweier Vektoren ( a ) und ( b ):</p>
+<p>[ ab = a b + a b ]</p>
+<ul>
+<li>( a b ): Skalarprodukt (Längen, Winkel)</li>
+<li>( a b ): Äußeres Produkt (Flächen, Orientierung)</li>
+</ul>
+<p><strong>Multivektoren</strong> entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)</p>
 <hr>
 </section>
-<section id="aufgabe-2" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2">Aufgabe 2)</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 2 (10 Punkte)**</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Gegeben ist das lineare System</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>$$ \dot x=\begin{pmatrix} -2&amp;-5\\1&amp;4 \end{pmatrix}x\quad \text{ und}\quad b(t)=4\begin{pmatrix} e^t\\0\end{pmatrix}$$</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>a) Geben Sie ein Fundamentalsystem der homogenen Gleichung an.</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>b) Geben sie die allgemeine Lösung des Anfangswertproblems $\dot x=Ax+b(t)$ an.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="warum-für-ingenieure" class="level2">
+<h2 class="anchored" data-anchor-id="warum-für-ingenieure">Warum für Ingenieure?</h2>
+<ul>
+<li><strong>Mechanik/Robotik:</strong> Elegante Berechnung von Drehungen, Spiegelungen und Projektionen</li>
+<li><strong>Elektrotechnik:</strong> Verallgemeinerung komplexer Zahlen und Quaternionen</li>
+<li><strong>Computer Vision / CAD:</strong> Einheitliche Darstellung von 3D-Geometrien</li>
+</ul>
 <hr>
 </section>
-<section id="aufgabe-3" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-3">Aufgabe 3)</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 3 (10 Punkte)**</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Gegeben sei die partielle Differentialgleichung</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>$$ u_{tt}-u_{xx}=0$$</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>mit $x\in[0,\pi]$ und $t&gt;0$</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>a) Klassifizieren Sie die PDE mit den Begriffen elliptisch, parabolisch, hyperbolisch.</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>b) Bestimmen Sie die Koeffizienten der Sinus-Fouriereihe der ungerade periodisch fortgesetzten Funktion</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>$$f(x)=1\quad  \text{für } x\in [0,\pi]$$.</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>c) Bestimmen Sie die Lösung der obigen PDE mit der Anfangsbedingung</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>$$u(0,x)=x\quad x\in[0,\pi],$$</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>$$u_t(0,x)=0\quad x\in[0,\pi],$$</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>und den Randbedingungen $u(t,0)=u(t,\pi)=0, t&gt;0$.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="beispiel-3d-drehung" class="level2">
+<h2 class="anchored" data-anchor-id="beispiel-3d-drehung">Beispiel: 3D-Drehung</h2>
+<p>Eine Drehung kann in GA mit einem sogenannten <strong>Rotor</strong> ausgedrückt werden:</p>
+<ol type="1">
+<li>Wähle eine Dreh-Ebene (Bivektor ( B ))</li>
+<li>Baue den Rotor: [ R = e^{-B / 2} ]</li>
+<li>Wende den Rotor auf einen Vektor ( v ) an: [ v’ = R v ]</li>
+</ol>
+<p>(( ) = Reverse von ( R ))</p>
 <hr>
 </section>
-<section id="aufgabe-4" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-4">Aufgabe 4)</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 4 (10 Punkte)**</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Gegeben seine die beiden Vektorfelder $F_k:ℝ^3\rightarrow ℝ^3$ mit $k=0,1$ und der Weg $\gamma: [0,1]\rightarrow ℝ^3$.</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>$F=\begin{pmatrix} z\cos(k(x+y))\\z\cos(k(x+y))\\\sin(k(x+y))+2z \end{pmatrix}$ und $\gamma(t)=\begin{pmatrix} \pi t\\\pi t\\ t^2\end{pmatrix}$</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>a) Bestimen Sie jeweils die Rotation von $F_0$ und $F_1$. </span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>b) Untersuchen Sie, ob die Vektorfelder $F_0$ und $F_1$ ein Potentialfeld sind und geben Sie gegebenenfalls ein Potential an. </span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>c) Berechnen Sie jeweils die Kurvenintegrale 2. Art der Vektorfelder $F_0$ und $F_1$ entlang $\gamma$.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="software-für-ga" class="level2">
+<h2 class="anchored" data-anchor-id="software-für-ga">Software für GA</h2>
+<ul>
+<li><strong>Python:</strong> Pakete <code>clifford</code>, <code>galgebra</code></li>
+<li><strong>MATLAB:</strong> Clifford Toolbox</li>
+<li><strong>Web:</strong> ganja.js (für schnelle Visualisierungen)</li>
+</ul>
+<hr>
 </section>
-<section id="aufgabe-5" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-5">Aufgabe 5)</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>**Aufgabe 5 (10 Punkte)**</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>Es sei $\gamma(u)=(e^u-1,0,\sqrt{u})^T$ mit $u\in[0,1]$ ein planarer Weg in der x-z-Ebene. Mit $A$ bezeichnen wir die Rotationsfläche, die entsteht, wenn $\gamma$ um die z-Achse  rotiert wird.</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>Gegeben sei ausserdem das Vektorfeld</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>$$ F:ℝ^3\rightarrow ℝ^3, F(x,y,z)=\begin{pmatrix} xz\\yz \\x^2+y^2 \end{pmatrix} $$</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>a) Geben Sie eine Parametrisierung $f(u,v)$ der Fläche $A$ an. </span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>b) Bestimmen Sie Tangentialvektoren und Normenalenvektor an die Fläche $A$ für $u&gt;0$. </span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>c) Bestimmen Sie das Oberflächenintegral 2.Art $\int_AF\cdot dn$. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="aufgabe-6" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-6">Aufgabe 6)</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>**Aufgabe 6 (10 Punkte)**</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Es sei die Kugel $K$ gegeben durch</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>$$ K=\left\{(x,y,z)^T\in ℝ^3:x^2+y^2+z^2\leq4 \right\}$$</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>und $S$ ihre Oberfläche.</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>Weiterhin sei das Vektorfeld $F:ℝ^3\rightarrow ℝ^3$ gegeben durch</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>$$F(x,y,z)=\begin{pmatrix} xz-y\\ yz+x \\xy+z \end{pmatrix}$$</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>b) Berechnen Sie den Fluss von $F$ durch die gesamte Kugeloberfläche $S$, also $\int_{\partial K}F\cdot dn$, wobei die Normale $n$ nach außen zeigt mit Hilfe des Satzes von Gauss.</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>c) Berechnen Sie  $\int_{S}rot(F)\cdot dn$.</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>d) Die Oberfläche $S$ wird durch die Ebenen $z=1$ und $z=-1$ in drei Teilflächen $S_O$, $S_M$ und $S_U$ unterteilt. Berechnen Sie die Integrale $\int_{S_O}rot(F)\cdot dn$ und $\int_{S_M}rot(F)\cdot dn$ mit Hilfe des Sates von Stokes.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="literatur-ressourcen" class="level2">
+<h2 class="anchored" data-anchor-id="literatur-ressourcen">Literatur &amp; Ressourcen</h2>
+<ul>
+<li>Doran &amp; Lasenby: <em>Geometric Algebra for Physicists</em></li>
+<li>Dorst, Fontijne &amp; Mann: <em>Geometric Algebra for Computer Science</em></li>
+<li>YouTube: <em>Geometric Algebra Tutorial – Steven De Keninck</em></li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=ItGlUbFBFfc">David Hestenes</a> hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt</p>
+<p><a href="https://www.youtube.com/watch?v=Ktg5M7EMgoo">Peter Joot</a> zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet</p>
+<p><a href="https://peeterjoot.com/2023/09/25/geometric-algebra-exact-and-least-squares-solutions-of-two-variable-linear-system/">Peter Joot</a></p>
+<p><a href="https://www.hse.ru/data/2024/07/01/2122016310/Широков_Якутск.pdf">SVD</a> zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
