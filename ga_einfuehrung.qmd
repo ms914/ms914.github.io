@@ -1,0 +1,81 @@
+---
+title: "Geometrische Algebra"
+
+output: html_document
+---
+
+
+# Einführung
+
+Die **Geometrische Algebra (GA)** ist eine Erweiterung der klassischen Vektorrechnung.
+Sie vereint Vektoren, komplexe Zahlen, Quaternionen und Matrizen in einem einheitlichen Rahmen.  
+Dadurch werden viele geometrische Operationen deutlich einfacher.
+
+---
+
+## Grundidee
+
+Das zentrale neue Konzept ist das **geometrische Produkt** zweier Vektoren \( a \) und \( b \):
+
+\[
+ab = a \cdot b + a \wedge b
+\]
+
+- \( a \cdot b \): Skalarprodukt (Längen, Winkel)
+- \( a \wedge b \): Äußeres Produkt (Flächen, Orientierung)
+
+**Multivektoren** entstehen als Kombination:
+- Skalar (0D)
+- Vektor (1D)
+- Bivektor (2D)
+- Trivektor (3D)
+
+---
+
+## Warum für Ingenieure?
+
+- **Mechanik/Robotik:** Elegante Berechnung von Drehungen, Spiegelungen und Projektionen
+- **Elektrotechnik:** Verallgemeinerung komplexer Zahlen und Quaternionen
+- **Computer Vision / CAD:** Einheitliche Darstellung von 3D-Geometrien
+
+---
+
+## Beispiel: 3D-Drehung
+
+Eine Drehung kann in GA mit einem sogenannten **Rotor** ausgedrückt werden:
+
+1. Wähle eine Dreh-Ebene (Bivektor \( B \))
+2. Baue den Rotor:
+\[
+R = e^{-B \theta / 2}
+\]
+3. Wende den Rotor auf einen Vektor \( v \) an:
+\[
+v' = R v \tilde{R}
+\]
+
+(\( \tilde{R} \) = Reverse von \( R \))
+
+---
+
+## Software für GA
+
+- **Python:** Pakete `clifford`, `galgebra`
+- **MATLAB:** Clifford Toolbox
+- **Web:** ganja.js (für schnelle Visualisierungen)
+
+---
+
+## Literatur & Ressourcen
+
+- Doran & Lasenby: *Geometric Algebra for Physicists*
+- Dorst, Fontijne & Mann: *Geometric Algebra for Computer Science*
+- YouTube: *Geometric Algebra Tutorial – Steven De Keninck*
+
+[David Hestenes](https://www.youtube.com/watch?v=ItGlUbFBFfc) hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt
+
+[Peter Joot](https://www.youtube.com/watch?v=Ktg5M7EMgoo) zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet
+
+[Peter Joot](https://peeterjoot.com/2023/09/25/geometric-algebra-exact-and-least-squares-solutions-of-two-variable-linear-system/)
+
+[SVD](https://www.hse.ru/data/2024/07/01/2122016310/Широков_Якутск.pdf) zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können

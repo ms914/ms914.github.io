@@ -19,6 +19,8 @@ website:
         text: Klausur WS 24/25
       - href: hm3_python.qmd
         text: Sympy
+      - href: ga_einfuehrung.qmd
+        text: Geometrische Algebra
       - about.qmd
       
 

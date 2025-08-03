@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ms914.github.io - HM Website</title>
+<title>ms914.github.io - Geometrische Algebra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,7 +89,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -146,7 +117,7 @@ window.Quarto = {
 <span class="menu-text">Sympy</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ga_einfuehrung.html"> 
+    <a class="nav-link active" href="./ga_einfuehrung.html" aria-current="page"> 
 <span class="menu-text">Geometrische Algebra</span></a>
   </li>  
   <li class="nav-item">
@@ -169,7 +140,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#herzlich-willkommen-zur-hm-website" id="toc-herzlich-willkommen-zur-hm-website" class="nav-link active" data-scroll-target="#herzlich-willkommen-zur-hm-website">Herzlich Willkommen zur HM Website</a></li>
+  <li><a href="#einführung" id="toc-einführung" class="nav-link active" data-scroll-target="#einführung">Einführung</a>
+  <ul class="collapse">
+  <li><a href="#grundidee" id="toc-grundidee" class="nav-link" data-scroll-target="#grundidee">Grundidee</a></li>
+  <li><a href="#warum-für-ingenieure" id="toc-warum-für-ingenieure" class="nav-link" data-scroll-target="#warum-für-ingenieure">Warum für Ingenieure?</a></li>
+  <li><a href="#beispiel-3d-drehung" id="toc-beispiel-3d-drehung" class="nav-link" data-scroll-target="#beispiel-3d-drehung">Beispiel: 3D-Drehung</a></li>
+  <li><a href="#software-für-ga" id="toc-software-für-ga" class="nav-link" data-scroll-target="#software-für-ga">Software für GA</a></li>
+  <li><a href="#literatur-ressourcen" id="toc-literatur-ressourcen" class="nav-link" data-scroll-target="#literatur-ressourcen">Literatur &amp; Ressourcen</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -178,7 +156,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HM Website</h1>
+<h1 class="title">Geometrische Algebra</h1>
 </div>
 
 
@@ -195,75 +173,65 @@ window.Quarto = {
 </header>
 
 
-<section id="herzlich-willkommen-zur-hm-website" class="level1">
-<h1>Herzlich Willkommen zur HM Website</h1>
-<p>HM1 dient zur Festigung der Grundlagen. Approximation benötigt Konvergenz.</p>
-<p>HM2 behandelt Lineare Algebra und 2D Analysis. Finde Lösungen für mehr als eine Gleichung und Approximation in mehr als einer Variable. Vektor Räume und Abbildungen darin.</p>
-<p>HM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik. Differentialoperatoren und Integraltheoreme und Differentialgleichungen mit mehr als einer Variablen, oft Ort und Zeit.</p>
-<p>HM4 führt in numerische Methoden ein. Löse Gleichungssysteme durch Approximation. Finde eine beste Approximation zu Daten (Model).</p>
-<p><a href="hm101_mindmap_mit_ziel.png">mindmap</a></p>
-<p><img src="images/clipboard-3118651815.png" class="img-fluid"></p>
-<p>Prüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.</p>
+<section id="einführung" class="level1">
+<h1>Einführung</h1>
+<p>Die <strong>Geometrische Algebra (GA)</strong> ist eine Erweiterung der klassischen Vektorrechnung. Sie vereint Vektoren, komplexe Zahlen, Quaternionen und Matrizen in einem einheitlichen Rahmen.<br>
+Dadurch werden viele geometrische Operationen deutlich einfacher.</p>
+<hr>
+<section id="grundidee" class="level2">
+<h2 class="anchored" data-anchor-id="grundidee">Grundidee</h2>
+<p>Das zentrale neue Konzept ist das <strong>geometrische Produkt</strong> zweier Vektoren ( a ) und ( b ):</p>
+<p>[ ab = a b + a b ]</p>
 <ul>
-<li><a href="./exam-questions.html">Exam Questions</a></li>
-<li><a href="./solutions.html">Solutions</a></li>
-<li><a href="./hm3_python.html">sympy code examples</a></li>
+<li>( a b ): Skalarprodukt (Längen, Winkel)</li>
+<li>( a b ): Äußeres Produkt (Flächen, Orientierung)</li>
 </ul>
-<p>Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:</p>
-<table class="table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 35%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Eigenschaft</strong></th>
-<th><strong>Skalarfeld</strong> <span class="math inline">\(u(x,t)\)</span> oder <span class="math inline">\(\phi(x,y,z)\)</span></th>
-<th><strong>Vektorfeld</strong> <span class="math inline">\(\mathbf{F}(x,y,z)\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Definition</strong></td>
-<td>Ordnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)</td>
-<td>Ordnet jedem Punkt einen Vektor zu (Wert + Richtung)</td>
-</tr>
-<tr class="even">
-<td><strong>Beispiele</strong></td>
-<td>Temperatur <span class="math inline">\(T(x,y,z)\)</span>, Druck <span class="math inline">\(p(x,y,z)\)</span>, elektrisches Potential <span class="math inline">\(\phi(x,y,z)\)</span></td>
-<td>Kraftfeld <span class="math inline">\(\mathbf{F} = (F_x, F_y, F_z)\)</span>, elektrisches Feld <span class="math inline">\(\mathbf{E}\)</span>, Strömungsgeschwindigkeit <span class="math inline">\(\mathbf{v}\)</span></td>
-</tr>
-<tr class="odd">
-<td><strong>Typische Gleichung</strong></td>
-<td>Wärmeleitungsgleichung <span class="math inline">\(\frac{\partial u}{\partial t} = \alpha \nabla^2 u\)</span></td>
-<td>Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder</td>
-</tr>
-<tr class="even">
-<td><strong>Mathematische Operationen</strong></td>
-<td>Gradient (<span class="math inline">\(\nabla u\)</span>) → erzeugt ein Vektorfeld aus einem Skalarfeld</td>
-<td>Divergenz (<span class="math inline">\(\nabla \cdot \mathbf{F}\)</span>), Rotation (<span class="math inline">\(\nabla \times \mathbf{F}\)</span>)</td>
-</tr>
-<tr class="odd">
-<td><strong>Verwendung in der Physik</strong></td>
-<td>Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck</td>
-<td>Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder</td>
-</tr>
-<tr class="even">
-<td><strong>Buchstabenherkunft</strong></td>
-<td><span class="math inline">\(u\)</span> historisch von Fourier für Temperatur, <span class="math inline">\(\phi\)</span> für Potentiale</td>
-<td><span class="math inline">\(\mathbf{F}\)</span> von „Force“ (Kraft) in der Mechanik</td>
-</tr>
-</tbody>
-</table>
-<p>Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra.</p>
-<p>Geometrische Algebra vereint Lineare Algebra, Analysis und numerische Methoden in einem Formalismus.</p>
+<p><strong>Multivektoren</strong> entstehen als Kombination: - Skalar (0D) - Vektor (1D) - Bivektor (2D) - Trivektor (3D)</p>
+<hr>
+</section>
+<section id="warum-für-ingenieure" class="level2">
+<h2 class="anchored" data-anchor-id="warum-für-ingenieure">Warum für Ingenieure?</h2>
+<ul>
+<li><strong>Mechanik/Robotik:</strong> Elegante Berechnung von Drehungen, Spiegelungen und Projektionen</li>
+<li><strong>Elektrotechnik:</strong> Verallgemeinerung komplexer Zahlen und Quaternionen</li>
+<li><strong>Computer Vision / CAD:</strong> Einheitliche Darstellung von 3D-Geometrien</li>
+</ul>
+<hr>
+</section>
+<section id="beispiel-3d-drehung" class="level2">
+<h2 class="anchored" data-anchor-id="beispiel-3d-drehung">Beispiel: 3D-Drehung</h2>
+<p>Eine Drehung kann in GA mit einem sogenannten <strong>Rotor</strong> ausgedrückt werden:</p>
+<ol type="1">
+<li>Wähle eine Dreh-Ebene (Bivektor ( B ))</li>
+<li>Baue den Rotor: [ R = e^{-B / 2} ]</li>
+<li>Wende den Rotor auf einen Vektor ( v ) an: [ v’ = R v ]</li>
+</ol>
+<p>(( ) = Reverse von ( R ))</p>
+<hr>
+</section>
+<section id="software-für-ga" class="level2">
+<h2 class="anchored" data-anchor-id="software-für-ga">Software für GA</h2>
+<ul>
+<li><strong>Python:</strong> Pakete <code>clifford</code>, <code>galgebra</code></li>
+<li><strong>MATLAB:</strong> Clifford Toolbox</li>
+<li><strong>Web:</strong> ganja.js (für schnelle Visualisierungen)</li>
+</ul>
+<hr>
+</section>
+<section id="literatur-ressourcen" class="level2">
+<h2 class="anchored" data-anchor-id="literatur-ressourcen">Literatur &amp; Ressourcen</h2>
+<ul>
+<li>Doran &amp; Lasenby: <em>Geometric Algebra for Physicists</em></li>
+<li>Dorst, Fontijne &amp; Mann: <em>Geometric Algebra for Computer Science</em></li>
+<li>YouTube: <em>Geometric Algebra Tutorial – Steven De Keninck</em></li>
+</ul>
 <p><a href="https://www.youtube.com/watch?v=ItGlUbFBFfc">David Hestenes</a> hat mit Einführung der Vektorableitung eine Geometrische Analysis entwickelt</p>
 <p><a href="https://www.youtube.com/watch?v=Ktg5M7EMgoo">Peter Joot</a> zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet</p>
 <p><a href="https://peeterjoot.com/2023/09/25/geometric-algebra-exact-and-least-squares-solutions-of-two-variable-linear-system/">Peter Joot</a></p>
 <p><a href="https://www.hse.ru/data/2024/07/01/2122016310/Широков_Якутск.pdf">SVD</a> zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
