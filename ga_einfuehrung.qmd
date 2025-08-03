@@ -76,6 +76,6 @@ $$
 
 [Peter Joot](https://www.youtube.com/watch?v=Ktg5M7EMgoo) zeigt wie die Geometrische Algebra exakte und angenäherte Lösungen von Gleichungen findet
 
-[Peter Joot](https://peeterjoot.com/2023/09/25/geometric-algebra-exact-and-least-squares-solutions-of-two-variable-linear-system/)
+[Peter Joot](https://peeterjoot.com/2023/09/25/geometric-algebra-exact-and-least-squares-solutions-of-two-variable-linear-system/) [GA for Electrical Engineers](https://peeterjoot.com/archives/math2023/GAelectrodynamics.color.V0.3.5.pdf)
 
 [SVD](https://www.hse.ru/data/2024/07/01/2122016310/Широков_Якутск.pdf) zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können
