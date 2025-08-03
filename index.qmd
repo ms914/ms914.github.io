@@ -15,26 +15,26 @@ HM4 führt in numerische Methoden ein. Löse Gleichungssysteme durch Approximati
 
 [mindmap](hm101_mindmap_mit_ziel.png)
 
+![](images/clipboard-3118651815.png)
+
 Prüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.
 
-- [Exam Questions](exam-questions.qmd)
-- [Solutions](solutions.qmd)
-- [sympy code examples](hm3_python.qmd)
+-   [Exam Questions](exam-questions.qmd)
+-   [Solutions](solutions.qmd)
+-   [sympy code examples](hm3_python.qmd)
 
- 
+Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:
 
-Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge zwischen Skalarfeldern und Vektorfeldern zusammenfasst:  
+| **Eigenschaft**               | **Skalarfeld** $u(x,t)$ oder $\phi(x,y,z)$                                    | **Vektorfeld** $\mathbf{F}(x,y,z)$                                                                              |
+|-------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Definition**                | Ordnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung)           | Ordnet jedem Punkt einen Vektor zu (Wert + Richtung)                                                            |
+| **Beispiele**                 | Temperatur $T(x,y,z)$, Druck $p(x,y,z)$, elektrisches Potential $\phi(x,y,z)$ | Kraftfeld $\mathbf{F} = (F_x, F_y, F_z)$, elektrisches Feld $\mathbf{E}$, Strömungsgeschwindigkeit $\mathbf{v}$ |
+| **Typische Gleichung**        | Wärmeleitungsgleichung $\frac{\partial u}{\partial t} = \alpha \nabla^2 u$    | Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder                     |
+| **Mathematische Operationen** | Gradient ($\nabla u$) → erzeugt ein Vektorfeld aus einem Skalarfeld           | Divergenz ($\nabla \cdot \mathbf{F}$), Rotation ($\nabla \times \mathbf{F}$)                                    |
+| **Verwendung in der Physik**  | Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck                      | Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder     |
+| **Buchstabenherkunft**        | $u$ historisch von Fourier für Temperatur, $\phi$ für Potentiale              | $\mathbf{F}$ von „Force“ (Kraft) in der Mechanik                                                                |
 
-| **Eigenschaft**      | **Skalarfeld $u(x,t)$ oder $\phi(x,y,z)$** | **Vektorfeld $\mathbf{F}(x,y,z)$** |
-|----------------------|--------------------------------------------------|----------------------------------|
-| **Definition**       | Ordnet jedem Punkt eine skalare Größe zu (nur Wert, keine Richtung) | Ordnet jedem Punkt einen Vektor zu (Wert + Richtung) |
-| **Beispiele**       | Temperatur $T(x,y,z)$, Druck $p(x,y,z)$, elektrisches Potential $\phi(x,y,z)$ | Kraftfeld $\mathbf{F} = (F_x, F_y, F_z)$, elektrisches Feld $\mathbf{E}$, Strömungsgeschwindigkeit $\mathbf{v}$|
-| **Typische Gleichung** | Wärmeleitungsgleichung $\frac{\partial u}{\partial t} = \alpha \nabla^2 u$ | Navier-Stokes-Gleichungen für Strömungen, Maxwell-Gleichungen für elektromagnetische Felder |
-| **Mathematische Operationen** | Gradient ($\nabla u$) → erzeugt ein Vektorfeld aus einem Skalarfeld | Divergenz ($\nabla \cdot \mathbf{F}$), Rotation ($\nabla \times \mathbf{F}$) |
-| **Verwendung in der Physik** | Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck | Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder |
-| **Buchstabenherkunft** | $u$ historisch von Fourier für Temperatur, $\phi$ für Potentiale | $\mathbf{F}$ von „Force“ (Kraft) in der Mechanik |
-
-Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra. 
+Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra.
 
 [David Hestenes](https://www.youtube.com/watch?v=ItGlUbFBFfc)
 
@@ -43,7 +43,3 @@ Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der
 [Peter Joot](https://peeterjoot.com/2023/09/25/geometric-algebra-exact-and-least-squares-solutions-of-two-variable-linear-system/)
 
 [SVD](https://www.hse.ru/data/2024/07/01/2122016310/Широков_Якутск.pdf)
-
-
-
-
