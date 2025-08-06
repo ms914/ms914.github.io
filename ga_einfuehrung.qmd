@@ -38,7 +38,6 @@ $$
 - **Elektrotechnik:** Verallgemeinerung komplexer Zahlen und Quaternionen
 - **Computer Vision / CAD:** Einheitliche Darstellung von 3D-Geometrien
 
-[Spacetime Algebra](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGYzTERoV2lmMGV6ZFFmRVMwWGZRWTV2V0ZZd3xBQ3Jtc0tsMl9UZXpiLUs2YnM0UHlZOWx1cU9XdDB3d2pnOG5iakt3ckpQRm9PajR0UVpWQkJLMlJyY283SGRCeHlLdk5xOWoxLUFXM2NSdDVQM2NmX2dmaWxISmlMUnUzUEhkajR2Zk45QmxfNVd0bEVKRWNfSQ&q=https%3A%2F%2Farxiv.org%2Fabs%2F1411.5002&v=Bt0qLGami5M) und Spacetime Calculus ist eine Unteralgebra zu Geometric Algebra/Calculus für die Elektrodynamik. Wegen der Analogie zwischen den Feldtheorien Elektrodynamik mit den Maxwellgleichungen und der Strömungslehre mit den Navier-Stokes Gleichungen ist das relevant für Ingenieure.
 ---
 
 ## Beispiel: 3D-Drehung
@@ -62,11 +61,17 @@ $$
 ## Software für GA
 
 - **Python:** Pakete `clifford`, `galgebra`
+- **Julia:** Pakete `grassmann`
 - **MATLAB:** Clifford Toolbox
 - **Web:** ganja.js (für schnelle Visualisierungen)
 
 ---
 
+## Spacetime Algebra
+
+[Spacetime Algebra](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGYzTERoV2lmMGV6ZFFmRVMwWGZRWTV2V0ZZd3xBQ3Jtc0tsMl9UZXpiLUs2YnM0UHlZOWx1cU9XdDB3d2pnOG5iakt3ckpQRm9PajR0UVpWQkJLMlJyY283SGRCeHlLdk5xOWoxLUFXM2NSdDVQM2NmX2dmaWxISmlMUnUzUEhkajR2Zk45QmxfNVd0bEVKRWNfSQ&q=https%3A%2F%2Farxiv.org%2Fabs%2F1411.5002&v=Bt0qLGami5M) und Spacetime Calculus ist eine Unteralgebra zu Geometric Algebra/Calculus für die Elektrodynamik. Wegen der Analogie zwischen den Feldtheorien Elektrodynamik mit den Maxwellgleichungen und der Strömungslehre mit den Navier-Stokes Gleichungen ist das relevant für Ingenieure.
+
+---
 ## Literatur & Ressourcen
 
 - Doran & Lasenby: *Geometric Algebra for Physicists*
@@ -84,3 +89,5 @@ $$
 [Peter Joot: GA for Electrical Engineers](https://peeterjoot.com/archives/math2023/GAelectrodynamics.color.V0.3.5.pdf) ist eine ausführliche Einführung in die Grundlagen der GA, von Multivektoren, Integralsätzen und der Anwendung in der Elektrodynamik
 
 [SVD](https://www.hse.ru/data/2024/07/01/2122016310/Широков_Якутск.pdf) zeigt, dass auch für die Anwendung wichtige Matrixmethoden in GA formuliert werden können
+
+
