@@ -5,6 +5,8 @@ format: html
 
 # Herzlich Willkommen zur HM Website
 
+Die Höhere Mathematik dient zur Beschreibung [Dynamischer Systeme](https://www.studysmarter.de/studium/mathematik-studium/differentialgleichungen/dynamische-systeme/).
+
 HM1 dient zur Festigung der Grundlagen. 
 
 - Approximation benötigt Konvergenz.
