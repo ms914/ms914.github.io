@@ -55,7 +55,11 @@ Geometrische Algebra vereint Lineare Algebra, Analysis und numerische Methoden i
 # Wie man diese Webseite verwendet
 - Latex Aufgabentexte in chatGPT als prompt einfügen, und Lösungen zusammenfassen oder expandieren und sympy code erzeugen
 - Sympy code in colab ausführen um Ergebnisse zu überprüfen
+- Latex Aufgabentext in colab einfügen. Gemini kann a) die Aufgabe in sympy lösen oder b) die Aufgabe lösen und das Ergebnis in einer Textzelle ablegen
 
+[colab](https://colab.research.google.com/drive/1bgNbwfHiOBB5bKAJUtaVEMWsmpF5UhDq?usp=sharing)
+
+# HM3
 -   [Exam Questions](exam-questions.qmd)
 -   [Solutions](solutions.qmd)
 -   [sympy code examples](hm3_python.qmd)
