@@ -75,7 +75,7 @@ Ein Fundamentalsystem besteht aus linear unabhängigen Lösungen des homogenen S
 <details>
 <summary>Frage: Wie klassifiziert man eine partielle Differentialgleichung (elliptisch, parabolisch, hyperbolisch)?</summary>
 
-Die Klassifizierung hängt von den Koeffizienten der höchsten Ableitungen ab. (Diese Information ist in den Quellen nicht detailliert, daher müsstest du das in deinen Unterlagen nachschlagen).
+Die Klassifizierung hängt von den Koeffizienten der höchsten Ableitungen ab.
 Beispiel aus der Quelle: $2u_t - u_{xx} = 0$ ist eine parabolische PDE.
 
 </details>
