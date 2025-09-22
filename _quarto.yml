@@ -9,18 +9,18 @@ website:
         text: Home
       - href: klausuren.qmd
         text: Klausuren  
-      - href: HM_solutions.qmd
-        text: Lösungen
-      - href: karteikarten.qmd
-        text: Karteikarten
       - href: hm3_codecopy.qmd
         text: Latex
+      - href: HM_solutions.qmd
+        text: Lösungen
       - href: hm3_klausur_ws2425.qmd
         text: Klausur WS 24/25
       - href: hm3_python.qmd
         text: Sympy
       - href: ga_einfuehrung.qmd
         text: Geometrische Algebra
+      - href: karteikarten.qmd
+        text: Karteikarten
       - about.qmd
       
 

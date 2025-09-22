@@ -5,27 +5,30 @@ format: html
 
 # Herzlich Willkommen zur HM Website
 
-Die Höhere Mathematik dient zur Beschreibung [Dynamischer Systeme](https://www.studysmarter.de/studium/mathematik-studium/differentialgleichungen/dynamische-systeme/).
+Die Höhere Mathematik dient u.a. zur Beschreibung [Dynamischer Systeme](https://www.studysmarter.de/studium/mathematik-studium/differentialgleichungen/dynamische-systeme/).
 
+# Übersicht der Inhalte HM1-4
 HM1 dient zur Festigung der Grundlagen. 
 
-- Approximation benötigt Konvergenz.
+- Approximation benötigt den Konvergenzbegriff.
 
 HM2 behandelt Lineare Algebra und 2D Analysis. 
 
-- Der Gauß-Algorithmus findet Lösungen für mehr als eine Gleichung als Matrixgleichung $Ax=b$. Dies liefert eine exakte Lösung. Eine Schwester ist die Näherungslösung von Gleichungen in der Numerik, wichtig beim Modellieren von Datenpunkten.
+- Der **Gauß-Algorithmus** findet Lösungen für mehr als eine Gleichung als Matrixgleichung $Ax=b$. Dies liefert eine exakte Lösung. Eine Schwester ist die Näherungslösung von Gleichungen in der Numerik, wichtig beim Modellieren von Datenpunkten.
 
-- Vektorräume und Abbildungen darin. Damit gelingt die Transformation ins **Eigensystem** einer Matrix, so dass die Abbildung einer reinen Streckung (Eigenwerte) entspricht. Die Anwendung ist bei Systemen von Differentialgleichungen, deren Lösung so ein Fundamentalsystem hat.
+- Vektorräume und Abbildungen darin. Damit gelingt die Transformation ins **Eigensystem** einer Matrix, so dass die Abbildung einer reinen Streckung (Eigenwerte) entspricht. Die Anwendung ist u.a. bei Systemen von Differentialgleichungen, deren Lösung so ein Fundamentalsystem hat.
 
-- Eine 2D **Taylorentwicklung** liefert eine Approximation in mehr als einer Variable. Dies findet direkte Anwendung bei Optimierungen.
+- Eine 2D **Taylorentwicklung** liefert eine Approximation in mehr als einer Variablen bzw. einem Vektorraum. Dies findet direkte Anwendung bei Optimierungen.
 
 - Die **Lagrangemethode** mit Nebenbedingungen ist so eine.
 
-HM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik. 
+HM3 behandelt Vektoranalysis und DGLs und ist die Grundlage für die Theorie der Strömungsdynamik bzw. Elektrodynamik. 
 
 - Differentialoperatoren und Integraltheoreme und 
 
-- Differentialgleichungen mit mehr als einer Variablen, oft Ort und Zeit.
+- Differentialgleichungen mit mehr als einer Variablen, oft Ort und Zeit. 
+
+- Systeme von Differentialgleichungen zur Beschreibung dynamischer Systeme.
 
 HM4 führt in numerische Methoden ein. Löse Gleichungssysteme durch Approximation. Finde eine beste Approximation zu Daten (Model).
 
@@ -44,12 +47,14 @@ Hier ist eine übersichtliche Tabelle, die die Unterschiede und Zusammenhänge z
 | **Mathematische Operationen** | Gradient ($\nabla u$) → erzeugt ein Vektorfeld aus einem Skalarfeld           | Divergenz ($\nabla \cdot \mathbf{F}$), Rotation ($\nabla \times \mathbf{F}$)                                    |
 | **Verwendung in der Physik**  | Beschreibt Zustandsgrößen wie Temperatur, Energie, Druck                      | Beschreibt physikalische Feldgrößen mit Richtung wie Kräfte, Strömungen, elektrische und magnetische Felder     |
 | **Buchstabenherkunft**        | $u$ historisch von Fourier für Temperatur, $\phi$ für Potentiale              | $\mathbf{F}$ von „Force“ (Kraft) in der Mechanik                                                                |
-
+# Geometrische Algebra
 Diese Unterscheidung verschwindet durch die Einführung von Multivektoren in der Geometrischen Algebra.
 
 Geometrische Algebra vereint Lineare Algebra, Analysis und numerische Methoden in einem Formalismus.
 
-Prüfungsaufgaben (Exam Questions), Kurzlösungen (Solutions) und Sympy code zu HM3.
+# Wie man diese Webseite verwendet
+- Latex Aufgabentexte in chatGPT als prompt einfügen, und Lösungen zusammenfassen oder expandieren und sympy code erzeugen
+- Sympy code in colab ausführen um Ergebnisse zu überprüfen
 
 -   [Exam Questions](exam-questions.qmd)
 -   [Solutions](solutions.qmd)
